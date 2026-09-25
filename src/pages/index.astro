@@ -14,7 +14,7 @@ const heroImage = image('hero');
   description="Leak Detection Bargersville finds hidden slab, water line, pool and wall leaks across Johnson County, IN, using acoustic, thermal and pressure testing. Call for same-day service."
   faqs={faqs}
 >
-  <section class="hero dark">
+  <section class="hero">
     <div class="container hero-grid">
       <div>
         <span class="badge live">Technicians available today</span>
@@ -31,7 +31,7 @@ const heroImage = image('hero');
           <span class="badge"><Icon name="shield" />Licensed &amp; insured</span>
           <span class="badge"><Icon name="bolt" />24/7 emergency</span>
           <span class="badge"><Icon name="drop" />Non-invasive</span>
-          <span class="badge"><Icon name="pin" />Local to {site.city}</span>
+          <span class="badge amber"><Icon name="pin" />Local to {site.city}</span>
         </div>
       </div>
 
@@ -91,10 +91,12 @@ const heroImage = image('hero');
   </section>
 
   <div class="trust">
-    <div><Icon name="clock" /><p><b>Same-day visits</b><span>Across {site.county}</span></p></div>
-    <div><Icon name="drop" /><p><b>No guesswork digging</b><span>Leak marked within inches</span></p></div>
-    <div><Icon name="report" /><p><b>Photo report</b><span>For your plumber &amp; insurer</span></p></div>
-    <div><Icon name="shield" /><p><b>Licensed &amp; insured</b><span>Local {site.city} team</span></p></div>
+    <div class="container trust-grid">
+      <div><b>Inches</b><span>Typical pinpoint accuracy</span></div>
+      <div><b>Same day</b><span>Appointments across {site.county}</span></div>
+      <div><b>0</b><span>Unnecessary holes dug</span></div>
+      <div><b>1 report</b><span>Photos + readings for your insurer</span></div>
+    </div>
   </div>
 
   <section class="section" id="services">
@@ -124,10 +126,10 @@ const heroImage = image('hero');
         <h2>Four steps from “something’s wrong” to a marked spot</h2>
       </div>
       <div class="steps">
-        <div class="step"><span class="n">STEP 1</span><h3>Isolate</h3><p>We shut off fixtures and read the meter to confirm there’s a leak and which line it’s on.</p></div>
-        <div class="step"><span class="n">STEP 2</span><h3>Pressure test</h3><p>Each line is pressurized and watched for pressure drop, so we know which one is failing.</p></div>
-        <div class="step"><span class="n">STEP 3</span><h3>Listen &amp; scan</h3><p>Ground microphones and thermal cameras follow the sound and heat to the exact spot.</p></div>
-        <div class="step"><span class="n">STEP 4</span><h3>Mark &amp; report</h3><p>We mark the spot and send a photo report you can hand to a plumber or insurance adjuster.</p></div>
+        <div class="step"><span class="n">STEP 1</span><h3>Isolate</h3><p>We shut off fixtures and read the meter to confirm there’s a leak and which line it’s on.</p><span class="spec">Meter test</span></div>
+        <div class="step"><span class="n">STEP 2</span><h3>Pressure test</h3><p>Each line is pressurized and watched for pressure drop, so we know which one is failing.</p><span class="spec">Pressure gauge · psi</span></div>
+        <div class="step"><span class="n">STEP 3</span><h3>Listen &amp; scan</h3><p>Ground microphones and thermal cameras follow the sound and heat to the exact spot.</p><span class="spec">Acoustic + infrared</span></div>
+        <div class="step"><span class="n">STEP 4</span><h3>Mark &amp; report</h3><p>We mark the spot and send a photo report you can hand to a plumber or insurance adjuster.</p><span class="spec">Photo report · same day</span></div>
       </div>
     </div>
   </section>
@@ -140,7 +142,7 @@ const heroImage = image('hero');
         <p>Local technicians mean faster visits. Choose your town to see how we help homes there.</p>
       </div>
       <div class="chips">
-        {areas.map((a) => <a class="chip" href={`/areas/${a.slug}/`}><Icon name="pin" />{a.name}, IN</a>)}
+        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={`/areas/${a.slug}/`}><Icon name="pin" />{a.name}, IN</a>)}
       </div>
     </div>
   </section>
