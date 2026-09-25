@@ -1,0 +1,93 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services, areas, type Service } from '../../data/site';
+import { image } from '../../data/images';
+
+export function getStaticPaths() {
+  return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+
+const { service } = Astro.props as { service: Service };
+const photo = image(service.slug);
+const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
+const serviceSchema = {
+  '@type': 'Service',
+  name: service.name,
+  serviceType: service.name,
+  description: service.description,
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: areas.map((a) => `${a.name}, IN`),
+};
+---
+<Base
+  title={`${service.title} | ${site.name}`}
+  description={service.description}
+  faqs={service.faqs}
+  breadcrumbs={[{ name: 'Services', url: '/#services' }, { name: service.name, url: `/services/${service.slug}/` }]}
+  schema={[serviceSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#services">Services</a><span>/</span><span>{service.name}</span></nav>
+      <h1>{service.title}</h1>
+      <p class="answer">{service.answer}</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/"><Icon name="cal" />Book an inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        {photo && <img class="photo" src={photo} alt={`${service.name} in progress at a home in ${site.city}, Indiana`} width="1200" height="675" loading="lazy" />}
+        <h2>Signs you may need {service.name.toLowerCase()}</h2>
+        <ul class="list">
+          {service.signs.map((s) => <li><Icon name="check" /><span>{s}</span></li>)}
+        </ul>
+
+        <h2>How we find it</h2>
+        <ul class="list">
+          {service.method.map((m) => <li><Icon name="check" /><span><b>{m.name}:</b> {m.text}</span></li>)}
+        </ul>
+
+        <h2>Why accurate detection matters in {site.city}</h2>
+        {service.body.map((p) => <p>{p}</p>)}
+
+        <h2>Common questions</h2>
+        <Faq items={service.faqs} />
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name={service.icon} /></span>
+        <h3>Need {service.name.toLowerCase()} today?</h3>
+        <p>Call and a local technician will confirm a time, often the same day.</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/">Request a visit</a>
+        <p class="small">Serving {areas.map((a) => a.name).join(', ')}.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Related services</span><h2>Other leaks we find</h2></div>
+      <div class="cards">
+        {others.map((s) => (
+          <a class="card" href={`/services/${s.slug}/`}>
+            <span class="ico"><Icon name={s.icon} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.short}</p>
+            <span class="more">Learn more<Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

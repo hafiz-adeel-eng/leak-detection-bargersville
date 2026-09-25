@@ -1,0 +1,160 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, services, areas, generalFaqs } from '../data/site';
+import { image } from '../data/images';
+
+const faqs = generalFaqs.slice(0, 5);
+const heroImage = image('hero');
+---
+<Base
+  title="Leak Detection in Bargersville, IN | Same-Day, Non-Invasive"
+  description="Leak Detection Bargersville finds hidden slab, water line, pool and wall leaks across Johnson County, IN, using acoustic, thermal and pressure testing. Call for same-day service."
+  faqs={faqs}
+>
+  <section class="hero dark">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge live">Technicians available today</span>
+        <h1>We hear the leak <em>before</em> you see the damage.</h1>
+        <p class="lede">
+          Leak Detection Bargersville finds hidden water leaks in slabs, walls, yards and pools using acoustic,
+          thermal and pressure testing. We mark the exact spot, so there’s no guesswork digging or torn-up floors.
+        </p>
+        <div class="ctas">
+          <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+          <a class="btn btn-ghost" href="/contact/"><Icon name="cal" />Book an inspection</a>
+        </div>
+        <div class="badges">
+          <span class="badge"><Icon name="shield" />Licensed &amp; insured</span>
+          <span class="badge"><Icon name="bolt" />24/7 emergency</span>
+          <span class="badge"><Icon name="drop" />Non-invasive</span>
+          <span class="badge"><Icon name="pin" />Local to {site.city}</span>
+        </div>
+      </div>
+
+      <div class="visual" role="img" aria-label="Illustration of a technician's acoustic scan locating a leak in a water line under a concrete slab">
+        {heroImage ? (
+          <img src={heroImage} alt="Leak detection technician using acoustic equipment on a kitchen floor in a Bargersville home" width="800" height="860" fetchpriority="high" />
+        ) : (
+        <svg viewBox="0 0 400 430" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="slab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B4257"/><stop offset="1" stop-color="#10293A"/></linearGradient>
+            <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2230"/><stop offset="1" stop-color="#081820"/></linearGradient>
+            <radialGradient id="glow"><stop offset="0" stop-color="#F5A524" stop-opacity=".55"/><stop offset="1" stop-color="#F5A524" stop-opacity="0"/></radialGradient>
+          </defs>
+          <g transform="translate(0 112)">
+          <!-- floor tiles -->
+          <g stroke="#2A5870" stroke-width="1">
+            <rect x="0" y="150" width="400" height="18" fill="#1E4A60"/>
+            <path d="M50 150v18M110 150v18M170 150v18M230 150v18M290 150v18M350 150v18"/>
+          </g>
+          <rect x="0" y="168" width="400" height="70" fill="url(#slab)"/>
+          <g fill="#2A5870" opacity=".5"><circle cx="40" cy="190" r="2"/><circle cx="120" cy="215" r="1.5"/><circle cx="210" cy="198" r="2.2"/><circle cx="300" cy="222" r="1.6"/><circle cx="360" cy="188" r="2"/></g>
+          <rect x="0" y="238" width="400" height="320" fill="url(#soil)"/>
+          <!-- pipe -->
+          <rect x="0" y="286" width="400" height="18" rx="9" fill="#B87333"/>
+          <rect x="0" y="289" width="400" height="4" rx="2" fill="#D8955A" opacity=".7"/>
+          <!-- leak -->
+          <circle cx="238" cy="295" r="70" fill="url(#glow)"/>
+          <circle cx="238" cy="295" r="7" fill="#F5A524"/>
+          <!-- sound rings -->
+          <g fill="none" stroke="#2CC9C3" stroke-width="1.6">
+            <path d="M200 262a50 50 0 0 1 76 0" opacity=".9"/>
+            <path d="M184 244a74 74 0 0 1 108 0" opacity=".6"/>
+            <path d="M168 226a98 98 0 0 1 140 0" opacity=".35"/>
+          </g>
+          <!-- ground mic -->
+          <g>
+            <rect x="228" y="118" width="20" height="32" rx="4" fill="#E8F1F4"/>
+            <rect x="236" y="40" width="4" height="80" fill="#86A0AB"/>
+            <circle cx="238" cy="36" r="10" fill="#0F2533" stroke="#2CC9C3" stroke-width="2"/>
+          </g>
+          <!-- marker flag -->
+          <path d="M268 150V96" stroke="#E8F1F4" stroke-width="2"/>
+          <path d="M268 96h28l-8 9 8 9h-28z" fill="#F5A524"/>
+          </g>
+        </svg>
+        )}
+        <div class="readout" aria-hidden="true">
+          <div class="row"><span>ACOUSTIC SCAN · KITCHEN SLAB</span><b>LIVE</b></div>
+          <svg viewBox="0 0 300 56" preserveAspectRatio="none">
+            <path class="wave" d="M0 28 L20 27 L32 30 L44 25 L58 31 L70 26 L84 29 L96 24 L110 32 L122 27 L136 29 L150 26 L160 10 L168 48 L176 4 L184 50 L192 18 L204 30 L218 26 L232 30 L246 27 L260 29 L274 26 L288 28 L300 27"/>
+            <circle cx="176" cy="4" r="3.5" fill="#F5A524"/>
+          </svg>
+          <div class="row"><span>Signal peak found</span><b>Leak marked</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div><Icon name="clock" /><p><b>Same-day visits</b><span>Across {site.county}</span></p></div>
+    <div><Icon name="drop" /><p><b>No guesswork digging</b><span>Leak marked within inches</span></p></div>
+    <div><Icon name="report" /><p><b>Photo report</b><span>For your plumber &amp; insurer</span></p></div>
+    <div><Icon name="shield" /><p><b>Licensed &amp; insured</b><span>Local {site.city} team</span></p></div>
+  </div>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>Every kind of hidden leak, found without tearing things up</h2>
+        <p>From slab leaks under your kitchen floor to a pool that won’t hold water, we use the right tool for each kind of leak.</p>
+      </div>
+      <div class="cards">
+        {services.map((s) => (
+          <a class="card" href={`/services/${s.slug}/`}>
+            <span class="ico"><Icon name={s.icon} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.short}</p>
+            <span class="more">Learn more<Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How we find it</span>
+        <h2>Four steps from “something’s wrong” to a marked spot</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">STEP 1</span><h3>Isolate</h3><p>We shut off fixtures and read the meter to confirm there’s a leak and which line it’s on.</p></div>
+        <div class="step"><span class="n">STEP 2</span><h3>Pressure test</h3><p>Each line is pressurized and watched for pressure drop, so we know which one is failing.</p></div>
+        <div class="step"><span class="n">STEP 3</span><h3>Listen &amp; scan</h3><p>Ground microphones and thermal cameras follow the sound and heat to the exact spot.</p></div>
+        <div class="step"><span class="n">STEP 4</span><h3>Mark &amp; report</h3><p>We mark the spot and send a photo report you can hand to a plumber or insurance adjuster.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint" id="areas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Service areas</span>
+        <h2>Based in {site.city}, serving all of {site.county}</h2>
+        <p>Local technicians mean faster visits. Choose your town to see how we help homes there.</p>
+      </div>
+      <div class="chips">
+        {areas.map((a) => <a class="chip" href={`/areas/${a.slug}/`}><Icon name="pin" />{a.name}, IN</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions homeowners ask</span>
+        <h2>Leak detection FAQ</h2>
+      </div>
+      <Faq items={faqs} />
+      <p style="margin-top:20px"><a class="btn btn-ghost btn-sm" href="/faq/">See all questions<Icon name="arrow" /></a></p>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

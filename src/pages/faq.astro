@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, services, generalFaqs } from '../data/site';
+
+const seen = new Set<string>();
+const all = [...generalFaqs, ...services.flatMap((s) => s.faqs)].filter((f) => {
+  if (seen.has(f.q)) return false;
+  seen.add(f.q);
+  return true;
+});
+---
+<Base
+  title={`Leak Detection FAQ: Signs, Process & Insurance | ${site.name}`}
+  description="Answers to common leak detection questions from Bargersville homeowners: signs of a slab leak, how detection works, insurance, pool leaks and more."
+  faqs={all}
+  breadcrumbs={[{ name: 'FAQ', url: '/faq/' }]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>FAQ</span></nav>
+      <h1>Leak detection questions, answered</h1>
+      <p class="answer">Straight answers about hidden water leaks, how we find them, and what to do next. Don’t see your question? Call {site.phone} or email {site.email}.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container"><Faq items={all} /></div>
+  </section>
+  <CtaBand />
+</Base>

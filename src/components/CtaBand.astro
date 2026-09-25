@@ -1,0 +1,23 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+interface Props { title?: string; text?: string }
+const {
+  title = 'Hear running water? Call before the damage spreads.',
+  text = `Same-day appointments across ${site.city} and ${site.county}.`,
+} = Astro.props;
+---
+<section class="section">
+  <div class="container">
+    <div class="cta-band dark">
+      <div>
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/">Book online<Icon name="arrow" /></a>
+      </div>
+    </div>
+  </div>
+</section>

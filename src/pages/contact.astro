@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { site, services, areas } from '../data/site';
+---
+<Base
+  title={`Contact & Book an Inspection | ${site.name}`}
+  description={`Book a leak detection visit in ${site.city} and ${site.county}, IN. Call ${site.phone}, email us, or send a request online.`}
+  breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Contact</span></nav>
+      <h1>Book a leak detection visit</h1>
+      <p class="answer">For active leaks, calling is fastest. For everything else, send the form and we’ll get back to you to confirm a time.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <form class="form" action={`https://formsubmit.co/${site.email}`} method="POST">
+        <input type="hidden" name="_subject" value="New leak detection request (website)" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value={`${site.url}/thank-you/`} />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="row2">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" /></div>
+          <div class="field">
+            <label for="town">Town</label>
+            <select id="town" name="town">
+              {areas.map((a) => <option>{a.name}</option>)}
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            {services.map((s) => <option>{s.name}</option>)}
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">What are you noticing?</label><textarea id="message" name="message" placeholder="e.g. warm spot on the kitchen floor, water bill doubled"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send request<Icon name="arrow" /></button>
+      </form>
+
+      <aside class="aside">
+        <h3>Reach us directly</h3>
+        <ul class="contact-list">
+          <li><span class="ico"><Icon name="phone" /></span><a href={`tel:${site.phoneHref}`}>{site.phone}<span>Fastest for active leaks</span></a></li>
+          <li><span class="ico"><Icon name="mail" /></span><a href={`mailto:${site.email}`}>{site.email}<span>We reply within one business day</span></a></li>
+          <li><span class="ico"><Icon name="pin" /></span><p>{site.city}, IN {site.postalCode}<span>Serving all of {site.county}</span></p></li>
+        </ul>
+        <p class="small">{site.hours}.</p>
+      </aside>
+    </div>
+  </section>
+</Base>

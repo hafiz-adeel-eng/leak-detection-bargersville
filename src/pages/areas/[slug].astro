@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services, areas, type Area } from '../../data/site';
+
+export function getStaticPaths() {
+  return areas.map((area) => ({ params: { slug: area.slug }, props: { area } }));
+}
+
+const { area } = Astro.props as { area: Area };
+const faqs = [
+  { q: `Do you offer leak detection in ${area.name}, IN?`, a: `Yes. ${site.name} serves homes throughout ${area.name} and the rest of ${site.county}, with same-day visits when our schedule allows.` },
+  { q: `What kinds of leaks do you find in ${area.name}?`, a: 'We find slab leaks, main water line leaks, pool and spa leaks, shower and wall leaks, and irrigation leaks, using non-invasive acoustic, thermal and pressure testing.' },
+];
+---
+<Base
+  title={`Leak Detection in ${area.name}, IN | ${site.name}`}
+  description={`Non-invasive leak detection in ${area.name}, Indiana. Slab, water line, pool and wall leaks found with acoustic and thermal equipment. Same-day service in ${site.county}.`}
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Service areas', url: '/#areas' }, { name: `${area.name}, IN`, url: `/areas/${area.slug}/` }]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#areas">Service areas</a><span>/</span><span>{area.name}, IN</span></nav>
+      <h1>Leak Detection in {area.name}, Indiana</h1>
+      <p class="answer">{area.note}</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/"><Icon name="cal" />Book an inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services in {area.name}</span>
+        <h2>Leak detection services for {area.name} homes</h2>
+      </div>
+      <div class="cards">
+        {services.map((s) => (
+          <a class="card" href={`/services/${s.slug}/`}>
+            <span class="ico"><Icon name={s.icon} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.short}</p>
+            <span class="more">Learn more<Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">FAQ</span><h2>{area.name} leak detection questions</h2></div>
+      <Faq items={faqs} />
+      <h2 style="font-size:22px;margin:48px 0 20px">Other areas we serve</h2>
+      <div class="chips">
+        {areas.filter((a) => a.slug !== area.slug).map((a) => <a class="chip" href={`/areas/${a.slug}/`}><Icon name="pin" />{a.name}, IN</a>)}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title={`Leak in ${area.name}? We can usually be there today.`} />
+</Base>
