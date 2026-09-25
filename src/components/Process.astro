@@ -1,0 +1,68 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+
+const steps = [
+  {
+    icon: 'drop',
+    title: 'Confirm the leak',
+    text: 'We read your water meter with everything off, then isolate the hot, cold and outdoor lines to prove there’s a leak and find which line it’s on.',
+    tool: 'Meter & shutoff test',
+  },
+  {
+    icon: 'gauge',
+    title: 'Pressure-test the line',
+    text: 'The suspect line is pressurized and watched on a gauge. A steady drop confirms it’s the one leaking before we go any further.',
+    tool: 'Pressure gauge',
+  },
+  {
+    icon: 'wave',
+    title: 'Pinpoint the spot',
+    text: 'Ground microphones pick up the sound of escaping water, and thermal imaging shows the heat or moisture it leaves behind.',
+    tool: 'Acoustic + thermal',
+  },
+  {
+    icon: 'pin',
+    title: 'Mark it & report',
+    text: 'We mark the exact spot on your floor, wall or lawn, with photos and notes you can hand to your plumber and insurer.',
+    tool: 'Photo report',
+  },
+];
+---
+<section class="process" id="how-it-works" aria-labelledby="process-title">
+  <div class="container">
+    <div class="process-head">
+      <div>
+        <span class="process-eyebrow">Our process</span>
+        <h2 id="process-title">How we find your leak <span>without tearing things up</span></h2>
+      </div>
+      <p>Every visit follows the same four steps, so you always know what we’re doing and why. Nothing is opened until the leak is found.</p>
+    </div>
+
+    <ol class="process-steps">
+      {steps.map((s, i) => (
+        <li class="pstep">
+          <div class="pstep-top">
+            <span class="pstep-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <span class="pstep-icon"><Icon name={s.icon} /></span>
+          </div>
+          <h3><span class="sr-only">Step {i + 1}: </span>{s.title}</h3>
+          <p>{s.text}</p>
+          <span class="pstep-tool">{s.tool}</span>
+        </li>
+      ))}
+    </ol>
+
+    <div class="process-foot">
+      <ul class="process-gets" aria-label="What you get">
+        <li><Icon name="check" />Leak confirmed, not guessed</li>
+        <li><Icon name="check" />Exact spot marked</li>
+        <li><Icon name="check" />Photo report for your plumber &amp; insurer</li>
+      </ul>
+      <div class="process-ctas">
+        <a class="btn btn-primary" href="/contact/"><Icon name="cal" />Book an inspection</a>
+        <a class="process-call" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+      </div>
+    </div>
+  </div>
+</section>

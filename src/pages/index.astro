@@ -5,6 +5,7 @@ import ServiceCard from '../components/ServiceCard.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Hero from '../components/Hero.astro';
+import Process from '../components/Process.astro';
 import { site, services, areas, generalFaqs } from '../data/site';
 
 const faqs = generalFaqs.slice(0, 5);
@@ -38,20 +39,7 @@ const faqs = generalFaqs.slice(0, 5);
     </div>
   </section>
 
-  <section class="section dark" id="how-it-works">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">How we find it</span>
-        <h2>Four steps from “something’s wrong” to a marked spot</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><span class="n">STEP 1</span><h3>Isolate</h3><p>We shut off fixtures and read the meter to confirm there’s a leak and which line it’s on.</p><span class="spec">Meter test</span></div>
-        <div class="step"><span class="n">STEP 2</span><h3>Pressure test</h3><p>Each line is pressurized and watched for pressure drop, so we know which one is failing.</p><span class="spec">Pressure gauge · psi</span></div>
-        <div class="step"><span class="n">STEP 3</span><h3>Listen &amp; scan</h3><p>Ground microphones and thermal cameras follow the sound and heat to the exact spot.</p><span class="spec">Acoustic + infrared</span></div>
-        <div class="step"><span class="n">STEP 4</span><h3>Mark &amp; report</h3><p>We mark the spot and send a photo report you can hand to a plumber or insurance adjuster.</p><span class="spec">Photo report · same day</span></div>
-      </div>
-    </div>
-  </section>
+  <Process />
 
   <section class="section tint" id="areas">
     <div class="container">
