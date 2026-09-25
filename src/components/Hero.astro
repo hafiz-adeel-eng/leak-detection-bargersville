@@ -1,0 +1,98 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+import { image } from '../data/images';
+
+// Drop public/images/hero.webp (technician photo, no text) and
+// public/images/hero-inset.webp (close-up of a leaking pipe) to replace the built-in art.
+const photo = image('hero');
+const inset = image('hero-inset');
+
+const features = [
+  { icon: 'drop', label: 'Water Leak Detection', href: '/services/water-line-leak-detection/' },
+  { icon: 'slab', label: 'Slab Leak Detection', href: '/services/slab-leak-detection/' },
+  { icon: 'home', label: 'Hidden Leak Solutions', href: '/services/thermal-imaging/' },
+  { icon: 'shield', label: 'Residential & Commercial', href: '/contact/' },
+];
+---
+<section class="hx">
+  <div class="hx-media" aria-hidden={photo ? undefined : 'true'}>
+    {photo ? (
+      <img src={photo} alt="Leak detection technician with headphones and an acoustic listening device checking a water line outside a Bargersville home" width="1600" height="900" fetchpriority="high" />
+    ) : (
+      <div class="hx-art">
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+          <defs>
+            <linearGradient id="hxsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B4A6B"/><stop offset="1" stop-color="#0E2C47"/></linearGradient>
+            <linearGradient id="hxsoil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A2A1E"/><stop offset="1" stop-color="#1C140E"/></linearGradient>
+          </defs>
+          <rect width="800" height="600" fill="url(#hxsky)"/>
+          <path d="M470 330V170l110-80 110 80v160z" fill="#16405E"/>
+          <path d="M455 180 580 88l125 92" fill="none" stroke="#2A5E82" stroke-width="10" stroke-linejoin="round"/>
+          <rect x="520" y="220" width="46" height="50" rx="4" fill="#2A5E82"/><rect x="600" y="220" width="46" height="50" rx="4" fill="#2A5E82"/>
+          <rect x="0" y="330" width="800" height="36" fill="#2F6B3A"/>
+          <rect x="0" y="366" width="800" height="234" fill="url(#hxsoil)"/>
+          <rect x="0" y="470" width="800" height="26" rx="13" fill="#8A97A0"/>
+          <rect x="0" y="474" width="800" height="6" rx="3" fill="#B9C4CA"/>
+          <g fill="#6FC3F0"><circle cx="560" cy="500" r="5"/><circle cx="572" cy="512" r="4"/><circle cx="552" cy="516" r="3.5"/></g>
+          <g fill="none" stroke="#3FA9F5" stroke-width="5" stroke-linecap="round">
+            <path d="M535 440a36 36 0 0 1 50 0"/><path d="M522 424a56 56 0 0 1 76 0" opacity=".7"/><path d="M509 408a76 76 0 0 1 102 0" opacity=".4"/>
+          </g>
+          <path d="M560 330V250" stroke="#D9DEE2" stroke-width="5"/><circle cx="560" cy="244" r="14" fill="#0B2240" stroke="#E2B659" stroke-width="4"/>
+          <path d="M600 330v-58" stroke="#E6ECEF" stroke-width="3"/><path d="M600 272h36l-10 11 10 11h-36z" fill="#E2B659"/>
+        </svg>
+      </div>
+    )}
+  </div>
+
+  <div class="hx-trust" aria-label="Why homeowners choose us">
+    <span><Icon name="shield" /><b>Trusted</b> Local Experts</span>
+    <span><Icon name="clock" /><b>Fast &amp;</b> Reliable Service</span>
+    <span><Icon name="pin" /><b>{site.city}</b> &amp; Surrounding Areas</span>
+  </div>
+
+  <div class="container hx-inner">
+    <div class="hx-copy">
+      <p class="hx-eyebrow">Find it <i>•</i> Fix it <i>•</i> Protect your home</p>
+      <h1>
+        <span class="w">Professional</span>
+        <span class="g">Leak Detection</span>
+        <span class="w sm">in {site.city}</span>
+      </h1>
+      <p class="hx-lede">Accurate leak detection. Less damage. A healthier home.</p>
+
+      <ul class="hx-features">
+        {features.map((f) => (
+          <li><a href={f.href}><span class="ring"><Icon name={f.icon} /></span>{f.label}</a></li>
+        ))}
+      </ul>
+
+      <div class="hx-ctas">
+        <a class="btn-gold" href="/contact/">Get a Free Estimate<Icon name="arrow" /></a>
+        <a class="hx-call" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+      </div>
+    </div>
+
+    <div class="hx-inset" aria-hidden="true">
+      {inset ? <img src={inset} alt="" width="360" height="360" /> : (
+        <svg viewBox="0 0 200 200" width="100%" height="100%">
+          <rect width="200" height="200" fill="#2B1E15"/>
+          <g fill="#3E2C1F"><circle cx="30" cy="40" r="9"/><circle cx="160" cy="30" r="12"/><circle cx="170" cy="160" r="10"/><circle cx="40" cy="170" r="8"/></g>
+          <rect x="-10" y="112" width="220" height="30" rx="15" fill="#8A97A0"/>
+          <rect x="-10" y="117" width="220" height="7" rx="3" fill="#C4CED3"/>
+          <rect x="88" y="108" width="24" height="38" rx="4" fill="#6F7B83"/>
+          <path d="M104 146c2 14 10 22 6 34M98 146c-4 12-2 24-8 32" stroke="#8FD3FF" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <g fill="none" stroke="#3FA9F5" stroke-width="7" stroke-linecap="round">
+            <path d="M82 84a26 26 0 0 1 36 0"/><path d="M70 70a44 44 0 0 1 60 0" opacity=".75"/><path d="M58 56a62 62 0 0 1 84 0" opacity=".45"/>
+          </g>
+        </svg>
+      )}
+    </div>
+  </div>
+
+  <svg class="hx-wave" viewBox="0 0 1600 140" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 C 420 150, 900 10, 1600 40 L1600 140 L0 140 Z" fill="var(--bg-2)"/>
+    <path d="M0 70 C 420 150, 900 10, 1600 40" fill="none" stroke="url(#hxgold)" stroke-width="5"/>
+    <defs><linearGradient id="hxgold" x1="0" x2="1"><stop offset="0" stop-color="#C8963E"/><stop offset=".5" stop-color="#F1D08A"/><stop offset="1" stop-color="#C8963E"/></linearGradient></defs>
+  </svg>
+</section>
