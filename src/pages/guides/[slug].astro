@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import GuideArticle from '../../components/GuideArticle.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', (g) => !g.data.path);
+  return guides.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+<GuideArticle entry={entry} />

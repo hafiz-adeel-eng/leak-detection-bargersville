@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site } from '../../data/site';
+import { guideUrl } from '../../data/guides';
+
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const itemList = {
+  '@type': 'ItemList',
+  name: 'Leak detection guides',
+  itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${site.url}${guideUrl(g)}`, name: g.data.h1 })),
+};
+---
+<Base
+  title={`Leak Detection Guides for Homeowners | ${site.name}`}
+  description="Practical guides to finding water leaks in your house, slab, yard, walls, pool and sprinkler system, plus what professional leak detection costs and how it works."
+  breadcrumbs={[{ name: 'Guides', url: '/guides/' }]}
+  schema={[itemList]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Guides</span></nav>
+      <h1>Leak detection guides</h1>
+      <p class="answer">Straight answers from a local leak detection team: how to check for a leak yourself, what the signs mean, and when it’s time to call a professional.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="guide-list">
+        {guides.map((g) => (
+          <a class="guide-item" href={guideUrl(g)}>
+            <span class="gi-service">{g.data.service.name}</span>
+            <h2>{g.data.h1}</h2>
+            <p>{g.data.quickAnswer}</p>
+            <span class="more">Read the guide<Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

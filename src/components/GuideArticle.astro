@@ -1,0 +1,120 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import Faq from './Faq.astro';
+import CtaBand from './CtaBand.astro';
+import { site } from '../data/site';
+import { image } from '../data/images';
+import { guideUrl } from '../data/guides';
+
+interface Props { entry: CollectionEntry<'guides'> }
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content, headings } = await render(entry);
+const url = guideUrl(entry);
+const photo = d.image ? image(d.image.name) : null;
+const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length;
+const minutes = Math.max(3, Math.round(words / 220));
+const toc = headings.filter((h) => h.depth === 2);
+const all = await getCollection('guides');
+const related = d.related.map((s) => all.find((g) => g.id === s)).filter(Boolean) as CollectionEntry<'guides'>[];
+const fmt = (dt: Date) => dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+
+const article = {
+  '@type': 'Article',
+  '@id': `${site.url}${url}#article`,
+  headline: d.h1,
+  description: d.description,
+  datePublished: d.published.toISOString().slice(0, 10),
+  dateModified: d.updated.toISOString().slice(0, 10),
+  author: { '@type': 'Organization', '@id': `${site.url}/#business`, name: site.name },
+  publisher: { '@id': `${site.url}/#business` },
+  mainEntityOfPage: `${site.url}${url}`,
+  about: { '@type': 'Service', name: d.service.name, url: `${site.url}${d.service.url}` },
+  keywords: [d.primaryKeyword, ...d.secondaryKeywords].join(', '),
+  ...(photo ? { image: `${site.url}${photo.split('?')[0]}` } : {}),
+};
+const crumbs = d.path
+  ? [{ name: d.h1, url }]
+  : [{ name: 'Guides', url: '/guides/' }, { name: d.h1, url }];
+---
+<Base title={d.title} description={d.description} faqs={d.faqs} breadcrumbs={crumbs} schema={[article]}>
+  <section class="page-hero dark guide-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>/</span>
+        {!d.path && <><a href="/guides/">Guides</a><span>/</span></>}
+        <span>{d.h1}</span>
+      </nav>
+      <h1>{d.h1}</h1>
+      <p class="guide-meta">
+        <span>By the {site.name} team</span><span aria-hidden="true">·</span>
+        <span>Updated <time datetime={d.updated.toISOString().slice(0, 10)}>{fmt(d.updated)}</time></span><span aria-hidden="true">·</span>
+        <span>{minutes} min read</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="section guide-section">
+    <div class="container guide-grid">
+      <article class="guide">
+        <div class="quick-answer" id="quick-answer">
+          <span class="qa-label">Quick answer</span>
+          <p>{d.quickAnswer}</p>
+        </div>
+
+        {photo && d.image && (
+          <figure class="guide-figure">
+            <img src={photo} alt={d.image.alt} width="1200" height="675" loading="eager" decoding="async" />
+          </figure>
+        )}
+
+        <div class="guide-body">
+          <Content />
+        </div>
+
+        <div class="guide-cta">
+          <div>
+            <h2>Still can’t find it?</h2>
+            <p>Our {d.service.name.toLowerCase()} pinpoints the leak without tearing things up, so the repair starts in the right spot.</p>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-primary" href={d.service.url}>{d.service.name}<Icon name="arrow" /></a>
+            <a class="btn btn-ghost" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+          </div>
+        </div>
+
+        <h2 class="faq-title" id="faq">Frequently asked questions</h2>
+        <Faq items={d.faqs} openFirst={false} />
+      </article>
+
+      <aside class="guide-aside">
+        {toc.length > 0 && (
+          <nav class="toc-box" aria-label="On this page">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#quick-answer">Quick answer</a></li>
+              {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+              <li><a href="#faq">FAQs</a></li>
+            </ol>
+          </nav>
+        )}
+        <div class="aside">
+          <h3>Need a professional?</h3>
+          <p>Local leak detection across {site.city} and {site.county}.</p>
+          <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+          <a class="btn btn-ghost" href={d.service.url}>{d.service.name}</a>
+        </div>
+        {related.length > 0 && (
+          <div class="related-box">
+            <h2>Related guides</h2>
+            <ul>{related.map((r) => <li><a href={guideUrl(r)}>{r.data.h1}</a></li>)}</ul>
+          </div>
+        )}
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
