@@ -5,8 +5,8 @@ h1: "How to Find a Water Leak in Your House"
 quickAnswer: "Start with your water meter: turn off every faucet and water-using appliance, note the reading, and wait one to two hours. If the meter moves, you have a leak. Then check toilets with a dye test, look under sinks and around the water heater, and close the main shutoff to tell whether the leak is inside the house or in the line outside."
 primaryKeyword: "find water leak in house"
 secondaryKeywords: ["how to find a water leak in your house", "i have a water leak in my house", "checking for water leaks", "detecting a water leak in your home", "can't find water leak", "find leaks in house", "locate water leak"]
-service: { name: "Hidden Leak Detection", url: "/services/shower-wall-leak-detection/" }
-image: { name: "shower-wall-leak-detection", alt: "Technician listening for a hidden water leak with an acoustic sensor on a tile floor inside a home" }
+service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
+image: { name: "hidden-water-leak-detection", alt: "Technician listening for a hidden water leak with an acoustic sensor on a tile floor inside a home" }
 related: ["why-is-my-water-bill-so-high", "how-to-find-a-leak-in-a-wall", "how-to-find-a-slab-leak"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -94,7 +94,7 @@ Call for professional leak detection when:
 - the leak is on the hot water side, or
 - water is reaching flooring, cabinets or the foundation.
 
-A leak detection specialist uses pressure testing, [acoustic listening and thermal imaging](/guides/leak-detection-methods/) to mark the leak's location, so your plumber opens one small area instead of guessing. In Bargersville and the rest of Johnson County, our [hidden leak detection](/services/shower-wall-leak-detection/) service is built for exactly that.
+A leak detection specialist uses pressure testing, [acoustic listening and thermal imaging](/guides/leak-detection-methods/) to mark the leak's location, so your plumber opens one small area instead of guessing. In Bargersville and the rest of Johnson County, our [hidden water leak detection](/services/hidden-water-leak-detection/) service is built for exactly that.
 
 ## Quick checklist
 

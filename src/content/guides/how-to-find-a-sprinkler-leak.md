@@ -78,7 +78,7 @@ DIY checks find most broken heads and obvious wet spots. Call a professional whe
 - the meter shows a mainline leak but there's no wet spot,
 - the leak is under a driveway, patio or landscaping you don't want to dig up,
 - the soil drains so well that water never surfaces, or
-- you can't tell whether it's the sprinkler line or the [main water line to the house](/services/water-line-leak-detection/).
+- you can't tell whether it's the sprinkler line or the [main water line to the house](/services/underground-water-leak-detection/).
 
 Our [irrigation leak detection](/services/irrigation-leak-detection/) service tests each zone, checks the valves and traces the buried line with acoustic equipment, then marks the break so only a small hole is dug. We cover Bargersville and the rest of Johnson County.
 

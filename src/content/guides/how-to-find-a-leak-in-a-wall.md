@@ -5,8 +5,8 @@ h1: "How to Find a Water Leak Inside a Wall"
 quickAnswer: "Look for stains, bubbling or peeling paint, soft drywall, warped baseboards and musty smells, usually near a bathroom, kitchen or laundry. Do a meter test to see if a supply line is leaking, run nearby fixtures to check drains, and use a moisture meter to find the wettest point. Professionals confirm the spot with thermal imaging and acoustic listening before any drywall is cut."
 primaryKeyword: "find water leak in wall"
 secondaryKeywords: ["detect water leak behind wall", "finding a water leak in a wall", "water leak behind drywall", "find leaking pipe in wall", "detecting leaks behind walls", "wall leak detection", "hidden water leak"]
-service: { name: "Hidden Leak Detection", url: "/services/shower-wall-leak-detection/" }
-image: { name: "thermal-imaging", alt: "Technician holding a thermal camera that shows a cold moisture pattern on a water-stained wall near the floor" }
+service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
+image: { name: "thermal-imaging-inspection", alt: "Technician holding a thermal camera that shows a cold moisture pattern on a water-stained wall near the floor" }
 related: ["how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "why-is-my-water-bill-so-high"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -80,4 +80,4 @@ The U.S. EPA recommends drying water-damaged materials within **24–48 hours** 
 
 ## Get the leak found
 
-In Bargersville and the rest of Johnson County, our [hidden leak detection](/services/shower-wall-leak-detection/) service finds leaks inside walls, showers and floors without guesswork demolition, and we can add a [thermal imaging inspection](/services/thermal-imaging/) with a photo report for your insurer.
+In Bargersville and the rest of Johnson County, our [hidden water leak detection](/services/hidden-water-leak-detection/) service finds leaks inside walls, showers and floors without guesswork demolition, and we can add a [thermal imaging inspection](/services/thermal-imaging-inspection/) with a photo report for your insurer.

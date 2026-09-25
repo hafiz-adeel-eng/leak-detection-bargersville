@@ -4,7 +4,9 @@ import { site } from '../data/site';
 interface Props { title?: string; text?: string }
 const {
   title = 'Hear running water? Call before the damage spreads.',
-  text = `Same-day appointments across ${site.city} and ${site.county}.`,
+  text = site.claims.sameDay
+    ? `Same-day appointments across ${site.city} and ${site.county}.`
+    : `Local leak detection across ${site.city} and ${site.county}.`,
 } = Astro.props;
 ---
 <section class="section">

@@ -6,7 +6,7 @@ quickAnswer: "Professional leak detection narrows the leak down in stages. A pre
 primaryKeyword: "acoustic leak detection"
 secondaryKeywords: ["non invasive leak detection", "tracer gas leak detection", "leak correlator", "geophones leak detection", "hydrophone leak detection", "ground penetrating radar leak detection", "electronic leak detection", "professional leak detection"]
 service: { name: "Professional Leak Detection", url: "/" }
-image: { name: "water-line-leak-detection", alt: "Water spraying from a cracked underground pipe while a technician reads the frequency display of an acoustic leak detector" }
+image: { name: "underground-water-leak-detection", alt: "Water spraying from a cracked underground pipe while a technician reads the frequency display of an acoustic leak detector" }
 related: ["leak-detection-cost", "how-to-find-a-slab-leak", "how-to-find-an-underground-water-leak"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -81,9 +81,9 @@ GPR sends radar pulses into the ground and reads the reflections. It can help lo
 | Leak type | Usually starts with | Pinpointed with |
 |---|---|---|
 | [Slab leak](/services/slab-leak-detection/) | Meter test, hot/cold isolation, pressure test | Acoustic listening, thermal imaging, tracer gas |
-| [Main water line](/services/water-line-leak-detection/) | Meter and shutoff test | Acoustic listening, correlator, tracer gas |
-| [Inside a wall or shower](/services/shower-wall-leak-detection/) | Fixture isolation, flood test | Moisture mapping, [thermal imaging](/services/thermal-imaging/), acoustic |
-| [Pool or spa](/services/pool-leak-detection/) | Bucket test | Dye test, line pressure test, hydrophone |
+| [Main water line](/services/underground-water-leak-detection/) | Meter and shutoff test | Acoustic listening, correlator, tracer gas |
+| [Inside a wall or shower](/services/hidden-water-leak-detection/) | Fixture isolation, flood test | Moisture mapping, [thermal imaging](/services/thermal-imaging-inspection/), acoustic |
+| [Pool or spa](/services/pool-spa-leak-detection/) | Bucket test | Dye test, line pressure test, hydrophone |
 | [Irrigation](/services/irrigation-leak-detection/) | Zone-by-zone test | Acoustic listening, line tracing |
 
 ## What happens after the leak is found

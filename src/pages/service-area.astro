@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, services, areas } from '../data/site';
+
+const faqs = [
+  { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county}, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
+  { q: 'Do you charge more outside Bargersville?', a: 'Pricing depends on the job, not just the town. Call with your address and what you’re noticing, and we’ll tell you what to expect before we come out.' },
+];
+---
+<Base
+  title={`Service Area: ${site.county}, IN | ${site.name}`}
+  description={`Leak detection for homes in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland and Trafalgar. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Service area', url: '/service-area/' }]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Service area</span></nav>
+      <h1>Leak detection across {site.county}</h1>
+      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county}: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/"><Icon name="cal" />Book an inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Towns we serve</span>
+        <h2>Where we work</h2>
+        <p>Not sure if you’re in our area? Call with your address and we’ll let you know.</p>
+      </div>
+      <div class="area-grid">
+        {areas.map((a) => (
+          <div class="area-card" id={a.slug}>
+            <h2><Icon name="pin" />{a.name}, IN</h2>
+            <p>{a.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Services</span><h2>Leak detection services in every town we serve</h2></div>
+      <div class="cards">{services.map((s) => <ServiceCard service={s} />)}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>Service area questions</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

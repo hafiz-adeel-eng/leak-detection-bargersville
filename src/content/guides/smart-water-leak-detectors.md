@@ -5,7 +5,7 @@ h1: "Smart Water Leak Detectors vs. Professional Leak Detection"
 quickAnswer: "Smart leak detectors warn you that water is escaping. Spot sensors catch water where they sit, flow monitors notice continuous water use, and automatic shutoff valves can stop the water. None of them tell you where a hidden leak is inside a wall, under a slab or in a buried line. That's what professional leak detection does."
 primaryKeyword: "smart water leak detector"
 secondaryKeywords: ["water leak detector residential", "best water leak detector", "whole house water leak detection system", "automatic water shut off leak detector", "wifi water leak detector", "water leak detection system for home"]
-service: { name: "Hidden Leak Detection", url: "/services/shower-wall-leak-detection/" }
+service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 related: ["how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high", "leak-detection-methods"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -68,7 +68,7 @@ These are sudden, visible leaks. Catching them in minutes instead of days is whe
 3. **If nothing is visible**, do a meter test to confirm the leak. See [how to find a water leak in your house](/guides/how-to-find-a-water-leak-in-your-house/).
 4. **If the meter keeps moving** with everything off and you can't see a leak, it's hidden: in a wall, under the slab or in the service line.
 
-That's the point where [hidden leak detection](/services/shower-wall-leak-detection/) comes in. In Bargersville and the rest of Johnson County, we pinpoint the leak with acoustic, thermal and pressure testing, then mark it so the repair is small.
+That's the point where [hidden water leak detection](/services/hidden-water-leak-detection/) comes in. In Bargersville and the rest of Johnson County, we pinpoint the leak with acoustic, thermal and pressure testing, then mark it so the repair is small.
 
 ## Are smart leak detectors worth it?
 

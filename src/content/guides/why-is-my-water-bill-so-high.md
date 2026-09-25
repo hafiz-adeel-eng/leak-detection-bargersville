@@ -5,7 +5,7 @@ h1: "Why Is My Water Bill So High? 9 Things to Check"
 quickAnswer: "A sudden jump in your water bill usually comes from a leak (most often a running toilet), seasonal use like lawn watering, or a billing change such as an estimated reading or a rate increase. Compare the bill's usage in gallons with past months, then do a meter test with all water off. If the meter moves, work through toilets, faucets, appliances, irrigation and finally hidden leaks."
 primaryKeyword: "why is my water bill so high"
 secondaryKeywords: ["high water bill leak", "water bill suddenly high", "hidden water leak", "i think i have a water leak", "checking for water leaks", "water leak in house"]
-service: { name: "Hidden Leak Detection", url: "/services/shower-wall-leak-detection/" }
+service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 related: ["how-to-find-a-water-leak-in-your-house", "how-to-find-a-sprinkler-leak", "how-to-find-a-slab-leak"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -89,4 +89,4 @@ Many water utilities offer a one-time leak adjustment once a leak is repaired. A
 
 ## When to call for leak detection
 
-If the meter confirms a leak you can't find, our [hidden leak detection](/services/shower-wall-leak-detection/) service locates it without tearing up floors or walls. We serve Bargersville and the rest of Johnson County.
+If the meter confirms a leak you can't find, our [hidden water leak detection](/services/hidden-water-leak-detection/) service locates it without tearing up floors or walls. We serve Bargersville and the rest of Johnson County.

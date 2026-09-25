@@ -11,22 +11,46 @@ import { site, services, areas, generalFaqs } from '../data/site';
 const faqs = generalFaqs.slice(0, 5);
 ---
 <Base
-  title="Leak Detection in Bargersville, IN | Same-Day, Non-Invasive"
-  description="Leak Detection Bargersville finds hidden slab, water line, pool and wall leaks across Johnson County, IN, using acoustic, thermal and pressure testing. Call for same-day service."
+  title="Leak Detection in Bargersville, IN | Non-Invasive Leak Location"
+  description="Suspect a hidden leak? We locate water leaks under slabs, inside walls, in yards and pools across Bargersville, without tearing things up. Schedule an inspection."
   faqs={faqs}
 >
   <Hero />
 
   <div class="trust">
     <div class="container trust-grid">
-      <div><b>Inches</b><span>Typical pinpoint accuracy</span></div>
-      <div><b>Same day</b><span>Appointments across {site.county}</span></div>
+      <div><b>Marked</b><span>Exact spot flagged before any repair</span></div>
+      <div><b>{site.claims.sameDay ? 'Same day' : 'Local'}</b><span>{site.claims.sameDay ? 'Appointments across ' : 'Team based in '}{site.claims.sameDay ? site.county : site.city}</span></div>
       <div><b>0</b><span>Unnecessary holes dug</span></div>
       <div><b>1 report</b><span>Photos + readings for your insurer</span></div>
     </div>
   </div>
 
-  <section class="section" id="services">
+  <section class="section" id="what-is">
+    <div class="container intro-grid">
+      <div>
+        <span class="eyebrow">Water leak detection</span>
+        <h2>What is professional leak detection?</h2>
+        <p class="intro-lede">Professional leak detection finds a hidden water leak <b>without opening floors, walls or yards to search</b>. A technician confirms the leak with a meter test, isolates which line is leaking, then pinpoints the spot with pressure testing, acoustic listening and thermal imaging. The spot is marked so the repair starts in the right place.</p>
+        <p>Detection and repair are separate steps. We find and mark the leak; the repair is usually done by a plumber, through one small opening instead of several.</p>
+        <a class="btn btn-ghost" href="/guides/leak-detection-methods/">How leak detection works<Icon name="arrow" /></a>
+      </div>
+      <div class="signs-card">
+        <h3>Signs you may have a hidden leak</h3>
+        <ul class="list">
+          <li><Icon name="check" /><span>Your water bill jumped with no change in use</span></li>
+          <li><Icon name="check" /><span>The water meter moves with everything turned off</span></li>
+          <li><Icon name="check" /><span>Warm or damp spots on the floor</span></li>
+          <li><Icon name="check" /><span>Stains, bubbling paint or a musty smell</span></li>
+          <li><Icon name="check" /><span>Soggy or extra-green patches in the yard</span></li>
+          <li><Icon name="check" /><span>The sound of running water when nothing is on</span></li>
+        </ul>
+        <a class="signs-link" href="/guides/how-to-find-a-water-leak-in-your-house/">How to check for a leak yourself<Icon name="arrow" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="services">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Services</span>
@@ -41,15 +65,31 @@ const faqs = generalFaqs.slice(0, 5);
 
   <Process />
 
+  <section class="section" id="repair-cost">
+    <div class="container two-cards">
+      <div class="info-card">
+        <span class="ico"><Icon name="pin" /></span>
+        <h2>Detection vs. repair: what happens after we find it</h2>
+        <p>We mark the leak on your floor, wall or lawn and give you photos and readings. Your plumber then opens one small area at the marked spot and repairs the pipe. For slab leaks, the usual options are a spot repair, a reroute or a repipe, depending on the pipe’s age and condition.</p>
+      </div>
+      <div class="info-card">
+        <span class="ico"><Icon name="report" /></span>
+        <h2>What affects the cost</h2>
+        <p>The price depends on where the leak is, how many lines need testing, the pipe material, access, and what’s above the pipe. Detection is priced separately from the repair, and it usually costs far less than searching by opening floors or walls.</p>
+        <a class="more-link" href="/leak-detection-cost/">See what affects leak detection cost<Icon name="arrow" /></a>
+      </div>
+    </div>
+  </section>
+
   <section class="section tint" id="areas">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Service areas</span>
+        <span class="eyebrow">Service area</span>
         <h2>Based in {site.city}, serving all of {site.county}</h2>
-        <p>Local technicians mean faster visits. Choose your town to see how we help homes there.</p>
+        <p>Pick your town to see our service area, or call and ask if you’re nearby.</p>
       </div>
       <div class="chips">
-        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={`/areas/${a.slug}/`}><Icon name="pin" />{a.name}, IN</a>)}
+        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={`/service-area/#${a.slug}`}><Icon name="pin" />{a.name}, IN</a>)}
       </div>
     </div>
   </section>

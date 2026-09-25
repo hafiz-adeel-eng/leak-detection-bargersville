@@ -5,7 +5,7 @@ h1: "How to Find an Underground Water Leak"
 quickAnswer: "Turn off all water, close the main shutoff valve where the line enters your house, and watch the water meter. If it still moves, the leak is in the buried service line between the meter and the house. Walk that path for soggy, sunken or extra-green ground. To pinpoint it without digging, professionals listen along the line with acoustic equipment or use tracer gas on plastic pipe."
 primaryKeyword: "finding a water leak underground"
 secondaryKeywords: ["best way to find a water leak underground", "locating water leaks underground", "find water leak in yard", "finding water line leaks underground", "find broken water pipe underground", "underground water leak detection", "water line leak detection"]
-service: { name: "Water Line Leak Detection", url: "/services/water-line-leak-detection/" }
+service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "hero", alt: "Leak detection technician with headphones listening for a buried water line leak with a ground microphone on a front lawn" }
 related: ["how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
@@ -86,4 +86,4 @@ In most areas, the homeowner owns the line **from the meter to the house**, and 
 
 ## Get the leak marked
 
-If the shutoff test points to your service line in Bargersville or elsewhere in Johnson County, our [water line leak detection](/services/water-line-leak-detection/) service traces the line and marks the leak on your lawn, so your plumber digs once, in the right place.
+If the shutoff test points to your service line in Bargersville or elsewhere in Johnson County, our [underground water leak detection](/services/underground-water-leak-detection/) service traces the line and marks the leak on your lawn, so your plumber digs once, in the right place.

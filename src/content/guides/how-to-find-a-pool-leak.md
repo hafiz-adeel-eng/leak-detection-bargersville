@@ -5,8 +5,8 @@ h1: "How to Find a Pool Leak"
 quickAnswer: "Start with the bucket test: set a bucket of pool water on the pool step, mark both water levels, and compare after 24 hours. If the pool drops more than the bucket, it's leaking. Compare the loss with the pump on and off to narrow it to the plumbing or the shell, then use dye near skimmers, returns, lights and cracks to find the exact spot."
 primaryKeyword: "finding a pool leak"
 secondaryKeywords: ["find leak in pool plumbing", "finding a pool leak underground", "leak in pool return line", "finding leaks in underground pool pipes", "finding a leak in a hot tub", "pool leak detection", "leak detection for pools"]
-service: { name: "Pool Leak Detection", url: "/services/pool-leak-detection/" }
-image: { name: "pool-leak-detection", alt: "Technician lowering an underwater acoustic sensor into a backyard pool while reading the leak detector's display" }
+service: { name: "Pool & Spa Leak Detection", url: "/services/pool-spa-leak-detection/" }
+image: { name: "pool-spa-leak-detection", alt: "Technician lowering an underwater acoustic sensor into a backyard pool while reading the leak detector's display" }
 related: ["leak-detection-methods", "how-to-find-an-underground-water-leak", "leak-detection-cost"]
 published: 2026-09-25
 updated: 2026-09-25
@@ -86,4 +86,4 @@ Indiana's freeze–thaw winters are hard on pools. Lines, skimmer throats and fi
 
 ## Get your pool leak found
 
-For pools and spas in Bargersville and the rest of Johnson County, our [pool leak detection](/services/pool-leak-detection/) service tests every line and fitting, then marks the leak so the repair is quick and targeted.
+For pools and spas in Bargersville and the rest of Johnson County, our [pool & spa leak detection](/services/pool-spa-leak-detection/) service tests every line and fitting, then marks the leak so the repair is quick and targeted.
