@@ -1,0 +1,24 @@
+---
+import Icon from './Icon.astro';
+import type { Service } from '../data/site';
+import { image } from '../data/images';
+
+interface Props { service: Service }
+const { service } = Astro.props;
+const photo = image(`${service.slug}-card`);
+---
+<a class="card" href={`/services/${service.slug}/`}>
+  <div class={photo ? 'card-media' : 'card-media placeholder'}>
+    {photo ? (
+      <img src={photo} alt={`${service.name} technician at work in a Bargersville home`} width="640" height="400" loading="lazy" decoding="async" />
+    ) : (
+      <span class="ph-icon" aria-hidden="true"><Icon name={service.icon} /></span>
+    )}
+  </div>
+  <div class="card-body">
+    <span class="card-badge"><Icon name={service.icon} /></span>
+    <h3>{service.name}</h3>
+    <p>{service.short}</p>
+    <span class="more">Learn more<Icon name="arrow" /></span>
+  </div>
+</a>

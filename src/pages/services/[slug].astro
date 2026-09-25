@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
 import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { site, services, areas, type Service } from '../../data/site';
@@ -77,14 +78,7 @@ const serviceSchema = {
     <div class="container">
       <div class="section-head"><span class="eyebrow">Related services</span><h2>Other leaks we find</h2></div>
       <div class="cards">
-        {others.map((s) => (
-          <a class="card" href={`/services/${s.slug}/`}>
-            <span class="ico"><Icon name={s.icon} /></span>
-            <h3>{s.name}</h3>
-            <p>{s.short}</p>
-            <span class="more">Learn more<Icon name="arrow" /></span>
-          </a>
-        ))}
+        {others.map((s) => <ServiceCard service={s} />)}
       </div>
     </div>
   </section>

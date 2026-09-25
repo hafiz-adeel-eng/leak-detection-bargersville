@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import ServiceCard from '../components/ServiceCard.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Hero from '../components/Hero.astro';
@@ -32,14 +33,7 @@ const faqs = generalFaqs.slice(0, 5);
         <p>From slab leaks under your kitchen floor to a pool that won’t hold water, we use the right tool for each kind of leak.</p>
       </div>
       <div class="cards">
-        {services.map((s) => (
-          <a class="card" href={`/services/${s.slug}/`}>
-            <span class="ico"><Icon name={s.icon} /></span>
-            <h3>{s.name}</h3>
-            <p>{s.short}</p>
-            <span class="more">Learn more<Icon name="arrow" /></span>
-          </a>
-        ))}
+        {services.map((s) => <ServiceCard service={s} />)}
       </div>
     </div>
   </section>
