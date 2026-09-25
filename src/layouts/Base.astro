@@ -1,4 +1,7 @@
 ---
+import '@fontsource-variable/manrope/wght.css';
+import '@fontsource/jetbrains-mono/latin-500.css';
+import '@fontsource/jetbrains-mono/latin-600.css';
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import Logo from '../components/Logo.astro';
@@ -12,9 +15,10 @@ interface Props {
   breadcrumbs?: { name: string; url: string }[];
   schema?: Record<string, unknown>[];
   noindex?: boolean;
+  preload?: { href: string; srcset?: string; sizes?: string };
 }
 
-const { title, description, faqs = [], breadcrumbs = [], schema = [], noindex = false } = Astro.props;
+const { title, description, faqs = [], breadcrumbs = [], schema = [], noindex = false, preload } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogFile = image('og-image') ?? image('hero');
 const ogImage = ogFile ? new URL(ogFile, site.url).href : undefined;
@@ -90,9 +94,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
     <meta name="geo.region" content="US-IN" />
     <meta name="geo.placename" content={site.city} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" />
+{preload && <link rel="preload" as="image" href={preload.href} imagesrcset={preload.srcset} imagesizes={preload.sizes} fetchpriority="high" />}
 
     <script type="application/ld+json" set:html={jsonLd} />
   </head>
@@ -126,15 +128,15 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
             <p>Non-invasive leak detection for homes in {site.city} and across {site.county}. We find the leak so the repair starts in the right place.</p>
           </div>
           <div>
-            <h4>Services</h4>
+            <h2 class="footer-h">Services</h2>
             <ul>{services.map((s) => <li><a href={`/services/${s.slug}/`}>{s.name}</a></li>)}</ul>
           </div>
           <div>
-            <h4>Service areas</h4>
+            <h2 class="footer-h">Service areas</h2>
             <ul>{areas.map((a) => <li><a href={`/service-area/#${a.slug}`}>{a.name}, IN</a></li>)}</ul>
           </div>
           <div>
-            <h4>Contact</h4>
+            <h2 class="footer-h">Contact</h2>
             <ul>
               <li><a href={`tel:${site.phoneHref}`}>{site.phone}</a></li>
               <li><a href={`mailto:${site.email}`}>{site.email}</a></li>

@@ -9,14 +9,14 @@
   --line: #E2D6BF;
   --text: #0B2240;
   --text-2: #3A4A62;
-  --muted: #6B7488;
-  --aqua: #946B26;
+  --muted: #5A6275;
+  --aqua: #7A5618;
   --aqua-soft: rgba(166, 124, 46, 0.13);
   --amber: #A67C2E;
   --amber-ink: #FFFFFF;
   --gold-grad: linear-gradient(180deg, #BD954A 0%, #A67C2E 55%, #84601F 100%);
   --good: #2E8B57;
-  --font: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font: "Manrope Variable", "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   --r: 14px;
   --max: 1160px;
@@ -254,7 +254,7 @@ p { margin: 0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
 @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; } }
-.footer-grid h4 { font-size: 14px; font-weight: 700; margin-bottom: 14px; color: var(--text); }
+.footer-grid h4, .footer-h { font-size: 14px; font-weight: 700; margin: 0 0 14px; color: var(--text); letter-spacing: 0; }
 .footer-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .footer-grid a { text-decoration: none; color: var(--text-2); font-size: 14.5px; }
 .footer-grid a:hover { color: var(--aqua); }
