@@ -27,27 +27,44 @@ const faqs = generalFaqs.slice(0, 5);
     </div>
   </div>
 
-  <section class="section" id="what-is">
-    <div class="container intro-grid">
-      <div>
+  <section class="section whatis" id="what-is">
+    <div class="container whatis-grid">
+      <div class="whatis-copy">
         <span class="eyebrow">Water leak detection</span>
-        <h2>What is professional leak detection?</h2>
-        <p class="intro-lede">Professional leak detection finds a hidden water leak <b>without opening floors, walls or yards to search</b>. A technician confirms the leak with a meter test, isolates which line is leaking, then pinpoints the spot with pressure testing, acoustic listening and thermal imaging. The spot is marked so the repair starts in the right place.</p>
-        <p>Detection and repair are separate steps. We find and mark the leak; the repair is usually done by a plumber, through one small opening instead of several.</p>
-        <a class="btn btn-ghost" href="/guides/leak-detection-methods/">How leak detection works<Icon name="arrow" /></a>
+        <h2>What is professional <span>leak detection?</span></h2>
+        <div class="whatis-answer">
+          <p>Professional leak detection finds a hidden water leak <b>without opening floors, walls or yards to search</b>. The spot is marked so the repair starts in the right place.</p>
+        </div>
+        <ol class="whatis-steps">
+          <li><span class="ws-ico"><Icon name="gauge" /></span><div><b>Confirm</b><span>A meter test proves there’s a leak.</span></div></li>
+          <li><span class="ws-ico"><Icon name="pipe" /></span><div><b>Isolate</b><span>We find which line is leaking.</span></div></li>
+          <li><span class="ws-ico"><Icon name="wave" /></span><div><b>Pinpoint</b><span>Pressure, acoustic and thermal testing mark the spot.</span></div></li>
+        </ol>
+        <div class="whatis-note">
+          <span class="wn-ico"><Icon name="report" /></span>
+          <p><b>Detection and repair are separate steps.</b> We find and mark the leak; the repair is usually done by a plumber, through one small opening instead of several.</p>
+        </div>
+        <a class="btn btn-primary" href="/guides/leak-detection-methods/">How leak detection works<Icon name="arrow" /></a>
       </div>
-      <div class="signs-card">
-        <h3>Signs you may have a hidden leak</h3>
-        <ul class="list">
-          <li><Icon name="check" /><span>Your water bill jumped with no change in use</span></li>
-          <li><Icon name="check" /><span>The water meter moves with everything turned off</span></li>
-          <li><Icon name="check" /><span>Warm or damp spots on the floor</span></li>
-          <li><Icon name="check" /><span>Stains, bubbling paint or a musty smell</span></li>
-          <li><Icon name="check" /><span>Soggy or extra-green patches in the yard</span></li>
-          <li><Icon name="check" /><span>The sound of running water when nothing is on</span></li>
+
+      <aside class="signs-panel" aria-labelledby="signs-title">
+        <div class="signs-head">
+          <span class="sh-ico"><Icon name="drop" /></span>
+          <div><span class="sh-kicker">Quick check</span><h3 id="signs-title">Signs you may have a hidden leak</h3></div>
+        </div>
+        <ul class="signs-rows">
+          <li><span class="sr-ico"><Icon name="report" /></span>Your water bill jumped with no change in use</li>
+          <li><span class="sr-ico"><Icon name="gauge" /></span>The water meter moves with everything turned off</li>
+          <li><span class="sr-ico"><Icon name="thermal" /></span>Warm or damp spots on the floor</li>
+          <li><span class="sr-ico"><Icon name="shower" /></span>Stains, bubbling paint or a musty smell</li>
+          <li><span class="sr-ico"><Icon name="sprinkler" /></span>Soggy or extra-green patches in the yard</li>
+          <li><span class="sr-ico"><Icon name="wave" /></span>The sound of running water when nothing is on</li>
         </ul>
-        <a class="signs-link" href="/guides/how-to-find-a-water-leak-in-your-house/">How to check for a leak yourself<Icon name="arrow" /></a>
-      </div>
+        <div class="signs-foot">
+          <p>Two or more of these? It’s time to check.</p>
+          <a class="signs-btn" href="/guides/how-to-find-a-water-leak-in-your-house/">Check for a leak yourself<Icon name="arrow" /></a>
+        </div>
+      </aside>
     </div>
   </section>
 

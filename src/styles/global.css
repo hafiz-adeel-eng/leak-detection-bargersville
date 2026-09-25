@@ -571,3 +571,72 @@ p { margin: 0; }
 .why-ico svg { width: 22px; height: 22px; }
 .why-list b { display: block; color: var(--text); font-size: 15.5px; }
 .why-list span { font-size: 14px; color: var(--text-2); line-height: 1.45; }
+
+/* ===== Hero tagline (Find it · Fix it · Protect your home) ===== */
+.hx-tagline {
+  list-style: none; margin: 0; padding: 6px; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px;
+  border-radius: 999px; background: rgba(8,26,51,.55); border: 1px solid rgba(195,154,74,.45);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 10px 24px -14px rgba(0,0,0,.6); backdrop-filter: blur(6px);
+}
+.hx-tagline li {
+  position: relative; display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 10px; border-radius: 999px;
+  font: 700 12.5px var(--font); letter-spacing: .14em; text-transform: uppercase; color: #E8D3A4;
+}
+.hx-tagline li + li::before { content: ""; position: absolute; left: -4px; top: 50%; width: 4px; height: 4px; margin-top: -2px; border-radius: 50%; background: #B08A3E; }
+.hx-tagline li:last-child { background: linear-gradient(180deg, #BD954A, #A67C2E 55%, #84601F); color: #fff; box-shadow: 0 6px 16px -8px rgba(132,96,31,.9); }
+.hx-tagline li:last-child::before { display: none; }
+.hx-tagline svg { width: 16px; height: 16px; color: #C39A4A; flex: none; }
+.hx-tagline li:last-child svg { color: #fff; }
+@media (max-width: 520px) {
+  .hx-tagline { border-radius: 16px; }
+  .hx-tagline li { font-size: 11px; letter-spacing: .1em; padding: 6px 10px 6px 8px; }
+}
+
+/* ===== What is leak detection ===== */
+.whatis { background: linear-gradient(180deg, var(--bg) 0%, #F4EEE2 100%); }
+.whatis-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 4vw, 56px); align-items: center; }
+@media (max-width: 920px) { .whatis-grid { grid-template-columns: 1fr; } }
+.whatis-copy { display: grid; gap: 18px; justify-items: start; }
+.whatis-copy h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 800; letter-spacing: -.025em; line-height: 1.08; }
+.whatis-copy h2 span { color: var(--aqua); }
+.whatis-answer { border-left: 4px solid #A67C2E; background: var(--surface); border-radius: 0 14px 14px 0; padding: 16px 20px; box-shadow: 0 12px 28px -22px rgba(11,34,64,.45); }
+.whatis-answer p { font-size: 18px; line-height: 1.6; color: var(--text); margin: 0; }
+.whatis-steps { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 560px) { .whatis-steps { grid-template-columns: 1fr; } }
+.whatis-steps li { display: grid; grid-template-columns: 40px 1fr; gap: 10px; align-items: start; padding: 14px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
+.ws-ico { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #fff; background: var(--gold-grad); }
+.ws-ico svg { width: 20px; height: 20px; }
+.whatis-steps b { display: block; color: var(--text); font-size: 15.5px; }
+.whatis-steps span:not(.ws-ico) { font-size: 13.5px; color: var(--text-2); line-height: 1.45; }
+.whatis-note { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: start; padding: 14px 16px; border-radius: 14px; background: var(--aqua-soft); border: 1px dashed rgba(122,86,24,.45); }
+.wn-ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: #0B2240; color: #D4AE62; }
+.wn-ico svg { width: 18px; height: 18px; }
+.whatis-note p { margin: 0; font-size: 15px; color: var(--text-2); }
+.whatis-note b { color: var(--text); }
+
+.signs-panel { border-radius: 22px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 30px 60px -36px rgba(11,34,64,.55); }
+.signs-head { display: flex; align-items: center; gap: 14px; padding: 22px 24px; color: #F3EFE6; background: radial-gradient(80% 140% at 100% 0%, rgba(195,154,74,.28), transparent 60%), #0B2240; }
+.sh-ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--gold-grad); color: #fff; flex: none; }
+.sh-ico svg { width: 24px; height: 24px; }
+.sh-kicker { display: block; font: 600 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: #C39A4A; }
+.signs-head h3 { font-size: 20px; font-weight: 800; color: #fff; margin-top: 2px; }
+.signs-rows { list-style: none; margin: 0; padding: 8px 12px; }
+.signs-rows li { display: grid; grid-template-columns: 38px 1fr; gap: 12px; align-items: center; padding: 11px 12px; border-radius: 12px; font-size: 15px; color: var(--text); font-weight: 600; transition: background .2s; }
+.signs-rows li + li { border-top: 1px solid var(--line); }
+.signs-rows li:hover { background: var(--bg); }
+.sr-ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--aqua-soft); color: var(--aqua); }
+.sr-ico svg { width: 20px; height: 20px; }
+.signs-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 16px 24px 20px; background: var(--bg-2); border-top: 1px solid var(--line); }
+.signs-foot p { margin: 0; font-weight: 700; color: var(--text); font-size: 14.5px; }
+.signs-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: #0B2240; color: #F3EFE6; text-decoration: none; font-weight: 700; font-size: 14px; transition: background .2s; }
+.signs-btn:hover { background: #163867; }
+.signs-btn svg { width: 16px; height: 16px; color: #D4AE62; }
+
+/* ===== FAQ boxes: navy with white text ===== */
+.faq details { background: #0B2240; border: 1px solid rgba(195,154,74,.25); box-shadow: 0 12px 26px -20px rgba(11,34,64,.6); transition: border-color .2s, background .2s; }
+.faq details:hover { border-color: rgba(195,154,74,.55); }
+.faq details[open] { background: linear-gradient(180deg, #12305A, #0B2240); border-color: rgba(195,154,74,.7); }
+.faq summary { color: #FFFFFF; }
+.faq summary::after { color: #D4AE62; }
+.faq details p { color: #D6DEE8; }
+.faq summary:focus-visible { outline-color: #D4AE62; }
