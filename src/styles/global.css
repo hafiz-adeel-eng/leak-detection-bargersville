@@ -640,3 +640,8 @@ p { margin: 0; }
 .faq summary::after { color: #D4AE62; }
 .faq details p { color: #D6DEE8; }
 .faq summary:focus-visible { outline-color: #D4AE62; }
+
+/* ===== Case studies ===== */
+.case-quote { margin: 8px 0 0; padding: 20px 22px; border-radius: 16px; background: #0B2240; color: #F3EFE6; border-left: 4px solid #B08A3E; }
+.case-quote p { font-size: 18px; color: #F3EFE6 !important; margin: 0 0 8px; }
+.case-quote cite { font-style: normal; color: #C39A4A; font-weight: 700; font-size: 14px; }

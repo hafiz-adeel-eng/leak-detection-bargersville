@@ -9,6 +9,9 @@ export const site = {
   region: 'IN',
   postalCode: '46106',
   county: 'Johnson County',
+  // Google Business Profile. Paste the profile URL and the "Ask for reviews" share link once the profile exists.
+  gbpUrl: '', // e.g. https://maps.app.goo.gl/...
+  gbpReviewUrl: '', // e.g. https://g.page/r/.../review
   // Trust claims. Turn each on only once the business confirms it is true.
   claims: {
     sameDay: false, // "Same-day appointments"

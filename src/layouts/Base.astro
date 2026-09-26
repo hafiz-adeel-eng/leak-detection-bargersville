@@ -44,6 +44,7 @@ const business = {
     ? { openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' } }
     : {}),
   knowsAbout: services.map((s) => s.name),
+  ...(site.gbpUrl ? { sameAs: [site.gbpUrl] } : {}),
 };
 
 const graph: Record<string, unknown>[] = [
@@ -144,6 +145,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
               <li><a href="/guides/">Leak detection guides</a></li>
               <li><a href="/leak-detection-cost/">Leak detection cost</a></li>
               <li><a href="/faq/">Leak detection FAQ</a></li>
+              {site.gbpReviewUrl && <li><a href={site.gbpReviewUrl} rel="noopener">Leave us a Google review</a></li>}
             </ul>
           </div>
         </div>

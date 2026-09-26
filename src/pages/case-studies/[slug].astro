@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services } from '../../data/site';
+import { image } from '../../data/images';
+
+export async function getStaticPaths() {
+  const cases = await getCollection('cases');
+  return cases.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const service = services.find((s) => s.slug === d.service);
+const fmt = (dt: Date) => dt.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const photos = d.photos.map((p) => ({ src: image(`cases/${p.name}`), alt: p.alt })).filter((p) => p.src);
+const article = {
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.date.toISOString().slice(0, 10),
+  author: { '@id': `${site.url}/#business` },
+  publisher: { '@id': `${site.url}/#business` },
+  ...(photos[0] ? { image: `${site.url}${photos[0].src!.split('?')[0]}` } : {}),
+};
+---
+<Base title={`${d.title} | ${site.name}`} description={d.description} breadcrumbs={[{ name: 'Case studies', url: '/case-studies/' }, { name: d.title, url: `/case-studies/${entry.id}/` }]} schema={[article]}>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/case-studies/">Case studies</a><span>/</span><span>{d.town}</span></nav>
+      <h1>{d.title}</h1>
+      <p class="guide-meta"><span>{service?.name}</span><span aria-hidden="true">·</span><span>{d.town}, IN</span><span aria-hidden="true">·</span><span>{fmt(d.date)}</span></p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        {photos[0] && <img class="photo" src={photos[0].src!} alt={photos[0].alt} width="1200" height="675" />}
+        <h2>What the homeowner noticed</h2><p>{d.problem}</p>
+        <h2>How we found it</h2>
+        <ol class="method-list">{d.method.map((m) => <li><b>{m}</b></li>)}</ol>
+        <h2>What we found</h2><p>{d.result}</p>
+        <div class="guide-body"><Content /></div>
+        {photos.slice(1).map((p) => <img class="photo" src={p.src!} alt={p.alt} width="1200" height="675" loading="lazy" />)}
+        {d.quote && <blockquote class="case-quote"><p>“{d.quote.text}”</p><cite>{d.quote.name}</cite></blockquote>}
+      </article>
+      <aside class="aside">
+        {service && <><span class="ico"><Icon name={service.icon} /></span><h3>{service.name}</h3><p>{service.short}</p><a class="btn btn-ghost" href={`/services/${service.slug}/`}>About this service</a></>}
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+      </aside>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

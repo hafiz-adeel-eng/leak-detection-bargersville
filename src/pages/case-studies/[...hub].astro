@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services } from '../../data/site';
+
+// Only build /case-studies/ once at least one real case study exists.
+export async function getStaticPaths() {
+  const all = await getCollection('cases');
+  return all.length ? [{ params: { hub: undefined } }] : [];
+}
+
+const cases = (await getCollection('cases')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+<Base
+  title={`Leak Detection Case Studies | ${site.name}`}
+  description={`Real leak detection jobs in ${site.city} and ${site.county}: what the homeowner noticed, how the leak was found, and what we marked for repair.`}
+  breadcrumbs={[{ name: 'Case studies', url: '/case-studies/' }]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Case studies</span></nav>
+      <h1>Recent leak detection jobs</h1>
+      <p class="answer">Real jobs from around {site.county}: what the homeowner noticed, how we found the leak, and what we marked for the repair.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      {cases.length === 0 ? (
+        <p class="answer">Case studies are coming soon.</p>
+      ) : (
+        <div class="guide-list">
+          {cases.map((c) => (
+            <a class="guide-item" href={`/case-studies/${c.id}/`}>
+              <span class="gi-service">{services.find((s) => s.slug === c.data.service)?.name ?? 'Leak detection'} · {c.data.town} · {fmt(c.data.date)}</span>
+              <h2>{c.data.title}</h2>
+              <p>{c.data.description}</p>
+              <span class="more">Read the case study<Icon name="arrow" /></span>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+  <CtaBand />
+</Base>

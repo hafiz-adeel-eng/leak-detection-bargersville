@@ -21,4 +21,21 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { guides };
+// Real completed jobs only. Nothing is published until a file exists in src/content/cases/.
+const cases = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases' }),
+  schema: z.object({
+    title: z.string(), // e.g. "Hot water slab leak under a kitchen in Greenwood"
+    description: z.string(),
+    service: z.string(), // service slug, e.g. "slab-leak-detection"
+    town: z.string(), // e.g. "Greenwood"
+    date: z.coerce.date(), // job date
+    problem: z.string(), // what the homeowner noticed
+    method: z.array(z.string()), // what was used to find it
+    result: z.string(), // what was found and marked
+    photos: z.array(z.object({ name: z.string(), alt: z.string() })).default([]), // files in public/images/cases/<name>.webp
+    quote: z.object({ text: z.string(), name: z.string() }).optional(), // only with the customer's written permission
+  }),
+});
+
+export const collections = { guides, cases };
