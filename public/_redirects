@@ -23,3 +23,7 @@
 /areas/trafalgar-in        /service-area/#trafalgar           301
 /areas/                    /service-area/                     301
 /areas                     /service-area/                     301
+
+# Forms removed (call only)
+/thank-you/   /contact/   301
+/thank-you    /contact/   301

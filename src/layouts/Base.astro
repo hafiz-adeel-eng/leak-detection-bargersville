@@ -141,7 +141,6 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
             <h2 class="footer-h">Contact</h2>
             <ul>
               <li><a href={`tel:${site.phoneHref}`}>{site.phone}</a></li>
-              <li><a href="/contact/">Book an inspection</a></li>
               <li><a href="/guides/">Leak detection guides</a></li>
               <li><a href="/leak-detection-cost/">Leak detection cost</a></li>
               <li><a href="/faq/">Leak detection FAQ</a></li>
@@ -157,8 +156,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
     </footer>
 
     <div class="callbar dark">
-      <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call now</a>
-      <a class="btn btn-ghost btn-sm" href="/contact/"><Icon name="cal" />Book</a>
+      <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
     </div>
 
     <script>

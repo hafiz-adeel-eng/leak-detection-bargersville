@@ -4,57 +4,43 @@ import Icon from '../components/Icon.astro';
 import { site, services, areas } from '../data/site';
 ---
 <Base
-  title={`Contact & Book an Inspection | ${site.name}`}
-  description={`Book a leak detection visit in ${site.city} and ${site.county}, IN. Call ${site.phone} or schedule an inspection online.`}
+  title={`Call for Leak Detection | ${site.name}`}
+  description={`Call ${site.phone} for leak detection in ${site.city} and ${site.county}, IN. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
   breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
 >
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Contact</span></nav>
-      <h1>Book a leak detection visit</h1>
-      <p class="answer">For active leaks, calling is fastest. For everything else, send the form and we’ll get back to you to confirm a time.</p>
+      <h1>Call to schedule leak detection</h1>
+      <p class="answer">The fastest way to reach us is a phone call. Tell us what you’re noticing and where you are, and we’ll set up a time to find the leak.</p>
+      <div class="ctas">
+        <a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container content-grid">
-      <form class="form" action={`https://formsubmit.co/${site.email}`} method="POST">
-        <input type="hidden" name="_subject" value="New leak detection request (website)" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value={`${site.url}/thank-you/`} />
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-        <div class="row2">
-          <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required /></div>
-          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
-        </div>
-        <div class="row2">
-          <div class="field">
-            <label for="town">Town</label>
-            <select id="town" name="town">
-              {areas.map((a) => <option>{a.name}</option>)}
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="service">What do you need?</label>
-          <select id="service" name="service">
-            {services.map((s) => <option>{s.name}</option>)}
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <div class="field"><label for="message">What are you noticing?</label><textarea id="message" name="message" placeholder="e.g. warm spot on the kitchen floor, water bill doubled"></textarea></div>
-        <button class="btn btn-primary" type="submit">Send request<Icon name="arrow" /></button>
-      </form>
-
-      <aside class="aside">
-        <h3>Reach us directly</h3>
-        <ul class="contact-list">
-          <li><span class="ico"><Icon name="phone" /></span><a href={`tel:${site.phoneHref}`}>{site.phone}<span>Fastest for active leaks</span></a></li>
-          <li><span class="ico"><Icon name="pin" /></span><p>{site.city}, IN {site.postalCode}<span>Serving all of {site.county}</span></p></li>
+    <div class="container two-cards">
+      <div class="info-card">
+        <span class="ico"><Icon name="phone" /></span>
+        <h2>When you call, it helps to know</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>What you’re noticing: a high bill, a warm floor, a wet spot, a stain, or a pool that keeps dropping</span></li>
+          <li><Icon name="check" /><span>Whether your water meter moves with everything turned off</span></li>
+          <li><Icon name="check" /><span>Your town and the type of home (slab, basement or crawl space)</span></li>
+          <li><Icon name="check" /><span>If water is actively spreading, turn off the main valve first</span></li>
         </ul>
-        <p class="small">{site.hours}.</p>
-      </aside>
+      </div>
+      <div class="info-card">
+        <span class="ico"><Icon name="pin" /></span>
+        <h2>Where we work</h2>
+        <p>Based in {site.city}, serving {areas.map((a) => a.name).join(', ')}.</p>
+        <a class="more-link" href="/service-area/">See our service area<Icon name="arrow" /></a>
+        <h2 style="margin-top:8px">What we find</h2>
+        <ul class="list">
+          {services.map((s) => <li><Icon name={s.icon} /><span><a href={`/services/${s.slug}/`}>{s.name}</a></span></li>)}
+        </ul>
+      </div>
     </div>
   </section>
 </Base>
