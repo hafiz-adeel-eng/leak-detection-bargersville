@@ -5,7 +5,7 @@ import { site, services, areas } from '../data/site';
 ---
 <Base
   title={`Contact & Book an Inspection | ${site.name}`}
-  description={`Book a leak detection visit in ${site.city} and ${site.county}, IN. Call ${site.phone}, email us, or send a request online.`}
+  description={`Book a leak detection visit in ${site.city} and ${site.county}, IN. Call ${site.phone} or schedule an inspection online.`}
   breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
 >
   <section class="page-hero dark">
@@ -28,7 +28,6 @@ import { site, services, areas } from '../data/site';
           <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
         </div>
         <div class="row2">
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" /></div>
           <div class="field">
             <label for="town">Town</label>
             <select id="town" name="town">
@@ -52,7 +51,6 @@ import { site, services, areas } from '../data/site';
         <h3>Reach us directly</h3>
         <ul class="contact-list">
           <li><span class="ico"><Icon name="phone" /></span><a href={`tel:${site.phoneHref}`}>{site.phone}<span>Fastest for active leaks</span></a></li>
-          <li><span class="ico"><Icon name="mail" /></span><a href={`mailto:${site.email}`}>{site.email}<span>We reply within one business day</span></a></li>
           <li><span class="ico"><Icon name="pin" /></span><p>{site.city}, IN {site.postalCode}<span>Serving all of {site.county}</span></p></li>
         </ul>
         <p class="small">{site.hours}.</p>

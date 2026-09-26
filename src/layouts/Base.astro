@@ -31,7 +31,6 @@ const business = {
   url: `${site.url}/`,
   logo: `${site.url}/images/logo.png`,
   telephone: site.phoneHref,
-  email: site.email,
   ...(ogImage ? { image: ogImage } : {}),
   address: {
     '@type': 'PostalAddress',
@@ -142,7 +141,6 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
             <h2 class="footer-h">Contact</h2>
             <ul>
               <li><a href={`tel:${site.phoneHref}`}>{site.phone}</a></li>
-              <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
               <li><a href="/contact/">Book an inspection</a></li>
               <li><a href="/guides/">Leak detection guides</a></li>
               <li><a href="/leak-detection-cost/">Leak detection cost</a></li>
