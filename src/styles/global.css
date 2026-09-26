@@ -10,7 +10,7 @@
   --text: #0B2240;
   --text-2: #3A4A62;
   --muted: #5A6275;
-  --aqua: #7A5A00;
+  --aqua: #8F6A00; /* softer amber for text on ivory (4.5:1) */
   --aqua-soft: rgba(255,193,7,.18);
   --amber: #FFC107;
   --amber-ink: #0B2240;
@@ -600,7 +600,7 @@ p { margin: 0; }
 @media (max-width: 920px) { .whatis-grid { grid-template-columns: 1fr; } }
 .whatis-copy { display: grid; gap: 18px; justify-items: start; }
 .whatis-copy h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 800; letter-spacing: -.025em; line-height: 1.08; }
-.whatis-copy h2 span { color: var(--aqua); }
+.whatis-copy h2 span { color: #A67C00; } /* large heading text: lighter amber (3:1+) */
 .whatis-answer { border-left: 4px solid #FFE08A; background: var(--surface); border-radius: 0 14px 14px 0; padding: 16px 20px; box-shadow: 0 12px 28px -22px rgba(11,34,64,.45); }
 .whatis-answer p { font-size: 18px; line-height: 1.6; color: var(--text); margin: 0; }
 .whatis-steps { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
@@ -657,3 +657,6 @@ p { margin: 0; }
 @media (max-width: 700px) { .callbar { grid-template-columns: 1fr; } }
 .call-big { min-height: 60px; padding: 16px 30px; font-size: 18px; border-radius: 999px; }
 .call-big svg { width: 22px; height: 22px; }
+
+/* Sand backgrounds are darker, so small amber text steps down one shade to stay readable */
+.section.alt, .section.tint, .trust, .signs-foot, .guide-links { --aqua: #836200; }
