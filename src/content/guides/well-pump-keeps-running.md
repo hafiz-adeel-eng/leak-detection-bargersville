@@ -7,7 +7,7 @@ primaryKeyword: "well pump keeps running"
 secondaryKeywords: ["well pump runs constantly", "well pump won't shut off", "well pump keeps turning on and off", "well pump continuously running", "water pump for well keeps running", "well pump keeps running indiana", "well water leak johnson county"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "underground-water-leak-detection", alt: "Technician listening along a buried water line from a private well to find the leak making the well pump run" }
-related: ["how-to-find-an-underground-water-leak", "water-in-basement-or-crawl-space", "low-water-pressure-leak"]
+related: ["sump-pump-running-constantly", "how-to-find-an-underground-water-leak", "water-in-basement-or-crawl-space", "low-water-pressure-leak"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 24

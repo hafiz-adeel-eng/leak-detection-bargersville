@@ -6,7 +6,7 @@ quickAnswer: "Smart leak detectors warn you that water is escaping. Spot sensors
 primaryKeyword: "smart water leak detector"
 secondaryKeywords: ["water leak detector residential", "best water leak detector", "whole house water leak detection system", "automatic water shut off leak detector", "wifi water leak detector", "water leak detection system for home"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
-related: ["how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high", "leak-detection-methods"]
+related: ["refrigerator-water-line-leak", "how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high", "leak-detection-methods"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 9

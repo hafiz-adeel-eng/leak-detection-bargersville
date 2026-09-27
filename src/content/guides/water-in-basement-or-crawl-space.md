@@ -7,7 +7,7 @@ primaryKeyword: "water in basement"
 secondaryKeywords: ["water in crawl space", "basement leak or groundwater", "water in basement no rain", "crawl space plumbing leak", "wet basement floor after no rain", "basement condensation vs leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician using a thermal camera to check a damp foundation wall for a plumbing leak versus seepage" }
-related: ["how-to-find-a-water-leak-in-your-house", "frozen-pipe-leaks", "water-heater-leaking"]
+related: ["sump-pump-running-constantly", "water-softener-leaking", "how-to-find-a-water-leak-in-your-house", "frozen-pipe-leaks", "water-heater-leaking"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 22

@@ -7,7 +7,7 @@ primaryKeyword: "water leaking from ceiling"
 secondaryKeywords: ["ceiling leak", "water dripping from ceiling", "water stain on ceiling", "ceiling leak under bathroom", "how to find a ceiling leak", "leak in ceiling no rain"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician scanning a water-stained ceiling with a thermal camera to trace a plumbing leak from the bathroom above" }
-related: ["how-to-find-a-leak-in-a-wall", "water-leak-emergency-what-to-do", "does-insurance-cover-slab-leaks"]
+related: ["shower-pan-leak", "toilet-leaking-at-base", "how-to-find-a-leak-in-a-wall", "water-leak-emergency-what-to-do", "does-insurance-cover-slab-leaks"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 18

@@ -7,7 +7,7 @@ primaryKeyword: "hear water running in pipes when nothing is on"
 secondaryKeywords: ["sound of running water in walls", "water running sound under floor", "hissing sound in walls", "running water noise no leak", "why do I hear water running in my house"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician listening through a tile floor with an acoustic ground microphone to locate the sound of a hidden water leak" }
-related: ["how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods"]
+related: ["toilet-leaking-at-base", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 19
