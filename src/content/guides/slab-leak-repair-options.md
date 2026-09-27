@@ -1,6 +1,6 @@
 ---
 title: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe"
-description: "Found a slab leak? Compare the three main repair options — spot repair through the slab, rerouting the line, or repiping — and learn what decides which one is right for your home."
+description: "Found a slab leak? Compare spot repair, rerouting and repiping, and learn what decides which slab leak repair is right for your home."
 h1: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe?"
 quickAnswer: "There are three main ways to fix a slab leak. A spot repair opens the concrete at the marked leak and fixes that section. A reroute abandons the leaking line and runs a new one through the walls or attic. A repipe replaces most or all of the supply lines. The right choice depends on the pipe's age and condition, how many leaks there have been, and where the leak is."
 primaryKeyword: "slab leak repair"

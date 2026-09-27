@@ -37,6 +37,7 @@ const serviceSchema = {
   faqs={s.faqs}
   breadcrumbs={[{ name: 'Services', url: '/#services' }, { name: s.name, url: `/services/${s.slug}/` }]}
   schema={[serviceSchema]}
+  ogImage={photo ?? undefined}
 >
   <section class="page-hero dark">
     <div class="container">
@@ -102,6 +103,9 @@ const serviceSchema = {
             <ul>{guides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
           </div>
         )}
+
+        <h2>Where we offer {lower}</h2>
+        <p>We’re based in {site.city} and provide {lower} across {site.county}: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}. Each town page covers local water utilities, common leak causes and what to check before you call.</p>
 
         <h2>Frequently asked questions</h2>
         <Faq items={s.faqs} />

@@ -5,9 +5,10 @@ import { site, services, areas } from '../data/site';
 import { locationUrl } from '../data/locations';
 ---
 <Base
-  title={`Call for Leak Detection | ${site.name}`}
+  title={`Contact ${site.name} | Call to Schedule`}
   description={`Call ${site.phone} for leak detection in ${site.city} and ${site.county}, IN. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
   breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
+  schema={[{ '@type': 'ContactPage', '@id': `${site.url}/contact/#webpage`, url: `${site.url}/contact/`, name: `Contact ${site.name}`, about: { '@id': `${site.url}/#business` } }]}
 >
   <section class="page-hero dark">
     <div class="container">

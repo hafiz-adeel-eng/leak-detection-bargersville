@@ -1,6 +1,6 @@
 ---
 title: "How to Find a Pool Leak: Bucket Test & Dye Test"
-description: "Is your pool leaking or just evaporating? Use the bucket test to find out, the pump on/off test to narrow it down, and a dye test to find leaks at skimmers, returns, lights and cracks."
+description: "Leaking or just evaporating? Use the bucket test, the pump on/off test and a dye test to find pool leaks at skimmers, returns, lights and cracks."
 h1: "How to Find a Pool Leak"
 quickAnswer: "Start with the bucket test: set a bucket of pool water on the pool step, mark both water levels, and compare after 24 hours. If the pool drops more than the bucket, it's leaking. Compare the loss with the pump on and off to narrow it to the plumbing or the shell, then use dye near skimmers, returns, lights and cracks to find the exact spot."
 primaryKeyword: "finding a pool leak"

@@ -1,12 +1,12 @@
 ---
 title: "Why Is My Water Bill So High? 9 Leak Checks"
-description: "A water bill that suddenly jumps usually means a leak, a billing change or a new habit. Work through these 9 checks, from running toilets to hidden slab leaks, to find where the water is going."
+description: "A water bill that suddenly jumps usually means a leak. Work through 9 checks, from running toilets to hidden slab leaks, to find where the water is going."
 h1: "Why Is My Water Bill So High? 9 Things to Check"
 quickAnswer: "A sudden jump in your water bill usually comes from a leak (most often a running toilet), seasonal use like lawn watering, or a billing change such as an estimated reading or a rate increase. Compare the bill's usage in gallons with past months, then do a meter test with all water off. If the meter moves, work through toilets, faucets, appliances, irrigation and finally hidden leaks."
 primaryKeyword: "why is my water bill so high"
 secondaryKeywords: ["high water bill leak", "water bill suddenly high", "hidden water leak", "i think i have a water leak", "checking for water leaks", "water leak in house"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
-related: ["how-to-find-a-water-leak-in-your-house", "how-to-find-a-sprinkler-leak", "how-to-find-a-slab-leak"]
+related: ["smart-water-leak-detectors", "how-to-find-a-water-leak-in-your-house", "how-to-find-a-sprinkler-leak", "how-to-find-a-slab-leak"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 10

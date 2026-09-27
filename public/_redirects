@@ -8,19 +8,19 @@
 /services/thermal-imaging/             /services/thermal-imaging-inspection/         301
 /services/thermal-imaging              /services/thermal-imaging-inspection/         301
 
-# Town pages merged into one service area page
+# Old town URLs now point to the dedicated town pages
 /areas/bargersville-in/    /                                  301
 /areas/bargersville-in     /                                  301
-/areas/greenwood-in/       /service-area/#greenwood           301
-/areas/greenwood-in        /service-area/#greenwood           301
-/areas/franklin-in/        /service-area/#franklin            301
-/areas/franklin-in         /service-area/#franklin            301
-/areas/center-grove-in/    /service-area/#center-grove        301
-/areas/center-grove-in     /service-area/#center-grove        301
-/areas/whiteland-in/       /service-area/#whiteland           301
-/areas/whiteland-in        /service-area/#whiteland           301
-/areas/trafalgar-in/       /service-area/#trafalgar           301
-/areas/trafalgar-in        /service-area/#trafalgar           301
+/areas/greenwood-in/       /service-area/greenwood/          301
+/areas/greenwood-in        /service-area/greenwood/          301
+/areas/franklin-in/        /service-area/franklin/           301
+/areas/franklin-in         /service-area/franklin/           301
+/areas/center-grove-in/    /service-area/center-grove/       301
+/areas/center-grove-in     /service-area/center-grove/       301
+/areas/whiteland-in/       /service-area/whiteland/          301
+/areas/whiteland-in        /service-area/whiteland/          301
+/areas/trafalgar-in/       /service-area/trafalgar/          301
+/areas/trafalgar-in        /service-area/trafalgar/          301
 /areas/                    /service-area/                     301
 /areas                     /service-area/                     301
 

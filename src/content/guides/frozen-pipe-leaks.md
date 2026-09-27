@@ -1,6 +1,6 @@
 ---
 title: "Frozen Pipes: How to Find a Hidden Leak After a Freeze"
-description: "A pipe that froze may not leak until it thaws, and the split is often hidden in a wall, crawl space or outside wall faucet. Here's how to check for damage after a freeze, what to do if a pipe bursts, and how to prevent it."
+description: "A frozen pipe often leaks only after it thaws, hidden in a wall or crawl space. How to check for damage after a freeze, what to do if it bursts, and prevention."
 h1: "Frozen Pipes: How to Find a Hidden Leak After a Freeze"
 quickAnswer: "A frozen pipe often doesn't leak until it thaws, because the ice plugs the crack. After a hard freeze, do a meter test with every fixture off: if the meter moves, a pipe is leaking somewhere. Check exterior walls, crawl spaces, garages and outside faucets, then have hidden leaks pinpointed with moisture mapping, thermal imaging and acoustic listening before opening walls."
 primaryKeyword: "frozen pipe leak"

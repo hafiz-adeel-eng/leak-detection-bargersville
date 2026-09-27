@@ -1,6 +1,6 @@
 ---
 title: "How to Find a Water Leak Inside a Wall"
-description: "Stains, bubbling paint or a musty smell? Learn how to tell if a pipe is leaking inside a wall, how to narrow down the spot with a meter test and moisture readings, and what to do before cutting drywall."
+description: "Stains, bubbling paint or a musty smell? How to tell if a pipe is leaking inside a wall, narrow down the spot, and what to do before cutting drywall."
 h1: "How to Find a Water Leak Inside a Wall"
 quickAnswer: "Look for stains, bubbling or peeling paint, soft drywall, warped baseboards and musty smells, usually near a bathroom, kitchen or laundry. Do a meter test to see if a supply line is leaking, run nearby fixtures to check drains, and use a moisture meter to find the wettest point. Professionals confirm the spot with thermal imaging and acoustic listening before any drywall is cut."
 primaryKeyword: "find water leak in wall"

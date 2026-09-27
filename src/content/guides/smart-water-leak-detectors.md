@@ -1,6 +1,6 @@
 ---
 title: "Smart Water Leak Detectors vs. Professional Leak Detection"
-description: "Spot sensors, flow monitors and automatic shutoff valves can warn you about a leak. Here's what each type catches, what it can't do, and when you still need professional leak detection."
+description: "Spot sensors, flow monitors and automatic shutoff valves: what each smart water leak detector catches, what it misses, and when you need a pro."
 h1: "Smart Water Leak Detectors vs. Professional Leak Detection"
 quickAnswer: "Smart leak detectors warn you that water is escaping. Spot sensors catch water where they sit, flow monitors notice continuous water use, and automatic shutoff valves can stop the water. None of them tell you where a hidden leak is inside a wall, under a slab or in a buried line. That's what professional leak detection does."
 primaryKeyword: "smart water leak detector"

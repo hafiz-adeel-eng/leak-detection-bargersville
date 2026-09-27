@@ -1,6 +1,6 @@
 ---
 title: "How Professional Leak Detection Works: Methods & Tools"
-description: "Acoustic listening, pressure testing, tracer gas, correlators, thermal imaging and more. See how professionals find hidden water leaks without tearing up floors, walls or yards."
+description: "Acoustic listening, pressure testing, tracer gas, correlators and thermal imaging: how professionals find hidden water leaks without tearing things up."
 h1: "How Professional Leak Detection Works"
 quickAnswer: "Professional leak detection narrows the leak down in stages. A pressure test confirms which line is leaking, then acoustic ground microphones, correlators or tracer gas locate the exact spot, and thermal imaging and moisture meters confirm what's happening inside walls and floors. The goal is to mark the leak within inches so only a small area is opened."
 primaryKeyword: "acoustic leak detection"

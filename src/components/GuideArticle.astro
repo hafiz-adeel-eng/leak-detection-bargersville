@@ -40,7 +40,7 @@ const crumbs = d.path
   ? [{ name: d.h1, url }]
   : [{ name: 'Guides', url: '/guides/' }, { name: d.h1, url }];
 ---
-<Base title={d.title} description={d.description} faqs={d.faqs} breadcrumbs={crumbs} schema={[article]}>
+<Base title={d.title} description={d.description} faqs={d.faqs} breadcrumbs={crumbs} schema={[article]} ogType="article" ogImage={photo ?? undefined} article={{ published: article.datePublished, modified: article.dateModified }}>
   <section class="page-hero dark guide-hero">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb">
