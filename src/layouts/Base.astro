@@ -7,6 +7,7 @@ import Icon from '../components/Icon.astro';
 import Logo from '../components/Logo.astro';
 import { site, services, areas, hoursText, type Faq } from '../data/site';
 import { image } from '../data/images';
+import { locations, locationUrl } from '../data/locations';
 
 interface Props {
   title: string;
@@ -39,7 +40,10 @@ const business = {
     postalCode: site.postalCode,
     addressCountry: 'US',
   },
-  areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
+  areaServed: areas.map((a) => {
+    const loc = locations.find((l) => l.slug === a.slug);
+    return { '@type': 'City', name: `${a.name}, IN`, url: new URL(locationUrl(a.slug), site.url).href, ...(loc ? { sameAs: loc.wiki } : {}) };
+  }),
   ...(site.claims.emergency247
     ? { openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' } }
     : {}),
@@ -135,7 +139,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
           </div>
           <div>
             <h2 class="footer-h">Service areas</h2>
-            <ul>{areas.map((a) => <li><a href={`/service-area/#${a.slug}`}>{a.name}, IN</a></li>)}</ul>
+            <ul>{areas.map((a) => <li><a href={locationUrl(a.slug)}>Leak detection {a.name}</a></li>)}</ul>
           </div>
           <div>
             <h2 class="footer-h">Contact</h2>

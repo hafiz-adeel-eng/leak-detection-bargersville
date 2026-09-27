@@ -5,6 +5,14 @@ import ServiceCard from '../components/ServiceCard.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { site, services, areas } from '../data/site';
+import { locations, locationUrl } from '../data/locations';
+
+const areaList = {
+  '@type': 'ItemList',
+  name: `Leak detection service areas in ${site.county}, Indiana`,
+  itemListElement: areas.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: `Leak detection in ${a.name}, IN`, url: new URL(locationUrl(a.slug), site.url).href })),
+};
+const zips = (slug: string) => locations.find((l) => l.slug === slug)?.zips.join(', ') ?? site.postalCode;
 
 const faqs = [
   { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county}, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
@@ -16,6 +24,7 @@ const faqs = [
   description={`Leak detection for homes in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland and Trafalgar. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
   faqs={faqs}
   breadcrumbs={[{ name: 'Service area', url: '/service-area/' }]}
+  schema={[areaList]}
 >
   <section class="page-hero dark">
     <div class="container">
@@ -38,8 +47,10 @@ const faqs = [
       <div class="area-grid">
         {areas.map((a) => (
           <div class="area-card" id={a.slug}>
-            <h2><Icon name="pin" />{a.name}, IN</h2>
+            <h2><Icon name="pin" /><a href={locationUrl(a.slug)}>{a.name}, IN</a></h2>
             <p>{a.note}</p>
+            <p class="small">ZIP {zips(a.slug)}</p>
+            <a class="more-link" href={locationUrl(a.slug)}>Leak detection in {a.name}<Icon name="arrow" /></a>
           </div>
         ))}
       </div>

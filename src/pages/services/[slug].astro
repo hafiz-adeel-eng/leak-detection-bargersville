@@ -9,6 +9,7 @@ import { site, services, areas, type Service } from '../../data/site';
 import { image } from '../../data/images';
 import { guideUrl } from '../../data/guides';
 import { md } from '../../data/md';
+import { locationUrl } from '../../data/locations';
 
 export function getStaticPaths() {
   return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
@@ -111,7 +112,7 @@ const serviceSchema = {
         <h3>Call for {lower}</h3>
         <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Call and we’ll confirm a time for your ${site.city}-area home.`}</p>
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
-        <p class="small">Serving <a href="/service-area/">{areas.map((a) => a.name).join(', ')}</a>.</p>
+        <p class="small">Serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)} and the rest of <a href="/service-area/">{site.county}</a>.</p>
       </aside>
     </div>
   </section>

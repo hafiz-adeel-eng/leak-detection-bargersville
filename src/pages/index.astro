@@ -7,6 +7,7 @@ import CtaBand from '../components/CtaBand.astro';
 import Hero from '../components/Hero.astro';
 import Process from '../components/Process.astro';
 import { site, services, areas, generalFaqs } from '../data/site';
+import { locationUrl } from '../data/locations';
 
 const faqs = generalFaqs.slice(0, 5);
 ---
@@ -114,10 +115,10 @@ const faqs = generalFaqs.slice(0, 5);
       <div class="section-head">
         <span class="eyebrow">Service area</span>
         <h2>Based in {site.city}, serving all of {site.county}</h2>
-        <p>Pick your town to see our service area, or call and ask if you’re nearby.</p>
+        <p>Pick your town for local leak detection details, or call and ask if you’re nearby.</p>
       </div>
       <div class="chips">
-        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={`/service-area/#${a.slug}`}><Icon name="pin" />{a.name}, IN</a>)}
+        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={locationUrl(a.slug)}><Icon name="pin" />{a.name}, IN</a>)}
       </div>
     </div>
   </section>

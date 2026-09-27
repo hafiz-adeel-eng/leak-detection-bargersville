@@ -1,0 +1,180 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import Process from '../../components/Process.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services, areas, type Service } from '../../data/site';
+import { locations, locationUrl, type Location } from '../../data/locations';
+import { guideUrl } from '../../data/guides';
+import { image } from '../../data/images';
+import { md } from '../../data/md';
+
+export function getStaticPaths() {
+  return locations.map((location) => ({ params: { slug: location.slug }, props: { location } }));
+}
+
+const { location: l } = Astro.props as { location: Location };
+const url = `${site.url}${locationUrl(l.slug)}`;
+const place = `${l.name}, IN`;
+const photo = image('hero');
+const allGuides = await getCollection('guides');
+const guides = l.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+const calls = l.topCalls
+  .map((c) => ({ ...c, s: services.find((x) => x.slug === c.service) }))
+  .filter((c) => c.s) as { service: string; text: string; s: Service }[];
+const nearby = l.nearby.map((slug) => areas.find((a) => a.slug === slug)).filter(Boolean) as typeof areas;
+
+const city = {
+  '@type': 'City',
+  name: place,
+  sameAs: l.wiki,
+  geo: { '@type': 'GeoCoordinates', latitude: l.geo.lat, longitude: l.geo.lng },
+  containedInPlace: { '@type': 'AdministrativeArea', name: `${site.county}, Indiana` },
+};
+const serviceSchema = {
+  '@type': 'Service',
+  '@id': `${url}#service`,
+  name: `Leak detection in ${place}`,
+  serviceType: 'Water leak detection',
+  description: l.description,
+  url,
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: city,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: `Leak detection services in ${place}`,
+    itemListElement: services.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: s.name, url: `${site.url}/services/${s.slug}/` },
+    })),
+  },
+};
+const pageSchema = {
+  '@type': 'WebPage',
+  '@id': `${url}#webpage`,
+  url,
+  name: l.title,
+  description: l.description,
+  isPartOf: { '@id': `${site.url}/#website` },
+  about: { '@id': `${url}#service` },
+  mainEntity: { '@id': `${url}#service` },
+  keywords: [l.primaryKeyword, ...l.secondaryKeywords].join(', '),
+  speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.answer', '.facts'] },
+  ...(photo ? { primaryImageOfPage: new URL(photo, site.url).href } : {}),
+};
+---
+<Base
+  title={l.title}
+  description={l.description}
+  faqs={l.faqs}
+  breadcrumbs={[{ name: 'Service area', url: '/service-area/' }, { name: place, url: locationUrl(l.slug) }]}
+  schema={[serviceSchema, pageSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/service-area/">Service area</a><span>/</span><span>{place}</span></nav>
+      <h1>{l.h1}</h1>
+      <p class="answer">{l.answer}</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+        <a class="btn btn-ghost" href="/contact/">Request a visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>{l.name} at a glance</h2>
+        <table class="facts">
+          <tbody>
+            {l.facts.map((f) => <tr><th scope="row">{f.label}</th><td>{f.value}</td></tr>)}
+            <tr><th scope="row">Services</th><td>{services.map((s) => s.name).join(', ')}</td></tr>
+          </tbody>
+        </table>
+
+        {l.intro.map((p) => <p set:html={md(p)} />)}
+
+        <h2>Most common leak calls in {l.name}</h2>
+        <ul class="list">
+          {calls.map((c) => <li><Icon name="check" /><span><b><a href={`/services/${c.s.slug}/`}>{c.s.name}</a>:</b> {c.text}</span></li>)}
+        </ul>
+
+        <h2>{l.homes.h2}</h2>
+        {l.homes.paras.map((p) => <p set:html={md(p)} />)}
+
+        <h2>Why leaks happen in {l.name}</h2>
+        <ul class="list">
+          {l.factors.map((x) => <li><Icon name="check" /><span set:html={md(x)} /></li>)}
+        </ul>
+
+        <div class="inline-cta">
+          <p><b>Meter moving with everything off?</b> That’s a leak. The sooner it’s found, the smaller the repair.</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>Your water utility and the service line in {l.name}</h2>
+        {l.water.paras.map((p) => <p set:html={md(p)} />)}
+        <p class="note-link">Utility sites: {l.water.links.map((x, i) => <>{i > 0 && ', '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</p>
+
+        <h2>Check for a leak before you call</h2>
+        <ol class="steps-ol">
+          <li>Turn off every faucet, the washer, dishwasher and ice maker.</li>
+          <li>Look at your water meter’s leak indicator, or write down the reading.</li>
+          <li>Wait 30 minutes to two hours without using water. If the reading changed or the indicator spins, water is leaking.</li>
+          <li>Close the main shutoff in the house. If the meter still moves, the leak is in the buried line outside; if it stops, it’s inside.</li>
+          <li>If you have sprinklers, close the irrigation valve too, so a sprinkler leak doesn’t look like a house leak.</li>
+        </ol>
+        <p class="note-link">More detail: <a href="/guides/how-to-find-a-water-leak-in-your-house/">how to find a water leak in your house</a>.</p>
+
+        <h2>What leak detection costs in {l.name}</h2>
+        <p>The price depends on the type of leak, how many lines need testing and what’s above the pipe, not on which town you live in. Detection is priced separately from the repair. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.</p>
+
+        {guides.length > 0 && (
+          <div class="guide-links">
+            <h2>Guides for {l.name} homeowners</h2>
+            <ul>{guides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
+          </div>
+        )}
+
+        <h2>Leak detection in {l.name}: frequently asked questions</h2>
+        <Faq items={l.faqs} />
+
+        <p class="sources">Sources: {l.sources.map((x, i) => <>{i > 0 && '; '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</p>
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name="pin" /></span>
+        <h3>Leak detection in {place}</h3>
+        <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Based in ${site.city}, serving ${l.name} and the rest of ${site.county}.`}</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">ZIP {l.zips.join(', ')}</p>
+        <p class="small">Nearby: {nearby.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)}</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Services in {l.name}</span><h2>Leak detection services in {place}</h2></div>
+      <div class="cards">{services.map((s) => <ServiceCard service={s} />)}</div>
+    </div>
+  </section>
+
+  <Process />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Nearby</span><h2>We also serve nearby towns</h2></div>
+      <div class="chips">
+        {nearby.map((a) => <a class="chip" href={locationUrl(a.slug)}><Icon name="pin" />Leak detection in {a.name}, IN</a>)}
+        <a class="chip" href="/service-area/"><Icon name="pin" />All of {site.county}</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title={`Need a leak found in ${l.name}?`} />
+</Base>
