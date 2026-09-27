@@ -7,7 +7,7 @@ primaryKeyword: "frozen pipe leak"
 secondaryKeywords: ["burst pipe after freeze", "how to tell if a frozen pipe burst", "frozen pipes leak detection", "pipe burst in wall", "frost free spigot leaking inside wall", "how to prevent frozen pipes"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician scanning an exterior wall with a thermal camera to find where a frozen pipe split and leaked" }
-related: ["water-in-basement-or-crawl-space", "water-leak-emergency-what-to-do", "how-to-find-a-leak-in-a-wall", "how-to-find-an-underground-water-leak"]
+related: ["burst-pipe-insurance-claim-indiana", "well-pump-keeps-running", "water-in-basement-or-crawl-space", "water-leak-emergency-what-to-do", "how-to-find-a-leak-in-a-wall", "how-to-find-an-underground-water-leak"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 17

@@ -7,7 +7,7 @@ primaryKeyword: "finding a water leak underground"
 secondaryKeywords: ["best way to find a water leak underground", "locating water leaks underground", "find water leak in yard", "finding water line leaks underground", "find broken water pipe underground", "underground water leak detection", "water line leak detection"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "hero", alt: "Leak detection technician with headphones listening for a buried water line leak with a ground microphone on a front lawn" }
-related: ["low-water-pressure-leak", "frozen-pipe-leaks", "how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
+related: ["water-line-replacement-cost-indiana", "water-leak-under-driveway", "low-water-pressure-leak", "frozen-pipe-leaks", "how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 6

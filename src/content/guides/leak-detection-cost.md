@@ -7,7 +7,7 @@ primaryKeyword: "leak detection costs"
 secondaryKeywords: ["slab leak detection cost", "slab leak repair cost", "average slab leak repair cost", "under slab leak repair costs", "concrete slab leak repair cost", "how much does leak detection cost"]
 service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone and a frequency display on a tile floor" }
-related: ["leak-detection-methods", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house"]
+related: ["water-line-replacement-cost-indiana", "leak-detection-methods", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 4

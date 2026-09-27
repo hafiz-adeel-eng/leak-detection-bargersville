@@ -6,7 +6,7 @@ quickAnswer: "A sudden jump in your water bill usually comes from a leak (most o
 primaryKeyword: "why is my water bill so high"
 secondaryKeywords: ["high water bill leak", "water bill suddenly high", "hidden water leak", "i think i have a water leak", "checking for water leaks", "water leak in house"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
-related: ["water-running-sound-in-pipes", "smart-water-leak-detectors", "how-to-find-a-water-leak-in-your-house", "how-to-find-a-sprinkler-leak", "how-to-find-a-slab-leak"]
+related: ["water-bill-leak-adjustment-indiana", "water-running-sound-in-pipes", "smart-water-leak-detectors", "how-to-find-a-water-leak-in-your-house", "how-to-find-a-sprinkler-leak", "how-to-find-a-slab-leak"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 10
