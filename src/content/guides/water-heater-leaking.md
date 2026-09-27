@@ -7,7 +7,7 @@ primaryKeyword: "water heater leaking"
 secondaryKeywords: ["water heater leaking from bottom", "hot water heater leaking what to do", "water heater relief valve leaking", "water heater leaking from top", "hot water heater running constantly leak"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet floor near a utility closet with an acoustic sensor to find a hot water leak" }
-related: ["water-softener-leaking", "how-to-find-a-slab-leak", "water-leak-emergency-what-to-do", "water-running-sound-in-pipes"]
+related: ["how-to-shut-off-water-to-house", "water-softener-leaking", "how-to-find-a-slab-leak", "water-leak-emergency-what-to-do", "water-running-sound-in-pipes"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 21

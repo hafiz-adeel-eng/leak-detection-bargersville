@@ -7,7 +7,7 @@ primaryKeyword: "low water pressure in whole house"
 secondaryKeywords: ["low water pressure causes", "sudden drop in water pressure", "low water pressure leak", "is low water pressure a sign of a leak", "normal house water pressure psi"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "underground-water-leak-detection", alt: "Water escaping from a cracked buried service line, a common cause of low water pressure throughout a house" }
-related: ["well-pump-keeps-running", "how-to-find-an-underground-water-leak", "why-is-my-water-bill-so-high", "water-running-sound-in-pipes"]
+related: ["galvanized-pipe-replacement", "well-pump-keeps-running", "how-to-find-an-underground-water-leak", "why-is-my-water-bill-so-high", "water-running-sound-in-pipes"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 20

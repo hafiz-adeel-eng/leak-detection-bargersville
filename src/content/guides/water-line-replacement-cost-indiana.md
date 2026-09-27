@@ -7,7 +7,7 @@ primaryKeyword: "water line replacement cost indiana"
 secondaryKeywords: ["main water line replacement cost", "cost to replace water line from meter to house", "main water line leak repair cost", "underground water line repair cost", "trenchless water line replacement cost", "water line replacement cost johnson county in", "who pays for water line repair indiana"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "underground-water-leak-detection", alt: "Exposed buried water service line leaking in a yard, pinpointed before any trench was dug" }
-related: ["how-to-find-an-underground-water-leak", "water-leak-under-driveway", "low-water-pressure-leak"]
+related: ["galvanized-pipe-replacement", "whole-house-repipe-cost", "how-to-find-an-underground-water-leak", "water-leak-under-driveway", "low-water-pressure-leak"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 23

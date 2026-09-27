@@ -7,7 +7,7 @@ primaryKeyword: "finding a slab leak"
 secondaryKeywords: ["signs of a slab leak", "find leak under slab", "detecting water leak under slab", "hot water slab leak", "water leak under concrete slab", "find water leak under concrete floor", "slab leak detection"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone while a tablet displays the leak's sound frequency" }
-related: ["water-running-sound-in-pipes", "water-heater-leaking", "is-leak-detection-worth-it", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "leak-detection-cost"]
+related: ["pinhole-leaks-copper-pipes", "slab-leak-repair-cost", "water-running-sound-in-pipes", "water-heater-leaking", "is-leak-detection-worth-it", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "leak-detection-cost"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 5

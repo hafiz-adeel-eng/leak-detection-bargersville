@@ -7,7 +7,7 @@ primaryKeyword: "find water leak in wall"
 secondaryKeywords: ["detect water leak behind wall", "finding a water leak in a wall", "water leak behind drywall", "find leaking pipe in wall", "detecting leaks behind walls", "wall leak detection", "hidden water leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician holding a thermal camera that shows a cold moisture pattern on a water-stained wall near the floor" }
-related: ["shower-pan-leak", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "why-is-my-water-bill-so-high"]
+related: ["leak-under-sink", "outside-spigot-leaking", "shower-pan-leak", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "why-is-my-water-bill-so-high"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 7

@@ -7,7 +7,7 @@ primaryKeyword: "emergency leak detection"
 secondaryKeywords: ["emergency leak detection near me", "24 hour leak detection", "emergency water leak detection", "water leak in house", "burst pipe what to do"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet tile floor near a cabinet with an acoustic sensor, with an inset of a leaking pipe" }
-related: ["burst-pipe-insurance-claim-indiana", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "does-insurance-cover-slab-leaks", "frozen-pipe-leaks", "leak-detection-vs-plumber"]
+related: ["how-to-shut-off-water-to-house", "burst-pipe-what-to-do", "burst-pipe-insurance-claim-indiana", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "does-insurance-cover-slab-leaks", "frozen-pipe-leaks", "leak-detection-vs-plumber"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 14

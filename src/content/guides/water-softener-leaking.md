@@ -7,7 +7,7 @@ primaryKeyword: "water softener leaking"
 secondaryKeywords: ["water leaking from water softener", "water softener leaking from bottom", "water softener bypass valve leaking", "water softener leaking from top", "brine tank overflowing", "water softener leak indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet utility room floor near a water softener and water heater for a plumbing leak" }
-related: ["water-heater-leaking", "water-in-basement-or-crawl-space", "water-running-sound-in-pipes"]
+related: ["washing-machine-leaking", "water-heater-leaking", "water-in-basement-or-crawl-space", "water-running-sound-in-pipes"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 32

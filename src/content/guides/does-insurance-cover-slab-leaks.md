@@ -7,7 +7,7 @@ primaryKeyword: "does homeowners insurance cover slab leaks"
 secondaryKeywords: ["slab leak insurance", "insurance cover leak detection", "water leak insurance claim", "slab leak repair", "hot water slab leak"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician documenting moisture on a water-stained wall with a thermal camera for an insurance report" }
-related: ["burst-pipe-insurance-claim-indiana", "slab-leak-repair-options", "water-leak-emergency-what-to-do", "how-to-find-a-slab-leak"]
+related: ["slab-leak-repair-cost", "burst-pipe-insurance-claim-indiana", "slab-leak-repair-options", "water-leak-emergency-what-to-do", "how-to-find-a-slab-leak"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 16

@@ -7,7 +7,7 @@ primaryKeyword: "refrigerator water line leak"
 secondaryKeywords: ["fridge water line repair", "fixing refrigerator water line", "ice maker water line leak", "saddle valve leak", "water under refrigerator", "refrigerator leaking water on floor"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a kitchen floor near the refrigerator with an acoustic sensor for a hidden water line leak" }
-related: ["water-leaking-from-ceiling", "water-in-basement-or-crawl-space", "smart-water-leak-detectors"]
+related: ["leak-under-sink", "washing-machine-leaking", "water-leaking-from-ceiling", "water-in-basement-or-crawl-space", "smart-water-leak-detectors"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 31

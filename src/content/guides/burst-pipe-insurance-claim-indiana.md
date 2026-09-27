@@ -7,7 +7,7 @@ primaryKeyword: "burst pipe insurance claim"
 secondaryKeywords: ["burst pipe insurance claim tips", "insurance claim burst pipe", "frozen pipe insurance claim", "does homeowners insurance cover burst pipes", "burst pipe insurance claim indiana", "water damage claim indiana"]
 service: { name: "Thermal Imaging Inspection", url: "/services/thermal-imaging-inspection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician documenting water damage from a burst pipe with a thermal camera for a homeowners insurance claim" }
-related: ["does-insurance-cover-slab-leaks", "water-leak-emergency-what-to-do", "frozen-pipe-leaks"]
+related: ["burst-pipe-what-to-do", "does-insurance-cover-slab-leaks", "water-leak-emergency-what-to-do", "frozen-pipe-leaks"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 27

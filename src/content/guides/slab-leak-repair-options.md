@@ -7,7 +7,7 @@ primaryKeyword: "slab leak repair"
 secondaryKeywords: ["fix slab leak", "slab leak solutions", "concrete slab leak repair", "slab leak repair near me", "best way to fix a slab leak", "under slab leak repair", "slab leak plumbers"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician pinpointing a slab leak with an acoustic ground microphone before any concrete is opened" }
-related: ["water-line-replacement-cost-indiana", "how-to-find-a-slab-leak", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
+related: ["slab-leak-repair-cost", "whole-house-repipe-cost", "water-line-replacement-cost-indiana", "how-to-find-a-slab-leak", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 15
