@@ -1,13 +1,13 @@
 ---
 title: "Water Leak Emergency: What to Do in the First Hour"
-description: "Water spreading across the floor or coming through the ceiling? Here's what to do right now: shut off the water, stay safe around electricity, protect your belongings, document for insurance and find the source."
+description: "Water on the floor or through the ceiling? Shut off the water, stay safe around electricity, protect belongings, document for insurance, then find the source."
 h1: "Water Leak Emergency: What to Do in the First Hour"
 quickAnswer: "Shut off the main water valve first. If water is near outlets or appliances, turn off power to that area at the breaker, but only if you can do it from a dry spot. Move belongings out of the water, take photos for insurance, and start drying. Then find the source: a visible burst pipe needs a plumber; a hidden leak needs leak detection before anything is opened."
 primaryKeyword: "emergency leak detection"
 secondaryKeywords: ["emergency leak detection near me", "24 hour leak detection", "emergency water leak detection", "water leak in house", "burst pipe what to do"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet tile floor near a cabinet with an acoustic sensor, with an inset of a leaking pipe" }
-related: ["how-to-find-a-water-leak-in-your-house", "does-insurance-cover-slab-leaks", "how-to-find-a-leak-in-a-wall"]
+related: ["how-to-shut-off-water-to-house", "burst-pipe-what-to-do", "burst-pipe-insurance-claim-indiana", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "does-insurance-cover-slab-leaks", "frozen-pipe-leaks", "leak-detection-vs-plumber"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 14

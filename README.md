@@ -14,6 +14,7 @@ npm run build    # output in dist/
 
 - Business details (name, phone, email): `src/data/site.ts` → `site`
 - Services, service areas and FAQs: `src/data/site.ts`
+- Town pages (`/service-area/<town>/`): `src/data/locations.ts`
 - Colors and styles: `src/styles/global.css`
 - AI images: see `public/images/README.md` for file names and prompts
 

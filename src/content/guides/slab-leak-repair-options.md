@@ -1,13 +1,13 @@
 ---
 title: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe"
-description: "Found a slab leak? Compare the three main repair options — spot repair through the slab, rerouting the line, or repiping — and learn what decides which one is right for your home."
+description: "Found a slab leak? Compare spot repair, rerouting and repiping, and learn what decides which slab leak repair is right for your home."
 h1: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe?"
 quickAnswer: "There are three main ways to fix a slab leak. A spot repair opens the concrete at the marked leak and fixes that section. A reroute abandons the leaking line and runs a new one through the walls or attic. A repipe replaces most or all of the supply lines. The right choice depends on the pipe's age and condition, how many leaks there have been, and where the leak is."
 primaryKeyword: "slab leak repair"
 secondaryKeywords: ["fix slab leak", "slab leak solutions", "concrete slab leak repair", "slab leak repair near me", "best way to fix a slab leak", "under slab leak repair", "slab leak plumbers"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician pinpointing a slab leak with an acoustic ground microphone before any concrete is opened" }
-related: ["how-to-find-a-slab-leak", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
+related: ["slab-leak-repair-cost", "whole-house-repipe-cost", "water-line-replacement-cost-indiana", "how-to-find-a-slab-leak", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 15

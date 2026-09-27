@@ -1,13 +1,13 @@
 ---
 title: "How to Find an Underground Water Leak in Your Yard"
-description: "Soggy yard, low pressure or a meter that never stops? Learn how to confirm a leak in the buried water line between your meter and house, and how the exact spot is found without digging up the yard."
+description: "Soggy yard, low pressure or a meter that never stops? Confirm a leak in the buried line from meter to house, and see how it's found without digging up the yard."
 h1: "How to Find an Underground Water Leak"
 quickAnswer: "Turn off all water, close the main shutoff valve where the line enters your house, and watch the water meter. If it still moves, the leak is in the buried service line between the meter and the house. Walk that path for soggy, sunken or extra-green ground. To pinpoint it without digging, professionals listen along the line with acoustic equipment or use tracer gas on plastic pipe."
 primaryKeyword: "finding a water leak underground"
 secondaryKeywords: ["best way to find a water leak underground", "locating water leaks underground", "find water leak in yard", "finding water line leaks underground", "find broken water pipe underground", "underground water leak detection", "water line leak detection"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
 image: { name: "hero", alt: "Leak detection technician with headphones listening for a buried water line leak with a ground microphone on a front lawn" }
-related: ["how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
+related: ["water-line-replacement-cost-indiana", "water-leak-under-driveway", "low-water-pressure-leak", "frozen-pipe-leaks", "how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 6

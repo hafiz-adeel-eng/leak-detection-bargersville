@@ -1,6 +1,6 @@
 ---
 title: "Leak Detection Specialist vs. Plumber: Who to Call"
-description: "Should you call a plumber or a leak detection specialist? See who does what, when a plumber alone is enough, and when a hidden leak needs dedicated detection equipment first."
+description: "Plumber or leak detection specialist? Who does what, when a plumber alone is enough, and when a hidden leak needs detection equipment first."
 h1: "Leak Detection Specialist vs. Plumber: Who Should Find Your Leak?"
 quickAnswer: "Call a plumber for leaks you can see — a dripping faucet, a running toilet, a leaking supply line under a sink. Call a leak detection specialist when the leak is hidden: under the slab, inside a wall, in the buried water line, in a pool or in the sprinklers. The specialist finds and marks the exact spot; the plumber then repairs it through one small opening."
 primaryKeyword: "plumber for leak detection"

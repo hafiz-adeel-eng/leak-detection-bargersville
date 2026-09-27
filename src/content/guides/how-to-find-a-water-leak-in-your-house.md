@@ -1,13 +1,13 @@
 ---
 title: "How to Find a Water Leak in Your House (Step-by-Step)"
-description: "Think you have a water leak? Use the water meter test, check toilets, faucets and appliances, and narrow down hidden leaks in walls, floors or the slab before you call a pro."
+description: "Think you have a water leak? Do the meter test, check toilets, faucets and appliances, and narrow down hidden leaks in walls, floors or the slab."
 h1: "How to Find a Water Leak in Your House"
 quickAnswer: "Start with your water meter: turn off every faucet and water-using appliance, note the reading, and wait one to two hours. If the meter moves, you have a leak. Then check toilets with a dye test, look under sinks and around the water heater, and close the main shutoff to tell whether the leak is inside the house or in the line outside."
 primaryKeyword: "find water leak in house"
 secondaryKeywords: ["how to find a water leak in your house", "i have a water leak in my house", "checking for water leaks", "detecting a water leak in your home", "can't find water leak", "find leaks in house", "locate water leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician listening for a hidden water leak with an acoustic sensor on a tile floor inside a home" }
-related: ["why-is-my-water-bill-so-high", "how-to-find-a-leak-in-a-wall", "how-to-find-a-slab-leak"]
+related: ["leak-under-sink", "how-to-shut-off-water-to-house", "water-in-basement-or-crawl-space", "smart-water-leak-detectors", "how-to-choose-a-leak-detection-company", "why-is-my-water-bill-so-high", "how-to-find-a-leak-in-a-wall", "how-to-find-a-slab-leak"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 1

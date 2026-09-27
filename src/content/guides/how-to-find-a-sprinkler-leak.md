@@ -1,13 +1,13 @@
 ---
 title: "How to Find a Leak in Your Sprinkler System"
-description: "Soggy spots, a weak zone or a meter that runs with the sprinklers off? Here's how to find a leak in your irrigation system zone by zone, and how to tell a mainline leak from a lateral line."
+description: "Soggy spots, a weak zone or a meter running with sprinklers off? Find an irrigation leak zone by zone and tell a mainline leak from a lateral."
 h1: "How to Find a Leak in Your Sprinkler System"
 quickAnswer: "Run each zone one at a time and look for soggy spots, bubbling soil, weak heads or water at the valve box. If the water meter moves while the sprinklers are off, the leak is in the always-pressurized mainline or a valve. If it only leaks while a zone runs, the break is in that zone's lateral line or a head."
 primaryKeyword: "how to find a leak in sprinkler system"
 secondaryKeywords: ["how to find an irrigation leak", "find leak in irrigation system", "finding sprinkler leaks", "how to find a sprinkler line leak", "find sprinkler leak underground", "how to find leaks in your lawn sprinkler system", "sprinkler leak detection"]
 service: { name: "Irrigation Leak Detection", url: "/services/irrigation-leak-detection/" }
 image: { name: "irrigation-leak-detection", alt: "Technician using an acoustic leak detector beside an exposed sprinkler line leaking at a fitting in a lawn" }
-related: ["how-to-find-an-underground-water-leak", "how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high"]
+related: ["how-to-find-a-pool-leak", "how-to-find-an-underground-water-leak", "how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 2

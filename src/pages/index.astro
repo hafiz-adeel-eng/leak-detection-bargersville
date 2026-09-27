@@ -7,11 +7,18 @@ import CtaBand from '../components/CtaBand.astro';
 import Hero from '../components/Hero.astro';
 import Process from '../components/Process.astro';
 import { site, services, areas, generalFaqs } from '../data/site';
+import { locationUrl } from '../data/locations';
+import { getCollection } from 'astro:content';
+import { guideUrl } from '../data/guides';
+
+const featured = ['why-is-my-water-bill-so-high', 'how-to-find-a-water-leak-in-your-house', 'how-to-find-a-slab-leak', 'leak-detection-vs-plumber', 'is-leak-detection-worth-it', 'how-to-choose-a-leak-detection-company'];
+const allGuides = await getCollection('guides');
+const homeGuides = featured.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
 
 const faqs = generalFaqs.slice(0, 5);
 ---
 <Base
-  title="Leak Detection in Bargersville, IN | Non-Invasive Leak Location"
+  title="Leak Detection in Bargersville, IN | Slab & Water Leaks"
   description="Suspect a hidden leak? We locate water leaks under slabs, inside walls, in yards and pools across Bargersville, without tearing things up. Call today."
   faqs={faqs}
   preload={{ href: '/images/hero.webp', srcset: '/images/hero-xs.webp 640w, /images/hero-sm.webp 900w, /images/hero.webp 1600w', sizes: '100vw' }}
@@ -109,15 +116,29 @@ const faqs = generalFaqs.slice(0, 5);
     </div>
   </section>
 
+  <section class="section" id="guides">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Homeowner guides</span>
+        <h2>Check for a leak yourself, then decide who to call</h2>
+        <p>Plain answers from our leak detection work around {site.county}.</p>
+      </div>
+      <div class="guide-links">
+        <ul>{homeGuides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
+      </div>
+      <p style="margin-top:20px"><a class="btn btn-ghost btn-sm" href="/guides/">All leak detection guides<Icon name="arrow" /></a></p>
+    </div>
+  </section>
+
   <section class="section tint" id="areas">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Service area</span>
         <h2>Based in {site.city}, serving all of {site.county}</h2>
-        <p>Pick your town to see our service area, or call and ask if you’re nearby.</p>
+        <p>Pick your town for local leak detection details, or call and ask if you’re nearby.</p>
       </div>
       <div class="chips">
-        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={`/service-area/#${a.slug}`}><Icon name="pin" />{a.name}, IN</a>)}
+        {areas.map((a, i) => <a class={i === 0 ? 'chip home' : 'chip'} href={locationUrl(a.slug)}><Icon name="pin" />{a.name}, IN</a>)}
       </div>
     </div>
   </section>

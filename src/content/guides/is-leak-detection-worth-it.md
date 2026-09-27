@@ -1,6 +1,6 @@
 ---
 title: "Is Professional Leak Detection Worth It?"
-description: "Is it worth paying for professional, non-invasive leak detection instead of opening floors and walls to search? See what it saves, when it pays off, and when you don't need it."
+description: "Is non-invasive leak detection worth paying for instead of opening floors and walls? What it saves, when it pays off, and when you don't need it."
 h1: "Is Professional Leak Detection Worth It?"
 quickAnswer: "Usually, yes, when the leak is hidden. Non-invasive leak detection finds and marks the leak before anything is opened, so the repair needs one small opening instead of several exploratory holes in tile, concrete, drywall or lawn. It isn't needed when the leak is visible and easy to reach, like a dripping faucet or a running toilet."
 primaryKeyword: "non invasive leak detection"

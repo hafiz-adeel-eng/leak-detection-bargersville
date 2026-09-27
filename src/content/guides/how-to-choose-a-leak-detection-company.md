@@ -1,10 +1,10 @@
 ---
 title: "How to Choose a Leak Detection Company: 9 Questions"
-description: "Hiring a leak detection company in Bargersville or Johnson County? Ask these 9 questions about methods, equipment, reports and repair so you find the leak without unnecessary demolition."
+description: "Hiring a leak detection company in Johnson County, IN? Ask these 9 questions about methods, equipment, reports and repair before you book."
 h1: "How to Choose a Leak Detection Company"
 quickAnswer: "Choose a leak detection company that confirms the leak before touching anything, tests each line to isolate it, pinpoints the spot with acoustic, thermal or tracer gas equipment, and marks it with photos you can give your plumber and insurer. Ask how they work, what they use, and what you get at the end. Be wary of anyone who wants to break floors or walls before testing."
-primaryKeyword: "leak detection company"
-secondaryKeywords: ["best leak detection company near me", "leak detection specialist", "leak detection company near me", "water leak detection company", "leak experts", "local leak detection company"]
+primaryKeyword: "how to choose a leak detection company"
+secondaryKeywords: ["best leak detection company near me", "questions to ask a leak detection company", "how to pick a leak detection company", "best water leak detection company", "leak detection company reviews"]
 service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "hero", alt: "Leak detection technician listening for a buried water line leak with a ground microphone outside a Bargersville home" }
 related: ["leak-detection-vs-plumber", "is-leak-detection-worth-it", "leak-detection-methods"]

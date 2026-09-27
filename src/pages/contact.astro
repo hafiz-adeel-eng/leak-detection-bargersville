@@ -2,11 +2,13 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { site, services, areas } from '../data/site';
+import { locationUrl } from '../data/locations';
 ---
 <Base
-  title={`Call for Leak Detection | ${site.name}`}
+  title={`Contact ${site.name} | Call to Schedule`}
   description={`Call ${site.phone} for leak detection in ${site.city} and ${site.county}, IN. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
   breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
+  schema={[{ '@type': 'ContactPage', '@id': `${site.url}/contact/#webpage`, url: `${site.url}/contact/`, name: `Contact ${site.name}`, about: { '@id': `${site.url}/#business` } }]}
 >
   <section class="page-hero dark">
     <div class="container">
@@ -34,7 +36,7 @@ import { site, services, areas } from '../data/site';
       <div class="info-card">
         <span class="ico"><Icon name="pin" /></span>
         <h2>Where we work</h2>
-        <p>Based in {site.city}, serving {areas.map((a) => a.name).join(', ')}.</p>
+        <p>Based in {site.city}, serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
         <a class="more-link" href="/service-area/">See our service area<Icon name="arrow" /></a>
         <h2 style="margin-top:8px">What we find</h2>
         <ul class="list">
