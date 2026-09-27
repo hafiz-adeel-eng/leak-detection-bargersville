@@ -86,7 +86,7 @@ export const locations: Location[] = [
       { service: 'irrigation-leak-detection', text: 'High summer water bills and wet zones in subdivisions with in-ground sprinklers.' },
       { service: 'hidden-water-leak-detection', text: 'Stains, soft drywall or a ceiling leak under a bathroom.' },
     ],
-    guides: ['how-to-find-a-slab-leak', 'how-to-find-an-underground-water-leak', 'why-is-my-water-bill-so-high', 'frozen-pipe-leaks'],
+    guides: ['how-to-find-a-slab-leak', 'how-to-find-an-underground-water-leak', 'why-is-my-water-bill-so-high', 'water-running-sound-in-pipes', 'frozen-pipe-leaks'],
     nearby: ['center-grove', 'whiteland', 'bargersville', 'franklin'],
     faqs: [
       { q: 'Do you offer leak detection in Greenwood, IN?', a: 'Yes. We serve all of Greenwood, including ZIP codes 46142 and 46143, from our base in Bargersville. We find slab leaks, buried water line leaks, leaks inside walls and showers, pool and spa leaks and sprinkler leaks.' },
@@ -153,7 +153,7 @@ export const locations: Location[] = [
       { service: 'thermal-imaging-inspection', text: 'Moisture mapping with a photo report for an insurance claim or before buying an older home.' },
       { service: 'slab-leak-detection', text: 'Warm spots or running water sounds under the floor in slab-built homes.' },
     ],
-    guides: ['how-to-find-a-leak-in-a-wall', 'how-to-find-an-underground-water-leak', 'frozen-pipe-leaks', 'does-insurance-cover-slab-leaks'],
+    guides: ['how-to-find-a-leak-in-a-wall', 'water-in-basement-or-crawl-space', 'water-leaking-from-ceiling', 'how-to-find-an-underground-water-leak', 'frozen-pipe-leaks'],
     nearby: ['whiteland', 'greenwood', 'bargersville', 'trafalgar'],
     faqs: [
       { q: 'Do you provide leak detection in Franklin, Indiana?', a: 'Yes. We serve all of Franklin (ZIP 46131) and the surrounding area from Bargersville. We find hidden leaks in walls and floors, slab leaks, buried water line leaks, pool and spa leaks and sprinkler leaks.' },
@@ -220,7 +220,7 @@ export const locations: Location[] = [
       { service: 'slab-leak-detection', text: 'Warm floors or a meter that keeps turning with everything off.' },
       { service: 'underground-water-leak-detection', text: 'A soggy strip between the meter and the house, often on plastic lines that need tracer gas.' },
     ],
-    guides: ['how-to-find-a-sprinkler-leak', 'how-to-find-a-pool-leak', 'how-to-find-a-slab-leak', 'smart-water-leak-detectors'],
+    guides: ['how-to-find-a-sprinkler-leak', 'how-to-find-a-pool-leak', 'how-to-find-a-slab-leak', 'water-heater-leaking', 'smart-water-leak-detectors'],
     nearby: ['bargersville', 'greenwood', 'whiteland', 'franklin'],
     faqs: [
       { q: 'Do you serve Center Grove and White River Township?', a: 'Yes. Center Grove is right next to our base in Bargersville. We serve homes throughout White River Township, including Greenwood 46142 and 46143 and Bargersville 46106 addresses.' },
@@ -287,7 +287,7 @@ export const locations: Location[] = [
       { service: 'hidden-water-leak-detection', text: 'Stains, soft drywall or water showing up in a ceiling under a bathroom.' },
       { service: 'thermal-imaging-inspection', text: 'A moisture map and photo report for an insurance claim.' },
     ],
-    guides: ['why-is-my-water-bill-so-high', 'how-to-find-a-water-leak-in-your-house', 'how-to-find-a-slab-leak', 'water-leak-emergency-what-to-do'],
+    guides: ['why-is-my-water-bill-so-high', 'how-to-find-a-water-leak-in-your-house', 'how-to-find-a-slab-leak', 'water-running-sound-in-pipes', 'water-leak-emergency-what-to-do'],
     nearby: ['greenwood', 'franklin', 'center-grove', 'bargersville'],
     faqs: [
       { q: 'Do you offer leak detection in Whiteland and New Whiteland?', a: 'Yes. We serve both towns and the rest of ZIP code 46184 from our base in Bargersville, including slab leaks, buried water line leaks, hidden leaks in walls and floors, pools and sprinklers.' },
@@ -350,7 +350,7 @@ export const locations: Location[] = [
       { service: 'hidden-water-leak-detection', text: 'Stains or soft drywall after a freeze, or near bathrooms and laundry rooms.' },
       { service: 'irrigation-leak-detection', text: 'Sprinkler lines and yard hydrants that leak after winter.' },
     ],
-    guides: ['how-to-find-an-underground-water-leak', 'frozen-pipe-leaks', 'how-to-find-a-slab-leak', 'leak-detection-methods'],
+    guides: ['how-to-find-an-underground-water-leak', 'low-water-pressure-leak', 'water-in-basement-or-crawl-space', 'frozen-pipe-leaks', 'leak-detection-methods'],
     nearby: ['bargersville', 'franklin', 'center-grove', 'greenwood'],
     faqs: [
       { q: 'Do you serve Trafalgar and southern Johnson County?', a: 'Yes. Trafalgar is just south of our base in Bargersville along State Road 135. We serve the town and the surrounding countryside in ZIP code 46181.' },
