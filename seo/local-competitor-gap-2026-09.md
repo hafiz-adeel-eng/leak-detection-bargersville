@@ -1,6 +1,6 @@
 # Nearby towns: keyword and competitor gap review (September 2026)
 
-New town pages: Mooresville, Martinsville, Morgantown, Nineveh & Prince's Lakes, Edinburgh, Southport & Perry Township, Beech Grove.
+New town pages (all within 20 km of Bargersville): Southport & Perry Township (~16 km), Morgantown (~18 km), Nineveh & Prince's Lakes (~20 km). Mooresville, Beech Grove, Martinsville and Edinburgh (20–25 km) were researched but left out to keep the service area within 20 km.
 
 ## Search demand (Google Ads Keyword Planner, Indiana, last 12 months)
 
@@ -21,8 +21,8 @@ Low volume, but high intent and low competition: the page that answers the quest
 
 ## How the new pages fill the gaps
 
-- Real local facts with sources: 2020 Census population, ZIP codes, county, and the actual water provider (Indiana American Water–Mooresville, Hill Water Corp, City of Martinsville, Morgantown Water Utility, Prince's Lakes utility, Edinburgh Municipal Utilities, Citizens Water).
+- Real local facts with sources: 2020 Census population, ZIP codes, county, and the actual water provider (Morgantown Water Utility, Prince's Lakes utility, Citizens Water).
 - Who owns the service line, and when to call the utility first.
-- Housing and leak causes specific to the town: older galvanized and plaster homes (Beech Grove, Martinsville), long rural lines and wells (Morgantown, Martinsville), seasonal lake homes (Nineveh & Prince's Lakes), mid-century slab homes (Southport & Perry Township).
+- Housing and leak causes specific to the town: long rural lines and wells (Morgantown), seasonal lake homes (Nineveh & Prince's Lakes), mid-century slab homes (Southport & Perry Township).
 - Meter test steps, cost factors, local FAQs, and links into the matching guide cluster (well pump, galvanized, pinhole, frozen pipes, water line cost).
 - Schema: Service with City (sameAs, geo, county), WebPage, FAQPage and BreadcrumbList.

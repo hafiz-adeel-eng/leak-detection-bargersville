@@ -422,12 +422,8 @@ export const areas: Area[] = [
   { slug: 'whiteland', name: 'Whiteland & New Whiteland', note: 'Along the I-65 corridor in Johnson County.' },
   { slug: 'trafalgar', name: 'Trafalgar', note: 'In southwestern Johnson County.' },
   { slug: 'nineveh', name: 'Nineveh & Prince’s Lakes', note: 'Lake communities in southern Johnson County.' },
-  { slug: 'edinburgh', name: 'Edinburgh', note: 'Southeast Johnson County along I-65.' },
-  { slug: 'mooresville', name: 'Mooresville', note: 'Northern Morgan County, west along State Road 144.' },
-  { slug: 'martinsville', name: 'Martinsville', note: 'The Morgan County seat, southwest along I-69.' },
   { slug: 'morgantown', name: 'Morgantown', note: 'Southeastern Morgan County on State Road 135.' },
   { slug: 'southport', name: 'Southport & Perry Township', note: 'Indianapolis’ south side, just north of Greenwood.' },
-  { slug: 'beech-grove', name: 'Beech Grove', note: 'Southeast side of Indianapolis in Marion County.' },
 ];
 
 export const generalFaqs: Faq[] = [
