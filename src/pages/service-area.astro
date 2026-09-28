@@ -9,19 +9,19 @@ import { locations, locationUrl } from '../data/locations';
 
 const areaList = {
   '@type': 'ItemList',
-  name: `Leak detection service areas in ${site.county}, Indiana`,
+  name: `Leak detection service areas in ${site.county} and nearby, Indiana`,
   itemListElement: areas.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: `Leak detection in ${a.name}, IN`, url: new URL(locationUrl(a.slug), site.url).href })),
 };
 const zips = (slug: string) => locations.find((l) => l.slug === slug)?.zips.join(', ') ?? site.postalCode;
 
 const faqs = [
-  { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county}, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
+  { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county} and nearby towns in Morgan and southern Marion counties, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
   { q: 'Do you charge more outside Bargersville?', a: 'Pricing depends on the job, not just the town. Call with your address and what you’re noticing, and we’ll tell you what to expect before we come out.' },
 ];
 ---
 <Base
-  title={`Leak Detection Service Area: ${site.county}, IN`}
-  description={`Leak detection for homes in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland and Trafalgar. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
+  title={`Leak Detection Service Area: ${site.county} & Nearby, IN`}
+  description={`Leak detection in ${site.city}, Greenwood, Franklin, Center Grove, Mooresville, Martinsville, Edinburgh, Southport, Beech Grove and nearby Indiana towns.`}
   faqs={faqs}
   breadcrumbs={[{ name: 'Service area', url: '/service-area/' }]}
   schema={[areaList]}
@@ -29,8 +29,8 @@ const faqs = [
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Service area</span></nav>
-      <h1>Leak detection across {site.county}</h1>
-      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county}: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
+      <h1>Leak detection across {site.county} and nearby towns</h1>
+      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county} and nearby towns in Morgan and southern Marion counties: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
       <div class="ctas">
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>

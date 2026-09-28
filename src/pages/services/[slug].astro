@@ -105,7 +105,7 @@ const serviceSchema = {
         )}
 
         <h2>Where we offer {lower}</h2>
-        <p>We’re based in {site.city} and provide {lower} across {site.county}: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}. Each town page covers local water utilities, common leak causes and what to check before you call.</p>
+        <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}. Each town page covers local water utilities, common leak causes and what to check before you call.</p>
 
         <h2>Frequently asked questions</h2>
         <Faq items={s.faqs} />
@@ -116,7 +116,7 @@ const serviceSchema = {
         <h3>Call for {lower}</h3>
         <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Call and we’ll confirm a time for your ${site.city}-area home.`}</p>
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
-        <p class="small">Serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)} and the rest of <a href="/service-area/">{site.county}</a>.</p>
+        <p class="small">Serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)} and <a href="/service-area/">nearby towns</a>.</p>
       </aside>
     </div>
   </section>
