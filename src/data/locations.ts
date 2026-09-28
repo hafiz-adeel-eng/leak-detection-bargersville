@@ -9,6 +9,7 @@ import type { Faq } from './site';
 export type Location = {
   slug: string; // must match an entry in `areas` (site.ts)
   name: string; // display name, e.g. "Greenwood"
+  county?: string; // defaults to site.county (Johnson County)
   title: string; // <title>, under ~60 characters
   description: string; // meta description
   h1: string;
@@ -87,7 +88,7 @@ export const locations: Location[] = [
       { service: 'hidden-water-leak-detection', text: 'Stains, soft drywall or a ceiling leak under a bathroom.' },
     ],
     guides: ['slab-leak-repair-cost', 'pinhole-leaks-copper-pipes', 'shower-pan-leak', 'water-leak-under-driveway', 'water-bill-leak-adjustment-indiana', 'how-to-find-a-slab-leak', 'how-to-find-an-underground-water-leak', 'why-is-my-water-bill-so-high', 'water-running-sound-in-pipes', 'frozen-pipe-leaks'],
-    nearby: ['center-grove', 'whiteland', 'bargersville', 'franklin'],
+    nearby: ['center-grove', 'southport', 'whiteland', 'bargersville', 'franklin'],
     faqs: [
       { q: 'Do you offer leak detection in Greenwood, IN?', a: 'Yes. We serve all of Greenwood, including ZIP codes 46142 and 46143, from our base in Bargersville. We find slab leaks, buried water line leaks, leaks inside walls and showers, pool and spa leaks and sprinkler leaks.' },
       { q: 'Who do I call if my water leak is near the meter in Greenwood?', a: 'Call your water utility first, usually Indiana American Water or the Bargersville water utility depending on your address. The utility normally owns the meter and the line up to it. Leaks past the meter are usually the homeowner’s to repair.' },
@@ -154,7 +155,7 @@ export const locations: Location[] = [
       { service: 'slab-leak-detection', text: 'Warm spots or running water sounds under the floor in slab-built homes.' },
     ],
     guides: ['galvanized-pipe-replacement', 'whole-house-repipe-cost', 'sump-pump-running-constantly', 'water-line-replacement-cost-indiana', 'burst-pipe-insurance-claim-indiana', 'how-to-find-a-leak-in-a-wall', 'water-in-basement-or-crawl-space', 'water-leaking-from-ceiling', 'how-to-find-an-underground-water-leak', 'frozen-pipe-leaks'],
-    nearby: ['whiteland', 'greenwood', 'bargersville', 'trafalgar'],
+    nearby: ['whiteland', 'greenwood', 'nineveh', 'bargersville', 'trafalgar'],
     faqs: [
       { q: 'Do you provide leak detection in Franklin, Indiana?', a: 'Yes. We serve all of Franklin (ZIP 46131) and the surrounding area from Bargersville. We find hidden leaks in walls and floors, slab leaks, buried water line leaks, pool and spa leaks and sprinkler leaks.' },
       { q: 'Can you find leaks in an older Franklin home without damaging plaster or original floors?', a: 'Yes. We use thermal imaging, moisture mapping and acoustic listening to narrow the leak down before anything is opened, so the opening for the repair is small and in the right place.' },
@@ -221,7 +222,7 @@ export const locations: Location[] = [
       { service: 'underground-water-leak-detection', text: 'A soggy strip between the meter and the house, often on plastic lines that need tracer gas.' },
     ],
     guides: ['polybutylene-pipe-replacement', 'outside-spigot-leaking', 'refrigerator-water-line-leak', 'water-leak-under-driveway', 'how-to-find-a-sprinkler-leak', 'how-to-find-a-pool-leak', 'how-to-find-a-slab-leak', 'water-heater-leaking', 'smart-water-leak-detectors'],
-    nearby: ['bargersville', 'greenwood', 'whiteland', 'franklin'],
+    nearby: ['bargersville', 'greenwood', 'southport', 'whiteland', 'trafalgar'],
     faqs: [
       { q: 'Do you serve Center Grove and White River Township?', a: 'Yes. Center Grove is right next to our base in Bargersville. We serve homes throughout White River Township, including Greenwood 46142 and 46143 and Bargersville 46106 addresses.' },
       { q: 'How do I know if my sprinkler system or my house is leaking?', a: 'Close the irrigation shutoff and watch your water meter with everything in the house off. If the meter stops, the leak is in the sprinkler system. If it keeps moving, the leak is in the house plumbing or the service line.' },
@@ -288,7 +289,7 @@ export const locations: Location[] = [
       { service: 'thermal-imaging-inspection', text: 'A moisture map and photo report for an insurance claim.' },
     ],
     guides: ['polybutylene-pipe-replacement', 'burst-pipe-what-to-do', 'toilet-leaking-at-base', 'water-bill-leak-adjustment-indiana', 'why-is-my-water-bill-so-high', 'how-to-find-a-water-leak-in-your-house', 'how-to-find-a-slab-leak', 'water-running-sound-in-pipes', 'water-leak-emergency-what-to-do'],
-    nearby: ['greenwood', 'franklin', 'center-grove', 'bargersville'],
+    nearby: ['greenwood', 'franklin', 'southport', 'center-grove', 'bargersville'],
     faqs: [
       { q: 'Do you offer leak detection in Whiteland and New Whiteland?', a: 'Yes. We serve both towns and the rest of ZIP code 46184 from our base in Bargersville, including slab leaks, buried water line leaks, hidden leaks in walls and floors, pools and sprinklers.' },
       { q: 'Who supplies water in Whiteland and New Whiteland?', a: 'Whiteland has its own utility, Whiteland Water Works, which buys its water from Indiana American Water. New Whiteland is served by Indiana American Water. Your bill shows which one you have.' },
@@ -351,7 +352,7 @@ export const locations: Location[] = [
       { service: 'irrigation-leak-detection', text: 'Sprinkler lines and yard hydrants that leak after winter.' },
     ],
     guides: ['outside-spigot-leaking', 'how-to-shut-off-water-to-house', 'water-softener-leaking', 'well-pump-keeps-running', 'water-line-replacement-cost-indiana', 'how-to-find-an-underground-water-leak', 'low-water-pressure-leak', 'water-in-basement-or-crawl-space', 'frozen-pipe-leaks', 'leak-detection-methods'],
-    nearby: ['bargersville', 'franklin', 'center-grove', 'greenwood'],
+    nearby: ['bargersville', 'nineveh', 'morgantown', 'franklin', 'center-grove'],
     faqs: [
       { q: 'Do you serve Trafalgar and southern Johnson County?', a: 'Yes. Trafalgar is just south of our base in Bargersville along State Road 135. We serve the town and the surrounding countryside in ZIP code 46181.' },
       { q: 'Can you find a leak in a long water line on a rural property?', a: 'Yes. We trace where the line runs, then listen along it with a ground microphone to find the loudest point. On plastic pipe we add tracer gas. We mark the spot so only one small hole is dug.' },
@@ -361,6 +362,197 @@ export const locations: Location[] = [
     sources: [
       { name: 'U.S. Census Bureau, 2020 Census', url: 'https://data.census.gov/' },
       { name: 'Town of Trafalgar utilities', url: 'https://townoftrafalgar.org/utilities/' },
+    ],
+  },
+  {
+    slug: 'morgantown',
+    name: 'Morgantown',
+    county: 'Morgan County',
+    title: 'Leak Detection in Morgantown, IN | Water Line & Well Leaks',
+    description: 'Leak detection in Morgantown, IN (46160). We find leaks in long buried water lines, well systems, slabs and walls, and mark the spot so only one hole is dug.',
+    h1: 'Leak Detection in Morgantown, IN',
+    answer: 'We find hidden water leaks in and around Morgantown, including long buried lines on rural lots and well systems. We confirm the leak, trace where the line runs, then pinpoint it with acoustic listening, pressure testing, thermal imaging or tracer gas, and mark the spot so only one small hole is dug.',
+    primaryKeyword: 'leak detection morgantown in',
+    secondaryKeywords: ['water leak detection morgantown indiana', 'well water leak morgantown in', 'underground water line leak morgantown', 'plumber morgantown indiana leak', 'leak detection 46160'],
+    wiki: 'https://en.wikipedia.org/wiki/Morgantown,_Indiana',
+    geo: { lat: 39.3714, lng: -86.2586 },
+    zips: ['46160'],
+    facts: [
+      { label: 'County', value: 'Morgan County, Indiana' },
+      { label: 'ZIP code', value: '46160' },
+      { label: 'Population', value: `1,014 in town (${censusNote})` },
+      { label: 'Water provider', value: 'Morgantown Water Utility in town; many rural homes on private wells' },
+      { label: 'Most common calls', value: 'Buried water lines, well-line leaks, frozen pipes, hidden leaks' },
+    ],
+    intro: [
+      'Morgantown is a small town in southeastern Morgan County, south of Bargersville on State Road 135 and close to the Brown County line. Outside town, most homes sit on larger rural lots, many with private wells, long water lines and outbuildings.',
+      'That makes buried line leaks the most common problem here, and the hardest to find by digging. We trace the line first, then listen along it to find the spot.',
+    ],
+    homes: {
+      h2: 'Rural lines, wells and older homes',
+      paras: [
+        'A long line from the meter or well to the house, and on to a barn or shop, can leak anywhere along its length. Signs are a wet strip of ground, lower pressure, muddy water, or a well pump that runs when nobody is using water.',
+        'Older homes in town may have crawl spaces and older supply lines that freeze in the hardest cold snaps. See [frozen pipe leaks](/guides/frozen-pipe-leaks/) for what to check after a freeze.',
+      ],
+    },
+    factors: [
+      '**Long buried lines** from the meter or well to houses and outbuildings.',
+      '**Freeze–thaw cycles,** especially on lines to detached buildings and yard hydrants.',
+      '**Well systems** where a leak keeps the pump cycling.',
+      '**Rocky or clay soils** that move and stress buried pipe.',
+      '**Older plumbing** in crawl spaces in town.',
+    ],
+    water: {
+      paras: [
+        'Homes in town are served by the **Morgantown Water Utility**, which uses groundwater. Many homes in the surrounding countryside are on **private wells**. Your bill, or the lack of one, tells you which you have.',
+        'On town water, the homeowner usually owns the line from the meter to the house. On a private well, the whole system, from the pump to the fixtures, is the owner’s responsibility.',
+      ],
+      links: [],
+    },
+    topCalls: [
+      { service: 'underground-water-leak-detection', text: 'Wet ground, low pressure or a pump or meter that never stops on long buried lines.' },
+      { service: 'hidden-water-leak-detection', text: 'Stains or soft drywall after a freeze, or near bathrooms and laundry rooms.' },
+      { service: 'slab-leak-detection', text: 'Warm floors or running water sounds under the concrete.' },
+      { service: 'irrigation-leak-detection', text: 'Yard hydrants and sprinkler lines that leak after winter.' },
+    ],
+    guides: ['well-pump-keeps-running', 'how-to-find-an-underground-water-leak', 'frozen-pipe-leaks', 'outside-spigot-leaking', 'water-line-replacement-cost-indiana'],
+    nearby: ['trafalgar', 'nineveh', 'bargersville', 'center-grove'],
+    faqs: [
+      { q: 'Do you serve Morgantown, Indiana?', a: 'Yes. We serve Morgantown and the surrounding countryside in ZIP 46160, south of our base in Bargersville along State Road 135.' },
+      { q: 'Can you find a leak in a long rural water line?', a: 'Yes. We trace where the line runs, then listen along it with a ground microphone to find the loudest point. On plastic pipe we add tracer gas. We mark the spot so only one small hole is dug.' },
+      { q: 'How do I know if my well system is leaking?', a: 'With all water off, the pump should stay off. If it turns on by itself, or the pressure gauge slowly drops, water is escaping somewhere between the pump and the fixtures.' },
+      { q: 'Who is responsible for a leak in Morgantown?', a: 'On town water, the homeowner usually owns the line from the meter to the house. On a private well, the whole system is the owner’s. If a leak is right at the meter, call the town utility first.' },
+    ],
+    sources: [{ name: 'U.S. Census Bureau, 2020 Census', url: 'https://data.census.gov/' }],
+  },
+  {
+    slug: 'nineveh',
+    name: 'Nineveh & Prince’s Lakes',
+    title: 'Leak Detection in Nineveh & Prince’s Lakes, IN',
+    description: 'Leak detection in Nineveh and Prince’s Lakes, IN (46164). We find leaks in lake homes, long water lines and slabs, and mark the spot before anything is dug.',
+    h1: 'Leak Detection in Nineveh & Prince’s Lakes, IN',
+    answer: 'We find hidden water leaks in Nineveh, Prince’s Lakes and the lake communities around them. We confirm the leak at the meter, work out which line is leaking, then pinpoint it with pressure testing, acoustic listening, thermal imaging or tracer gas, and mark the spot so the repair stays small.',
+    primaryKeyword: 'leak detection nineveh in',
+    secondaryKeywords: ['leak detection princes lakes indiana', 'water leak detection nineveh indiana', 'lake house water leak indiana', 'underground water leak nineveh in', 'leak detection 46164'],
+    wiki: 'https://en.wikipedia.org/wiki/Prince%27s_Lakes,_Indiana',
+    geo: { lat: 39.3528, lng: -86.0994 },
+    zips: ['46164'],
+    facts: [
+      { label: 'County', value: 'Johnson County, Indiana' },
+      { label: 'ZIP code', value: '46164' },
+      { label: 'Population', value: `1,372 in Prince’s Lakes (${censusNote}); Nineveh is unincorporated` },
+      { label: 'Water provider', value: 'Prince’s Lakes water utility; Nineveh’s utility buys its water from Prince’s Lakes' },
+      { label: 'Most common calls', value: 'Buried line leaks, frozen pipes in seasonal homes, slab leaks' },
+    ],
+    intro: [
+      'Nineveh and Prince’s Lakes sit in southern Johnson County, south of Bargersville near the Brown County line. The area is known for its lakes, including the Prince’s Lakes and Cordry-Sweetwater communities, with a mix of year-round homes, lake cottages and rural properties.',
+      'Lake homes and rural lots bring their own leak problems: long buried lines, homes that sit empty in winter, and plumbing in crawl spaces close to the water.',
+    ],
+    homes: {
+      h2: 'Lake homes and seasonal properties',
+      paras: [
+        'A home that sits empty for part of the winter is at risk of **frozen and burst pipes**, and a leak can run for days before anyone sees it. Shutting off and draining the water, or keeping the heat at a safe level, prevents most of it. See [frozen pipe leaks](/guides/frozen-pipe-leaks/).',
+        'Many lake properties have **long service lines** and lines to docks, garages or outdoor spigots. When the meter moves with everything off, the leak can be anywhere along that run. Line tracing and acoustic listening find it without trenching the yard.',
+      ],
+    },
+    factors: [
+      '**Seasonal homes** where frozen pipes go unnoticed.',
+      '**Long buried lines** on lake and rural lots.',
+      '**Outdoor spigots and yard lines** that crack in a hard freeze.',
+      '**Crawl spaces** with exposed plumbing.',
+      '**Clay soil and slopes** near the lakes that move and stress buried pipe.',
+    ],
+    water: {
+      paras: [
+        'The **Town of Prince’s Lakes** water utility serves Prince’s Lakes and supplies water for Nineveh, whose own utility buys treated water from Prince’s Lakes. It also supplies the Cordry-Sweetwater Conservancy District and some rural Johnson County customers. Your bill shows who serves you.',
+        'In most cases, the homeowner owns the line from the meter to the house. If the leak is at the meter, call your water utility first.',
+      ],
+      links: [
+        { name: 'Town of Prince’s Lakes utilities', url: 'https://princeslakes.in.gov/utilities' },
+        { name: 'Cordry-Sweetwater Conservancy District', url: 'https://cscd-in.org/water-rates-and-policies' },
+      ],
+    },
+    topCalls: [
+      { service: 'underground-water-leak-detection', text: 'A moving meter, a wet spot in the yard or low pressure on long lake-lot lines.' },
+      { service: 'hidden-water-leak-detection', text: 'Water damage found after a freeze in a seasonal home.' },
+      { service: 'slab-leak-detection', text: 'Warm floors or running water sounds under the slab.' },
+      { service: 'thermal-imaging-inspection', text: 'A moisture map and photo report for an insurance claim.' },
+    ],
+    guides: ['frozen-pipe-leaks', 'how-to-find-an-underground-water-leak', 'burst-pipe-what-to-do', 'how-to-shut-off-water-to-house', 'water-bill-leak-adjustment-indiana'],
+    nearby: ['trafalgar', 'franklin', 'morgantown', 'bargersville'],
+    faqs: [
+      { q: 'Do you serve Nineveh and Prince’s Lakes?', a: 'Yes. We serve Nineveh, Prince’s Lakes and the surrounding lake communities in ZIP 46164, south of our base in Bargersville.' },
+      { q: 'Who supplies water in Nineveh and Prince’s Lakes?', a: 'The Town of Prince’s Lakes water utility serves Prince’s Lakes and supplies water for Nineveh’s utility and the Cordry-Sweetwater Conservancy District. Your bill shows who serves you.' },
+      { q: 'How do I protect a lake home from frozen pipes?', a: 'Keep the heat on at a safe level, or shut off the main and drain the lines before you leave for the winter. Disconnect hoses and drain outdoor spigots.' },
+      { q: 'Can you find a leak on a lake property without digging up the yard?', a: 'Yes. We trace the line, listen along it with acoustic equipment, and use tracer gas on plastic pipe. We mark the leak so only one small hole is dug.' },
+    ],
+    sources: [
+      { name: 'U.S. Census Bureau, 2020 Census', url: 'https://data.census.gov/' },
+      { name: 'Town of Prince’s Lakes utilities', url: 'https://princeslakes.in.gov/utilities' },
+    ],
+  },
+  {
+    slug: 'southport',
+    name: 'Southport & Perry Township',
+    county: 'Marion County',
+    title: 'Leak Detection in Southport & Perry Township, Indianapolis',
+    description: 'Leak detection for Southport and Perry Township on Indianapolis’ south side (46227, 46237). Slab, water line and hidden leaks pinpointed before opening.',
+    h1: 'Leak Detection in Southport & Perry Township',
+    answer: 'We find hidden water leaks in Southport and Perry Township homes on Indianapolis’ south side. We confirm the leak at the meter, isolate the line, then pinpoint it with pressure testing, acoustic listening and thermal imaging, and mark the exact spot so your plumber makes one small, targeted repair.',
+    primaryKeyword: 'leak detection southport indianapolis',
+    secondaryKeywords: ['leak detection perry township indianapolis', 'water leak detection south side indianapolis', 'slab leak indianapolis south side', 'plumber southport indiana leak', 'leak detection 46227', 'leak detection 46237'],
+    wiki: 'https://en.wikipedia.org/wiki/Southport,_Indiana',
+    geo: { lat: 39.6653, lng: -86.1275 },
+    zips: ['46227', '46237', '46217'],
+    facts: [
+      { label: 'County', value: 'Marion County (Perry Township), Indianapolis' },
+      { label: 'ZIP codes', value: '46227, 46237, 46217' },
+      { label: 'Population', value: `2,123 in the city of Southport (${censusNote}); Perry Township is much larger` },
+      { label: 'Water provider', value: 'Citizens Energy Group (Citizens Water) for most addresses' },
+      { label: 'Most common calls', value: 'Slab leaks, buried service lines, hidden wall and ceiling leaks' },
+    ],
+    intro: [
+      'Southport is a small city founded in 1832, surrounded by Perry Township on the south side of Indianapolis, just north of Greenwood and the Johnson County line. Much of Perry Township was built out after World War II, so many homes here are several decades old, alongside newer infill.',
+      'Homes of that age often have original copper or galvanized supply lines and long-buried service lines, which is exactly where hidden leaks start.',
+    ],
+    homes: {
+      h2: 'Mid-century homes and their leaks',
+      paras: [
+        'Many south-side homes are **slab-on-grade** ranches or have **crawl spaces**, with supply lines under the floor. Older copper can develop **pinhole leaks**, and galvanized lines corrode from the inside. See [pinhole leaks in copper pipes](/guides/pinhole-leaks-copper-pipes/) and [galvanized pipe replacement](/guides/galvanized-pipe-replacement/).',
+        'A leak in the **buried service line** often shows up as low pressure or a wet strip of lawn. With older lines, the question is often repair or replace; see [water line replacement cost](/guides/water-line-replacement-cost-indiana/).',
+      ],
+    },
+    factors: [
+      '**Aging copper and galvanized pipe** in mid-century homes.',
+      '**Slab foundations** with supply lines under the floor.',
+      '**Freeze–thaw cycles** that crack shallow lines and spigots.',
+      '**Tree roots** from mature trees pressing on buried lines.',
+      '**Clay soil** that moves and stresses pipe under slabs and lawns.',
+    ],
+    water: {
+      paras: [
+        'Most homes in Southport and Perry Township get their water from **Citizens Energy Group** (Citizens Water), which serves most of Marion County. Your bill confirms your provider.',
+        'In most cases, the utility owns the meter and the line up to it, and the homeowner owns the service line from the meter to the house. If the leak is at the meter or in the street, call Citizens first.',
+      ],
+      links: [{ name: 'Citizens Energy Group water', url: 'https://info.citizensenergygroup.com/water' }],
+    },
+    topCalls: [
+      { service: 'slab-leak-detection', text: 'Warm floors, a running meter or water sounds under the slab in south-side ranches.' },
+      { service: 'underground-water-leak-detection', text: 'Low pressure or a wet strip of lawn from an aging service line.' },
+      { service: 'hidden-water-leak-detection', text: 'Stains, soft drywall or a ceiling leak under a bathroom.' },
+      { service: 'thermal-imaging-inspection', text: 'Moisture mapping and a photo report for insurance.' },
+    ],
+    guides: ['pinhole-leaks-copper-pipes', 'slab-leak-repair-cost', 'galvanized-pipe-replacement', 'water-line-replacement-cost-indiana', 'water-leaking-from-ceiling'],
+    nearby: ['greenwood', 'center-grove', 'whiteland', 'bargersville'],
+    faqs: [
+      { q: 'Do you serve Southport and Perry Township?', a: 'Yes. We serve Southport and Perry Township on Indianapolis’ south side, including ZIP codes 46227, 46237 and 46217, just north of our Johnson County service area.' },
+      { q: 'Who supplies water on the south side of Indianapolis?', a: 'Most homes in Southport and Perry Township are served by Citizens Energy Group (Citizens Water). Your bill confirms your provider.' },
+      { q: 'Are pinhole leaks common in older south-side homes?', a: 'They can be. Older copper lines can pit from the inside over time. One pinhole can be repaired; several in a few years usually means it is time to consider rerouting or repiping.' },
+      { q: 'Can you find a slab leak without breaking the floor?', a: 'Yes. We pressure-test the lines, then listen through the floor with acoustic equipment and scan with a thermal camera to mark the leak. The plumber opens only one small section for the repair.' },
+    ],
+    sources: [
+      { name: 'U.S. Census Bureau, 2020 Census', url: 'https://data.census.gov/' },
+      { name: 'Citizens Energy Group water', url: 'https://info.citizensenergygroup.com/water' },
     ],
   },
 ];

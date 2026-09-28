@@ -421,6 +421,9 @@ export const areas: Area[] = [
   { slug: 'center-grove', name: 'Center Grove', note: 'The Center Grove area in White River Township.' },
   { slug: 'whiteland', name: 'Whiteland & New Whiteland', note: 'Along the I-65 corridor in Johnson County.' },
   { slug: 'trafalgar', name: 'Trafalgar', note: 'In southwestern Johnson County.' },
+  { slug: 'nineveh', name: 'Nineveh & Prince’s Lakes', note: 'Lake communities in southern Johnson County.' },
+  { slug: 'morgantown', name: 'Morgantown', note: 'Southeastern Morgan County on State Road 135.' },
+  { slug: 'southport', name: 'Southport & Perry Township', note: 'Indianapolis’ south side, just north of Greenwood.' },
 ];
 
 export const generalFaqs: Faq[] = [

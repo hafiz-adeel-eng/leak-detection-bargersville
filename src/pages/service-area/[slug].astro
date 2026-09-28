@@ -19,6 +19,7 @@ export function getStaticPaths() {
 const { location: l } = Astro.props as { location: Location };
 const url = `${site.url}${locationUrl(l.slug)}`;
 const place = `${l.name}, IN`;
+const county = l.county ?? site.county;
 const photo = image('hero');
 const allGuides = await getCollection('guides');
 const guides = l.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
@@ -32,7 +33,7 @@ const city = {
   name: place,
   sameAs: l.wiki,
   geo: { '@type': 'GeoCoordinates', latitude: l.geo.lat, longitude: l.geo.lng },
-  containedInPlace: { '@type': 'AdministrativeArea', name: `${site.county}, Indiana` },
+  containedInPlace: { '@type': 'AdministrativeArea', name: `${county}, Indiana` },
 };
 const serviceSchema = {
   '@type': 'Service',
@@ -118,7 +119,7 @@ const pageSchema = {
 
         <h2>Your water utility and the service line in {l.name}</h2>
         {l.water.paras.map((p) => <p set:html={md(p)} />)}
-        <p class="note-link">Utility sites: {l.water.links.map((x, i) => <>{i > 0 && ', '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</p>
+        {l.water.links.length > 0 && (<p class="note-link">Utility sites: {l.water.links.map((x, i) => <>{i > 0 && ', '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</p>)}
 
         <h2>Check for a leak before you call</h2>
         <ol class="steps-ol">
@@ -149,7 +150,7 @@ const pageSchema = {
       <aside class="aside">
         <span class="ico"><Icon name="pin" /></span>
         <h3>Leak detection in {place}</h3>
-        <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Based in ${site.city}, serving ${l.name} and the rest of ${site.county}.`}</p>
+        <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Based in ${site.city}, serving ${l.name} and nearby towns in ${county}.`}</p>
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
         <p class="small">ZIP {l.zips.join(', ')}</p>
         <p class="small">Nearby: {nearby.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)}</p>
@@ -171,7 +172,7 @@ const pageSchema = {
       <div class="section-head"><span class="eyebrow">Nearby</span><h2>We also serve nearby towns</h2></div>
       <div class="chips">
         {nearby.map((a) => <a class="chip" href={locationUrl(a.slug)}><Icon name="pin" />Leak detection in {a.name}, IN</a>)}
-        <a class="chip" href="/service-area/"><Icon name="pin" />All of {site.county}</a>
+        <a class="chip" href="/service-area/"><Icon name="pin" />All service areas</a>
       </div>
     </div>
   </section>
