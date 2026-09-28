@@ -54,10 +54,10 @@ export const services: Service[] = [
     name: 'Slab Leak Detection',
     icon: 'slab',
     short: 'Warm spots on the floor or a meter that keeps running? We trace the line under the concrete.',
-    title: 'Slab Leak Detection | Bargersville & Johnson County, IN',
+    title: 'Slab Leak Detection & Repair | Bargersville, IN',
     description: 'Warm floor, a meter that keeps running or a jump in your water bill? We pinpoint leaks under concrete slabs so only a small area needs to be opened.',
-    h1: 'Slab Leak Detection in Bargersville, IN',
-    answer: 'A slab leak is a broken water line under your home’s concrete foundation. We find it without breaking the floor to search: we isolate and pressure-test the lines, then use acoustic ground microphones and thermal imaging to mark the spot, so your plumber opens only one small section.',
+    h1: 'Slab Leak Detection & Repair in Bargersville, IN',
+    answer: 'A slab leak is a broken water line under your home’s concrete foundation. We find it without breaking the floor to search: we isolate and pressure-test the lines, then use acoustic ground microphones and thermal imaging to mark the spot, so only one small section is opened for the repair, which our plumbing partner can handle.',
     whatIs: {
       h2: 'What is a slab leak?',
       paras: [
@@ -94,13 +94,13 @@ export const services: Service[] = [
       'Take photos of any warm, damp or damaged flooring for your insurer.',
     ],
     after: [
-      'We mark the leak on the floor and give you photos and readings. The repair is a separate step, usually done by a plumber.',
+      'We mark the leak on the floor and give you photos and readings. Our plumbing partner can then make the repair, so one call covers finding and fixing it. If you already have a plumber, we hand them the marked spot and the report instead.',
       'Common repairs are a spot repair through a small opening in the slab, rerouting the line through walls or the attic, or repiping if the lines are old. Accurate detection keeps a spot repair small.',
     ],
     costNote: 'The cost depends on how many lines need testing, the flooring and slab above the pipe, and how easy the line is to trace.',
     faqs: [
       { q: 'How do I know if I have a slab leak?', a: 'The most common signs are warm spots on the floor, the sound of running water when nothing is on, and a water meter that keeps moving. A sudden jump in your water bill is another clue.' },
-      { q: 'Can you find a slab leak without breaking the floor?', a: 'Yes. Detection is non-invasive. We mark the leak location on the floor; the only opening is made later by your plumber for the repair.' },
+      { q: 'Can you find a slab leak without breaking the floor?', a: 'Yes. Detection is non-invasive. We mark the leak location on the floor; the only opening is the small one made for the repair, by our plumbing partner or your own plumber.' },
       { q: 'Is a hot water slab leak an emergency?', a: 'It should be handled quickly because it wastes water and energy and can damage flooring. Close the cold water inlet on the water heater to stop the flow until the repair.' },
       { q: 'Does homeowners insurance cover slab leaks?', a: 'Many policies cover sudden water damage and the cost of getting access to the leak, but not the worn pipe itself. Check your policy and keep the detection report.' },
     ],
@@ -113,9 +113,9 @@ export const services: Service[] = [
     name: 'Underground Water Leak Detection',
     icon: 'pipe',
     short: 'Soggy yard, low pressure or a high water bill. We find breaks in the buried line between the meter and the house.',
-    title: 'Underground Water Leak Detection | Bargersville, IN',
+    title: 'Water Line Leak Detection & Repair | Bargersville, IN',
     description: 'Soggy yard, low pressure or a meter that never stops? We trace buried water lines from the meter to your home, pinpoint the leak and mark it for repair.',
-    h1: 'Underground Water Leak Detection in Bargersville',
+    h1: 'Underground Water Line Leak Detection & Repair',
     answer: 'An underground water leak is a break in the buried service line that brings water from the meter to your house. We confirm it with a shutoff test, trace where the line runs, then listen along it with acoustic equipment, or use tracer gas on plastic pipe, and mark the spot on your lawn so only one small hole is dug.',
     whatIs: {
       h2: 'What counts as an underground water leak?',
@@ -160,8 +160,8 @@ export const services: Service[] = [
       'Note any soggy, sunken or greener patches between the meter and the house.',
     ],
     after: [
-      'We mark the leak with a flag or paint and give you photos and notes. Your plumber digs one small hole at the marked spot for the repair.',
-      'If the line is old and leaks keep appearing, replacing the whole line can make more sense than spot repairs. Your plumber can advise once the leak is found.',
+      'We mark the leak with a flag or paint and give you photos and notes. Our plumbing partner digs one small hole at the marked spot and makes the repair, or we hand the spot to your own plumber.',
+      'If the line is old and leaks keep appearing, replacing the whole line can make more sense than spot repairs. Once the leak is found, our plumbing partner can quote both options.',
     ],
     costNote: 'The cost depends on the length and depth of the line, the pipe material, and what’s above it: lawn, driveway or landscaping.',
     faqs: [
@@ -178,9 +178,9 @@ export const services: Service[] = [
     name: 'Hidden Water Leak Detection',
     icon: 'shower',
     short: 'Stains, musty smells or a high bill with no visible leak. We find leaks inside walls, floors and showers.',
-    title: 'Hidden Water Leak Detection in Bargersville, IN',
+    title: 'Hidden Water Leak Detection & Repair | Bargersville, IN',
     description: 'Stains, a musty smell or a high water bill with no visible leak? We find hidden leaks inside walls, floors, showers and ceilings with non-invasive testing.',
-    h1: 'Hidden Water Leak Detection',
+    h1: 'Hidden Water Leak Detection & Repair',
     answer: 'A hidden water leak is one you can’t see: a supply line inside a wall, a shower valve or pan, a drain, or a pipe under the floor. We confirm the leak with a meter test, isolate the fixtures, then map moisture, use thermal imaging and listen for pressurized leaks to find the source before anything is opened.',
     whatIs: {
       h2: 'What is a hidden water leak?',
@@ -226,7 +226,7 @@ export const services: Service[] = [
       'Dry what you can and take photos. The EPA advises drying water-damaged materials within 24–48 hours to help prevent mold.',
     ],
     after: [
-      'We mark the source and document it with photos and readings, so the opening is small and in the right place.',
+      'We mark the source and document it with photos and readings, so the opening is small and in the right place. Our plumbing partner can make the repair, or your own plumber can.',
       'If you need it for insurance, a [thermal imaging inspection](/services/thermal-imaging-inspection/) adds side-by-side thermal and regular photos.',
     ],
     costNote: 'The cost depends on how many fixtures and lines need testing and whether a shower flood test is needed.',
@@ -282,7 +282,7 @@ export const services: Service[] = [
       'Note where the water level stops dropping.',
     ],
     after: [
-      'We mark each leak and tell you where it is: shell, fitting or a specific plumbing line. The repair is quoted separately.',
+      'We mark each leak and tell you where it is: shell, fitting or a specific plumbing line. Repairs to plumbing lines can be handled by our plumbing partner and are quoted separately.',
     ],
     costNote: 'The cost depends on the pool’s size, the number of lines and fittings, and whether a spa is attached.',
     faqs: [
@@ -427,10 +427,10 @@ export const areas: Area[] = [
 ];
 
 export const generalFaqs: Faq[] = [
-  { q: 'What does a leak detection company do?', a: 'We find hidden water leaks without tearing up your home. We use pressure tests, acoustic listening and thermal imaging to pinpoint the leak, mark it, and document it with photos. Your plumber then makes a small, targeted repair.' },
+  { q: 'What does a leak detection company do?', a: 'We find hidden water leaks without tearing up your home. We use pressure tests, acoustic listening and thermal imaging to pinpoint the leak, mark it, and document it with photos. Our plumbing partner then makes a small, targeted repair, or we hand the spot to your own plumber.' },
   { q: 'How long does a leak detection visit take?', a: 'It depends on how many lines need testing and how hard the leak is to reach. A single fixture check is quick; a slab or buried line takes longer. We’ll give you an idea when you call.' },
   { q: 'Will homeowners insurance cover the leak?', a: 'Many policies cover the water damage and the cost of getting access to the leak, but not the broken pipe itself. Photos and readings from the detection help with the claim. Check your own policy for details.' },
   { q: 'What should I do while I wait for you to arrive?', a: 'Turn off the main water valve if water is actively spreading, move valuables away from wet areas, and take photos for your insurance claim.' },
-  { q: 'Is leak detection the same as leak repair?', a: 'No. Detection finds and marks the leak; the repair is a separate step, usually done by a plumber. Accurate detection keeps the repair small.' },
+  { q: 'Do you also repair the leak?', a: 'Yes. We find and mark the leak, then our plumbing partner makes the repair, so you deal with one team from finding the leak to fixing it. If you already have a plumber, we can hand them the marked spot and our report instead. Accurate detection keeps the repair small.' },
   ...services[0].faqs.slice(0, 2),
 ];
