@@ -36,7 +36,7 @@ const business = {
   url: `${site.url}/`,
   logo: `${site.url}/images/logo.png`,
   telephone: site.phoneHref,
-  description: `Non-invasive water leak detection in ${site.city}, Indiana and across ${site.county}: slab, underground, hidden, pool, thermal imaging and irrigation leaks, pinpointed and marked for repair.`,
+  description: `Non-invasive water leak detection in ${site.city}, Indiana and across ${site.county}: slab, underground, hidden, pool, thermal imaging and irrigation leaks, pinpointed, marked and repaired with our plumbing partner.`,
   ...(siteOg ? { image: siteOg } : {}),
   address: {
     '@type': 'PostalAddress',
@@ -53,7 +53,7 @@ const business = {
   ...(site.claims.emergency247
     ? { openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' } }
     : {}),
-  knowsAbout: services.map((s) => s.name),
+  knowsAbout: [...services.map((s) => s.name), 'Slab leak repair', 'Water line leak repair', 'Hidden pipe leak repair'],
   ...(site.gbpUrl ? { sameAs: [site.gbpUrl] } : {}),
 };
 
