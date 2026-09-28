@@ -1,0 +1,44 @@
+---
+import CityPage from '../components/CityPage.astro';
+import { site } from '../data/site';
+---
+<CityPage
+  path="/plumber-franklin-in/"
+  city="Franklin"
+  focus="plumbing"
+  title="Plumber in Franklin, IN | Leak Detection Bargersville"
+  description="Plumber for Franklin, Indiana homes: water heaters, drains, sewer lines, burst and frozen pipes, and hidden leaks pinpointed before anything is opened."
+  h1="Plumber in Franklin, Indiana"
+  answer={`Plumbing repair for Franklin homes — from the older houses near downtown to newer neighborhoods on the edge of town. We’re based nearby in ${site.city}, and we locate hidden leaks before opening anything, so repairs stay small.`}
+  sections={[
+    {
+      h2: 'Plumbing services in Franklin',
+      list: [
+        '[Water heater repair and replacement](/plumbing/water-heater-repair/)',
+        '[Drain cleaning](/plumbing/drain-cleaning/) for slow and clogged drains',
+        '[Sewer line repair](/plumbing/sewer-line-repair/) after a camera inspection',
+        '[Burst, frozen and leaking pipe repair](/plumbing/pipe-repair/)',
+        '[Help with plumbing emergencies](/plumbing/emergency-plumber/)',
+        '[Leak detection](/) for slabs, walls, buried lines, pools and sprinklers',
+      ],
+    },
+    {
+      h2: 'Older homes, newer homes, different problems',
+      paras: [
+        'Franklin is the Johnson County seat, with a historic downtown and a lot of older homes around it, plus newer development further out. Older homes are more likely to have aging supply and sewer lines; newer homes are more likely to have slab foundations and modern water heaters.',
+        'Either way, the approach is the same: **find the problem first**, explain the options, then repair it.',
+      ],
+    },
+  ]}
+  problems={[
+    { title: 'Aging pipes in older houses', text: 'Older supply lines and fittings can corrode and develop pinhole leaks or low water pressure.' },
+    { title: 'Sewer line trouble', text: 'Older sewer lines are vulnerable to roots, cracks and sags — the usual cause of repeat backups.' },
+    { title: 'Water heater failures', text: 'Leaking tanks, no hot water and sediment noise are common as heaters age.' },
+    { title: 'Hidden leaks and high bills', text: 'A meter that moves with everything off points to a hidden leak in a wall, slab or buried line.' },
+  ]}
+  faqs={[
+    { q: 'Do you work in Franklin, IN?', a: `Yes. We’re based in ${site.city} and serve homes throughout Franklin and the rest of Johnson County.` },
+    { q: 'My older Franklin home keeps having drain backups. What’s causing it?', a: 'Repeat backups usually mean roots, a crack or a sag in the sewer line. A camera inspection shows exactly what and where.' },
+    { q: 'How do I reach you?', a: `Call ${site.phone} and describe the problem.` },
+  ]}
+/>

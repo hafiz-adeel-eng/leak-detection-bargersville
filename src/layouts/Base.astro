@@ -6,6 +6,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import Logo from '../components/Logo.astro';
 import { site, services, areas, hoursText, type Faq } from '../data/site';
+import { plumbing } from '../data/plumbing';
 import { image } from '../data/images';
 
 interface Props {
@@ -106,8 +107,8 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
       <div class="container nav">
         <Logo />
         <ul class="nav-links" id="nav-links">
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="/#services">Leak detection</a></li>
+          <li><a href="/plumbing/">Plumbing</a></li>
           <li><a href="/service-area/">Service area</a></li>
           <li><a href="/guides/">Guides</a></li>
           <li><a href="/faq/">FAQ</a></li>
@@ -130,12 +131,14 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
             <p>Non-invasive leak detection for homes in {site.city} and across {site.county}. We find the leak so the repair starts in the right place.</p>
           </div>
           <div>
-            <h2 class="footer-h">Services</h2>
+            <h2 class="footer-h">Leak detection</h2>
             <ul>{services.map((s) => <li><a href={`/services/${s.slug}/`}>{s.name}</a></li>)}</ul>
           </div>
           <div>
-            <h2 class="footer-h">Service areas</h2>
-            <ul>{areas.map((a) => <li><a href={`/service-area/#${a.slug}`}>{a.name}, IN</a></li>)}</ul>
+            <h2 class="footer-h">Plumbing</h2>
+            <ul>{plumbing.map((p) => <li><a href={`/plumbing/${p.slug}/`}>{p.name}</a></li>)}</ul>
+            <h2 class="footer-h" style="margin-top:20px">Service areas</h2>
+            <ul>{areas.map((a) => <li><a href={a.slug === 'greenwood' ? '/plumber-greenwood-in/' : a.slug === 'franklin' ? '/plumber-franklin-in/' : `/service-area/#${a.slug}`}>{a.name}, IN</a></li>)}</ul>
           </div>
           <div>
             <h2 class="footer-h">Contact</h2>

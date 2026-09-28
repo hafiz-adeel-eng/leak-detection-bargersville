@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import ServiceCard from './ServiceCard.astro';
+import Faq from './Faq.astro';
+import CtaBand from './CtaBand.astro';
+import { site, areas, type Service } from '../data/site';
+import { image } from '../data/images';
+import { guideUrl } from '../data/guides';
+import { md } from '../data/md';
+
+interface Props {
+  service: Service;
+  pool: Service[]; // services of the same kind, for "related"
+  kind: 'leak' | 'plumbing';
+}
+const { service: s, pool, kind } = Astro.props;
+const base = kind === 'leak' ? '/services/' : '/plumbing/';
+const L = kind === 'leak'
+  ? {
+      crumb: { name: 'Services', url: '/#services' },
+      inline: 'The sooner the leak is found, the smaller the repair.',
+      method: 'How we locate it',
+      methodNote: true,
+      after: 'After we find the leak',
+      cost: 'Detection is priced separately from the repair. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.',
+      related: 'Other leaks we find',
+    }
+  : {
+      crumb: { name: 'Plumbing', url: '/plumbing/' },
+      inline: 'Call before a small plumbing problem turns into water damage.',
+      method: 'How we handle it',
+      methodNote: false,
+      after: 'After the repair',
+      cost: 'Every home is different, so call and describe the problem for an accurate quote.',
+      related: 'Other plumbing services',
+    };
+const photo = image(s.slug);
+const related = s.related.map((slug) => pool.find((x) => x.slug === slug)).filter(Boolean) as Service[];
+const allGuides = await getCollection('guides');
+const guides = s.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+const lower = s.name.toLowerCase();
+const url = `${base}${s.slug}/`;
+const serviceSchema = {
+  '@type': 'Service',
+  name: s.name,
+  serviceType: s.name,
+  description: s.description,
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
+  url: `${site.url}${url}`,
+};
+---
+<Base title={s.title} description={s.description} faqs={s.faqs} breadcrumbs={[L.crumb, { name: s.name, url }]} schema={[serviceSchema]}>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href={L.crumb.url}>{L.crumb.name}</a><span>/</span><span>{s.name}</span></nav>
+      <h1>{s.h1}</h1>
+      <p class="answer">{s.answer}</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        {photo && <img class="photo" src={photo} alt={s.image} width="1200" height="675" loading="eager" decoding="async" />}
+
+        <h2>{s.whatIs.h2}</h2>
+        {s.whatIs.paras?.map((p) => <p set:html={md(p)} />)}
+
+        <h2>Signs you may need {lower}</h2>
+        <ul class="list">
+          {s.signs.map((x) => <li><Icon name="check" /><span>{x}</span></li>)}
+        </ul>
+
+        <h2>Common causes</h2>
+        <ul class="list">
+          {s.causes.map((x) => <li><Icon name="check" /><span>{x}</span></li>)}
+        </ul>
+
+        <div class="inline-cta">
+          <p><b>Recognize these signs?</b> {L.inline}</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>{L.method}</h2>
+        <ol class="method-list">
+          {s.method.map((m) => <li><b>{m.name}</b><span>{m.text}</span></li>)}
+        </ol>
+        {L.methodNote && <p class="note-link">Want the details? Read <a href="/guides/leak-detection-methods/">how professional leak detection works</a>.</p>}
+
+        {s.extra?.map((sec) => (
+          <>
+            <h2>{sec.h2}</h2>
+            {sec.paras?.map((p) => <p set:html={md(p)} />)}
+          </>
+        ))}
+
+        <h2>What to do before we arrive</h2>
+        <ul class="list">
+          {s.beforeYouCall.map((x) => <li><Icon name="check" /><span>{x}</span></li>)}
+        </ul>
+
+        <h2>{L.after}</h2>
+        {s.after.map((p) => <p set:html={md(p)} />)}
+
+        <h2>What affects the cost</h2>
+        <p set:html={`${md(s.costNote)} ${L.cost}`} />
+
+        {guides.length > 0 && (
+          <div class="guide-links">
+            <h2>Helpful guides</h2>
+            <ul>{guides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
+          </div>
+        )}
+
+        <h2>Frequently asked questions</h2>
+        <Faq items={s.faqs} />
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name={s.icon} /></span>
+        <h3>Call for {lower}</h3>
+        <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Call and we’ll confirm a time for your ${site.city}-area home.`}</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">Serving <a href="/service-area/">{areas.map((a) => a.name).join(', ')}</a>.</p>
+      </aside>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Related services</span><h2>{L.related}</h2></div>
+        <div class="cards">
+          {related.map((r) => <ServiceCard service={r} base={base} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CtaBand title={`Need ${lower} in ${site.city}?`} />
+</Base>

@@ -3,11 +3,11 @@ import Icon from './Icon.astro';
 import type { Service } from '../data/site';
 import { image } from '../data/images';
 
-interface Props { service: Service }
-const { service } = Astro.props;
+interface Props { service: Service; base?: string }
+const { service, base = '/services/' } = Astro.props;
 const photo = image(`${service.slug}-card`);
 ---
-<a class="card" href={`/services/${service.slug}/`}>
+<a class="card" href={`${base}${service.slug}/`}>
   <div class={photo ? 'card-media' : 'card-media placeholder'}>
     {photo ? (
       <img src={photo} alt={`${service.name} technician at work in a Bargersville home`} width="640" height="400" loading="lazy" decoding="async" />

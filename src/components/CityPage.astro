@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import ServiceCard from './ServiceCard.astro';
+import Faq from './Faq.astro';
+import CtaBand from './CtaBand.astro';
+import { site, services, type Faq as FaqT, type Section } from '../data/site';
+import { plumbing } from '../data/plumbing';
+import { md } from '../data/md';
+
+interface Props {
+  path: string;
+  city: string; // e.g. "Greenwood"
+  title: string;
+  description: string;
+  h1: string;
+  answer: string;
+  sections: Section[];
+  problems: { title: string; text: string }[];
+  faqs: FaqT[];
+  focus: 'plumbing' | 'leak';
+}
+const p = Astro.props;
+const primary = p.focus === 'plumbing' ? plumbing : services;
+const secondary = p.focus === 'plumbing' ? services.slice(0, 3) : plumbing.slice(0, 3);
+const primaryBase = p.focus === 'plumbing' ? '/plumbing/' : '/services/';
+const secondaryBase = p.focus === 'plumbing' ? '/services/' : '/plumbing/';
+const schema = {
+  '@type': 'Service',
+  name: p.focus === 'plumbing' ? `Plumbing repair in ${p.city}, IN` : `Leak detection in ${p.city}, IN`,
+  serviceType: p.focus === 'plumbing' ? 'Plumber' : 'Leak detection',
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: { '@type': 'City', name: `${p.city}, IN` },
+  url: `${site.url}${p.path}`,
+};
+---
+<Base title={p.title} description={p.description} faqs={p.faqs} breadcrumbs={[{ name: 'Service area', url: '/service-area/' }, { name: p.h1, url: p.path }]} schema={[schema]}>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/service-area/">Service area</a><span>/</span><span>{p.city}</span></nav>
+      <h1>{p.h1}</h1>
+      <p class="answer">{p.answer}</p>
+      <div class="ctas"><a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        {p.sections.map((s) => (
+          <>
+            <h2>{s.h2}</h2>
+            {s.paras?.map((x) => <p set:html={md(x)} />)}
+            {s.list && <ul class="list">{s.list.map((x) => <li><Icon name="check" /><span set:html={md(x)} /></li>)}</ul>}
+          </>
+        ))}
+
+        <h2>Common problems in {p.city} homes</h2>
+        <ol class="method-list">
+          {p.problems.map((x) => <li><b>{x.title}</b><span>{x.text}</span></li>)}
+        </ol>
+
+        <div class="inline-cta">
+          <p><b>In {p.city}?</b> Call and tell us what you’re noticing.</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <Faq items={p.faqs} />
+      </article>
+      <aside class="aside">
+        <span class="ico"><Icon name="pin" /></span>
+        <h3>{p.city}, Indiana</h3>
+        <p>Call to schedule a visit to your {p.city} home.</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small"><a href="/service-area/">See our full service area</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">In {p.city}</span><h2>{p.focus === 'plumbing' ? 'Plumbing services' : 'Leak detection services'}</h2></div>
+      <div class="cards">{primary.map((s) => <ServiceCard service={s} base={primaryBase} />)}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Also in {p.city}</span><h2>{p.focus === 'plumbing' ? 'Hidden leak? We find it first' : 'Plumbing repair'}</h2></div>
+      <div class="cards">{secondary.map((s) => <ServiceCard service={s} base={secondaryBase} />)}</div>
+    </div>
+  </section>
+
+  <CtaBand title={`Need help in ${p.city}?`} />
+</Base>

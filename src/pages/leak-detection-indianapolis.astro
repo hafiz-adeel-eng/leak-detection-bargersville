@@ -1,0 +1,44 @@
+---
+import CityPage from '../components/CityPage.astro';
+import { site } from '../data/site';
+---
+<CityPage
+  path="/leak-detection-indianapolis/"
+  city="Indianapolis"
+  focus="leak"
+  title="Leak Detection in Indianapolis (South Side) | Non-Invasive"
+  description="Non-invasive leak detection for homes on the south side of Indianapolis: slab leaks, buried water lines, leaks in walls and showers, pools and sprinkler systems."
+  h1="Leak Detection in South Indianapolis"
+  answer={`We find hidden water leaks for homes on the south side of Indianapolis — under slabs, in buried water lines, inside walls, in pools and in sprinkler systems. The leak is pinpointed with pressure testing, acoustic listening and thermal imaging, then marked so only one small area is opened.`}
+  sections={[
+    {
+      h2: 'Leak detection services',
+      list: [
+        '[Slab leak detection](/services/slab-leak-detection/) — leaks under concrete floors',
+        '[Underground water leak detection](/services/underground-water-leak-detection/) — the line from the meter to the house',
+        '[Hidden water leak detection](/services/hidden-water-leak-detection/) — walls, floors, showers and ceilings',
+        '[Pool & spa leak detection](/services/pool-spa-leak-detection/)',
+        '[Thermal imaging inspection](/services/thermal-imaging-inspection/)',
+        '[Irrigation leak detection](/services/irrigation-leak-detection/)',
+      ],
+    },
+    {
+      h2: 'How we find leaks without tearing things up',
+      paras: [
+        'Every visit starts by confirming the leak with a meter test and isolating which line it’s on. Then the exact spot is located and marked, and documented with photos and readings for your plumber and insurer. Read [how professional leak detection works](/guides/leak-detection-methods/).',
+        `We’re based in ${site.city}, south of Indianapolis. Call to check whether your area is covered.`,
+      ],
+    },
+  ]}
+  problems={[
+    { title: 'Slab leaks', text: 'Warm spots on the floor, the sound of running water or a meter that keeps moving.' },
+    { title: 'Buried water line leaks', text: 'Soggy or sunken ground, low pressure and a high bill.' },
+    { title: 'Leaks inside walls', text: 'Stains, bubbling paint and musty smells near bathrooms and kitchens.' },
+    { title: 'Pool leaks', text: 'A pool that drops faster than a bucket of pool water beside it.' },
+  ]}
+  faqs={[
+    { q: 'Do you offer leak detection in Indianapolis?', a: `We serve the south side of Indianapolis from our base in ${site.city}. Call with your address to confirm your area.` },
+    { q: 'How do you find a leak without breaking the floor?', a: 'With pressure testing, acoustic ground microphones and thermal imaging. The spot is marked, and only that area is opened for the repair.' },
+    { q: 'Can you also repair the leak?', a: 'We can talk you through the repair options once the leak is found. See our plumbing services.' },
+  ]}
+/>

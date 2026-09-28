@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, areas, services } from '../../data/site';
+import { plumbing } from '../../data/plumbing';
+
+const faqs = [
+  { q: 'What plumbing services do you offer?', a: 'Water heater repair and replacement, drain cleaning, sewer line repair, burst and frozen pipe repair, and help with plumbing emergencies — alongside our leak detection services.' },
+  { q: 'Do you find the leak and fix it?', a: 'That’s the point of combining leak detection and plumbing: hidden leaks are pinpointed first, so the repair opening is small and in the right place.' },
+  { q: 'Which areas do you serve?', a: `We’re based in ${site.city} and serve ${areas.map((a) => a.name).join(', ')}.` },
+  { q: 'How do I get a quote?', a: 'Call and describe what’s happening. Every home is different, so we’ll ask a few questions and tell you what to expect.' },
+];
+const hub = {
+  '@type': 'Service',
+  name: 'Plumbing repair',
+  serviceType: 'Plumber',
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Plumbing services',
+    itemListElement: plumbing.map((p) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: p.name, url: `${site.url}/plumbing/${p.slug}/` } })),
+  },
+};
+---
+<Base
+  title="Plumber in Bargersville & Johnson County, IN | Plumbing Repair"
+  description="Plumbing repair in Bargersville, Greenwood, Franklin and Johnson County: water heaters, drains, sewer lines, burst and frozen pipes, and leaks found before anything is opened."
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Plumbing', url: '/plumbing/' }]}
+  schema={[hub]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Plumbing</span></nav>
+      <h1>Plumbing Repair in Bargersville &amp; Johnson County</h1>
+      <p class="answer">Water heaters, clogged drains, sewer lines, burst and frozen pipes — and the hidden leaks behind them. Because we started with leak detection, we find the problem before we open anything, so repairs stay small.</p>
+      <div class="ctas">
+        <a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Plumbing services</span>
+        <h2>What we fix</h2>
+        <p>Pick the problem you’re dealing with to see the signs, the causes and what to do before we arrive.</p>
+      </div>
+      <div class="cards">{plumbing.map((p) => <ServiceCard service={p} base="/plumbing/" />)}</div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container two-cards">
+      <div class="info-card">
+        <span class="ico"><Icon name="wave" /></span>
+        <h2>Find it first, then fix it</h2>
+        <p>Without detection, the only way to find a hidden leak is to open walls, floors or the yard until the water turns up. We locate it first with pressure testing, acoustic listening and thermal imaging, then repair it through one small opening.</p>
+        <a class="more-link" href="/guides/leak-detection-vs-plumber/">Leak detection vs. a plumber<Icon name="arrow" /></a>
+      </div>
+      <div class="info-card">
+        <span class="ico"><Icon name="pin" /></span>
+        <h2>Local to Johnson County</h2>
+        <p>Based in {site.city}, serving {areas.map((a) => a.name).join(', ')}.</p>
+        <ul class="list">
+          <li><Icon name="check" /><span><a href="/plumber-greenwood-in/">Plumber in Greenwood, IN</a></span></li>
+          <li><Icon name="check" /><span><a href="/plumber-franklin-in/">Plumber in Franklin, IN</a></span></li>
+          <li><Icon name="check" /><span><a href="/service-area/">Full service area</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Leak detection</span><h2>Can’t see where the water is coming from?</h2></div>
+      <div class="cards">{services.slice(0, 3).map((s) => <ServiceCard service={s} />)}</div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><h2>Plumbing questions</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Plumbing problem in Johnson County?" />
+</Base>

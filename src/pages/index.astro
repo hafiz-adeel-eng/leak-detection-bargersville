@@ -6,6 +6,7 @@ import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Hero from '../components/Hero.astro';
 import Process from '../components/Process.astro';
+import { plumbing } from '../data/plumbing';
 import { site, services, areas, generalFaqs } from '../data/site';
 
 const faqs = generalFaqs.slice(0, 5);
@@ -78,6 +79,17 @@ const faqs = generalFaqs.slice(0, 5);
       <div class="cards">
         {services.map((s) => <ServiceCard service={s} />)}
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="plumbing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Plumbing repair</span>
+        <h2>Find it, then fix it: plumbing repair too</h2>
+        <p>Water heaters, drains, sewer lines and burst or frozen pipes, with hidden leaks pinpointed before anything is opened. <a class="more-link" href="/plumbing/">All plumbing services<Icon name="arrow" /></a></p>
+      </div>
+      <div class="cards">{plumbing.slice(0, 3).map((p) => <ServiceCard service={p} base="/plumbing/" />)}</div>
     </div>
   </section>
 

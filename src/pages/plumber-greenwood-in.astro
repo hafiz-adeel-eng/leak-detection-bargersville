@@ -1,0 +1,44 @@
+---
+import CityPage from '../components/CityPage.astro';
+import { site } from '../data/site';
+---
+<CityPage
+  path="/plumber-greenwood-in/"
+  city="Greenwood"
+  focus="plumbing"
+  title="Plumber in Greenwood, IN | Leak Detection Bargersville"
+  description="Plumber for Greenwood, Indiana homes: water heater repair, drain cleaning, sewer lines, burst and frozen pipes, and hidden leaks found before anything is opened."
+  h1="Plumber in Greenwood, Indiana"
+  answer={`Water heaters, clogged drains, sewer line problems and leaking pipes in Greenwood homes. We’re based just south in ${site.city}, and because we started as a leak detection company, hidden leaks are pinpointed before any wall, floor or yard is opened.`}
+  sections={[
+    {
+      h2: 'Plumbing services for Greenwood homes',
+      list: [
+        '[Water heater repair](/plumbing/water-heater-repair/) — tank and tankless, gas and electric',
+        '[Drain cleaning](/plumbing/drain-cleaning/) — kitchen, bath, laundry and main drains',
+        '[Sewer line repair](/plumbing/sewer-line-repair/) — backups, roots and damaged lines',
+        '[Burst, frozen and leaking pipes](/plumbing/pipe-repair/)',
+        '[Plumbing emergencies](/plumbing/emergency-plumber/) — what to do first, and who to call',
+        '[Leak detection](/) — slab, underground, wall, pool and irrigation leaks',
+      ],
+    },
+    {
+      h2: 'Why a leak detection company for plumbing?',
+      paras: [
+        'Greenwood is the largest city in Johnson County, with everything from homes around Old Town to newer subdivisions. Whatever the age of the house, the most expensive plumbing jobs are usually the ones where the problem is hidden — under a slab, inside a wall or in a buried line.',
+        'We find those problems with pressure testing, acoustic listening and thermal imaging **before** opening anything, so the repair is smaller and your home is disrupted less.',
+      ],
+    },
+  ]}
+  problems={[
+    { title: 'Water heaters wearing out', text: 'No hot water, a leaking tank or rumbling from sediment — repair when it makes sense, replacement when it doesn’t.' },
+    { title: 'Roots in older sewer lines', text: 'Mature trees in established neighborhoods send roots into sewer joints, causing slow drains and backups.' },
+    { title: 'Slab leaks in newer homes', text: 'Many newer homes sit on concrete slabs; a leak underneath shows up as warm floors or a running meter.' },
+    { title: 'Frozen pipes in winter', text: 'Pipes in exterior walls, garages and crawl spaces are most at risk during Indiana cold snaps.' },
+  ]}
+  faqs={[
+    { q: 'Do you serve all of Greenwood?', a: `Yes. We’re based in ${site.city}, just south of Greenwood, and serve homes throughout the city.` },
+    { q: 'Can you find a hidden leak in my Greenwood home without breaking floors?', a: 'Yes. We use pressure testing, acoustic listening and thermal imaging to pinpoint the leak, then only the marked spot is opened for the repair.' },
+    { q: 'What’s the fastest way to reach you?', a: `Call ${site.phone} and tell us what you’re noticing.` },
+  ]}
+/>

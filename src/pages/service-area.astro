@@ -40,6 +40,8 @@ const faqs = [
           <div class="area-card" id={a.slug}>
             <h2><Icon name="pin" />{a.name}, IN</h2>
             <p>{a.note}</p>
+            {a.slug === 'greenwood' && <a class="more-link" href="/plumber-greenwood-in/">Plumber in Greenwood<Icon name="arrow" /></a>}
+            {a.slug === 'franklin' && <a class="more-link" href="/plumber-franklin-in/">Plumber in Franklin<Icon name="arrow" /></a>}
           </div>
         ))}
       </div>

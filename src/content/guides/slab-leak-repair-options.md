@@ -83,6 +83,8 @@ Detection and repair are separate steps. We find and mark the leak and give you 
 
 For how repairs are priced, see [what affects leak detection cost](/leak-detection-cost/). For insurance questions, see [does homeowners insurance cover slab leaks](/guides/does-insurance-cover-slab-leaks/).
 
+Need the repair done too? See our [pipe repair service](/plumbing/pipe-repair/).
+
 ## Need the leak found first?
 
 We locate slab leaks across Bargersville and Johnson County without breaking the floor to search. Call to describe what you're noticing.

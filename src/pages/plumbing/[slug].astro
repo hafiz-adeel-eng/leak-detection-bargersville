@@ -1,0 +1,11 @@
+---
+import ServicePage from '../../components/ServicePage.astro';
+import { plumbing } from '../../data/plumbing';
+import type { Service } from '../../data/site';
+
+export function getStaticPaths() {
+  return plumbing.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+const { service } = Astro.props as { service: Service };
+---
+<ServicePage service={service} pool={plumbing} kind="plumbing" />

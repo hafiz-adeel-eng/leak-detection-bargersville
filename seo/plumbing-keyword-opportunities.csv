@@ -1,0 +1,289 @@
+﻿area,keyword,variants,service,volume,competition,comp_index,bid_low_usd,bid_high_usd,value,intent
+City keyword (Indiana),plumber indianapolis,1,Plumber (general),1600,HIGH,83,38.85,110.77,119694,Transactional
+City keyword (Indiana),plumber greenwood indiana,1,Plumber (general),480,HIGH,74,32.25,114.7,35269,Transactional
+City keyword (Indiana),plumbers in indianapolis indiana,1,Plumber (general),480,HIGH,81,27.8,102.51,31273,Transactional
+City keyword (Indiana),water heater repair indianapolis,1,Water heater,390,LOW,28,24.59,108.41,25935,Transactional
+City keyword (Indiana),plumber carmel indiana,1,Plumber (general),260,HIGH,100,35.31,95.37,16988,Transactional
+City keyword (Indiana),plumber fishers indiana,1,Plumber (general),210,MEDIUM,54,38.3,116.3,16233,Transactional
+City keyword (Indiana),drain cleaning indianapolis,1,Drain cleaning,260,HIGH,67,29.84,94.31,16139,Transactional
+City keyword (Indiana),sewer line repair indianapolis,1,Sewer line,320,LOW,20,20.51,67.17,14029,Transactional
+City keyword (Indiana),emergency plumber indianapolis,1,Emergency plumber,110,MEDIUM,65,39.11,125.32,9044,Transactional
+City keyword (Indiana),plumbing companies indianapolis,1,Plumber (general),170,HIGH,95,15.45,81.83,8269,Transactional
+City keyword (Indiana),commercial sewer cleaning indianapolis,1,Sewer line,320,MEDIUM,50,12.41,31.14,6969,Transactional
+City keyword (Indiana),plumber franklin indiana,1,Plumber (general),110,HIGH,88,21.83,58.12,4397,Transactional
+City keyword (Indiana),plumber mooresville indiana,1,Plumber (general),90,HIGH,100,22.83,70.04,4179,Transactional
+City keyword (Indiana),broad ripple plumbers,1,Plumber (general),50,HIGH,98,43.14,120.11,4081,Transactional
+City keyword (Indiana),leak detection indianapolis,1,Leak detection,70,HIGH,82,15.16,63.25,2744,Transactional
+City keyword (Indiana),best plumbers indianapolis,1,Plumber (general),70,HIGH,100,13.59,62.16,2651,Transactional
+City keyword (Indiana),plumber plainfield indiana,1,Plumber (general),50,HIGH,100,26.54,74.17,2518,Transactional
+City keyword (Indiana),plumbing greenwood in,1,Plumber (general),30,MEDIUM,59,38.25,116.57,2322,Transactional
+City keyword (Indiana),commercial plumbers indianapolis,1,Plumber (general),50,HIGH,100,19.12,49.55,1717,Transactional
+City keyword (Indiana),cheap plumbers in indianapolis,1,Plumber (general),30,HIGH,100,9.24,51.5,911,Transactional
+City keyword (Indiana),indianapolis plumbing contractors,1,Plumber (general),20,HIGH,89,15.92,41.31,572,Transactional
+City keyword (Indiana),plumbing services indianapolis,1,Plumber (general),210,LOW,2,,,0,Transactional
+City keyword (Indiana),plumbers indianapolis in,1,Plumber (general),40,LOW,21,,,0,Transactional
+City keyword (Indiana),water heater replacement indianapolis,1,Water heater,30,HIGH,96,,,0,Transactional
+City keyword (Indiana),water heater repair greenwood in,1,Water heater,20,LOW,0,,,0,Transactional
+Indianapolis,plumber near me,7,Plumber (general),1900,HIGH,72,33.74,101.19,128187,Transactional
+Indianapolis,plumber,1,Plumber (general),1600,MEDIUM,39,29.62,84.19,91047,Transactional
+Indianapolis,water heater repair,1,Water heater,390,LOW,18,22.94,93.48,22702,Transactional
+Indianapolis,drain cleaning,1,Drain cleaning,390,HIGH,83,14.45,82.16,18840,Transactional
+Indianapolis,emergency plumber near me,1,Emergency plumber,210,LOW,25,39.3,112.72,15962,Transactional
+Indianapolis,emergency plumber,2,Emergency plumber,170,LOW,21,47.93,89.75,11702,Transactional
+Indianapolis,plumbing firms near me,4,Plumber (general),170,HIGH,100,31.89,96.28,10895,Transactional
+Indianapolis,plumbing services,1,Plumber (general),110,LOW,24,37.14,127.25,9041,Transactional
+Indianapolis,hot water repair near me,4,Water heater,170,LOW,21,19.81,86.12,9004,Transactional
+Indianapolis,drain cleaning near me,2,Drain cleaning,140,LOW,26,36.58,84.19,8454,Transactional
+Indianapolis,snaking a drain,1,Drain cleaning,480,HIGH,100,1.21,33.85,8415,Commercial
+Indianapolis,change water heater,3,Water heater,170,HIGH,79,12.46,86.12,8380,Commercial
+Indianapolis,fit water softener,5,Water softener / filtration,320,LOW,28,6.94,35.93,6860,Commercial
+Indianapolis,sump pumps,1,Sump pump,720,HIGH,100,0.94,17.44,6616,Commercial
+Indianapolis,plumbing companies,1,Plumber (general),140,LOW,12,18.25,72.02,6320,Commercial
+Indianapolis,sink disposal fix,8,Toilet / fixtures,210,LOW,20,5.23,52.21,6031,Commercial
+Indianapolis,24 hour plumber near me,1,Emergency plumber,90,MEDIUM,35,44.1,84.19,5773,Transactional
+Indianapolis,near me plumber service,3,Plumber (general),50,MEDIUM,52,71.65,135.91,5189,Transactional
+Indianapolis,water heater replacement near me,1,Water heater,90,LOW,18,15.26,93.06,4874,Transactional
+Indianapolis,drain cleaning companies,1,Drain cleaning,70,LOW,2,53.21,84.19,4809,Transactional
+Indianapolis,sewer line repair near me,1,Sewer line,110,LOW,13,23.3,59.43,4550,Transactional
+Indianapolis,septic tank pumped,1,Sewer line,210,LOW,21,9.88,33.41,4545,Commercial
+Indianapolis,drain,1,Drain cleaning,140,LOW,16,11.24,49.57,4257,Commercial
+Indianapolis,hot water installation,3,Water heater,90,LOW,30,7.85,86.12,4229,Transactional
+Indianapolis,fix sewer line,2,Sewer line,70,LOW,26,17.0,91.45,3796,Commercial
+Indianapolis,local plumbers,1,Plumber (general),40,HIGH,72,39.72,148.38,3762,Transactional
+Indianapolis,water heater maintenance,3,Water heater,140,LOW,24,3.83,44.94,3414,Commercial
+Indianapolis,sewer cleanout,1,Sewer line,50,MEDIUM,60,30.65,91.22,3047,Commercial
+Indianapolis,garbage disposals,1,Toilet / fixtures,720,HIGH,100,0.4,7.47,2836,Commercial
+Indianapolis,tankless water,6,Water heater,720,HIGH,100,0.43,7.43,2831,Commercial
+Indianapolis,cheap plumbers near me,3,Plumber (general),70,HIGH,99,21.12,57.89,2765,Transactional
+Indianapolis,unclog drain,1,Drain cleaning,40,HIGH,97,25.92,91.22,2343,Commercial
+Indianapolis,clogged drain,3,Drain cleaning,40,MEDIUM,66,21.31,83.14,2089,Commercial
+Indianapolis,plumbing co near me,1,Plumber (general),30,MEDIUM,53,37.58,97.67,2029,Transactional
+Indianapolis,snaking a toilet,1,Toilet / fixtures,140,HIGH,100,0.87,28.09,2027,Commercial
+Indianapolis,24 hr plumber,2,Emergency plumber,30,MEDIUM,63,50.05,84.19,2014,Transactional
+Indianapolis,commercial plumbing,1,Plumber (general),40,MEDIUM,37,15.09,79.51,1892,Commercial
+Indianapolis,hydro jet,2,Drain cleaning,40,HIGH,78,9.14,81.11,1805,Commercial
+Indianapolis,local plumber near me,2,Plumber (general),30,HIGH,90,27.24,93.06,1804,Transactional
+Indianapolis,clogged toilet,3,Drain cleaning,70,HIGH,85,9.53,40.52,1752,Commercial
+Indianapolis,tankless installation,7,Water heater,140,LOW,9,3.88,19.0,1602,Transactional
+Indianapolis,water heater replacement cost,1,Water heater,110,HIGH,69,4.73,23.41,1548,Transactional
+Indianapolis,drain clearing service,2,Drain cleaning,40,LOW,18,18.37,58.73,1542,Transactional
+Indianapolis,plumber best near me,5,Plumber (general),30,HIGH,99,9.12,93.06,1533,Transactional
+Indianapolis,change hot water heater,3,Water heater,30,HIGH,85,15.74,86.12,1528,Commercial
+Indianapolis,garbage disposal installation,2,Toilet / fixtures,70,MEDIUM,66,4.1,37.51,1456,Transactional
+Indianapolis,hot water expansion tank,2,Water heater,90,HIGH,76,0.24,32.1,1455,Commercial
+Indianapolis,plumbing drain cleaning,1,Drain cleaning,20,LOW,25,31.54,108.91,1404,Transactional
+Indianapolis,soft water installation cost,6,Water softener / filtration,140,MEDIUM,42,4.01,14.66,1307,Transactional
+Indianapolis,leak detection,1,Leak detection,30,MEDIUM,65,24.22,62.2,1296,Commercial
+Indianapolis,r and r plumbing,1,Plumber (general),110,LOW,19,5.33,17.82,1273,Commercial
+Indianapolis,clear drain,2,Drain cleaning,20,HIGH,76,35.14,85.16,1203,Commercial
+Indianapolis,water heater leaking,1,Water heater,50,HIGH,75,6.53,40.33,1172,Commercial
+Indianapolis,disposal replacement,4,Toilet / fixtures,50,HIGH,84,3.93,42.54,1162,Transactional
+Indianapolis,change sump pump,2,Sump pump,40,MEDIUM,61,8.42,49.48,1158,Commercial
+Indianapolis,$49 drain cleaning near me,1,Drain cleaning,30,HIGH,100,14.01,62.19,1143,Transactional
+Indianapolis,drain clog remover,1,Drain cleaning,20,HIGH,91,22.87,91.22,1141,Commercial
+Indianapolis,new water heater,1,Water heater,20,HIGH,100,26.18,86.12,1123,Commercial
+Indianapolis,affordable plumbing,1,Plumber (general),30,LOW,17,6.11,67.87,1110,Commercial
+Indianapolis,plumbing repair near me,2,Plumber (general),20,MEDIUM,38,24.67,84.19,1089,Transactional
+Indianapolis,sink drain cleaner,3,Drain cleaning,30,HIGH,100,0.7,71.56,1084,Commercial
+Indianapolis,drain clean out,1,Drain cleaning,20,HIGH,99,30.1,78.06,1082,Commercial
+Indianapolis,water leak detector,2,Leak detection,50,HIGH,74,2.84,40.28,1078,Commercial
+Indianapolis,trenchless sewer line replacement,2,Sewer line,20,MEDIUM,34,13.72,91.45,1052,Transactional
+Indianapolis,sewer jetting,1,Drain cleaning,20,HIGH,100,15.14,89.1,1042,Commercial
+Indianapolis,septic tank pumped near me,1,Sewer line,70,HIGH,82,3.19,26.15,1027,Transactional
+Indianapolis,sewer line cleanout,2,Sewer line,20,HIGH,84,24.46,73.81,983,Commercial
+Indianapolis,sump pump replacement cost,1,Sump pump,70,HIGH,69,4.94,22.93,975,Transactional
+Indianapolis,clean septic tank,1,Sewer line,40,HIGH,92,2.18,41.29,869,Commercial
+Indianapolis,unclog toilet,3,Drain cleaning,50,HIGH,100,1.01,33.68,867,Commercial
+Indianapolis,plumbing cleanout,1,Plumber (general),20,LOW,23,32.75,51.1,838,Commercial
+Indianapolis,best drain opener,5,Drain cleaning,40,HIGH,96,0.09,40.49,812,Commercial
+Indianapolis,24 7 plumber,1,Emergency plumber,20,HIGH,91,23.0,58.14,811,Transactional
+Indianapolis,rooters plumbing,1,Drain cleaning,20,HIGH,86,13.86,61.71,756,Commercial
+Indianapolis,drain pipes,1,Drain cleaning,70,HIGH,85,0.41,20.34,726,Commercial
+Indianapolis,plumber near me llc,1,Plumber (general),20,MEDIUM,52,19.03,53.17,722,Transactional
+Indianapolis,tankless installation cost,7,Water heater,90,MEDIUM,51,3.25,12.71,718,Transactional
+Indianapolis,george's plumbing,1,Plumber (general),30,MEDIUM,48,9.47,37.69,708,Commercial
+Indianapolis,unclog shower drain,3,Drain cleaning,40,HIGH,87,2.91,31.8,694,Commercial
+Indianapolis,hot water installation cost,5,Water heater,70,MEDIUM,59,3.27,16.17,681,Transactional
+Indianapolis,plumbing contractor,1,Plumber (general),20,LOW,27,9.13,58.33,675,Transactional
+Indianapolis,drain snaking near me,1,Drain cleaning,20,HIGH,100,14.72,51.2,659,Transactional
+Indianapolis,garbage disposal leaks from bottom,1,Toilet / fixtures,30,MEDIUM,63,8.21,33.44,625,Commercial
+Indianapolis,sink disposal humming,1,Toilet / fixtures,90,MEDIUM,47,0.03,13.66,616,Commercial
+Indianapolis,tub faucet replacement,3,Toilet / fixtures,50,HIGH,100,0.44,23.32,594,Transactional
+Indianapolis,fix toilet,5,Toilet / fixtures,40,MEDIUM,41,3.96,24.54,570,Commercial
+Indianapolis,toilet installation,1,Toilet / fixtures,40,MEDIUM,59,5.64,22.03,553,Transactional
+Indianapolis,drain water heater,1,Water heater,40,MEDIUM,34,4.42,22.4,536,Commercial
+Indianapolis,toilet replacement,2,Toilet / fixtures,30,HIGH,89,2.79,32.59,531,Transactional
+Indianapolis,best sink clog remover,3,Drain cleaning,30,HIGH,100,0.21,34.95,527,Commercial
+Indianapolis,electric tankless,9,Water heater,170,HIGH,100,0.3,5.39,484,Commercial
+Indianapolis,outdoor faucet leaking,2,Toilet / fixtures,20,MEDIUM,40,2.77,43.24,460,Commercial
+Indianapolis,tub faucet leaking,2,Toilet / fixtures,30,MEDIUM,57,3.06,25.18,424,Commercial
+Indianapolis,lee plumbing,1,Plumber (general),20,MEDIUM,53,8.11,34.05,422,Commercial
+Indianapolis,cost to replace disposal,4,Toilet / fixtures,50,MEDIUM,58,4.32,12.47,420,Transactional
+Indianapolis,outdoor faucet replacement,2,Toilet / fixtures,30,HIGH,99,4.35,23.55,419,Transactional
+Indianapolis,water softener installer near me,2,Water softener / filtration,20,HIGH,98,14.45,26.53,410,Transactional
+Indianapolis,clogged sink,2,Drain cleaning,20,HIGH,75,4.62,36.07,407,Commercial
+Indianapolis,soft water system cost,2,Water softener / filtration,30,HIGH,87,5.9,18.82,371,Commercial
+Indianapolis,sink disposal not working,6,Toilet / fixtures,50,MEDIUM,59,0.03,14.09,353,Commercial
+Indianapolis,tankless water heater cleaning,2,Water heater,20,HIGH,83,3.43,31.12,346,Transactional
+Indianapolis,tankless water cost,5,Water heater,70,HIGH,100,1.12,8.75,345,Commercial
+Indianapolis,toilet clog remover,2,Drain cleaning,20,HIGH,100,13.57,20.89,345,Commercial
+Indianapolis,water softener cost,1,Water softener / filtration,50,MEDIUM,66,3.17,10.56,343,Commercial
+Indianapolis,gas instantaneous water heater,2,Water heater,70,HIGH,100,0.42,8.91,327,Commercial
+Indianapolis,tankless water heater price,2,Water heater,90,HIGH,100,0.45,6.64,319,Commercial
+Indianapolis,mays plumbing,1,Plumber (general),20,LOW,23,5.88,23.5,294,Commercial
+Indianapolis,tankless gas water heater,1,Water heater,40,HIGH,100,0.58,14.06,293,Commercial
+Indianapolis,sewer line replacement cost,2,Sewer line,20,MEDIUM,46,4.02,25.2,292,Transactional
+Indianapolis,all pro plumbing,1,Plumber (general),20,HIGH,87,6.11,20.28,264,Commercial
+Indianapolis,leaking faucet,1,Toilet / fixtures,30,LOW,23,2.99,13.38,246,Commercial
+Indianapolis,bathroom sink drain,1,Drain cleaning,30,HIGH,100,0.39,15.52,239,Commercial
+Indianapolis,cameron plumbing,1,Plumber (general),20,LOW,26,3.12,20.83,239,Commercial
+Indianapolis,tub drain replacement,2,Drain cleaning,30,HIGH,100,0.33,14.78,227,Transactional
+Indianapolis,toilet replacement cost,2,Toilet / fixtures,20,MEDIUM,54,3.11,19.57,227,Transactional
+Indianapolis,snaking a shower drain,1,Drain cleaning,20,HIGH,95,0.26,22.34,226,Commercial
+Indianapolis,fix leaky faucet,2,Toilet / fixtures,20,MEDIUM,41,0.02,21.43,214,Commercial
+Indianapolis,cost for new water heater,1,Water heater,30,MEDIUM,52,2.31,11.63,209,Commercial
+Indianapolis,toilet leaking from tank,1,Toilet / fixtures,20,MEDIUM,55,5.98,14.23,202,Commercial
+Indianapolis,toilet drain cleaner,3,Drain cleaning,20,HIGH,100,0.26,19.73,200,Commercial
+Indianapolis,gas leak detection,1,Leak detection,170,HIGH,98,0.55,1.78,198,Commercial
+Indianapolis,disposal clogged,4,Drain cleaning,20,MEDIUM,62,0.19,17.94,181,Commercial
+Indianapolis,high efficient water heater,1,Water heater,40,HIGH,74,0.45,8.34,176,Commercial
+Indianapolis,water softener system installation cost,2,Water softener / filtration,30,HIGH,88,2.87,7.59,157,Transactional
+Indianapolis,outdoor faucet,2,Toilet / fixtures,70,HIGH,100,0.8,3.59,154,Commercial
+Indianapolis,tankless hotwater heater,2,Water heater,40,HIGH,97,0.35,7.08,149,Commercial
+Indianapolis,hot water heater replacement cost,1,Water heater,20,HIGH,82,2.76,11.36,141,Transactional
+Indianapolis,toilet installation cost,1,Toilet / fixtures,20,HIGH,75,3.47,10.34,138,Transactional
+Indianapolis,shower faucet replacement,1,Toilet / fixtures,20,HIGH,100,0.47,11.74,122,Transactional
+Indianapolis,sharkbite plumbing,1,Plumber (general),20,HIGH,100,0.21,10.41,106,Commercial
+Indianapolis,leak detection for pools,1,Leak detection,20,MEDIUM,41,2.64,7.13,98,Commercial
+Indianapolis,on demand water heater,2,Water heater,40,HIGH,100,0.34,4.47,96,Commercial
+Indianapolis,garbage disposal sink,1,Toilet / fixtures,30,HIGH,89,0.3,5.94,94,Commercial
+Indianapolis,ng tankless water heater,5,Water heater,20,HIGH,99,0.39,8.91,93,Commercial
+Indianapolis,propane tankless,7,Water heater,40,HIGH,100,0.36,4.08,89,Commercial
+Indianapolis,instant hot water heater,2,Water heater,20,HIGH,100,0.35,5.36,57,Commercial
+Indianapolis,shower drain,1,Drain cleaning,50,HIGH,100,0.17,1.99,54,Commercial
+Indianapolis,gerber toilet,1,Toilet / fixtures,40,HIGH,95,0.38,1.94,46,Commercial
+Indianapolis,drain pan for hot water heater,1,Water heater,30,HIGH,92,0.07,2.96,45,Commercial
+Indianapolis,detect natural gas leak,1,Gas line,40,HIGH,83,0.44,1.44,38,Commercial
+Indianapolis,bosch tankless,5,Water heater,20,HIGH,100,0.36,3.13,35,Commercial
+Indianapolis,gerber viper toilet,1,Toilet / fixtures,20,HIGH,100,0.85,2.45,33,Commercial
+Indianapolis,tub drains,1,Drain cleaning,40,HIGH,100,0.21,1.16,27,Commercial
+Indianapolis,cleaning the sink,1,Toilet / fixtures,20,HIGH,100,0.69,2.02,27,Transactional
+Indianapolis,toilet bowl tank,1,Toilet / fixtures,50,HIGH,100,0.18,0.83,25,Commercial
+Indianapolis,green gobbler drain opener,2,Drain cleaning,70,HIGH,100,0.12,0.56,24,Commercial
+Indianapolis,bath drain,1,Drain cleaning,40,HIGH,100,0.17,0.91,22,Commercial
+Indianapolis,green gobbler enzyme drain cleaner,1,Drain cleaning,30,HIGH,100,0.2,1.11,20,Commercial
+Indianapolis,mansfield toilet,1,Toilet / fixtures,30,HIGH,100,0.4,0.88,19,Commercial
+Indianapolis,bio clean for drains,1,Drain cleaning,30,HIGH,96,0.26,0.99,19,Commercial
+Indianapolis,pfister bathtub faucet,1,Toilet / fixtures,20,HIGH,100,0.35,1.4,17,Commercial
+Indianapolis,replace toilet flush valve,1,Toilet / fixtures,20,HIGH,100,0.31,0.74,10,Transactional
+Indianapolis,plumbing frozen pipes,1,Water line / pipe repair,320,LOW,0,,,0,Commercial
+Indianapolis,commercial plumbers near me,1,Plumber (general),110,LOW,14,,,0,Transactional
+Indianapolis,plumber toilet repair,2,Toilet / fixtures,110,LOW,11,,,0,Transactional
+Indianapolis,anode rod water heater replacement,1,Water heater,110,MEDIUM,41,,,0,Transactional
+Indianapolis,plumber for clogged toilet,1,Drain cleaning,90,LOW,10,,,0,Transactional
+Indianapolis,plumbing repair,1,Plumber (general),70,LOW,12,,,0,Transactional
+Indianapolis,sink drain,3,Drain cleaning,70,HIGH,99,,,0,Commercial
+Indianapolis,gas water heater fix,5,Water heater,70,LOW,16,,,0,Commercial
+Indianapolis,plumbing for water softener installation,1,Water softener / filtration,70,LOW,15,,,0,Transactional
+Indianapolis,drain clearing service near me,2,Drain cleaning,50,LOW,22,,,0,Transactional
+Indianapolis,tankless repair,5,Water heater,50,LOW,8,,,0,Transactional
+Indianapolis,frozen pipes,1,Water line / pipe repair,50,LOW,6,,,0,Commercial
+Indianapolis,plumber for gas leak,1,Gas line,50,LOW,18,,,0,Transactional
+Indianapolis,burst pipe plumber,2,Water line / pipe repair,50,LOW,2,,,0,Transactional
+Indianapolis,pecks plumbing,2,Plumber (general),50,HIGH,73,,,0,Commercial
+Indianapolis,tankless water maintenance,4,Water heater,40,MEDIUM,36,,,0,Commercial
+Indianapolis,emergency plumbing services,2,Emergency plumber,40,LOW,10,,,0,Transactional
+Indianapolis,water heater installation near me,1,Water heater,40,LOW,8,,,0,Transactional
+Indianapolis,blocked toilet plumber,1,Toilet / fixtures,40,LOW,20,,,0,Transactional
+Indianapolis,septic tank repair,1,Sewer line,40,LOW,6,,,0,Transactional
+Indianapolis,water softener system setup,3,Water softener / filtration,40,LOW,18,,,0,Commercial
+Indianapolis,electric hot water repair,7,Water heater,40,LOW,14,,,0,Transactional
+Indianapolis,plumber install toilet,3,Toilet / fixtures,40,LOW,26,,,0,Transactional
+Indianapolis,clean drain with baking soda,1,Drain cleaning,40,LOW,11,,,0,Commercial
+Indianapolis,expert plumbing,4,Plumber (general),40,LOW,31,,,0,Commercial
+Indianapolis,trenchless sewer repair,4,Sewer line,40,LOW,7,,,0,Transactional
+Indianapolis,snaking a tub drain,2,Drain cleaning,40,HIGH,89,,,0,Commercial
+Indianapolis,plumber for leaking toilet,2,Toilet / fixtures,40,LOW,0,,,0,Transactional
+Indianapolis,leak detection near me,4,Leak detection,30,LOW,20,,,0,Transactional
+Indianapolis,drain cleaning services near me,1,Drain cleaning,30,LOW,9,,,0,Transactional
+Indianapolis,gas leak fix,2,Gas line,30,HIGH,71,,,0,Commercial
+Indianapolis,gas hot water installation,3,Water heater,30,MEDIUM,37,,,0,Transactional
+Indianapolis,corrugated drain pipe,1,Drain cleaning,30,HIGH,94,,,0,Commercial
+Indianapolis,24 7 plumbing service near me,1,Emergency plumber,30,LOW,3,,,0,Transactional
+Indianapolis,blocked sink plumber,1,Toilet / fixtures,30,LOW,15,,,0,Transactional
+Indianapolis,toilet bolts,1,Toilet / fixtures,30,HIGH,96,,,0,Commercial
+Indianapolis,pvc drain pipe,1,Drain cleaning,30,HIGH,73,,,0,Commercial
+Indianapolis,heat pump hot water installation,2,Water heater,30,LOW,0,,,0,Transactional
+Indianapolis,water heater thermocouple replacement,2,Water heater,30,MEDIUM,41,,,0,Transactional
+Indianapolis,hot water expansion tank install,2,Water heater,30,LOW,6,,,0,Transactional
+Indianapolis,camping tankless water heater,1,Water heater,30,HIGH,100,,,0,Commercial
+Indianapolis,energy efficient tankless water heater,1,Water heater,30,,,,,0,Commercial
+Indianapolis,servis water heater,2,Water heater,20,MEDIUM,41,,,0,Commercial
+Indianapolis,drain service,3,Drain cleaning,20,LOW,10,,,0,Transactional
+Indianapolis,sewer and drain cleaning,1,Drain cleaning,20,MEDIUM,63,,,0,Transactional
+Indianapolis,drain weasel,3,Drain cleaning,20,HIGH,100,,,0,Commercial
+Indianapolis,shower drain cleaner,2,Drain cleaning,20,HIGH,94,,,0,Commercial
+Indianapolis,gas hot water installation cost,4,Water heater,20,MEDIUM,49,,,0,Transactional
+Indianapolis,electric hot water installation,3,Water heater,20,MEDIUM,35,,,0,Transactional
+Indianapolis,sink disposal leaking,3,Toilet / fixtures,20,LOW,20,,,0,Commercial
+Indianapolis,yelp plumbers near me,1,Plumber (general),20,,,,,0,Transactional
+Indianapolis,sewer repair,3,Sewer line,20,LOW,11,,,0,Transactional
+Indianapolis,pvc plumbing pipe,3,Plumber (general),20,LOW,0,,,0,Commercial
+Indianapolis,plumbing pipe,2,Plumber (general),20,MEDIUM,59,,,0,Commercial
+Indianapolis,copper plumbing,5,Plumber (general),20,LOW,16,,,0,Commercial
+Indianapolis,toilet tank fix,3,Toilet / fixtures,20,LOW,14,,,0,Commercial
+Indianapolis,drainage opener,1,Drain cleaning,20,HIGH,79,,,0,Commercial
+Indianapolis,slow flushing toilet,1,Toilet / fixtures,20,MEDIUM,42,,,0,Commercial
+Indianapolis,toilet overflow,1,Toilet / fixtures,20,MEDIUM,45,,,0,Commercial
+Indianapolis,plumber leaking pipe,3,Water line / pipe repair,20,LOW,12,,,0,Transactional
+Indianapolis,water softener installation service,1,Water softener / filtration,20,LOW,21,,,0,Transactional
+Indianapolis,natural drain cleaners,1,Drain cleaning,20,LOW,13,,,0,Commercial
+Indianapolis,replace sump pump battery,1,Sump pump,20,MEDIUM,54,,,0,Transactional
+Indianapolis,replacing water heater thermostat,1,Water heater,20,HIGH,88,,,0,Commercial
+Indianapolis,replacing water heater relief valve,6,Water heater,20,LOW,30,,,0,Commercial
+Johnson County,plumber near me,7,Plumber (general),720,MEDIUM,61,32.84,91.45,44744,Transactional
+Johnson County,plumber,1,Plumber (general),390,LOW,32,28.76,78.77,20968,Transactional
+Johnson County,emergency plumber near me,1,Emergency plumber,90,LOW,22,44.12,84.19,5774,Transactional
+Johnson County,drain cleaning,1,Drain cleaning,50,HIGH,88,14.63,91.22,2646,Transactional
+Johnson County,change water heater,3,Water heater,30,MEDIUM,52,32.69,90.39,1846,Commercial
+Johnson County,fit water softener,5,Water softener / filtration,50,MEDIUM,46,18.11,45.83,1598,Commercial
+Johnson County,plumbing firms near me,4,Plumber (general),30,HIGH,100,11.56,93.06,1569,Transactional
+Johnson County,sump pumps,1,Sump pump,90,HIGH,100,0.52,24.89,1143,Commercial
+Johnson County,snaking a drain,1,Drain cleaning,50,HIGH,98,0.42,26.4,671,Commercial
+Johnson County,tankless water,6,Water heater,140,HIGH,100,0.43,8.97,658,Commercial
+Johnson County,garbage disposals,1,Toilet / fixtures,110,HIGH,93,0.46,11.01,631,Commercial
+Johnson County,soft water installation cost,6,Water softener / filtration,30,MEDIUM,59,5.13,18.22,350,Transactional
+Johnson County,septic tank pumped near me,1,Sewer line,20,MEDIUM,50,2.3,23.66,260,Transactional
+Johnson County,snaking a toilet,1,Toilet / fixtures,20,HIGH,100,0.62,22.12,227,Commercial
+Johnson County,water heater replacement cost,1,Water heater,20,MEDIUM,62,3.94,14.65,186,Transactional
+Johnson County,tankless water heater price,2,Water heater,20,HIGH,79,0.79,7.77,86,Commercial
+Johnson County,tankless installation cost,7,Water heater,20,HIGH,90,2.37,5.89,83,Transactional
+Johnson County,electric tankless,9,Water heater,30,HIGH,100,0.32,3.25,54,Commercial
+Johnson County,water heater repair,1,Water heater,170,LOW,13,,,0,Transactional
+Johnson County,drain cleaning near me,2,Drain cleaning,90,LOW,14,,,0,Transactional
+Johnson County,24 hour plumber near me,1,Emergency plumber,70,LOW,8,,,0,Transactional
+Johnson County,hot water repair near me,4,Water heater,70,LOW,20,,,0,Transactional
+Johnson County,sewer line repair near me,1,Sewer line,70,LOW,5,,,0,Transactional
+Johnson County,plumbing frozen pipes,1,Water line / pipe repair,50,LOW,0,,,0,Commercial
+Johnson County,sink disposal fix,8,Toilet / fixtures,40,LOW,12,,,0,Commercial
+Johnson County,plumbing services,1,Plumber (general),40,LOW,14,,,0,Transactional
+Johnson County,septic tank pumped,1,Sewer line,40,LOW,22,,,0,Commercial
+Johnson County,emergency plumber,2,Emergency plumber,30,LOW,29,,,0,Transactional
+Johnson County,clogged drain,3,Drain cleaning,30,LOW,16,,,0,Commercial
+Johnson County,same day plumber,1,Plumber (general),30,LOW,0,,,0,Transactional
+Johnson County,gas leak detection,1,Leak detection,30,HIGH,90,,,0,Commercial
+Johnson County,hot water installation,3,Water heater,20,MEDIUM,63,,,0,Transactional
+Johnson County,fix sewer line,2,Sewer line,20,LOW,3,,,0,Commercial
+Johnson County,plumbing companies,1,Plumber (general),20,LOW,4,,,0,Commercial
+Johnson County,r and r plumbing,3,Plumber (general),20,LOW,16,,,0,Commercial
+Johnson County,commercial plumbers near me,1,Plumber (general),20,LOW,0,,,0,Transactional
+Johnson County,water heater replacement near me,1,Water heater,20,LOW,30,,,0,Transactional
+Johnson County,water heater installation near me,1,Water heater,20,LOW,13,,,0,Transactional
+Johnson County,water heater maintenance,5,Water heater,20,LOW,10,,,0,Commercial
+Johnson County,plumbing repair,1,Plumber (general),20,LOW,31,,,0,Transactional
+Johnson County,tankless installation,7,Water heater,20,LOW,7,,,0,Transactional
+Johnson County,hot water expansion tank,2,Water heater,20,LOW,19,,,0,Commercial
+Johnson County,plumber toilet repair,2,Toilet / fixtures,20,LOW,6,,,0,Transactional
+Johnson County,pfister bathtub faucet,1,Toilet / fixtures,20,HIGH,100,,,0,Commercial
+Johnson County,collapsed drain pipe,1,Drain cleaning,20,,,,,0,Commercial
+Johnson County,anode rod water heater replacement,1,Water heater,20,LOW,25,,,0,Transactional
