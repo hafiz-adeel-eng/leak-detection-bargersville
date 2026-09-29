@@ -128,7 +128,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
           <li><a href="/faq/">FAQ</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
-        <a class="btn btn-primary btn-sm btn-call-top" style="white-space:nowrap" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <a class="btn btn-primary btn-sm btn-call-top call-shake" style="white-space:nowrap" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
         <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><Icon name="menu" /></button>
       </div>
     </header>
@@ -159,6 +159,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
               <li><a href="/guides/">Leak detection guides</a></li>
               <li><a href="/leak-detection-cost/">Leak detection cost</a></li>
               <li><a href="/faq/">Leak detection FAQ</a></li>
+              <li><a href="/leak-detection/">Leak detection by city (U.S.)</a></li>
               {site.gbpReviewUrl && <li><a href={site.gbpReviewUrl} rel="noopener">Leave us a Google review</a></li>}
             </ul>
           </div>
@@ -171,8 +172,12 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
     </footer>
 
     <div class="callbar dark">
-      <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      <a class="btn btn-primary btn-sm call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />Contact Us: {site.phone}</a>
     </div>
+    <a class="float-call call-shake" href={`tel:${site.phoneHref}`} aria-label={`Contact us: call ${site.phone}`}>
+      <span class="fc-ico"><Icon name="phone" /></span>
+      <span class="fc-text"><small>Contact Us</small><b>{site.phone}</b></span>
+    </a>
 
     <script>
       const btn = document.querySelector('.menu-btn');
