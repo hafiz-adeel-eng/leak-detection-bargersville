@@ -30,7 +30,7 @@ The live domain could not be crawled from the audit environment, so hosting chec
 
 ## Needs the owner (can't be done in code)
 
-1. **Real phone number.** `(317) 555-0199` is a placeholder and is in the schema on every page. Google treats fake NAP as a trust problem. Update `src/data/site.ts`.
+1. ~~**Real phone number.**~~ Done: `(877) 729-0265` (call tracking) is set in `src/data/site.ts` and used on every page and in the schema.
 2. **Google Business Profile.** The biggest local ranking factor. Create/verify it as a service-area business, then paste the URLs into `gbpUrl` and `gbpReviewUrl`.
 3. **Merge to `main`** so Cloudflare Pages deploys these changes.
 4. **Cloudflare:** add a redirect rule from `leakdetectionbargersville.com/*` to `https://www.leakdetectionbargersville.com/$1` (301), and turn on **Crawler Hints** (sends IndexNow pings to Bing/Yandex on change).

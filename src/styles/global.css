@@ -14,7 +14,7 @@
   --aqua-soft: rgba(255,193,7,.18);
   --amber: #FFC107;
   --amber-ink: #0B2240;
-  --cta-grad: linear-gradient(180deg, #FFD54F 0%, #FFC107 55%, #FFB300 100%); /* CTA buttons only */
+  --cta-grad: linear-gradient(135deg, #FBE9A6 0%, #F2C94C 30%, #D4A21C 65%, #F5D774 100%); /* golden call/CTA buttons */
   --gold-grad: linear-gradient(180deg, #FFF3CF 0%, #FFE08A 55%, #FFD36B 100%); /* softer gold for icons & badges */
   --good: #2E8B57;
   --font: "Manrope Variable", "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -715,3 +715,10 @@ p { margin: 0; }
 .state-group { margin-top: 28px; }
 .state-group:first-child { margin-top: 0; }
 .state-group h2 { font-size: clamp(20px, 2.4vw, 24px); font-weight: 800; margin-bottom: 12px; }
+
+/* Every phone number link gets the golden background, including numbers inside text */
+:is(p, li, td) > a[href^="tel:"]:not(.btn):not(.btn-gold):not(.float-call) {
+  display: inline-block; padding: 1px 10px; border-radius: 8px; text-decoration: none; font-weight: 800;
+  background: var(--cta-grad); color: #0B2240 !important; box-shadow: 0 4px 12px -6px rgba(212,162,28,.8);
+}
+.btn-primary, .float-call { color: #0B2240; text-shadow: 0 1px 0 rgba(255,255,255,.35); }
