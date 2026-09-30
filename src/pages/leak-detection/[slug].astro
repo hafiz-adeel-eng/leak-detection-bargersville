@@ -1,0 +1,191 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import Process from '../../components/Process.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, services } from '../../data/site';
+import { nationalCities, nationalUrl, keywordsFor, type NationalCity } from '../../data/national';
+import { guideUrl } from '../../data/guides';
+import { md } from '../../data/md';
+
+export function getStaticPaths() {
+  return nationalCities.map((city) => ({ params: { slug: city.slug }, props: { city } }));
+}
+
+const { city: c } = Astro.props as { city: NationalCity };
+const place = `${c.city}, ${c.st}`;
+const url = `${site.url}${nationalUrl(c.slug)}`;
+const kw = keywordsFor(c);
+const allGuides = await getCollection('guides');
+const guideIds = ['how-to-find-a-slab-leak', 'slab-leak-repair-cost', 'how-to-find-an-underground-water-leak', 'why-is-my-water-bill-so-high', c.pools ? 'how-to-find-a-pool-leak' : 'frozen-pipe-leaks', 'leak-detection-methods'];
+const guides = guideIds.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+const sameState = nationalCities.filter((x) => x.st === c.st && x.slug !== c.slug).slice(0, 6);
+const others = nationalCities.filter((x) => x.st !== c.st).slice(0, 6 - Math.min(sameState.length, 6));
+const nearby = [...sameState, ...others].slice(0, 6);
+const cards = services.filter((s) => c.pools || s.slug !== 'pool-spa-leak-detection');
+
+const title = `Leak Detection in ${place} | Slab & Water Line Repair`.length <= 60
+  ? `Leak Detection in ${place} | Slab & Water Line Repair`
+  : `Leak Detection & Repair in ${place}`;
+const description = `Leak detection in ${place}: slab leaks, water line leaks${c.pools ? ', pool leaks' : ''} and hidden leaks found without tearing things up, then repaired. Call ${site.phone}.`.slice(0, 160);
+
+const faqs = [
+  ...c.faqs,
+  { q: `How much does leak detection cost in ${c.city}?`, a: `It depends on the type of leak, how many lines need testing and what is above the pipe. Detection and repair are quoted separately. Call ${site.phone} with what you’re noticing for an idea of cost before anyone comes out.` },
+  { q: `Can the leak be repaired too?`, a: `Yes. Once the leak is pinpointed and marked, the repair is made through one small opening, or the line is rerouted when that makes more sense.` },
+  { q: `How do I check for a leak before I call?`, a: `Turn off every faucet and water-using appliance and watch your water meter’s leak indicator for 15–30 minutes. If it moves, water is escaping somewhere on your side of the meter.` },
+];
+
+const cityNode = {
+  '@type': 'City',
+  name: place,
+  sameAs: c.wiki,
+  geo: { '@type': 'GeoCoordinates', latitude: c.geo.lat, longitude: c.geo.lng },
+  containedInPlace: { '@type': 'AdministrativeArea', name: `${c.county}, ${c.state}` },
+};
+const serviceSchema = {
+  '@type': 'Service',
+  '@id': `${url}#service`,
+  name: `Leak detection and repair in ${place}`,
+  serviceType: 'Water leak detection',
+  description,
+  url,
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: cityNode,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: `Leak detection services in ${place}`,
+    itemListElement: cards.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `${s.name} in ${place}` } })),
+  },
+};
+const pageSchema = {
+  '@type': 'WebPage',
+  '@id': `${url}#webpage`,
+  url,
+  name: title,
+  description,
+  isPartOf: { '@id': `${site.url}/#website` },
+  about: { '@id': `${url}#service` },
+  keywords: [kw.primary, ...kw.secondary].join(', '),
+};
+---
+<Base
+  title={title}
+  description={description}
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Leak detection by city', url: '/leak-detection/' }, { name: place, url: nationalUrl(c.slug) }]}
+  schema={[serviceSchema, pageSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/leak-detection/">Leak detection by city</a><span>/</span><span>{place}</span></nav>
+      <h1>Leak Detection in {c.city}, {c.st}</h1>
+      <p class="answer">Slab leaks, water line leaks{c.pools ? ', pool leaks' : ''} and hidden leaks in {c.city} homes, found without tearing up floors, walls or yards, then repaired through one small opening. One call to <a href={`tel:${site.phoneHref}`}>{site.phone}</a> connects you with a local leak detection pro.</p>
+      <div class="ctas">
+        <a class="btn btn-primary call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+        <a class="btn btn-ghost" href="#check">Check for a leak first</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>{c.city} at a glance</h2>
+        <table class="facts">
+          <tbody>
+            <tr><th scope="row">County</th><td>{c.county}, {c.state}</td></tr>
+            <tr><th scope="row">Population</th><td>{c.population} (2020 U.S. Census)</td></tr>
+            <tr><th scope="row">Water utility</th><td>{c.utility.url ? <a href={c.utility.url} rel="noopener" target="_blank">{c.utility.name}</a> : c.utility.name}</td></tr>
+            <tr><th scope="row">Services</th><td>Slab leak detection, water line leak detection, hidden leak detection{c.pools ? ', pool & spa leak detection' : ''}, thermal imaging, sprinkler leaks, leak repair</td></tr>
+          </tbody>
+        </table>
+
+        <p set:html={md(c.intro)} />
+
+        <h2>Why leaks happen in {c.city}</h2>
+        <ul class="list">
+          {c.factors.map((x) => <li><Icon name="check" /><span set:html={md(x)} /></li>)}
+        </ul>
+        <p set:html={md(c.homes)} />
+
+        <div class="inline-cta">
+          <p><b>Meter moving with everything off?</b> That’s a leak. Call now and get it found before it spreads.</p>
+          <a class="btn btn-primary btn-sm call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>Slab leak detection and repair in {c.city}</h2>
+        <p>A slab leak is a broken water line under the concrete foundation. Common signs in {c.city} homes are warm spots on tile, the sound of running water with everything off, a meter that never stops and a water bill that jumps. The line is isolated and pressure-tested, then the leak is pinpointed with acoustic ground microphones and thermal imaging and marked on the floor. The repair is a spot repair through one small opening, or a reroute of the line through the walls or attic. See <a href="/guides/slab-leak-repair-cost/">slab leak repair cost</a>.</p>
+
+        <h2>Water line leak detection in {c.city}</h2>
+        <p>The buried service line from the meter to the house is the homeowner’s responsibility in most of {c.city}; the utility, {c.utility.name}, usually owns the meter and the line up to it. A soggy strip of lawn, low pressure or a meter that moves with the house shutoff closed points to this line. The line is traced, then listened to with a ground microphone, or tested with tracer gas if it’s plastic, and the leak is marked so only one small hole is dug.</p>
+
+        <h2>Hidden leak detection inside {c.city} walls, ceilings and floors</h2>
+        <p>Stains, bubbling paint, soft drywall, a musty smell or a ceiling leak under a bathroom usually mean a supply line, drain, shower pan or valve is leaking out of sight. Moisture mapping and thermal imaging show where the water is, acoustic listening finds pressurized leaks, and the opening for the repair is small and in the right place.</p>
+
+        {c.pools && (
+          <>
+            <h2>Pool leak detection in {c.city}</h2>
+            <p>If your pool drops more than a bucket of water set on the step over 24 hours, it’s leaking. Pool leak detection checks the shell, skimmer, returns, main drain, lights and the buried plumbing lines, using pressure testing, dye testing and underwater acoustic equipment. See <a href="/guides/how-to-find-a-pool-leak/">how to find a pool leak</a>.</p>
+          </>
+        )}
+
+        <h2 id="check">How to check for a leak in your {c.city} home</h2>
+        <ol class="steps-ol">
+          <li>Turn off every faucet, the washer, dishwasher, ice maker and irrigation.</li>
+          <li>Watch the leak indicator on your water meter for 15–30 minutes.</li>
+          <li>If it moves, close the main shutoff in the house. If the meter still moves, the leak is in the buried line outside; if it stops, it’s inside or under the slab.</li>
+          <li>Put a few drops of food coloring in each toilet tank. Color in the bowl after 15 minutes means a toilet leak.</li>
+          <li>Still moving? Call <a href={`tel:${site.phoneHref}`}>{site.phone}</a> to get the leak found.</li>
+        </ol>
+
+        <h2>Leak detection cost in {c.city}</h2>
+        <p>The price depends on the type of leak, how many lines need testing and what’s above the pipe: tile, concrete, landscaping or a pool deck. Detection and repair are quoted separately. Finding the leak first keeps the repair small. See <a href="/leak-detection-cost/">what affects leak detection cost</a>.</p>
+
+        {guides.length > 0 && (
+          <div class="guide-links">
+            <h2>Leak guides for {c.city} homeowners</h2>
+            <ul>{guides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
+          </div>
+        )}
+
+        <h2>Leak detection in {c.city}: frequently asked questions</h2>
+        <Faq items={faqs} />
+
+        <p class="sources">Service in {c.city} is provided through our network of independent, local leak detection and plumbing professionals.{c.sources.length > 0 && <> Sources: {c.sources.map((x, i) => <>{i > 0 && '; '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</>} Population: U.S. Census Bureau, 2020 Census.</p>
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name="pin" /></span>
+        <h3>Leak detection in {place}</h3>
+        <p>Call and we’ll connect you with a leak detection pro serving {c.city}.</p>
+        <a class="btn btn-primary call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">{c.county}, {c.state}</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Services in {c.city}</span><h2>Leak detection services in {place}</h2></div>
+      <div class="cards">{cards.map((s) => <ServiceCard service={s} />)}</div>
+    </div>
+  </section>
+
+  <Process />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">More cities</span><h2>Leak detection in other cities</h2></div>
+      <div class="chips">
+        {nearby.map((x) => <a class="chip" href={nationalUrl(x.slug)}><Icon name="pin" />Leak detection {x.city}, {x.st}</a>)}
+        <a class="chip" href="/leak-detection/"><Icon name="pin" />All cities</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title={`Need a leak found in ${c.city}? Call ${site.phone}`} text={`Slab, water line${c.pools ? ', pool' : ''} and hidden leaks in ${place}.`} />
+</Base>

@@ -1,9 +1,9 @@
 export const site = {
   name: 'Leak Detection Bargersville',
   url: 'https://www.leakdetectionbargersville.com',
-  // Placeholder number: replace with the real business line before launch. [BUSINESS TO VERIFY]
-  phone: '(317) 555-0199',
-  phoneHref: '+13175550199',
+  // Call tracking number (Ringba), used on every page, in call buttons and in schema.
+  phone: '(877) 729-0265',
+  phoneHref: '+18777290265',
   email: 'adeelnaqshbandi@gmail.com',
   city: 'Bargersville',
   region: 'IN',

@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site } from '../../data/site';
+import { nationalCities, nationalUrl } from '../../data/national';
+
+const byState = new Map<string, typeof nationalCities>();
+for (const c of [...nationalCities].sort((a, b) => a.state.localeCompare(b.state) || a.city.localeCompare(b.city))) {
+  byState.set(c.state, [...(byState.get(c.state) ?? []), c]);
+}
+const list = {
+  '@type': 'ItemList',
+  name: 'Leak detection by city',
+  itemListElement: nationalCities.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: `Leak detection in ${c.city}, ${c.st}`, url: new URL(nationalUrl(c.slug), site.url).href })),
+};
+const faqs = [
+  { q: 'Which cities do you cover?', a: `Along with our home area around ${site.city}, Indiana, we connect homeowners in the cities listed here with local leak detection and plumbing pros. Call ${site.phone} from anywhere on this list.` },
+  { q: 'Who does the work outside Indiana?', a: 'Service in these cities is provided through our network of independent, local leak detection and plumbing professionals.' },
+];
+---
+<Base
+  title="Leak Detection by City | Slab, Water Line & Pool Leaks"
+  description={`Leak detection and repair in ${nationalCities.length} U.S. cities, from Florida to Texas, California and Louisiana: slab, water line, pool and hidden leaks. Call ${site.phone}.`.slice(0, 160)}
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Leak detection by city', url: '/leak-detection/' }]}
+  schema={[list]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Leak detection by city</span></nav>
+      <h1>Leak detection by city</h1>
+      <p class="answer">Slab leaks, water line leaks, pool leaks and hidden leaks in {nationalCities.length} cities across the U.S. Pick your city for local details, or call <a href={`tel:${site.phoneHref}`}>{site.phone}</a>.</p>
+      <div class="ctas"><a class="btn btn-primary call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {[...byState].map(([state, cities]) => (
+        <div class="state-group">
+          <h2>Leak detection in {state}</h2>
+          <div class="chips">
+            {cities.map((c) => <a class="chip" href={nationalUrl(c.slug)}><Icon name="pin" />{c.city}, {c.st}</a>)}
+          </div>
+        </div>
+      ))}
+      <p class="small" style="margin-top:24px">Looking for Johnson County, Indiana? See our <a href="/service-area/">local service area</a>.</p>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
