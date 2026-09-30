@@ -14,16 +14,20 @@ npm run build    # output in dist/
 
 - Business details (name, phone, email): `src/data/site.ts` → `site`
 - Services, service areas and FAQs: `src/data/site.ts`
+- Town pages (`/service-area/<town>/`): `src/data/locations.ts`
 - Colors and styles: `src/styles/global.css`
 - AI images: see `public/images/README.md` for file names and prompts
 
-## Deploy on Cloudflare Pages
+## Deploy on Cloudflare (Workers Builds)
 
-1. Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git → pick this repo.
-2. Framework preset: **Astro**. Build command: `npm run build`. Output directory: `dist`.
-3. After the first deploy, open Custom domains and add `www.leakdetectionbargersville.com` and `leakdetectionbargersville.com`.
-4. Remove the old Namecheap parking/URL-forward records so the domain points to Pages.
-5. Submit `https://www.leakdetectionbargersville.com/sitemap-index.xml` in Google Search Console.
+The repo is connected to a Cloudflare Worker named `leak-detection-bargersville`. `wrangler.jsonc` holds the config:
+
+- `build.command` runs `npm run build` before every deploy, so no build command is needed in the dashboard.
+- `assets.directory` uploads `dist/` as static assets; `_redirects` and `_headers` in `public/` are applied.
+- `previews: {}` lets non-production branches run `npx wrangler preview`.
+
+Pushes to `main` deploy to production. Custom domains: `www.leakdetectionbargersville.com` and `leakdetectionbargersville.com`.
+Submit `https://www.leakdetectionbargersville.com/sitemap-index.xml` in Google Search Console.
 
 ## Contact form
 

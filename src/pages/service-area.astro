@@ -5,23 +5,32 @@ import ServiceCard from '../components/ServiceCard.astro';
 import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { site, services, areas } from '../data/site';
+import { locations, locationUrl } from '../data/locations';
+
+const areaList = {
+  '@type': 'ItemList',
+  name: `Leak detection service areas in ${site.county} and nearby, Indiana`,
+  itemListElement: areas.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: `Leak detection in ${a.name}, IN`, url: new URL(locationUrl(a.slug), site.url).href })),
+};
+const zips = (slug: string) => locations.find((l) => l.slug === slug)?.zips.join(', ') ?? site.postalCode;
 
 const faqs = [
-  { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county}, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
+  { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county} and nearby towns in Morgan and southern Marion counties, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
   { q: 'Do you charge more outside Bargersville?', a: 'Pricing depends on the job, not just the town. Call with your address and what you’re noticing, and we’ll tell you what to expect before we come out.' },
 ];
 ---
 <Base
-  title={`Service Area: ${site.county}, IN | ${site.name}`}
-  description={`Leak detection for homes in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland and Trafalgar. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
+  title={`Leak Detection Service Area: ${site.county} & Nearby, IN`}
+  description={`Leak detection in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland, Trafalgar, Southport, Morgantown and Nineveh, Indiana: slab and water line leaks.`}
   faqs={faqs}
   breadcrumbs={[{ name: 'Service area', url: '/service-area/' }]}
+  schema={[areaList]}
 >
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Service area</span></nav>
-      <h1>Leak detection across {site.county}</h1>
-      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county}: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
+      <h1>Leak detection across {site.county} and nearby towns</h1>
+      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county} and nearby towns in Morgan and southern Marion counties: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
       <div class="ctas">
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -38,13 +47,21 @@ const faqs = [
       <div class="area-grid">
         {areas.map((a) => (
           <div class="area-card" id={a.slug}>
-            <h2><Icon name="pin" />{a.name}, IN</h2>
+            <h2><Icon name="pin" /><a href={locationUrl(a.slug)}>{a.name}, IN</a></h2>
             <p>{a.note}</p>
+            <p class="small">ZIP {zips(a.slug)}</p>
+            <a class="more-link" href={locationUrl(a.slug)}>Leak detection in {a.name}<Icon name="arrow" /></a>
             {a.slug === 'greenwood' && <a class="more-link" href="/plumber-greenwood-in/">Plumber in Greenwood<Icon name="arrow" /></a>}
             {a.slug === 'franklin' && <a class="more-link" href="/plumber-franklin-in/">Plumber in Franklin<Icon name="arrow" /></a>}
           </div>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="note-link">Outside Indiana? See <a href="/leak-detection/">leak detection by city</a> for Florida, Texas, California, Louisiana and more.</p>
     </div>
   </section>
 

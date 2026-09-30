@@ -1,13 +1,13 @@
 ---
 title: "Does Homeowners Insurance Cover Slab Leaks?"
-description: "Does homeowners insurance pay for a slab leak, the damage, or the cost of finding it? Learn what policies commonly cover and exclude, and how leak detection documentation helps your claim."
+description: "Does homeowners insurance pay for a slab leak, the damage or finding it? What policies usually cover and exclude, and how a detection report helps your claim."
 h1: "Does Homeowners Insurance Cover Slab Leaks?"
 quickAnswer: "Often in part. Many homeowners policies cover sudden water damage from a slab leak and the cost of getting access to the pipe (sometimes called tear-out), but not the repair of the worn pipe itself. Damage from slow, long-term leaks may be excluded. Policies vary, so check yours, call your insurer early, and keep the leak detection report and photos."
 primaryKeyword: "does homeowners insurance cover slab leaks"
 secondaryKeywords: ["slab leak insurance", "insurance cover leak detection", "water leak insurance claim", "slab leak repair", "hot water slab leak"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician documenting moisture on a water-stained wall with a thermal camera for an insurance report" }
-related: ["slab-leak-repair-options", "water-leak-emergency-what-to-do", "how-to-find-a-slab-leak"]
+related: ["slab-leak-repair-cost", "burst-pipe-insurance-claim-indiana", "slab-leak-repair-options", "water-leak-emergency-what-to-do", "how-to-find-a-slab-leak"]
 published: 2026-09-27
 updated: 2026-09-27
 order: 16

@@ -4,7 +4,8 @@ import Base from '../layouts/Base.astro';
 import Icon from './Icon.astro';
 import Faq from './Faq.astro';
 import CtaBand from './CtaBand.astro';
-import { site } from '../data/site';
+import { site, areas } from '../data/site';
+import { locationUrl } from '../data/locations';
 import { image } from '../data/images';
 import { guideUrl } from '../data/guides';
 
@@ -39,7 +40,7 @@ const crumbs = d.path
   ? [{ name: d.h1, url }]
   : [{ name: 'Guides', url: '/guides/' }, { name: d.h1, url }];
 ---
-<Base title={d.title} description={d.description} faqs={d.faqs} breadcrumbs={crumbs} schema={[article]}>
+<Base title={d.title} description={d.description} faqs={d.faqs} breadcrumbs={crumbs} schema={[article]} ogType="article" ogImage={photo ?? undefined} article={{ published: article.datePublished, modified: article.dateModified }}>
   <section class="page-hero dark guide-hero">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb">
@@ -112,6 +113,10 @@ const crumbs = d.path
             <ul>{related.map((r) => <li><a href={guideUrl(r)}>{r.data.h1}</a></li>)}</ul>
           </div>
         )}
+        <div class="related-box">
+          <h2>Areas we serve</h2>
+          <ul>{areas.map((a) => <li><a href={locationUrl(a.slug)}>Leak detection in {a.name}, IN</a></li>)}</ul>
+        </div>
       </aside>
     </div>
   </section>

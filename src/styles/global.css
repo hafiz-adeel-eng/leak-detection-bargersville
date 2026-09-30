@@ -14,7 +14,7 @@
   --aqua-soft: rgba(255,193,7,.18);
   --amber: #FFC107;
   --amber-ink: #0B2240;
-  --cta-grad: linear-gradient(180deg, #FFD54F 0%, #FFC107 55%, #FFB300 100%); /* CTA buttons only */
+  --cta-grad: linear-gradient(135deg, #FBE9A6 0%, #F2C94C 30%, #D4A21C 65%, #F5D774 100%); /* golden call/CTA buttons */
   --gold-grad: linear-gradient(180deg, #FFF3CF 0%, #FFE08A 55%, #FFD36B 100%); /* softer gold for icons & badges */
   --good: #2E8B57;
   --font: "Manrope Variable", "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -664,3 +664,65 @@ p { margin: 0; }
 /* Soft amber text reads better slightly heavier */
 .eyebrow { font-weight: 700; }
 .card .more, .more-link, .signs-link, .note-link a, .prose a, .guide-body a { font-weight: 700; }
+
+/* Location pages */
+.facts { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.facts th, .facts td { padding: 11px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.facts th { width: 34%; background: var(--bg-2); color: var(--text); font-weight: 700; font-size: 14px; }
+.facts td { color: var(--text-2); }
+.facts tr:last-child th, .facts tr:last-child td { border-bottom: 0; }
+@media (max-width: 520px) { .facts th { width: 40%; } }
+.steps-ol { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; color: var(--text-2); font-size: 17px; }
+.sources { font-size: 13px !important; color: var(--muted) !important; }
+.sources a { font-weight: 600 !important; }
+.area-card .more-link { margin-top: 6px; }
+.area-card h2 a { color: inherit; text-decoration: none; }
+.area-card h2 a:hover { color: var(--aqua); }
+.area-card .small { font-size: 13px; color: var(--muted); }
+
+/* Call buttons: shaking phone icon + floating "Contact Us" button */
+@keyframes phone-shake {
+  0%, 62%, 100% { transform: rotate(0); }
+  65% { transform: rotate(-16deg); } 68% { transform: rotate(16deg); }
+  71% { transform: rotate(-14deg); } 74% { transform: rotate(14deg); }
+  77% { transform: rotate(-8deg); } 80% { transform: rotate(8deg); } 83% { transform: rotate(0); }
+}
+@keyframes call-ring {
+  0% { box-shadow: 0 0 0 0 rgba(255, 179, 0, .55); }
+  70% { box-shadow: 0 0 0 16px rgba(255, 179, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0); }
+}
+.call-shake svg { animation: phone-shake 2.6s ease-in-out infinite; transform-origin: 50% 50%; }
+.float-call {
+  position: fixed; right: 22px; bottom: 22px; z-index: 70;
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 10px 18px 10px 10px; border-radius: 999px; text-decoration: none;
+  background: var(--cta-grad); color: #0B2240;
+  box-shadow: 0 14px 30px -12px rgba(0,0,0,.45);
+  animation: call-ring 2.6s ease-out infinite;
+}
+.float-call .fc-ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #0B2240; color: #FFE08A; }
+.float-call .fc-ico svg { width: 22px; height: 22px; }
+.float-call .fc-text { display: grid; line-height: 1.15; }
+.float-call small { font: 700 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.float-call b { font-size: 17px; font-weight: 800; }
+.float-call:hover { transform: translateY(-2px); }
+@media (max-width: 700px) { .float-call { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .call-shake svg, .float-call { animation: none; }
+}
+
+.state-group { margin-top: 28px; }
+.state-group:first-child { margin-top: 0; }
+.state-group h2 { font-size: clamp(20px, 2.4vw, 24px); font-weight: 800; margin-bottom: 12px; }
+
+/* Every phone number link gets the golden background, including numbers inside text */
+:is(p, li, td) > a[href^="tel:"]:not(.btn):not(.btn-gold):not(.float-call) {
+  display: inline-block; padding: 1px 10px; border-radius: 8px; text-decoration: none; font-weight: 800;
+  background: var(--cta-grad); color: #0B2240 !important; box-shadow: 0 4px 12px -6px rgba(212,162,28,.8);
+}
+.btn-primary, .float-call { color: #0B2240; text-shadow: 0 1px 0 rgba(255,255,255,.35); }
+
+/* Partner note under page-hero answers */
+.partner-note { margin-top: 14px; max-width: 64ch; font-size: 15.5px; color: var(--text-2); padding: 10px 14px; border-left: 3px solid #FFC107; background: rgba(255,193,7,.08); border-radius: 0 10px 10px 0; }
+.partner-note b { color: var(--text); }

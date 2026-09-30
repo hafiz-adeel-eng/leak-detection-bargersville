@@ -8,6 +8,7 @@ import Logo from '../components/Logo.astro';
 import { site, services, areas, hoursText, type Faq } from '../data/site';
 import { plumbing } from '../data/plumbing';
 import { image } from '../data/images';
+import { locations, locationUrl } from '../data/locations';
 
 interface Props {
   title: string;
@@ -17,12 +18,16 @@ interface Props {
   schema?: Record<string, unknown>[];
   noindex?: boolean;
   preload?: { href: string; srcset?: string; sizes?: string };
+  ogType?: 'website' | 'article';
+  ogImage?: string; // site-relative image path; defaults to the site OG image
+  article?: { published: string; modified: string };
 }
 
-const { title, description, faqs = [], breadcrumbs = [], schema = [], noindex = false, preload } = Astro.props;
+const { title, description, faqs = [], breadcrumbs = [], schema = [], noindex = false, preload, ogType = 'website', ogImage: pageOg, article } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogFile = image('og-image') ?? image('hero');
-const ogImage = ogFile ? new URL(ogFile, site.url).href : undefined;
+const siteOg = ogFile ? new URL(ogFile, site.url).href : undefined;
+const ogImage = pageOg ? new URL(pageOg, site.url).href : siteOg;
 const year = new Date().getFullYear();
 
 const business = {
@@ -32,7 +37,8 @@ const business = {
   url: `${site.url}/`,
   logo: `${site.url}/images/logo.png`,
   telephone: site.phoneHref,
-  ...(ogImage ? { image: ogImage } : {}),
+  description: `Non-invasive water leak detection in ${site.city}, Indiana and across ${site.county}: slab, underground, hidden, pool, thermal imaging and irrigation leaks, pinpointed, marked and repaired with our plumbing partner.`,
+  ...(siteOg ? { image: siteOg } : {}),
   address: {
     '@type': 'PostalAddress',
     addressLocality: site.city,
@@ -40,11 +46,15 @@ const business = {
     postalCode: site.postalCode,
     addressCountry: 'US',
   },
-  areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
+  geo: { '@type': 'GeoCoordinates', latitude: 39.5209, longitude: -86.1678 },
+  areaServed: areas.map((a) => {
+    const loc = locations.find((l) => l.slug === a.slug);
+    return { '@type': 'City', name: `${a.name}, IN`, url: new URL(locationUrl(a.slug), site.url).href, ...(loc ? { sameAs: loc.wiki } : {}) };
+  }),
   ...(site.claims.emergency247
     ? { openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' } }
     : {}),
-  knowsAbout: services.map((s) => s.name),
+  knowsAbout: [...services.map((s) => s.name), 'Slab leak repair', 'Water line leak repair', 'Hidden pipe leak repair'],
   ...(site.gbpUrl ? { sameAs: [site.gbpUrl] } : {}),
 };
 
@@ -86,12 +96,17 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {article && <meta property="article:published_time" content={article.published} />}
+    {article && <meta property="article:modified_time" content={article.modified} />}
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="geo.region" content="US-IN" />
@@ -114,7 +129,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
           <li><a href="/faq/">FAQ</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
-        <a class="btn btn-primary btn-sm btn-call-top" style="white-space:nowrap" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <a class="btn btn-primary btn-sm btn-call-top call-shake" style="white-space:nowrap" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
         <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><Icon name="menu" /></button>
       </div>
     </header>
@@ -136,9 +151,13 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
           </div>
           <div>
             <h2 class="footer-h">Plumbing</h2>
-            <ul>{plumbing.map((p) => <li><a href={`/plumbing/${p.slug}/`}>{p.name}</a></li>)}</ul>
+            <ul>
+              {plumbing.map((p) => <li><a href={`/plumbing/${p.slug}/`}>{p.name}</a></li>)}
+              <li><a href="/plumber-greenwood-in/">Plumber in Greenwood</a></li>
+              <li><a href="/plumber-franklin-in/">Plumber in Franklin</a></li>
+            </ul>
             <h2 class="footer-h" style="margin-top:20px">Service areas</h2>
-            <ul>{areas.map((a) => <li><a href={a.slug === 'greenwood' ? '/plumber-greenwood-in/' : a.slug === 'franklin' ? '/plumber-franklin-in/' : `/service-area/#${a.slug}`}>{a.name}, IN</a></li>)}</ul>
+            <ul>{areas.map((a) => <li><a href={locationUrl(a.slug)}>Leak detection {a.name}</a></li>)}</ul>
           </div>
           <div>
             <h2 class="footer-h">Contact</h2>
@@ -147,6 +166,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
               <li><a href="/guides/">Leak detection guides</a></li>
               <li><a href="/leak-detection-cost/">Leak detection cost</a></li>
               <li><a href="/faq/">Leak detection FAQ</a></li>
+              <li><a href="/leak-detection/">Leak detection by city (U.S.)</a></li>
               {site.gbpReviewUrl && <li><a href={site.gbpReviewUrl} rel="noopener">Leave us a Google review</a></li>}
             </ul>
           </div>
@@ -159,8 +179,12 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
     </footer>
 
     <div class="callbar dark">
-      <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      <a class="btn btn-primary btn-sm call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />Contact Us: {site.phone}</a>
     </div>
+    <a class="float-call call-shake" href={`tel:${site.phoneHref}`} aria-label={`Contact us: call ${site.phone}`}>
+      <span class="fc-ico"><Icon name="phone" /></span>
+      <span class="fc-text"><small>Contact Us</small><b>{site.phone}</b></span>
+    </a>
 
     <script>
       const btn = document.querySelector('.menu-btn');

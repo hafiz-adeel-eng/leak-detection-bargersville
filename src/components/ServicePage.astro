@@ -9,6 +9,7 @@ import { site, areas, type Service } from '../data/site';
 import { image } from '../data/images';
 import { guideUrl } from '../data/guides';
 import { md } from '../data/md';
+import { locationUrl } from '../data/locations';
 
 interface Props {
   service: Service;
@@ -24,7 +25,7 @@ const L = kind === 'leak'
       method: 'How we locate it',
       methodNote: true,
       after: 'After we find the leak',
-      cost: 'Detection is priced separately from the repair. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.',
+      cost: 'Detection and repair are quoted separately, and we can arrange both through our plumbing partner. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.',
       related: 'Other leaks we find',
     }
   : {
@@ -33,7 +34,7 @@ const L = kind === 'leak'
       method: 'How we handle it',
       methodNote: false,
       after: 'After the repair',
-      cost: 'Every home is different, so call and describe the problem for an accurate quote.',
+      cost: 'Repairs are carried out by our plumbing partner. Every home is different, so call and describe the problem for an accurate quote.',
       related: 'Other plumbing services',
     };
 const photo = image(s.slug);
@@ -52,12 +53,13 @@ const serviceSchema = {
   url: `${site.url}${url}`,
 };
 ---
-<Base title={s.title} description={s.description} faqs={s.faqs} breadcrumbs={[L.crumb, { name: s.name, url }]} schema={[serviceSchema]}>
+<Base title={s.title} description={s.description} faqs={s.faqs} breadcrumbs={[L.crumb, { name: s.name, url }]} schema={[serviceSchema]} ogImage={photo ?? undefined}>
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href={L.crumb.url}>{L.crumb.name}</a><span>/</span><span>{s.name}</span></nav>
       <h1>{s.h1}</h1>
       <p class="answer">{s.answer}</p>
+      {kind === 'plumbing' && <p class="partner-note"><b>One call from finding to fixing.</b> Repairs are carried out by our plumbing partner; hidden leaks are pinpointed first so the repair stays small.</p>}
       <div class="ctas">
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -118,6 +120,9 @@ const serviceSchema = {
           </div>
         )}
 
+        <h2>Where we offer {lower}</h2>
+        <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
+
         <h2>Frequently asked questions</h2>
         <Faq items={s.faqs} />
       </article>
@@ -127,7 +132,7 @@ const serviceSchema = {
         <h3>Call for {lower}</h3>
         <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Call and we’ll confirm a time for your ${site.city}-area home.`}</p>
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
-        <p class="small">Serving <a href="/service-area/">{areas.map((a) => a.name).join(', ')}</a>.</p>
+        <p class="small">Serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)} and <a href="/service-area/">nearby towns</a>.</p>
       </aside>
     </div>
   </section>

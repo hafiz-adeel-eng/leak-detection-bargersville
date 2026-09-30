@@ -7,6 +7,7 @@ import CtaBand from './CtaBand.astro';
 import { site, services, type Faq as FaqT, type Section } from '../data/site';
 import { plumbing } from '../data/plumbing';
 import { md } from '../data/md';
+import { locationUrl } from '../data/locations';
 
 interface Props {
   path: string;
@@ -40,6 +41,7 @@ const schema = {
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/service-area/">Service area</a><span>/</span><span>{p.city}</span></nav>
       <h1>{p.h1}</h1>
       <p class="answer">{p.answer}</p>
+      {p.focus === 'plumbing' && <p class="partner-note"><b>One call from finding to fixing.</b> Repairs are carried out by our plumbing partner.</p>}
       <div class="ctas"><a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a></div>
     </div>
   </section>
@@ -73,6 +75,7 @@ const schema = {
         <h3>{p.city}, Indiana</h3>
         <p>Call to schedule a visit to your {p.city} home.</p>
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        {p.focus === 'plumbing' && <p class="small"><a href={locationUrl(p.city.toLowerCase())}>Leak detection in {p.city}</a></p>}
         <p class="small"><a href="/service-area/">See our full service area</a></p>
       </aside>
     </div>

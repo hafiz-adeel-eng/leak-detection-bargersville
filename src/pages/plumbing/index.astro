@@ -9,7 +9,7 @@ import { plumbing } from '../../data/plumbing';
 
 const faqs = [
   { q: 'What plumbing services do you offer?', a: 'Water heater repair and replacement, drain cleaning, sewer line repair, burst and frozen pipe repair, and help with plumbing emergencies — alongside our leak detection services.' },
-  { q: 'Do you find the leak and fix it?', a: 'That’s the point of combining leak detection and plumbing: hidden leaks are pinpointed first, so the repair opening is small and in the right place.' },
+  { q: 'Do you find the leak and fix it?', a: 'Yes. We pinpoint the problem, and our plumbing partner makes the repair, so the opening is small and in the right place. If you already have a plumber, we can hand them the marked spot instead.' },
   { q: 'Which areas do you serve?', a: `We’re based in ${site.city} and serve ${areas.map((a) => a.name).join(', ')}.` },
   { q: 'How do I get a quote?', a: 'Call and describe what’s happening. Every home is different, so we’ll ask a few questions and tell you what to expect.' },
 ];
@@ -37,7 +37,7 @@ const hub = {
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Plumbing</span></nav>
       <h1>Plumbing Repair in Bargersville &amp; Johnson County</h1>
-      <p class="answer">Water heaters, clogged drains, sewer lines, burst and frozen pipes — and the hidden leaks behind them. Because we started with leak detection, we find the problem before we open anything, so repairs stay small.</p>
+      <p class="answer">Water heaters, clogged drains, sewer lines, burst and frozen pipes — and the hidden leaks behind them. We find the problem first, and our plumbing partner makes the repair, so one call covers finding and fixing it.</p>
       <div class="ctas">
         <a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>

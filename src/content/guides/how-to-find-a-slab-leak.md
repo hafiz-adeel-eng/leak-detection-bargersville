@@ -1,13 +1,13 @@
 ---
 title: "How to Find a Slab Leak: Signs, Tests & Next Steps"
-description: "Warm floors, a running meter or the sound of water under your house? Learn the signs of a slab leak, how to test for one yourself, and how the exact spot is found without breaking concrete."
+description: "Warm floors, a running meter or water sounds under the floor? The signs of a slab leak, how to test for one, and how it's pinpointed without breaking concrete."
 h1: "How to Find a Slab Leak"
 quickAnswer: "Signs of a slab leak include warm spots on the floor, the sound of running water with everything off, a water meter that keeps moving, and a sudden jump in your water bill. Confirm it with a meter test, then close the water heater inlet to see whether it's a hot or cold line. Finding the exact spot under concrete takes professional acoustic, thermal or tracer gas equipment."
 primaryKeyword: "finding a slab leak"
 secondaryKeywords: ["signs of a slab leak", "find leak under slab", "detecting water leak under slab", "hot water slab leak", "water leak under concrete slab", "find water leak under concrete floor", "slab leak detection"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone while a tablet displays the leak's sound frequency" }
-related: ["how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "leak-detection-cost"]
+related: ["pinhole-leaks-copper-pipes", "slab-leak-repair-cost", "water-running-sound-in-pipes", "water-heater-leaking", "is-leak-detection-worth-it", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "leak-detection-cost"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 5

@@ -1,13 +1,13 @@
 ---
 title: "Leak Detection Cost in Bargersville: What Affects Price"
-description: "What does leak detection cost, and why does it vary? See the factors that affect the price of finding a water leak, and what slab leak repair usually involves after the leak is found."
+description: "What does leak detection cost in Bargersville and Johnson County? The factors that set the price, and what slab leak repair involves once the leak is found."
 h1: "How Much Does Leak Detection Cost?"
 quickAnswer: "Leak detection cost depends on how many lines need testing, where the leak is (in a wall, under a slab, in the yard or in a pool), how easy the pipes are to reach, and which equipment the job needs. Detection is priced separately from the repair, and it usually costs far less than opening floors or walls to search by guesswork."
 primaryKeyword: "leak detection costs"
 secondaryKeywords: ["slab leak detection cost", "slab leak repair cost", "average slab leak repair cost", "under slab leak repair costs", "concrete slab leak repair cost", "how much does leak detection cost"]
 service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone and a frequency display on a tile floor" }
-related: ["leak-detection-methods", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house"]
+related: ["slab-leak-repair-cost", "water-line-replacement-cost-indiana", "leak-detection-methods", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
 updated: 2026-09-25
 order: 4
