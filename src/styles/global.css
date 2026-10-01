@@ -726,3 +726,12 @@ p { margin: 0; }
 /* Partner note under page-hero answers */
 .partner-note { margin-top: 14px; max-width: 64ch; font-size: 15.5px; color: var(--text-2); padding: 10px 14px; border-left: 3px solid #FFC107; background: rgba(255,193,7,.08); border-radius: 0 10px 10px 0; }
 .partner-note b { color: var(--text); }
+
+/* Town page: links to that town's service pages */
+.sub-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.sub-services > div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.sub-head { font: 600 12.5px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #6E5200; margin-bottom: 8px; }
+.sub-services ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.sub-services a { display: inline-flex; align-items: center; gap: 8px; padding-block: 4px; text-decoration: none; font-weight: 700; color: var(--text); }
+.sub-services a:hover { color: #6E5200; text-decoration: underline; }
+.sub-services svg { width: 18px; height: 18px; flex: none; color: #8A6500; }

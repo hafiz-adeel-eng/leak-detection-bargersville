@@ -10,6 +10,7 @@ import { image } from '../data/images';
 import { guideUrl } from '../data/guides';
 import { md } from '../data/md';
 import { locationUrl } from '../data/locations';
+import { townServicePages, townServiceUrl } from '../data/townServices';
 
 interface Props {
   service: Service;
@@ -17,6 +18,7 @@ interface Props {
   kind: 'leak' | 'plumbing';
 }
 const { service: s, pool, kind } = Astro.props;
+const local = townServicePages.filter((x) => x.service === s.slug);
 const base = kind === 'leak' ? '/services/' : '/plumbing/';
 const L = kind === 'leak'
   ? {
@@ -122,6 +124,7 @@ const serviceSchema = {
 
         <h2>Where we offer {lower}</h2>
         <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
+        {local.length > 0 && <p>In Greenwood: {local.map((x, i) => <>{i > 0 && ' and '}<a href={townServiceUrl(x)}>{x.h1.replace(', IN', '')}</a></>)}.</p>}
 
         <h2>Frequently asked questions</h2>
         <Faq items={s.faqs} />

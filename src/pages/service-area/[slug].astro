@@ -11,6 +11,7 @@ import { locations, locationUrl, type Location } from '../../data/locations';
 import { guideUrl } from '../../data/guides';
 import { image } from '../../data/images';
 import { md } from '../../data/md';
+import { townPages, townServiceUrl } from '../../data/townServices';
 
 export function getStaticPaths() {
   return locations.map((location) => ({ params: { slug: location.slug }, props: { location } }));
@@ -26,6 +27,7 @@ const guides = l.guides.map((id) => allGuides.find((g) => g.id === id)).filter(B
 const calls = l.topCalls
   .map((c) => ({ ...c, s: services.find((x) => x.slug === c.service) }))
   .filter((c) => c.s) as { service: string; text: string; s: Service }[];
+const sub = townPages(l.slug);
 const nearby = l.nearby.map((slug) => areas.find((a) => a.slug === slug)).filter(Boolean) as typeof areas;
 
 const city = {
@@ -103,6 +105,21 @@ const pageSchema = {
         <ul class="list">
           {calls.map((c) => <li><Icon name="check" /><span><b><a href={`/services/${c.s.slug}/`}>{c.s.name}</a>:</b> {c.text}</span></li>)}
         </ul>
+
+        {sub.length > 0 && (
+          <>
+            <h2>Leak detection and repair services in {l.name}</h2>
+            <p>Each service has its own page for {l.name} homes, covering the signs, how the leak is found, the repair options and what to check first.</p>
+            <div class="sub-services">
+              {(['detection', 'repair'] as const).map((k) => (
+                <div>
+                  <p class="sub-head">{k === 'detection' ? 'Find the leak' : 'Fix the leak'}</p>
+                  <ul>{sub.filter((x) => x.kind === k).map((x) => <li><a href={townServiceUrl(x)}><Icon name={k === 'repair' ? 'pipe' : 'wave'} />{x.h1}</a></li>)}</ul>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
 
         <h2>{l.homes.h2}</h2>
         {l.homes.paras.map((p) => <p set:html={md(p)} />)}
