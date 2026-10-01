@@ -141,7 +141,7 @@ const pageSchema = {
         ))}
 
         <section class="ts-block" id="faq">
-          <h2>{p.h1.replace(/ in Greenwood, IN$/, '')}: questions from {p.townName} homeowners</h2>
+          <h2>{p.h1.replace(` in ${place}`, '')}: questions from {p.townName} homeowners</h2>
           <Faq items={p.faqs} />
         </section>
 

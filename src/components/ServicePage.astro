@@ -124,7 +124,7 @@ const serviceSchema = {
 
         <h2>Where we offer {lower}</h2>
         <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
-        {local.length > 0 && <p>In Greenwood: {local.map((x, i) => <>{i > 0 && ' and '}<a href={townServiceUrl(x)}>{x.h1.replace(', IN', '')}</a></>)}.</p>}
+        {local.length > 0 && <p>Town pages for this service: {local.map((x, i) => <>{i > 0 && (i === local.length - 1 ? ' and ' : ', ')}<a href={townServiceUrl(x)}>{x.h1.replace(', IN', '')}</a></>)}.</p>}
 
         <h2>Frequently asked questions</h2>
         <Faq items={s.faqs} />
