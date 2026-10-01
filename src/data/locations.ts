@@ -106,11 +106,11 @@ export const locations: Location[] = [
     slug: 'franklin',
     name: 'Franklin',
     title: 'Leak Detection in Franklin, IN | Hidden & Slab Leaks',
-    description: 'Leak detection in Franklin, IN (46131). We find hidden leaks in older and newer homes, slab leaks and buried line leaks, and mark the spot; our plumbing partner can then make the repair.',
+    description: 'Leak detection and repair in Franklin, IN (46131): hidden leaks in older homes, slab leaks and buried water line leaks, pinpointed and marked for repair.',
     h1: 'Leak Detection in Franklin, IN',
     answer: 'We locate hidden water leaks in Franklin homes, from historic houses near the courthouse square to newer subdivisions. We confirm the leak with a meter test, isolate the line, then pinpoint it with pressure testing, acoustic listening and thermal imaging, and mark the spot; our plumbing partner can then make the repair.',
     primaryKeyword: 'leak detection franklin in',
-    secondaryKeywords: ['water leak detection franklin indiana', 'slab leak detection franklin in', 'franklin in leak detection company', 'underground water line leak franklin indiana', 'hidden water leak franklin in'],
+    secondaryKeywords: ['water leak detection franklin indiana', 'franklin in leak detection company', 'leak repair franklin indiana'], // service-specific terms belong to /service-area/franklin/<service>/
     wiki: 'https://en.wikipedia.org/wiki/Franklin,_Indiana',
     geo: { lat: 39.4806, lng: -86.055 },
     zips: ['46131'],
@@ -177,7 +177,7 @@ export const locations: Location[] = [
     h1: 'Leak Detection in Center Grove, IN',
     answer: 'We find hidden water leaks in Center Grove homes: slab leaks, buried water line leaks, pool and spa leaks and sprinkler leaks. We confirm the leak at the meter, isolate the system that’s losing water, then pinpoint it with pressure testing, acoustic listening, thermal imaging and tracer gas, and mark the spot for repair.',
     primaryKeyword: 'leak detection center grove',
-    secondaryKeywords: ['water leak detection center grove indiana', 'white river township leak detection', 'pool leak detection center grove', 'sprinkler leak detection center grove in', 'slab leak detection center grove'],
+    secondaryKeywords: ['water leak detection center grove indiana', 'white river township leak detection', 'leak repair center grove'], // service-specific terms belong to /service-area/center-grove/<service>/
     wiki: 'https://en.wikipedia.org/wiki/White_River_Township,_Johnson_County,_Indiana',
     geo: { lat: 39.587, lng: -86.16 },
     zips: ['46142', '46143', '46106'],

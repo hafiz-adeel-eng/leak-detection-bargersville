@@ -1,8 +1,11 @@
 import type { Faq } from './site';
+import { franklinPages } from './town-services/franklin';
+import { centerGrovePages } from './town-services/center-grove';
 
 // Service pages for a single town, at /service-area/<town>/<slug>/.
 // Each page is written for that town (its utility, soils, housing and permits), not filled in from a template,
-// so every page has its own sections. Greenwood came first because the town page already ranks on page one there.
+// so every page has its own sections. Greenwood came first because the town page already ranks on page one there;
+// Franklin and Center Grove pages live in ./town-services/.
 
 export type TownBlock = {
   h2: string;
@@ -42,7 +45,7 @@ export const townServiceUrl = (p: { town: string; slug: string }) => `/service-a
 
 const gw = { town: 'greenwood', townName: 'Greenwood', published: '2026-10-01', updated: '2026-10-01' };
 
-export const townServicePages: TownServicePage[] = [
+const greenwoodPages: TownServicePage[] = [
   // ───────────────────────────── Slab leak detection ─────────────────────────────
   {
     ...gw,
@@ -716,5 +719,7 @@ export const townServicePages: TownServicePage[] = [
     guides: ['how-to-find-a-sprinkler-leak', 'why-is-my-water-bill-so-high', 'water-bill-leak-adjustment-indiana'],
   },
 ];
+
+export const townServicePages: TownServicePage[] = [...greenwoodPages, ...franklinPages, ...centerGrovePages];
 
 export const townPages = (town: string) => townServicePages.filter((p) => p.town === town);
