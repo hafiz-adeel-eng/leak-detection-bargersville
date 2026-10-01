@@ -1,0 +1,249 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import Faq from '../../../components/Faq.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { site, services } from '../../../data/site';
+import { locations, locationUrl } from '../../../data/locations';
+import { townServicePages, townPages, townServiceUrl, type TownServicePage } from '../../../data/townServices';
+import { guideUrl } from '../../../data/guides';
+import { image } from '../../../data/images';
+import { md } from '../../../data/md';
+
+export function getStaticPaths() {
+  return townServicePages.map((page) => ({ params: { town: page.town, slug: page.slug }, props: { page } }));
+}
+
+const { page: p } = Astro.props as { page: TownServicePage };
+const loc = locations.find((l) => l.slug === p.town)!;
+const place = `${p.townName}, IN`;
+const path = townServiceUrl(p);
+const url = `${site.url}${path}`;
+const photo = image(p.image);
+const svc = services.find((s) => s.slug === p.service);
+const siblings = townPages(p.town);
+const detection = siblings.filter((x) => x.kind === 'detection');
+const repair = siblings.filter((x) => x.kind === 'repair');
+const allGuides = await getCollection('guides');
+const guides = p.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const toc = p.blocks.map((b) => ({ id: b.id ?? slug(b.h2), h2: b.h2 }));
+
+const city = {
+  '@type': 'City',
+  name: place,
+  sameAs: loc.wiki,
+  geo: { '@type': 'GeoCoordinates', latitude: loc.geo.lat, longitude: loc.geo.lng },
+  containedInPlace: { '@type': 'AdministrativeArea', name: `${loc.county ?? site.county}, Indiana` },
+};
+const serviceSchema = {
+  '@type': 'Service',
+  '@id': `${url}#service`,
+  name: p.h1,
+  serviceType: p.kind === 'repair' ? 'Plumbing leak repair' : 'Water leak detection',
+  description: p.description,
+  url,
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: city,
+  ...(svc ? { isRelatedTo: { '@type': 'Service', name: svc.name, url: `${site.url}/services/${svc.slug}/` } } : {}),
+};
+const pageSchema = {
+  '@type': 'WebPage',
+  '@id': `${url}#webpage`,
+  url,
+  name: p.title,
+  description: p.description,
+  isPartOf: { '@id': `${site.url}/#website` },
+  about: { '@id': `${url}#service` },
+  mainEntity: { '@id': `${url}#service` },
+  keywords: [p.primaryKeyword, ...p.secondaryKeywords].join(', '),
+  datePublished: p.published,
+  dateModified: p.updated,
+  speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.ts-answer'] },
+  ...(photo ? { primaryImageOfPage: new URL(photo, site.url).href } : {}),
+};
+---
+<Base
+  title={p.title}
+  description={p.description}
+  faqs={p.faqs}
+  breadcrumbs={[{ name: 'Service area', url: '/service-area/' }, { name: place, url: locationUrl(p.town) }, { name: p.h1, url: path }]}
+  schema={[serviceSchema, pageSchema]}
+  ogImage={photo ?? undefined}
+>
+  <section class="ts-hero dark">
+    <div class="container ts-hero-grid">
+      <div class="ts-hero-copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/service-area/">Service area</a><span>/</span><a href={locationUrl(p.town)}>{p.townName}</a><span>/</span><span>{p.kind === 'repair' ? 'Repair' : 'Detection'}</span></nav>
+        <span class={`ts-kind ${p.kind}`}><Icon name={p.kind === 'repair' ? 'pipe' : 'wave'} />{p.kind === 'repair' ? 'Leak repair' : 'Leak detection'} · {p.townName}, Indiana</span>
+        <h1>{p.h1}</h1>
+        <div class="ctas">
+          <a class="btn btn-primary call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+          <a class="btn btn-ghost" href={`#${toc[0].id}`}>Read the guide</a>
+        </div>
+      </div>
+      {photo && (
+        <figure class="ts-hero-media">
+          <img src={photo} alt={p.imageAlt} width="1200" height="800" fetchpriority="high" decoding="async" />
+        </figure>
+      )}
+    </div>
+  </section>
+
+  <section class="ts-intro">
+    <div class="container">
+      <div class="ts-answer-box">
+        <p class="ts-label">Short answer</p>
+        <p class="ts-answer">{p.answer}</p>
+      </div>
+      <dl class="ts-glance">
+        {p.glance.map((g) => <div><dt>{g.label}</dt><dd>{g.value}</dd></div>)}
+      </dl>
+    </div>
+  </section>
+
+  <section class="section ts-body">
+    <div class="container ts-grid">
+      <article class="ts-article">
+        {p.blocks.map((b, i) => (
+          <section class="ts-block" id={toc[i].id}>
+            <h2>{b.h2}</h2>
+            {b.paras?.map((x) => <p set:html={md(x)} />)}
+            {b.callout && <p class="ts-callout" set:html={md(b.callout)} />}
+            {b.list && <ul class="list">{b.list.map((x) => <li><Icon name="check" /><span set:html={md(x)} /></li>)}</ul>}
+            {b.steps && (
+              <ol class="ts-steps">
+                {b.steps.map((s) => <li><b>{s.t}</b><span set:html={md(s.d)} /></li>)}
+              </ol>
+            )}
+            {b.cards && (
+              <div class="ts-cards">
+                {b.cards.map((c) => <div class="ts-card"><h3>{c.t}</h3><p set:html={md(c.d)} /></div>)}
+              </div>
+            )}
+            {b.table && (
+              <div class="ts-table">
+                <table>
+                  <thead><tr>{b.table.head.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+                  <tbody>{b.table.rows.map((r) => <tr>{r.map((c, j) => j === 0 ? <th scope="row" set:html={md(c)} /> : <td set:html={md(c)} />)}</tr>)}</tbody>
+                </table>
+              </div>
+            )}
+            {b.after?.map((x) => <p set:html={md(x)} />)}
+            {i === 1 && (
+              <div class="inline-cta">
+                <p><b>{p.kind === 'repair' ? 'Ready to fix it?' : 'Think you have a leak?'}</b> Call and tell us what you’re noticing in your {p.townName} home.</p>
+                <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+              </div>
+            )}
+          </section>
+        ))}
+
+        <section class="ts-block" id="faq">
+          <h2>{p.h1.replace(/ in Greenwood, IN$/, '')}: questions from {p.townName} homeowners</h2>
+          <Faq items={p.faqs} />
+        </section>
+
+        {guides.length > 0 && (
+          <div class="guide-links">
+            <p class="ts-subhead">Guides that go deeper</p>
+            <ul>{guides.map((g) => <li><a href={guideUrl(g)}><Icon name="report" />{g.data.h1}</a></li>)}</ul>
+          </div>
+        )}
+
+        <p class="sources">Sources: <a href="https://www.amwater.com/inaw/" rel="noopener" target="_blank">Indiana American Water</a>; <a href="https://bargersville.in.gov/services/utilities/water/" rel="noopener" target="_blank">Town of Bargersville Water Utility</a>; <a href="https://indiana811.org/" rel="noopener" target="_blank">Indiana 811</a>; <a href="https://iac.iga.in.gov/iac/iac_title?iact=327" rel="noopener" target="_blank">Indiana Administrative Code, Title 327</a>. Updated {new Date(p.updated).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}.</p>
+      </article>
+
+      <aside class="ts-aside">
+        <div class="ts-call">
+          <p class="ts-subhead">{p.townName} homes, ZIP {loc.zips.join(' & ')}</p>
+          <p>{p.kind === 'repair' ? 'We pinpoint the leak, then our plumbing partner makes the repair.' : 'We find the leak and mark it. Repair through our plumbing partner if you want it.'}</p>
+          <a class="btn btn-primary call-shake" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+        <nav class="ts-toc" aria-label="On this page">
+          <p class="ts-subhead">On this page</p>
+          <ol>{toc.map((t) => <li><a href={`#${t.id}`}>{t.h2}</a></li>)}<li><a href="#faq">Questions</a></li></ol>
+        </nav>
+        <nav class="ts-services" aria-label={`Leak services in ${p.townName}`}>
+          <p class="ts-subhead">Detection in {p.townName}</p>
+          <ul>{detection.map((x) => <li>{x.slug === p.slug ? <span aria-current="page">{x.h1.replace(` in ${place}`, '')}</span> : <a href={townServiceUrl(x)}>{x.h1.replace(` in ${place}`, '')}</a>}</li>)}</ul>
+          <p class="ts-subhead">Repair in {p.townName}</p>
+          <ul>{repair.map((x) => <li>{x.slug === p.slug ? <span aria-current="page">{x.h1.replace(` in ${place}`, '')}</span> : <a href={townServiceUrl(x)}>{x.h1.replace(` in ${place}`, '')}</a>}</li>)}</ul>
+          <p class="ts-back"><a href={locationUrl(p.town)}>All leak services in {p.townName} <Icon name="arrow" /></a></p>
+        </nav>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand title={p.kind === 'repair' ? `Get the leak fixed in ${p.townName}` : `Get the leak found in ${p.townName}`} text={`One call for detection and repair across ${p.townName}, ZIP ${loc.zips.join(' and ')}.`} />
+</Base>
+
+<style>
+  .ts-hero { padding-block: clamp(36px, 5vw, 64px); background: radial-gradient(70% 120% at 100% 0%, rgba(255,193,7,.14), transparent 60%), var(--bg); }
+  .ts-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+  .ts-hero-copy { display: grid; gap: 18px; justify-items: start; }
+  .ts-hero h1 { font-size: clamp(32px, 4.4vw, 50px); font-weight: 800; max-width: 18ch; }
+  .ts-hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .ts-kind { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; font: 600 12.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,193,7,.14); color: #FFE08A; border: 1px solid rgba(255,193,7,.35); }
+  .ts-kind.repair { background: rgba(61,190,122,.14); color: #9BE3BC; border-color: rgba(61,190,122,.4); }
+  .ts-kind :global(svg) { width: 16px; height: 16px; }
+  .ts-hero-media { margin: 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 3 / 2; box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); }
+  .ts-hero-media img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .ts-hero-grid { grid-template-columns: 1fr; } .ts-hero-media { aspect-ratio: 16 / 9; } }
+
+  .ts-intro { padding-block: clamp(28px, 4vw, 44px) 0; }
+  .ts-intro .container { display: grid; gap: 18px; }
+  .ts-answer-box { background: var(--surface); border: 1px solid var(--line); border-left: 5px solid #D4A21C; border-radius: 0 16px 16px 0; padding: 20px 24px; max-width: 900px; }
+  .ts-label, .ts-subhead { font: 600 12.5px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #6E5200; margin: 0 0 8px; }
+  .ts-answer { font-size: 18px; line-height: 1.65; color: var(--text); font-weight: 500; }
+  .ts-glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 0; }
+  .ts-glance div { background: var(--bg-2); border-radius: 14px; padding: 14px 16px; display: grid; gap: 4px; }
+  .ts-glance dt { font: 600 12.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #6E5200; }
+  .ts-glance dd { margin: 0; color: var(--text); font-size: 15px; line-height: 1.5; }
+
+  .ts-body { padding-top: clamp(36px, 5vw, 56px); }
+  .ts-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(28px, 4vw, 56px); align-items: start; }
+  @media (max-width: 960px) { .ts-grid { grid-template-columns: 1fr; } }
+  .ts-article { display: grid; gap: 44px; max-width: 72ch; min-width: 0; }
+  .ts-block { display: grid; gap: 16px; scroll-margin-top: 90px; }
+  .ts-block h2 { font-size: clamp(23px, 2.8vw, 30px); font-weight: 800; }
+  .ts-block > p { color: var(--text-2); font-size: 17px; }
+  .ts-block :global(a:not(.btn)) { color: #6E5200; font-weight: 700; }
+  .ts-callout { padding: 14px 18px; border-radius: 12px; background: var(--aqua-soft); border: 1px solid rgba(212,162,28,.35); color: var(--text) !important; font-size: 16px !important; }
+
+  .ts-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: s; }
+  .ts-steps li { counter-increment: s; position: relative; display: grid; gap: 4px; padding: 0 0 20px 52px; color: var(--text-2); font-size: 16.5px; }
+  .ts-steps li::before { content: counter(s); position: absolute; left: 0; top: -2px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: #0B2240; color: #FFE08A; font: 700 15px/1 var(--font); }
+  .ts-steps li:not(:last-child)::after { content: ''; position: absolute; left: 16px; top: 36px; bottom: 4px; width: 2px; background: var(--line); }
+  .ts-steps b { color: var(--text); font-size: 17px; }
+
+  .ts-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .ts-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; display: grid; gap: 8px; align-content: start; }
+  .ts-card h3 { font-size: 18px; font-weight: 800; }
+  .ts-card p { color: var(--text-2); font-size: 15.5px; line-height: 1.6; }
+
+  .ts-table { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+  .ts-table table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 460px; }
+  .ts-table th, .ts-table td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  .ts-table thead th { background: #0B2240; color: #F3EFE6; font-size: 14px; }
+  .ts-table tbody th { color: var(--text); font-weight: 700; width: 42%; }
+  .ts-table td { color: var(--text-2); }
+  .ts-table tr:last-child th, .ts-table tr:last-child td { border-bottom: 0; }
+
+  .ts-aside { position: sticky; top: 90px; display: grid; gap: 16px; }
+  @media (max-width: 960px) { .ts-aside { position: static; } .ts-toc { display: none; } }
+  .ts-call, .ts-toc, .ts-services { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; display: grid; gap: 10px; }
+  .ts-call p:not(.ts-subhead) { color: var(--text-2); font-size: 15px; }
+  .ts-call .btn { width: 100%; }
+  .ts-toc ol, .ts-services ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; font-size: 14.5px; }
+  .ts-services ul { list-style: none; padding: 0; margin-bottom: 8px; }
+  .ts-toc a, .ts-services a { text-decoration: none; color: var(--text); padding-block: 2px; }
+  .ts-services a { display: inline-block; }
+  @media (max-width: 560px) { .ts-answer { font-size: 16.5px; } }
+  .ts-toc a:hover, .ts-services a:hover { color: #6E5200; text-decoration: underline; }
+  .ts-services [aria-current] { font-weight: 800; color: #6E5200; }
+  .ts-back a { font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+  .ts-back :global(svg) { width: 16px; height: 16px; }
+  .guide-links .ts-subhead { margin-bottom: 4px; }
+</style>

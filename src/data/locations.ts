@@ -42,7 +42,7 @@ export const locations: Location[] = [
     h1: 'Leak Detection in Greenwood, IN',
     answer: 'We find hidden water leaks in Greenwood homes without tearing up floors, walls or lawns. We confirm the leak at your meter, isolate the line, then pinpoint it with pressure testing, acoustic listening and thermal imaging, and mark the exact spot; our plumbing partner can then make one small, targeted repair.',
     primaryKeyword: 'leak detection greenwood in',
-    secondaryKeywords: ['water leak detection greenwood indiana', 'slab leak detection greenwood', 'slab leak repair greenwood in', 'leak repair greenwood indiana', 'greenwood leak detection company', 'underground water leak greenwood in', 'sprinkler leak detection greenwood', 'leak detection near greenwood'],
+    secondaryKeywords: ['water leak detection greenwood indiana', 'leak repair greenwood indiana', 'greenwood leak detection company', 'leak detection near greenwood'], // service-specific terms belong to /service-area/greenwood/<service>/
     wiki: 'https://en.wikipedia.org/wiki/Greenwood,_Indiana',
     geo: { lat: 39.6137, lng: -86.1067 },
     zips: ['46142', '46143'],
