@@ -16,11 +16,16 @@ const featured = ['why-is-my-water-bill-so-high', 'how-to-find-a-water-leak-in-y
 const allGuides = await getCollection('guides');
 const homeGuides = featured.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
 
-const faqs = generalFaqs.slice(0, 5);
+const homeFaqs = [
+  { q: 'What is a leak detection service?', a: 'A leak detection service finds hidden water leaks without tearing up your home. We confirm the leak with a meter test, isolate the line or fixture, then use pressure testing, acoustic listening and thermal imaging to pinpoint the exact spot, mark it, and document it with photos and readings for your plumber or insurer.' },
+  { q: 'Do you offer leak detection service in Bargersville and nearby towns?', a: "Yes. We are based in Bargersville and serve Johnson County and nearby towns, including Greenwood, Franklin, Center Grove, Whiteland and New Whiteland, Trafalgar, Nineveh and Prince's Lakes, Morgantown, and Southport. Pick your town for local leak detection details, or call and ask if you are nearby." },
+  ...generalFaqs.slice(0, 3),
+];
+const faqs = homeFaqs;
 ---
 <Base
-  title="Leak Detection & Repair in Bargersville, IN | Slab Leaks"
-  description="Suspect a hidden leak? We locate water leaks under slabs, inside walls, in yards and pools across Bargersville, without tearing things up. Call today."
+  title="Leak Detection Service in Bargersville, IN | Slab Leaks"
+  description="Leak detection service in Bargersville: we locate water leaks under slabs, inside walls, in yards and pools, without tearing things up. Call today."
   faqs={faqs}
   preload={{ href: '/images/hero.webp', srcset: '/images/hero-xs.webp 640w, /images/hero-sm.webp 900w, /images/hero.webp 1600w', sizes: '100vw' }}
 >
@@ -39,9 +44,9 @@ const faqs = generalFaqs.slice(0, 5);
     <div class="container whatis-grid">
       <div class="whatis-copy">
         <span class="eyebrow">Water leak detection</span>
-        <h2>What is professional <span>leak detection?</span></h2>
+        <h2>What is our professional <span>leak detection service?</span></h2>
         <div class="whatis-answer">
-          <p>Professional leak detection finds a hidden water leak <b>without opening floors, walls or yards to search</b>. The spot is marked so the repair starts in the right place.</p>
+          <p>Our professional leak detection service finds a hidden water leak <b>without opening floors, walls or yards to search</b>. The spot is marked so the repair starts in the right place.</p>
         </div>
         <ol class="whatis-steps">
           <li><span class="ws-ico"><Icon name="gauge" /></span><div><b>Confirm</b><span>A meter test proves there’s a leak.</span></div></li>
@@ -80,7 +85,7 @@ const faqs = generalFaqs.slice(0, 5);
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Services</span>
-        <h2>Every kind of hidden leak, found without tearing things up</h2>
+        <h2>Our leak detection service finds every kind of hidden leak, without tearing things up</h2>
         <p>From slab leaks under your kitchen floor to a pool that won’t hold water, we use the right tool for each kind of leak.</p>
       </div>
       <div class="cards">
@@ -159,7 +164,7 @@ const faqs = generalFaqs.slice(0, 5);
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Questions homeowners ask</span>
-        <h2>Leak detection FAQ</h2>
+        <h2>Leak detection service FAQ</h2>
       </div>
       <Faq items={faqs} />
       <p style="margin-top:20px"><a class="btn btn-ghost btn-sm" href="/faq/">See all questions<Icon name="arrow" /></a></p>
