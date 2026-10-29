@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, areas } from '../data/site';
+import { locationUrl } from '../data/locations';
+
+const faqs = [
+  { q: 'What is sewer line leak detection?', a: 'It is a camera inspection of the buried sewer line that finds a break, crack, roots or a sag and locates it from above — before any digging. You get the marked spot plus footage or photos, so the repair opens one small area.' },
+  { q: 'How do I know if my sewer line is leaking?', a: 'Several drains backing up at once, gurgling toilets or drains, a sewage smell, a soggy or unusually green patch over the line, and repeated main line clogs are the common signs. A camera inspection confirms it.' },
+  { q: 'Do you have to dig up my yard to find a sewer line leak?', a: 'No. Detection is non-invasive: the camera finds the problem and we locate it from above. Digging happens only for the repair, at the marked spot — not to search for the leak.' },
+  { q: 'What is the difference between sewer line leak detection and sewer line repair?', a: 'Detection finds and marks the leak; repair fixes it. We inspect and locate the problem, then our plumbing partner makes the repair — from a spot repair to replacing a section — or we hand the footage and marked spot to your own plumber.' },
+  { q: 'How much does sewer line leak detection cost?', a: 'It depends on the problem, the depth and length of the line, the pipe material, and what is above it — lawn, driveway or landscaping. Detection and repair are quoted separately, so call and describe the problem for an accurate quote.' },
+  { q: 'Do you offer sewer line leak detection near me?', a: "We are based in Bargersville and serve Johnson County and nearby towns, including Greenwood, Franklin, Center Grove, Whiteland and New Whiteland, Trafalgar, Nineveh and Prince's Lakes, Morgantown, and Southport. Pick your town on our service area page for local details, or call and ask if you are nearby." },
+];
+
+const serviceSchema = {
+  '@type': 'Service',
+  name: 'Sewer Line Leak Detection',
+  serviceType: 'Sewer Line Leak Detection',
+  description: 'Sewer line leak detection in Bargersville: we confirm the leak, trace the buried line and pinpoint the break without digging up your yard. Call today.',
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
+  url: `${site.url}/services/sewer-line-leak-detection/`,
+};
+---
+<Base
+  title="Sewer Line Leak Detection in Bargersville, IN"
+  description="Sewer line leak detection in Bargersville: we confirm the leak, trace the buried line and pinpoint the break without digging up your yard. Call today."
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Services', url: '/#services' }, { name: 'Sewer Line Leak Detection', url: '/services/sewer-line-leak-detection/' }]}
+  schema={[serviceSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#services">Services</a><span>/</span><span>Sewer Line Leak Detection</span></nav>
+      <h1>Sewer Line Leak Detection in Bargersville, IN</h1>
+      <p class="answer">Sewer line leak detection finds a break in the buried pipe that carries wastewater away from your home — without digging up your yard. We inspect the line with a camera, locate the problem from above and mark it, so the repair opens one small area instead of a trench.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>What is sewer line leak detection?</h2>
+        <p>A sewer line leak is a break, crack or failed joint in the buried pipe that carries wastewater from your home to the city sewer connection. Because the pipe is underground, the leak usually shows up as a backup, a smell or a soggy patch long before anyone sees the pipe itself.</p>
+        <p>Sewer line leak detection is the inspection that finds that break before any digging starts. A camera inspection shows what is wrong — roots, a crack, a collapsed section or a sag — and where it is. The problem spot is then located from above, so digging goes to the right place and the repair stays small. Detection and repair are two separate jobs: detection finds and marks the leak, and our plumbing partner makes the <a href="/plumbing/sewer-line-repair/">sewer line repair</a> — or we hand the marked spot and footage to your own plumber.</p>
+
+        <h2>Signs you may have a sewer line leak</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>Several drains backing up at once, rather than a single slow sink</span></li>
+          <li><Icon name="check" /><span>Gurgling toilets or drains</span></li>
+          <li><Icon name="check" /><span>A sewage smell inside or outside the house</span></li>
+          <li><Icon name="check" /><span>A soggy or unusually green patch over the sewer line</span></li>
+          <li><Icon name="check" /><span>Repeated main line clogs that keep coming back</span></li>
+        </ul>
+
+        <div class="inline-cta">
+          <p><b>Recognize these signs?</b> The sooner the leak is found, the smaller the repair.</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>What causes sewer line leaks?</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>Tree roots entering joints and cracks in search of water, then expanding until they block or break the pipe</span></li>
+          <li><Icon name="check" /><span>Older pipe material deteriorating with age</span></li>
+          <li><Icon name="check" /><span>Ground movement causing sags or offset joints</span></li>
+          <li><Icon name="check" /><span>Grease and debris building up in the line</span></li>
+        </ul>
+        <p>A sagging section holds water and waste instead of draining it, which speeds up blockages and wear on the pipe. Roots make it worse: once they find a crack, they keep growing into it.</p>
+
+        <h2>How we find a sewer line leak</h2>
+        <ol class="method-list">
+          <li><b>Clear first, if needed</b><span>If drains are backing up, the line is cleared so the house can drain again and the camera can see clearly.</span></li>
+          <li><b>Camera inspection</b><span>A camera is run through the line and shows the condition of the pipe — roots, a crack, a collapsed section or a sag — and pinpoints the problem.</span></li>
+          <li><b>Locate from above</b><span>The problem spot is located from above, so digging goes to the right place.</span></li>
+          <li><b>Mark and document</b><span>You get the marked spot plus the inspection footage or photos for your records — and for your plumber or insurer.</span></li>
+        </ol>
+        <p class="note-link">Want the general background? Read <a href="/guides/leak-detection-methods/">how professional leak detection works</a>.</p>
+
+        <h3>What to do before we arrive</h3>
+        <ul class="list">
+          <li><Icon name="check" /><span>Stop running water if drains are backing up.</span></li>
+          <li><Icon name="check" /><span>Keep people and pets away from any sewage; it’s a health hazard.</span></li>
+          <li><Icon name="check" /><span>Note which fixtures back up and when.</span></li>
+        </ul>
+
+        <h2>What affects the cost</h2>
+        <p>The cost depends on the problem, the depth and length of the line, the pipe material, and what’s above it — lawn, driveway or landscaping. Detection and repair are quoted separately, and we can arrange both through our plumbing partner. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.</p>
+
+        <h2>Where we offer sewer line leak detection</h2>
+        <p>We’re based in {site.city} and provide sewer line leak detection across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
+        <p>Pick your town for local details, or call and ask if you’re nearby. If the problem turns out to be in a buried water line rather than the sewer, see our <a href="/services/underground-water-leak-detection/">underground water leak detection</a> service.</p>
+
+        <h2>Frequently asked questions</h2>
+        <Faq items={faqs} />
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name="pipe" /></span>
+        <h3>Call for sewer line leak detection</h3>
+        <p>{site.claims.sameDay ? 'Call and a local technician will confirm a time, often the same day.' : `Call and we’ll confirm a time for your ${site.city}-area home.`}</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">Serving {areas.map((a, i) => <>{i > 0 && ', '}<a href={locationUrl(a.slug)}>{a.name}</a></>)} and <a href="/service-area/">nearby towns</a>.</p>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand title={`Need sewer line leak detection in ${site.city}?`} />
+</Base>
