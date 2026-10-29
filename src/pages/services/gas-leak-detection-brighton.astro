@@ -1,0 +1,111 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site } from '../../data/site';
+
+const faqs = [
+  { q: 'What is gas leak detection?', a: 'It is the testing of the gas line that feeds your home to find where gas is escaping, before any repair starts. The leak is pinpointed and marked, so the repair opens one small area instead of tearing things up.' },
+  { q: 'How do I know if I have a gas leak?', a: 'The common signs are a rotten-egg or sulfur smell, a hissing sound near a gas line or appliance, a patch of dead or dying grass above a buried line, bubbles in standing water, and a gas bill that jumps for no clear reason. If you notice any of these, treat it as real: leave and call.' },
+  { q: 'What should I do if I smell gas?', a: 'Leave the home immediately. Do not switch lights or appliances on or off, do not use your phone inside, and do not light anything. From a safe distance outside, call your gas company or 911. Do not go back inside until you are told it is safe.' },
+  { q: 'Do you have to dig up my yard to find a gas leak?', a: 'Usually not. Testing and detectors locate the leak first, so digging happens only for the repair, at the marked spot. A buried line repair may need one small dig — not a trench across the yard.' },
+  { q: 'How much does gas leak detection cost?', a: 'It depends on where the leak is, how much of the line must be tested, how accessible it is, and what the repair needs. Detection and repair are quoted separately, so call and describe the problem for an accurate quote.' },
+  { q: 'Do you offer gas leak detection in Brighton?', a: 'Yes. We offer gas leak detection in Brighton. If you are nearby and unsure whether we reach you, call and ask — we will confirm before booking.' },
+];
+
+const serviceSchema = {
+  '@type': 'Service',
+  name: 'Gas Leak Detection',
+  serviceType: 'Gas Leak Detection',
+  description: 'Gas leak detection in Brighton: we test gas lines, pinpoint the leak and mark it for a fast, safe repair. Smell gas in Brighton? Leave and call today.',
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: { '@type': 'City', name: 'Brighton' },
+  url: `${site.url}/services/gas-leak-detection-brighton/`,
+};
+---
+<Base
+  title="Gas Leak Detection in Brighton"
+  description="Gas leak detection in Brighton: we test gas lines, pinpoint the leak and mark it for a fast, safe repair. Smell gas in Brighton? Leave and call today."
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Services', url: '/#services' }, { name: 'Gas Leak Detection in Brighton', url: '/services/gas-leak-detection-brighton/' }]}
+  schema={[serviceSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#services">Services</a><span>/</span><span>Gas Leak Detection in Brighton</span></nav>
+      <h1>Gas Leak Detection in Brighton</h1>
+      <p class="answer">Gas leak detection finds a leak in the gas line that feeds your home — before it becomes dangerous. We test the line, pinpoint the leak and mark it, so the repair is fast, small and safe.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <div style="border-left:4px solid #EAB308;background:#FFF8E1;padding:1rem 1.25rem;margin-bottom:1.5rem;border-radius:0.5rem;">
+          <p><b>Smell gas right now?</b> Leave the home immediately. Do not switch lights or appliances on or off, do not use your phone inside, and do not light anything. From a safe distance outside, call your gas company or 911. Do not go back inside until you are told it is safe.</p>
+        </div>
+
+        <h2>What is gas leak detection?</h2>
+        <p>A gas leak is gas escaping from the line that runs from the meter into your home and to your appliances — through a failed joint, a cracked fitting or a damaged section of pipe. Because natural gas is invisible, a leak often shows up as a smell, a sound or a dying patch of grass long before anyone sees the pipe itself.</p>
+        <p>Gas leak detection is the testing that finds that leak before any repair starts. The line is tested, the leak is pinpointed and marked, and the repair goes straight to the right place. Detection and repair are two separate jobs: detection finds and marks the leak, and the repair fixes it.</p>
+
+        <h2>Signs you may have a gas leak</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>A rotten-egg or sulfur smell — the odor added to natural gas so leaks can be smelled</span></li>
+          <li><Icon name="check" /><span>A hissing or whistling sound near a gas line, meter or appliance</span></li>
+          <li><Icon name="check" /><span>A patch of dead or dying grass or plants above a buried gas line</span></li>
+          <li><Icon name="check" /><span>Bubbles in standing water or puddles over a buried line</span></li>
+          <li><Icon name="check" /><span>A gas bill that jumps for no clear reason</span></li>
+          <li><Icon name="check" /><span>Headaches, dizziness or nausea at home that ease when you leave — leave at once and call for help</span></li>
+        </ul>
+
+        <div class="inline-cta">
+          <p><b>Notice any of these signs?</b> Do not wait to see if it gets worse — leave and call.</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>What to do if you suspect a gas leak</h2>
+        <ol class="method-list">
+          <li><b>Leave immediately</b><span>Get everyone, including pets, out of the home. Do not stop to open windows or look for the leak.</span></li>
+          <li><b>Touch nothing electrical</b><span>Do not switch lights or appliances on or off — a spark can ignite gas.</span></li>
+          <li><b>Do not use your phone inside</b><span>Wait until you are outside and at a safe distance.</span></li>
+          <li><b>Call for help from outside</b><span>Call your gas company or 911 and describe the smell and where it is strongest.</span></li>
+          <li><b>Stay out until cleared</b><span>Do not go back inside until the gas company or emergency responders say it is safe.</span></li>
+        </ol>
+        <p class="note-link">If the leak is on the gas company's side of the meter, they handle it. The line from the meter into your home is usually yours — that is the line we test. Want the general background? Read <a href="/guides/leak-detection-methods/">how professional leak detection works</a>.</p>
+
+        <h2>How we find a gas leak</h2>
+        <ol class="method-list">
+          <li><b>Safety check first</b><span>We confirm the home is safe to enter and the gas supply situation before testing begins.</span></li>
+          <li><b>Pressure test</b><span>The line is sealed and pressurized. If the pressure holds, the line is sound; if it drops, gas is escaping somewhere.</span></li>
+          <li><b>Check joints and connections</b><span>Each joint, valve and appliance connection is checked — a soapy-water test shows bubbles exactly where gas escapes.</span></li>
+          <li><b>Detector sweep</b><span>An electronic gas detector is swept along the line and around appliances to pinpoint the leak, including leaks too small to hear.</span></li>
+          <li><b>Mark and document</b><span>You get the marked spot and a clear report of what was found — for the repair and for your records.</span></li>
+        </ol>
+
+        <h2>What affects the cost</h2>
+        <p>The cost depends on where the leak is, how much of the line must be tested, how accessible it is, and what the repair needs — a failed joint is a smaller job than replacing a buried section. Detection and repair are quoted separately. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.</p>
+
+        <h2>Where we offer gas leak detection</h2>
+        <p>We offer gas leak detection in Brighton. If you are nearby and unsure whether we reach you, call and ask — we will confirm before booking. For our wider coverage, see our <a href="/service-area/">service area</a>.</p>
+
+        <h2>Frequently asked questions</h2>
+        <Faq items={faqs} />
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name="pipe" /></span>
+        <h3>Call for gas leak detection</h3>
+        <p>Call and we'll confirm a time for your Brighton home.</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">Serving Brighton — and <a href="/service-area/">nearby towns</a> on request.</p>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand title={`Need gas leak detection in Brighton?`} />
+</Base>
