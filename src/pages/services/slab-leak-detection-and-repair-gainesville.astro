@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site } from '../../data/site';
+
+const faqs = [
+  { q: 'How do I know if I have a slab leak in Gainesville, FL?', a: 'The most common signs are warm spots on the floor, the sound of running water when nothing is on, and a water meter that keeps moving. A sudden jump in your Gainesville Regional Utilities (GRU) bill is another clue.' },
+  { q: 'Can you find a slab leak without breaking the floor?', a: 'Yes. Detection is non-invasive. We mark the leak location on the floor; the only opening is the small one made for the repair, by our plumbing partner or your own plumber.' },
+  { q: 'How is a slab leak repaired?', a: 'The common repairs are a spot repair through a small opening in the slab, rerouting the line through walls or the attic, or repiping if the lines are old. Accurate detection keeps a spot repair small.' },
+  { q: 'How much does slab leak detection and repair cost in Gainesville, FL?', a: 'It depends on how many lines need testing, the flooring and slab above the pipe, how easy the line is to trace, and which repair fits — spot repair, reroute or repipe. Detection and repair are quoted separately, so call and describe the problem for an accurate quote.' },
+  { q: 'Does homeowners insurance cover slab leaks?', a: 'Many policies cover sudden water damage and the cost of getting access to the leak, but not the worn pipe itself. Check your policy and keep the detection report and photos for your claim.' },
+  { q: 'What should I do if I suspect a slab leak?', a: 'Do a meter test: turn off all water and watch the meter for one to two hours. If it is a hot-side leak, close the cold water inlet on the water heater and turn the heater to vacation or off until the repair. Take photos of any warm, damp or damaged flooring, then call to schedule a visit.' },
+  { q: 'Do you offer slab leak detection and repair in Gainesville, FL?', a: 'Yes. We offer slab leak detection and repair in Gainesville, FL. If you are nearby and unsure whether we reach you, call and ask — we will confirm before booking.' },
+];
+
+const serviceSchema = {
+  '@type': 'Service',
+  name: 'Slab Leak Detection and Repair',
+  serviceType: 'Slab Leak Detection and Repair',
+  description: 'Slab Leak Detection and Repair in Gainesville, FL: warm floors, a running meter or a high GRU bill? Learn the signs, detection methods and repair options.',
+  provider: { '@id': `${site.url}/#business` },
+  areaServed: { '@type': 'City', name: 'Gainesville, FL' },
+  url: `${site.url}/services/slab-leak-detection-and-repair-gainesville/`,
+};
+---
+<Base
+  title="Slab Leak Detection and Repair in Gainesville, FL"
+  description="Slab Leak Detection and Repair in Gainesville, FL: warm floors, a running meter or a high GRU bill? Learn the signs, detection methods and repair options."
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Services', url: '/#services' }, { name: 'Slab Leak Detection and Repair in Gainesville, FL', url: '/services/slab-leak-detection-and-repair-gainesville/' }]}
+  schema={[serviceSchema]}
+>
+  <section class="page-hero dark">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#services">Services</a><span>/</span><span>Slab Leak Detection and Repair in Gainesville, FL</span></nav>
+      <h1>Slab Leak Detection and Repair in Gainesville, FL</h1>
+      <p class="answer">A slab leak is a water line leaking under your home's concrete foundation. In Gainesville, FL, where many homes are slab-built, we pinpoint the leak with pressure tests, acoustic listening and thermal imaging — without breaking the floor to search — and mark it for a small, targeted repair.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>What Is a Slab Leak?</h2>
+        <p>Many homes are built on a concrete slab, with the water supply lines running underneath it. When one of those lines develops a pinhole or crack, the water drains into the soil instead of onto your floor, so the first signs are subtle. Many Gainesville homes are slab-built, which is why a warm floor or a rising water bill is worth checking promptly.</p>
+        <p>Slab leaks happen on either the <b>hot</b> or the <b>cold</b> side. Hot-side leaks often show up as warm spots on the floor and a water heater that seems to run all the time. Cold-side leaks are usually noticed through the water meter or the bill. Common causes are pipes rubbing against concrete, gravel or each other as the house settles, pinholes in older copper lines from age and water chemistry, soil movement putting stress on the lines, and kinks, weak joints or damage during construction.</p>
+
+        <h2>Signs of a Slab Leak in Gainesville, FL</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>Warm or damp spots on tile, wood or carpet</span></li>
+          <li><Icon name="check" /><span>The sound of running water when every fixture is off</span></li>
+          <li><Icon name="check" /><span>A water meter that moves with no water in use</span></li>
+          <li><Icon name="check" /><span>A water bill that jumps for no clear reason — in Gainesville, a sudden high Gainesville Regional Utilities (GRU) bill</span></li>
+          <li><Icon name="check" /><span>Cracks in flooring, or baseboards that swell</span></li>
+          <li><Icon name="check" /><span>A water heater that runs more than usual</span></li>
+        </ul>
+
+        <div class="inline-cta">
+          <p><b>Notice any of these signs?</b> Do not wait to see if it gets worse — a slab leak keeps running under the floor until it is found.</p>
+          <a class="btn btn-primary btn-sm" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        </div>
+
+        <h2>How Slab Leak Detection Works in Gainesville, FL</h2>
+        <ol class="method-list">
+          <li><b>Meter and isolation test</b><span>Confirms there is a leak and whether it is on the hot or cold side.</span></li>
+          <li><b>Line pressure test</b><span>Shows which line under the slab is losing pressure.</span></li>
+          <li><b>Line tracing</b><span>Maps where the pipe actually runs under the floor.</span></li>
+          <li><b>Acoustic listening</b><span>Ground microphones pick up the hiss of water escaping under the concrete; the loudest point marks the leak.</span></li>
+          <li><b>Thermal imaging</b><span>A hot-water leak shows up as a warm bloom on the floor surface.</span></li>
+          <li><b>Tracer gas (when needed)</b><span>For quiet leaks in PEX or very small leaks that are hard to hear.</span></li>
+        </ol>
+        <p class="note-link">Detection is non-invasive: the floor is not broken to search for the leak. We mark the spot and give you photos and readings for the repair. Want the general background? Read <a href="/guides/how-to-find-a-slab-leak/">how to find a slab leak</a>, or see our <a href="/services/slab-leak-detection/">slab leak detection service</a>.</p>
+
+        <h2>Slab Leak Repair Options in Gainesville, FL</h2>
+        <p>Once the leak is marked, the repair goes straight to the right place. The common options are a <b>spot repair</b> through a small opening in the slab, <b>rerouting</b> the line through walls or the attic, or <b>repiping</b> if the lines are old and leaks keep appearing. Accurate detection keeps a spot repair small — the opening is only where the leak actually is.</p>
+        <p>We mark the leak on the floor and give you photos and readings. Our plumbing partner can then make the repair, so one call covers finding and fixing it. If you already have a plumber, we hand them the marked spot and the report instead. Compare the choices in our <a href="/guides/slab-leak-repair-options/">slab leak repair options guide</a>.</p>
+
+        <h2>What Affects Slab Leak Repair Cost in Gainesville, FL</h2>
+        <p>The cost depends on how many lines need testing, the flooring and slab above the pipe, and how easy the line is to trace — plus which repair fits: a spot repair is a smaller job than rerouting a line or repiping a house. Detection and repair are quoted separately. See <a href="/leak-detection-cost/">what affects leak detection cost</a> and our <a href="/guides/slab-leak-repair-cost/">slab leak repair cost guide</a>, or call for a quote for your home.</p>
+
+        <h2>How to Prevent Slab Leaks in Gainesville, FL</h2>
+        <ul class="list">
+          <li><Icon name="check" /><span>Run a meter test now and then: turn off all water and watch the meter for one to two hours — movement means a leak somewhere</span></li>
+          <li><Icon name="check" /><span>If the meter moves, close the cold water inlet on the water heater: if the meter stops, the leak is on the hot side</span></li>
+          <li><Icon name="check" /><span>Act on warm spots, damp flooring or a bill that jumps — early signs keep the repair small</span></li>
+          <li><Icon name="check" /><span>Keep an eye on older copper lines: Gainesville's water comes from the Floridan aquifer and carries dissolved minerals that can build scale over time</span></li>
+          <li><Icon name="check" /><span>Take photos of any warm, damp or damaged flooring for your insurer</span></li>
+        </ul>
+        <p class="note-link">If a leak is confirmed, <a href="/guides/does-insurance-cover-slab-leaks/">check what homeowners insurance covers for slab leaks</a> before the repair starts.</p>
+
+        <h2>Why Choose Leak Detection Bargersville for Slab Leak Repair in Gainesville, FL</h2>
+        <p>We find the leak before anything is opened, so the repair starts in the right place: non-invasive testing, a marked spot, and a report with photos and readings. Our plumbing partner can make the repair, or your own plumber can work from our marked spot and report. For a second opinion on a suspected slab leak, a <a href="/services/thermal-imaging-inspection/">thermal imaging inspection</a> can confirm what is happening under the floor.</p>
+        <p>Call to schedule a leak detection visit — we will confirm coverage for your Gainesville, FL home before booking.</p>
+
+        <h2>Where We Offer Slab Leak Detection and Repair in Gainesville, FL</h2>
+        <p>We offer slab leak detection and repair in Gainesville, FL, in Alachua County — home of the University of Florida. If you are nearby and unsure whether we reach you, call and ask — we will confirm before booking. For local Gainesville details, including the GRU water system and slab-built homes, see our <a href="/leak-detection/gainesville-fl/">Gainesville leak detection page</a>. For our wider coverage, see our <a href="/service-area/">service area</a>.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <Faq items={faqs} />
+      </article>
+
+      <aside class="aside">
+        <span class="ico"><Icon name="slab" /></span>
+        <h3>Call for slab leak detection</h3>
+        <p>Call and we'll confirm a time for your Gainesville, FL home.</p>
+        <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
+        <p class="small">Serving Gainesville, FL — and <a href="/service-area/">nearby towns</a> on request.</p>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand title={`Need slab leak detection and repair in Gainesville, FL?`} />
+</Base>
