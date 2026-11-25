@@ -1,8 +1,8 @@
 ---
 title: "How to Shut Off the Water to Your House (Fast)"
-description: "Where your main water shutoff is, how to turn it off in a leak, what to do if it's stuck, and when to use the meter pit or call the utility. For Indiana homes."
+description: "How to shut off water to your house: find the main shutoff, close it in a leak, deal with a stuck valve, and know when to use the meter pit. For Indiana homes."
 h1: "How to Shut Off the Water to Your House"
-quickAnswer: "Find the main shutoff valve where the water line enters the house, usually in the basement, crawl space, utility room, near the water heater, or in the garage. Turn a round gate-valve handle clockwise until it stops, or turn a lever ball valve a quarter turn so the handle crosses the pipe. If you can't find or close it, the meter pit or curb stop outside can shut off the water, but call your utility first unless it's an emergency."
+quickAnswer: "Here’s how to shut off water to your house. Find the main shutoff valve where the water line enters the house, usually in the basement, crawl space, utility room, near the water heater, or in the garage. Turn a round gate-valve handle clockwise until it stops, or turn a lever ball valve a quarter turn so the handle crosses the pipe. If you can't find or close it, the meter pit or curb stop outside can shut off the water, but call your utility first unless it's an emergency."
 primaryKeyword: "how to shut off water to house"
 secondaryKeywords: ["how to shut off the water to your house", "main water shut off valve", "where is my water shut off valve", "water shut off valve stuck", "how to turn off water in an emergency", "water meter pit shut off indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -40,7 +40,7 @@ The main shutoff is almost always where the water line **enters the house**:
 
 Look for a round **gate-valve** handle or a **lever** handle on a pipe about ¾ to 1 inch in diameter.
 
-## How to close it
+## How to shut off water to your house at the main valve
 
 - **Lever (ball) valve:** turn the handle a **quarter turn** so it's **across** the pipe. Open is in line with the pipe.
 - **Round (gate) valve:** turn **clockwise** until it stops. It may take several turns.

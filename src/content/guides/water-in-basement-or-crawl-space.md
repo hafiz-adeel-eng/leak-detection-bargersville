@@ -2,7 +2,7 @@
 title: "Water in the Basement or Crawl Space: Leak or Groundwater?"
 description: "Water in the basement or crawl space? How to tell a plumbing leak from groundwater or condensation with a meter test, a foil test and the timing of the water."
 h1: "Water in the Basement or Crawl Space: Plumbing Leak or Groundwater?"
-quickAnswer: "Check the water meter with everything off: if it moves, a pressurized pipe is leaking. Water that shows up only after rain usually comes from outside, through the wall-floor joint, cracks or poor drainage. Sweating pipes and damp walls in humid weather are condensation. A foil taped to the wall for 24–48 hours tells condensation from seepage."
+quickAnswer: "Water in the basement or crawl space comes from a leak, groundwater or condensation. Check the water meter with everything off: if it moves, a pressurized pipe is leaking. Water that shows up only after rain usually comes from outside, through the wall-floor joint, cracks or poor drainage. Sweating pipes and damp walls in humid weather are condensation. A foil taped to the wall for 24–48 hours tells condensation from seepage."
 primaryKeyword: "water in basement"
 secondaryKeywords: ["water in crawl space", "basement leak or groundwater", "water in basement no rain", "crawl space plumbing leak", "wet basement floor after no rain", "basement condensation vs leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -83,7 +83,7 @@ If the meter moves but you can't see water, or you've found wet soil or insulati
 
 A [thermal imaging inspection](/services/thermal-imaging-inspection/) with a photo report also documents the moisture for insurance, or before you buy an older home.
 
-## Basements and crawl spaces in Johnson County
+## Water in the basement or crawl space in Johnson County
 
 Johnson County's glacial clay drains slowly, so after heavy rain or snowmelt it holds water against foundations and pushes it through cracks and the cove joint where the wall meets the floor. That water tends to show up along the walls, comes and goes with the weather, and is usually cool and muddy.
 

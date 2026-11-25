@@ -1,8 +1,8 @@
 ---
-title: "Leak Detection Specialist vs. Plumber: Who to Call"
-description: "Plumber or leak detection specialist? Who does what, when a plumber alone is enough, and when a hidden leak needs detection equipment first."
-h1: "Leak Detection Specialist vs. Plumber: Who Should Find Your Leak?"
-quickAnswer: "Call a plumber for leaks you can see — a dripping faucet, a running toilet, a leaking supply line under a sink. Call a leak detection specialist when the leak is hidden: under the slab, inside a wall, in the buried water line, in a pool or in the sprinklers. The specialist finds and marks the exact spot; the plumber then repairs it through one small opening."
+title: "Leak Detection vs Plumber: Who to Call for a Hidden Leak"
+description: "Leak detection vs plumber: who does what, when a plumber alone is enough, and when a hidden leak needs a leak detection specialist with equipment first."
+h1: "Leak Detection vs. Plumber: Who Should Find Your Leak?"
+quickAnswer: "Leak detection vs plumber comes down to whether you can see the leak. Call a plumber for leaks you can see — a dripping faucet, a running toilet, a leaking supply line under a sink. Call a leak detection specialist when the leak is hidden: under the slab, inside a wall, in the buried water line, in a pool or in the sprinklers. The specialist finds and marks the exact spot; the plumber then repairs it through one small opening."
 primaryKeyword: "plumber for leak detection"
 secondaryKeywords: ["plumber for leaks", "plumber to find water leak", "leak detection plumbers near me", "plumber with leak detection", "water leak plumber", "leak detection specialist"]
 service: { name: "Professional Leak Detection", url: "/" }
@@ -48,7 +48,7 @@ A leak detection specialist **finds hidden leaks without opening things up to se
 
 The output is a **marked spot**, not a repaired pipe. See [how professional leak detection works](/guides/leak-detection-methods/).
 
-## Who to call for which leak
+## Leak detection vs plumber: who to call for which leak
 
 | What you're dealing with | Start with |
 |---|---|

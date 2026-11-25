@@ -2,7 +2,7 @@
 title: "Whole House Repipe Cost: PEX vs Copper (Indiana Guide)"
 description: "What a whole-house repipe costs, PEX vs copper, what drives the price, and the signs it's time to repipe instead of repairing leak after leak."
 h1: "Whole House Repipe Cost: PEX vs Copper and When It's Worth It"
-quickAnswer: "National cost guides put a whole-house repipe at roughly $4,500 to $15,000, with PEX usually around $4,000 to $9,000 and copper often $8,000 to $15,000 or more. Home size, number of bathrooms, pipe material and wall access drive the price, plus drywall repair afterward. Repiping makes sense when you have repeated leaks, galvanized or polybutylene pipe, or copper with multiple pinholes."
+quickAnswer: "National cost guides put whole-house repipe cost at roughly $4,500 to $15,000, with PEX usually around $4,000 to $9,000 and copper often $8,000 to $15,000 or more. Home size, number of bathrooms, pipe material and wall access drive the price, plus drywall repair afterward. Repiping makes sense when you have repeated leaks, galvanized or polybutylene pipe, or copper with multiple pinholes."
 primaryKeyword: "whole house repipe cost"
 secondaryKeywords: ["cost to repipe house", "repiping house cost", "cost to repipe house with pex", "whole house repipe", "cost to replumb a home", "repipe cost indiana"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Repiping means replacing the water supply lines throughout the house. It's a big job, but for a home with old, failing pipe it's often cheaper in the long run than paying for leak after leak and the water damage that comes with them. Here's what it costs, PEX versus copper, and the signs it's time.
 
-## Typical costs
+## Typical whole house repipe cost
 
 | | Typical range (national) |
 |---|---|

@@ -1,8 +1,8 @@
 ---
 title: "How to Find a Pool Leak: Bucket Test & Dye Test"
-description: "Leaking or just evaporating? Use the bucket test, the pump on/off test and a dye test to find pool leaks at skimmers, returns, lights and cracks."
+description: "How to find a pool leak: leaking or just evaporating? Use the bucket test, the pump on/off test and a dye test at skimmers, returns, lights and cracks."
 h1: "How to Find a Pool Leak"
-quickAnswer: "Start with the bucket test: set a bucket of pool water on the pool step, mark both water levels, and compare after 24 hours. If the pool drops more than the bucket, it's leaking. Compare the loss with the pump on and off to narrow it to the plumbing or the shell, then use dye near skimmers, returns, lights and cracks to find the exact spot."
+quickAnswer: "Here’s how to find a pool leak. Start with the bucket test: set a bucket of pool water on the pool step, mark both water levels, and compare after 24 hours. If the pool drops more than the bucket, it's leaking. Compare the loss with the pump on and off to narrow it to the plumbing or the shell, then use dye near skimmers, returns, lights and cracks to find the exact spot."
 primaryKeyword: "finding a pool leak"
 secondaryKeywords: ["find leak in pool plumbing", "finding a pool leak underground", "leak in pool return line", "finding leaks in underground pool pipes", "finding a leak in a hot tub", "pool leak detection", "leak detection for pools"]
 service: { name: "Pool & Spa Leak Detection", url: "/services/pool-spa-leak-detection/" }
@@ -86,7 +86,7 @@ The bucket and dye tests find many shell and fitting leaks, but not leaks in **b
 
 Indiana's freeze–thaw winters are hard on pools. Lines, skimmer throats and fittings that weren't fully winterized can crack, and the leak only shows after opening in spring.
 
-## Pool leaks in Center Grove, Greenwood and nearby
+## How to find a pool leak in Center Grove, Greenwood and nearby
 
 Most backyard pools in Johnson County are concentrated in the larger-lot subdivisions of Center Grove, west Greenwood and around Bargersville. The season is short, usually late May through September, so leaks tend to surface at opening, when a winter freeze has cracked a fitting, a skimmer throat or a return line that was not fully blown out.
 

@@ -2,7 +2,7 @@
 title: "Smart Water Leak Detectors vs. Professional Leak Detection"
 description: "Spot sensors, flow monitors and automatic shutoff valves: what each smart water leak detector catches, what it misses, and when you need a pro."
 h1: "Smart Water Leak Detectors vs. Professional Leak Detection"
-quickAnswer: "Smart leak detectors warn you that water is escaping. Spot sensors catch water where they sit, flow monitors notice continuous water use, and automatic shutoff valves can stop the water. None of them tell you where a hidden leak is inside a wall, under a slab or in a buried line. That's what professional leak detection does."
+quickAnswer: "Smart water leak detectors warn you that water is escaping. Spot sensors catch water where they sit, flow monitors notice continuous water use, and automatic shutoff valves can stop the water. None of them tell you where a hidden leak is inside a wall, under a slab or in a buried line. That's what professional leak detection does."
 primaryKeyword: "smart water leak detector"
 secondaryKeywords: ["water leak detector residential", "best water leak detector", "whole house water leak detection system", "automatic water shut off leak detector", "wifi water leak detector", "water leak detection system for home"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -78,6 +78,6 @@ Where you place sensors should match the house. In basement homes common in Fran
 
 A whole-house shutoff valve with flow monitoring catches what spot sensors miss, including a slow slab or buried-line leak, because it watches water moving through the main. In winter, a temperature alert in a crawl space or garage gives warning before pipes freeze.
 
-## Are smart leak detectors worth it?
+## Are smart water leak detectors worth it?
 
 For most homes, yes. Spot sensors near water heaters, washers and sinks are inexpensive protection. A flow monitor adds a useful early warning for hidden leaks. Just don't mistake an alert for a diagnosis: the sensor starts the search, it doesn't finish it.

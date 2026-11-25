@@ -1,8 +1,8 @@
 ---
 title: "Burst Pipe Insurance Claim in Indiana: Step by Step"
-description: "A pipe burst in your Indiana home? What to do first, how to document damage, what homeowners policies usually cover, and how to handle the claim."
+description: "Filing a burst pipe insurance claim in Indiana? What to do first, how to document damage, what policies usually cover and how to work with the adjuster."
 h1: "Burst Pipe Insurance Claim in Indiana: What to Do, Step by Step"
-quickAnswer: "Shut off the main water, cut power to wet areas if it's safe, and photograph everything before cleanup. Call your insurer or agent the same day, take reasonable steps to stop further damage, and keep every receipt. Most Indiana homeowners policies cover sudden water damage from a burst pipe, but not the pipe itself or damage from a slow leak that went on for a long time. Get the leak's location and cause documented."
+quickAnswer: "For a burst pipe insurance claim in Indiana, act fast and keep proof. Shut off the main water, cut power to wet areas if it's safe, and photograph everything before cleanup. Call your insurer or agent the same day, take reasonable steps to stop further damage, and keep every receipt. Most Indiana homeowners policies cover sudden water damage from a burst pipe, but not the pipe itself or damage from a slow leak that went on for a long time. Get the leak's location and cause documented."
 primaryKeyword: "burst pipe insurance claim"
 secondaryKeywords: ["burst pipe insurance claim tips", "insurance claim burst pipe", "frozen pipe insurance claim", "does homeowners insurance cover burst pipes", "burst pipe insurance claim indiana", "water damage claim indiana"]
 service: { name: "Thermal Imaging Inspection", url: "/services/thermal-imaging-inspection/" }
@@ -97,7 +97,7 @@ Ask the insurer to explain the denial or low offer in writing, citing the policy
 
 For slab leaks specifically, see [does homeowners insurance cover slab leaks](/guides/does-insurance-cover-slab-leaks/).
 
-## Filing from a Johnson County home: what adjusters ask for
+## Burst pipe insurance claims in Indiana: what Johnson County adjusters ask for
 
 Most burst-pipe claims in Johnson County arrive in the same few weeks each winter, after a cold snap when temperatures stay in the single digits overnight. That timing matters: adjusters are busy, so a clear file gets handled faster. Keep the water meter readings from before and after the shutoff, a photo of the break if you can reach it, and the date the heat was last confirmed on, because a policy may exclude freezing if a house was left unheated.
 

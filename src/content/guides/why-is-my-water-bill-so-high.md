@@ -1,8 +1,8 @@
 ---
 title: "Why Is My Water Bill So High? 9 Leak Checks (Indiana)"
-description: "A water bill that suddenly jumps usually means a leak. Work through 9 checks, from running toilets to hidden slab leaks, to find where the water is going."
+description: "Why is my water bill so high? A sudden jump usually means a leak. Work through 9 checks, from running toilets to hidden slab leaks, to find where it goes."
 h1: "Why Is My Water Bill So High? 9 Things to Check"
-quickAnswer: "A sudden jump in your water bill usually comes from a leak (most often a running toilet), seasonal use like lawn watering, or a billing change such as an estimated reading or a rate increase. Compare the bill's usage in gallons with past months, then do a meter test with all water off. If the meter moves, work through toilets, faucets, appliances, irrigation and finally hidden leaks."
+quickAnswer: "Why is my water bill so high? A sudden jump in your water bill usually comes from a leak (most often a running toilet), seasonal use like lawn watering, or a billing change such as an estimated reading or a rate increase. Compare the bill's usage in gallons with past months, then do a meter test with all water off. If the meter moves, work through toilets, faucets, appliances, irrigation and finally hidden leaks."
 primaryKeyword: "why is my water bill so high"
 secondaryKeywords: ["high water bill leak", "water bill suddenly high", "hidden water leak", "i think i have a water leak", "checking for water leaks", "water leak in house"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -25,7 +25,7 @@ faqs:
 
 A water bill that suddenly jumps is often the first sign of a leak, but not always. It can also be the sprinklers or a billing change. Work through these nine checks, easiest first, to find out which.
 
-## First: read the bill, not just the total
+## Why is my water bill so high? Read the bill first
 
 Look at the **usage in gallons** (or cubic feet) and compare it with the same month last year and the last few months. Also check:
 

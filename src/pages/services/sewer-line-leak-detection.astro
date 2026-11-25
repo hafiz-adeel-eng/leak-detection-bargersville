@@ -24,6 +24,7 @@ const serviceSchema = {
   areaServed: areas.map((a) => ({ '@type': 'City', name: `${a.name}, IN` })),
   url: `${site.url}/services/sewer-line-leak-detection/`,
 };
+import PageImage from '../../components/PageImage.astro';
 ---
 <Base
   title="Sewer Line Leak Detection in Bargersville, IN"
@@ -36,7 +37,7 @@ const serviceSchema = {
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#services">Services</a><span>/</span><span>Sewer Line Leak Detection</span></nav>
       <h1>Sewer Line Leak Detection in Bargersville, IN</h1>
-      <p class="answer">Sewer line leak detection finds a break in the buried pipe that carries wastewater away from your home — without digging up your yard. We inspect the line with a camera, locate the problem from above and mark it, so the repair opens one small area instead of a trench.</p>
+      <p class="answer">Sewer line leak detection in {site.city} finds a break in the buried pipe that carries wastewater away from your home — without digging up your yard. We inspect the line with a camera, locate the problem from above and mark it, so the repair opens one small area instead of a trench.</p>
       <div class="ctas">
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -46,6 +47,7 @@ const serviceSchema = {
   <section class="section">
     <div class="container content-grid">
       <article class="prose">
+        <PageImage path="/services/sewer-line-leak-detection/" />
         <h2>What is sewer line leak detection?</h2>
         <p>A sewer line leak is a break, crack or failed joint in the buried pipe that takes everything that goes down your drains out to the street main. Because the pipe is underground, the leak usually shows up as a backup, a smell or a soggy patch long before anyone sees the pipe itself.</p>
         <p>Sewer line leak detection is the inspection that finds that break before any digging starts. A small camera on a push cable travels down the pipe and records every joint; a radio transmitter (sonde) in the camera head lets us find its exact position and depth from the yard. That way the excavation lands on the break, not a guess. Detection and repair are two separate jobs: detection finds and marks the leak, and our plumbing partner makes the <a href="/plumbing/sewer-line-repair/">sewer line repair</a> — or we hand the marked spot and footage to your own plumber.</p>
@@ -92,7 +94,7 @@ const serviceSchema = {
         <h2>What affects the cost</h2>
         <p>An inspection is priced on access (a usable cleanout or not), line length and whether the line must be cleared first. Detection and repair are quoted separately, and we can arrange both through our plumbing partner. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.</p>
 
-        <h2>Where we offer sewer line leak detection</h2>
+        <h2>Sewer line leak detection in {site.city} and nearby towns</h2>
         <p>Sewer inspections are available from our {site.city} base to homes in: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
         <p>Pick your town for local details, or call and ask if you’re nearby. If the problem turns out to be in a buried water line rather than the sewer, see our <a href="/services/underground-water-leak-detection/">underground water leak detection</a> service.</p>
 

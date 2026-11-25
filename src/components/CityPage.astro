@@ -8,6 +8,7 @@ import { site, services, type Faq as FaqT, type Section } from '../data/site';
 import { plumbing } from '../data/plumbing';
 import { md } from '../data/md';
 import { locationUrl } from '../data/locations';
+import PageImage from './PageImage.astro';
 
 interface Props {
   path: string;
@@ -49,6 +50,7 @@ const schema = {
   <section class="section">
     <div class="container content-grid">
       <article class="prose">
+        <PageImage path={p.path} />
         {p.sections.map((s) => (
           <>
             <h2>{s.h2}</h2>

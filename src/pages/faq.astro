@@ -11,28 +11,30 @@ const own = generalFaqs.slice(3);
 const groups = services
   .filter((s) => s.faqs.length > 0)
   .map((s) => ({ id: s.slug, name: s.name, url: `/services/${s.slug}/#faq`, qs: s.faqs.map((f) => f.q) }));
+import PageImage from '../components/PageImage.astro';
 ---
 <Base
   title="Leak Detection FAQ: Signs, Process & Insurance"
-  description="Answers to common leak detection questions from Johnson County homeowners: what a visit involves, shutoffs, slow leaks, insurance and repairs."
+  description="Leak detection FAQ for Johnson County homeowners: what a visit involves, shutoffs, slow leaks, insurance and repairs."
   faqs={own}
   breadcrumbs={[{ name: 'FAQ', url: '/faq/' }]}
 >
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>FAQ</span></nav>
-      <h1>Leak detection questions, answered</h1>
-      <p class="answer">Straight answers about hidden water leaks, how we find them, and what to do next. Don’t see your question? Call {site.phone}.</p>
+      <h1>Leak Detection FAQ: Your Questions Answered</h1>
+      <p class="answer">Our leak detection FAQ gives straight answers about hidden water leaks, how we find them, and what to do next. Don’t see your question? Call {site.phone}.</p>
     </div>
   </section>
   <section class="section">
+    <div class="container kw-wrap"><PageImage path="/faq/" /></div>
     <div class="container faq-groups">
       <div class="faq-group" id="general">
         <h2>What to expect from a leak detection visit</h2>
         <Faq items={own} openFirst={false} />
       </div>
       <div class="faq-group" id="by-service">
-        <h2>Questions about each service</h2>
+        <h2>Leak detection FAQ by service</h2>
         <p class="faq-more">Each service page answers these in full. Pick a question to go straight to the answer.</p>
         <div class="faq-index">
           {groups.map((g) => (

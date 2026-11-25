@@ -8,6 +8,7 @@ import { site, services, areas, type Service } from '../../data/site';
 import { locations, locationUrl, type Location } from '../../data/locations';
 import { guideUrl } from '../../data/guides';
 import { image } from '../../data/images';
+import PageImage from '../../components/PageImage.astro';
 import { md } from '../../data/md';
 import { townPages, townServiceUrl } from '../../data/townServices';
 
@@ -93,6 +94,7 @@ const pageSchema = {
   <section class="section">
     <div class="container content-grid">
       <article class="prose">
+        <PageImage path={locationUrl(l.slug)} />
         <h2>{l.name} at a glance</h2>
         <table class="facts">
           <tbody>

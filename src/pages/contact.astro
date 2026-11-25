@@ -3,18 +3,19 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { site, services, areas } from '../data/site';
 import { locationUrl } from '../data/locations';
+import PageImage from '../components/PageImage.astro';
 ---
 <Base
   title={`Contact ${site.name} | Call to Schedule`}
-  description={`Call ${site.phone} for leak detection in ${site.city} and ${site.county}, IN. Slab, underground, hidden, pool, thermal and irrigation leaks.`}
+  description={`Contact ${site.name}: call ${site.phone} for leak detection in ${site.city} and ${site.county}, IN: slab, water line, wall and pool leaks.`}
   breadcrumbs={[{ name: 'Contact', url: '/contact/' }]}
   schema={[{ '@type': 'ContactPage', '@id': `${site.url}/contact/#webpage`, url: `${site.url}/contact/`, name: `Contact ${site.name}`, about: { '@id': `${site.url}/#business` } }]}
 >
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Contact</span></nav>
-      <h1>Call to schedule leak detection</h1>
-      <p class="answer">The fastest way to reach us is a phone call. Tell us what you’re noticing and where you are, and we’ll set up a time to find the leak.</p>
+      <h1>Contact {site.name}</h1>
+      <p class="answer">Contact {site.name} by phone: it’s the fastest way to reach us. Tell us what you’re noticing and where you are, and we’ll set up a time to find the leak.</p>
       <div class="ctas">
         <a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -22,10 +23,11 @@ import { locationUrl } from '../data/locations';
   </section>
 
   <section class="section">
+    <div class="container kw-wrap"><PageImage path="/contact/" /></div>
     <div class="container two-cards">
       <div class="info-card">
         <span class="ico"><Icon name="phone" /></span>
-        <h2>When you call, it helps to know</h2>
+        <h2>When you contact {site.name}, it helps to know</h2>
         <ul class="list">
           <li><Icon name="check" /><span>What you’re noticing: a high bill, a warm floor, a wet spot, a stain, or a pool that keeps dropping</span></li>
           <li><Icon name="check" /><span>Whether your water meter moves with everything turned off</span></li>

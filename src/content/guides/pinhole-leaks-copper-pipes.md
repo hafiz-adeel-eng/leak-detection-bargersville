@@ -2,7 +2,7 @@
 title: "Pinhole Leaks in Copper Pipes: Causes, Repair & Repipe"
 description: "Pinhole leaks in copper pipe? Why they happen, how to spot a hidden one, repair options, and when repeated pinholes mean it's time to repipe. For Indiana homes."
 h1: "Pinhole Leaks in Copper Pipes: Causes, Signs and Repair Options"
-quickAnswer: "Pinhole leaks are tiny holes caused by corrosion from the inside of copper pipe, driven by water chemistry, high water velocity, and sometimes thin-wall pipe. One pinhole can be fixed by cutting out the damaged section. If you've had several in a few years, the rest of the pipe is likely thinning too, and rerouting or repiping is often more cost-effective than chasing leak after leak."
+quickAnswer: "Pinhole leaks in copper pipes are tiny holes caused by corrosion from the inside of the pipe, driven by water chemistry, high water velocity, and sometimes thin-wall pipe. One pinhole can be fixed by cutting out the damaged section. If you've had several in a few years, the rest of the pipe is likely thinning too, and rerouting or repiping is often more cost-effective than chasing leak after leak."
 primaryKeyword: "pinhole leak copper pipe"
 secondaryKeywords: ["copper plumbing pinhole leaks", "pinhole leaks", "repair pinhole leak in copper pipe", "fix copper pipe leak", "what causes pinhole leaks in copper pipes", "pinhole leak in slab"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -86,7 +86,7 @@ Pinholes come from conditions that affect the **whole system**, not one spot. A 
 - **Have a plumber check** that hot water recirculation pumps aren't running too fast.
 - **Get pinholes found early,** before water damage spreads.
 
-## Copper pinholes in Johnson County homes
+## Pinhole leaks in copper pipes in Johnson County homes
 
 Copper is the common supply pipe in Johnson County homes built from the 1960s through the early 2000s, from Franklin ranches to Greenwood and Center Grove subdivisions. Pinholes tend to show up first on hot-water lines and near fittings, where fast flow and heat wear the pipe from the inside.
 

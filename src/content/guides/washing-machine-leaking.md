@@ -1,8 +1,8 @@
 ---
 title: "Washing Machine Leaking From the Bottom? Causes & Fixes"
-description: "Water under the washer? Check the supply hoses, drain hose, standpipe, pump and door seal, why hoses fail after five years, and how to check the floor."
+description: "Washing machine leaking from the bottom? Check the supply hoses, drain hose, standpipe, pump and door seal, why hoses fail after five years, and the floor."
 h1: "Washing Machine Leaking From the Bottom: Causes and Fixes"
-quickAnswer: "Water under a washer usually comes from the supply hoses, the drain hose or standpipe, the drain pump, the tub seal, or the door gasket on a front loader. Check the hoses first: insurance research found more than half of washing machine water damage claims involved supply hoses, with failures rising sharply after five years. Replace rubber hoses with braided lines and check the floor and wall for hidden water damage."
+quickAnswer: "A washing machine leaking from the bottom is usually losing water at the supply hoses, the drain hose or standpipe, the drain pump, the tub seal, or the door gasket on a front loader. Check the hoses first: insurance research found more than half of washing machine water damage claims involved supply hoses, with failures rising sharply after five years. Replace rubber hoses with braided lines and check the floor and wall for hidden water damage."
 primaryKeyword: "washing machine leaking from bottom"
 secondaryKeywords: ["washer leaking from bottom", "washing machine leaking", "leak from washing machine", "washing machine hose leak", "washer drain leaking", "water under washing machine"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Washing machines move a lot of water through a few rubber hoses and a drain, often in a closet or upstairs laundry room where a leak can do real damage. Research by the **Insurance Institute for Business & Home Safety** found washing machine failures are among the top sources of home water damage claims, and that **supply hoses** were involved in more than half of them. Here's how to find where your washer is leaking and fix it.
 
-## Find the source
+## Washing machine leaking? Find the source
 
 Dry the floor, then run a short cycle and watch.
 

@@ -1,8 +1,8 @@
 ---
 title: "Water Heater Leaking? Causes and What to Do First"
-description: "Water around the water heater? What to shut off, how to tell a tank leak from a relief valve, fitting or hidden hot-side leak, and when to repair or replace."
+description: "Water heater leaking? What to shut off, how to tell a tank leak from a relief valve, fitting or hidden hot-side leak, and when to repair or replace."
 h1: "Water Heater Leaking? Causes and What to Do First"
-quickAnswer: "Turn off the power or gas to the water heater and close the cold water inlet valve. Then find where the water comes from: the relief valve or its discharge pipe, the inlet and outlet fittings, the drain valve, condensation, or the tank itself. A leak from the tank body usually means replacement. If the heater is dry but runs constantly and the meter moves, look for a hot water leak elsewhere, such as under the slab."
+quickAnswer: "Water heater leaking? Act in this order. Turn off the power or gas to the water heater and close the cold water inlet valve. Then find where the water comes from: the relief valve or its discharge pipe, the inlet and outlet fittings, the drain valve, condensation, or the tank itself. A leak from the tank body usually means replacement. If the heater is dry but runs constantly and the meter moves, look for a hot water leak elsewhere, such as under the slab."
 primaryKeyword: "water heater leaking"
 secondaryKeywords: ["water heater leaking from bottom", "hot water heater leaking what to do", "water heater relief valve leaking", "water heater leaking from top", "hot water heater running constantly leak"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -35,7 +35,7 @@ Water on the floor next to the water heater doesn't always mean the heater is fi
 3. **Keep clear of hot water.** Water in the tank and relief line can be hot enough to scald.
 4. **If water is spreading,** close the main water shutoff and move belongings away. See [what to do in the first hour of a water leak](/guides/water-leak-emergency-what-to-do/).
 
-## Where is the water coming from?
+## Water heater leaking: where is the water coming from?
 
 Dry the area and the heater with a towel, then watch where water reappears.
 

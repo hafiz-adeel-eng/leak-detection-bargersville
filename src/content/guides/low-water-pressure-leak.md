@@ -2,7 +2,7 @@
 title: "Low Water Pressure in the Whole House: Is It a Leak?"
 description: "Low water pressure throughout the house? How to tell a leak from a bad pressure valve, a half-closed shutoff or old pipes, with a gauge test and a meter test."
 h1: "Low Water Pressure in the Whole House: Is It a Leak?"
-quickAnswer: "Whole-house low pressure usually comes from a failing pressure-reducing valve, a main shutoff or meter valve that isn't fully open, corroded galvanized pipe, a utility pressure problem, or a leak in the service line. Measure the pressure with a gauge at an outside faucet, then do a meter test with everything off. Low pressure plus a moving meter points to a leak."
+quickAnswer: "Low water pressure in the whole house usually comes from a failing pressure-reducing valve, a main shutoff or meter valve that isn't fully open, corroded galvanized pipe, a utility pressure problem, or a leak in the service line. Measure the pressure with a gauge at an outside faucet, then do a meter test with everything off. Low pressure plus a moving meter points to a leak."
 primaryKeyword: "low water pressure in whole house"
 secondaryKeywords: ["low water pressure causes", "sudden drop in water pressure", "low water pressure leak", "is low water pressure a sign of a leak", "normal house water pressure psi"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -34,7 +34,7 @@ Start here, because it changes everything:
 - **Only hot water is weak:** look at the water heater: sediment, a partly closed valve on the heater, or a problem on the hot side.
 - **Everything is weak:** the cause is on the main line. Keep reading.
 
-## Common causes of whole-house low pressure
+## Common causes of low water pressure in the whole house
 
 | Cause | Clues |
 |---|---|

@@ -1,8 +1,8 @@
 ---
 title: "Water Leak Emergency: What to Do in the First Hour"
-description: "Water on the floor or through the ceiling? Shut off the water, stay safe around electricity, protect belongings, document for insurance, then find the source."
+description: "Water leak emergency? Shut off the water, stay safe around electricity, protect belongings, document for insurance, then find the source. The first hour."
 h1: "Water Leak Emergency: What to Do in the First Hour"
-quickAnswer: "Shut off the main water valve first. If water is near outlets or appliances, turn off power to that area at the breaker, but only if you can do it from a dry spot. Move belongings out of the water, take photos for insurance, and start drying. Then find the source: a visible burst pipe needs a plumber; a hidden leak needs leak detection before anything is opened."
+quickAnswer: "In a water leak emergency, the first minutes matter most. Shut off the main water valve first. If water is near outlets or appliances, turn off power to that area at the breaker, but only if you can do it from a dry spot. Move belongings out of the water, take photos for insurance, and start drying. Then find the source: a visible burst pipe needs a plumber; a hidden leak needs leak detection before anything is opened."
 primaryKeyword: "emergency leak detection"
 secondaryKeywords: ["emergency leak detection near me", "24 hour leak detection", "emergency water leak detection", "water leak in house", "burst pipe what to do"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -66,7 +66,7 @@ Mop up standing water, open windows if the weather allows, and run fans or a deh
 | A stain spreading on a wall or ceiling | [Find the leak in the wall](/guides/how-to-find-a-leak-in-a-wall/) before cutting |
 | Warm floor or running-water sound | Possible [slab leak](/services/slab-leak-detection/) |
 
-## What not to do
+## What not to do in a water leak emergency
 
 - Don't cut into walls or break floors to look for the leak. You may open the wrong spot.
 - Don't use a regular household vacuum on water.

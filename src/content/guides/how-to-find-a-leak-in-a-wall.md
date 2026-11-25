@@ -1,8 +1,8 @@
 ---
-title: "How to Find a Water Leak Inside a Wall"
-description: "Stains, bubbling paint or a musty smell? How to tell if a pipe is leaking inside a wall, narrow down the spot, and what to do before cutting drywall."
-h1: "How to Find a Water Leak Inside a Wall"
-quickAnswer: "Look for stains, bubbling or peeling paint, soft drywall, warped baseboards and musty smells, usually near a bathroom, kitchen or laundry. Do a meter test to see if a supply line is leaking, run nearby fixtures to check drains, and use a moisture meter to find the wettest point. Professionals confirm the spot with thermal imaging and acoustic listening before any drywall is cut."
+title: "How to Find a Leak in a Wall: Signs & Steps Before Cutting"
+description: "How to find a leak in a wall: the signs, how to tell a supply line from a drain, how to narrow down the spot, and what to do before cutting drywall."
+h1: "How to Find a Leak in a Wall"
+quickAnswer: "Here’s how to find a leak in a wall. Look for stains, bubbling or peeling paint, soft drywall, warped baseboards and musty smells, usually near a bathroom, kitchen or laundry. Do a meter test to see if a supply line is leaking, run nearby fixtures to check drains, and use a moisture meter to find the wettest point. Professionals confirm the spot with thermal imaging and acoustic listening before any drywall is cut."
 primaryKeyword: "find water leak in wall"
 secondaryKeywords: ["detect water leak behind wall", "finding a water leak in a wall", "water leak behind drywall", "find leaking pipe in wall", "detecting leaks behind walls", "wall leak detection", "hidden water leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -65,7 +65,7 @@ Remember that water runs **down** and along the framing, so the stain is often *
 - **Washing machine box** in the laundry wall
 - **Water heater lines** in a utility closet
 
-## Step 4: Pinpoint before cutting
+## Step 4: How to find a leak in a wall without cutting
 
 Cutting drywall in the wrong place means a bigger patch, and with tile walls, broken tile. Professional hidden leak detection narrows it down without opening the wall:
 

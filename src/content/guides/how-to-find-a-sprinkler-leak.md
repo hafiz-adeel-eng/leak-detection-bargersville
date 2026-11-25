@@ -1,8 +1,8 @@
 ---
-title: "How to Find a Leak in Your Sprinkler System"
-description: "Soggy spots, a weak zone or a meter running with sprinklers off? Find an irrigation leak zone by zone and tell a mainline leak from a lateral."
-h1: "How to Find a Leak in Your Sprinkler System"
-quickAnswer: "Run each zone one at a time and look for soggy spots, bubbling soil, weak heads or water at the valve box. If the water meter moves while the sprinklers are off, the leak is in the always-pressurized mainline or a valve. If it only leaks while a zone runs, the break is in that zone's lateral line or a head."
+title: "How to Find a Sprinkler Leak: Zone-by-Zone Checks"
+description: "How to find a sprinkler leak: soggy spots, a weak zone or a meter running with sprinklers off. Check zone by zone and tell a mainline leak from a lateral."
+h1: "How to Find a Sprinkler Leak in Your Irrigation System"
+quickAnswer: "Here’s how to find a sprinkler leak. Run each zone one at a time and look for soggy spots, bubbling soil, weak heads or water at the valve box. If the water meter moves while the sprinklers are off, the leak is in the always-pressurized mainline or a valve. If it only leaks while a zone runs, the break is in that zone's lateral line or a head."
 primaryKeyword: "how to find a leak in sprinkler system"
 secondaryKeywords: ["how to find an irrigation leak", "find leak in irrigation system", "finding sprinkler leaks", "how to find a sprinkler line leak", "find sprinkler leak underground", "how to find leaks in your lawn sprinkler system", "sprinkler leak detection"]
 service: { name: "Irrigation Leak Detection", url: "/services/irrigation-leak-detection/" }
@@ -51,7 +51,7 @@ Before you dig, find out *which part* of the system is leaking. Most residential
 3. Close the **irrigation isolation valve**, usually near the backflow preventer or where the irrigation tees off the main water line.
 4. If the meter **stops**, the leak is in the irrigation mainline or a valve. If it **keeps moving**, the leak is in the house or the main service line. See [how to find an underground water leak](/guides/how-to-find-an-underground-water-leak/).
 
-## How to find the leak zone by zone
+## How to find a sprinkler leak zone by zone
 
 1. **Turn on one zone manually** from the controller.
 2. **Walk the zone** and watch each head. Look for geysers, heads that barely rise, water seeping around a head's base, and wet soil between heads.

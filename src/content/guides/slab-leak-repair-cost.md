@@ -1,8 +1,8 @@
 ---
 title: "Slab Leak Repair Cost: $2,000–$4,000 by Repair Type"
-description: "A typical slab leak repair runs about $2,000–$4,000. See what spot repair, rerouting and repiping cost, what drives the price, and how to keep the bill down."
+description: "Slab leak repair cost: a typical repair runs about $2,000–$4,000. What spot repair, rerouting and repiping cost, what drives the price, and how to keep it down."
 h1: "Slab Leak Repair Cost: What You'll Pay and What Drives It"
-quickAnswer: "National cost guides put a typical slab leak repair at about $2,000 to $4,000, with a simple spot repair often around $1,500 to $3,500 and rerouting commonly $600 to $7,500 depending on the length and route. Repiping the house runs much more. The biggest cost drivers are access through concrete and flooring, how many leaks there are, and how precisely the leak was located."
+quickAnswer: "National cost guides put typical slab leak repair cost at about $2,000 to $4,000, with a simple spot repair often around $1,500 to $3,500 and rerouting commonly $600 to $7,500 depending on the length and route. Repiping the house runs much more. The biggest cost drivers are access through concrete and flooring, how many leaks there are, and how precisely the leak was located."
 primaryKeyword: "slab leak repair cost"
 secondaryKeywords: ["slab leak cost to fix", "concrete slab leak repair cost", "hot water slab leak repair cost", "slab leak reroute cost", "average slab leak repair cost", "slab leak repair cost indiana"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -80,7 +80,7 @@ Many don't pay to **fix the pipe itself**, and they may exclude long-term seepag
 4. **Get two or three written quotes** that list access, repair, restoration and warranty.
 5. **Ask about rerouting** if the line is old, the flooring is expensive, or it's not the first leak.
 
-## Repair costs on Johnson County slab homes
+## Slab leak repair cost on Johnson County homes
 
 Two local factors move the price most. First, the floor: tile and hardwood laid in many newer Greenwood and Center Grove homes cost more to open and restore than carpet. Second, the route: a single-story ranch with an attic makes rerouting a line over the ceiling simpler than a two-story home where the line has to go through finished walls.
 

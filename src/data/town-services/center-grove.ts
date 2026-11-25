@@ -16,7 +16,7 @@ export const centerGrovePages: TownServicePage[] = [
     title: 'Slab Leak Detection in Center Grove, IN | PEX & Copper',
     description: 'Slab leak detection in Center Grove and White River Township: copper or PEX lines under the slab, found with acoustic, thermal and tracer gas testing.',
     h1: 'Slab Leak Detection in Center Grove, IN',
-    answer: 'Most Center Grove homes were built on concrete slabs over the last few decades, with copper or PEX water lines underneath. Copper leaks are usually loud enough to hear through the floor; PEX leaks are often quiet, so we add thermal imaging and tracer gas. Either way, we isolate the line, prove it’s leaking with a pressure test and mark the spot on your floor, without breaking anything to search.',
+    answer: 'Slab leak detection in Center Grove depends on what pipe runs under the floor. Most Center Grove homes were built on concrete slabs over the last few decades, with copper or PEX water lines underneath. Copper leaks are usually loud enough to hear through the floor; PEX leaks are often quiet, so we add thermal imaging and tracer gas. Either way, we isolate the line, prove it’s leaking with a pressure test and mark the spot on your floor, without breaking anything to search.',
     primaryKeyword: 'slab leak detection center grove',
     secondaryKeywords: ['slab leak center grove indiana', 'white river township slab leak', 'pex slab leak', 'leak under slab greenwood 46143', 'slab leak signs'],
     glance: [
@@ -97,7 +97,7 @@ export const centerGrovePages: TownServicePage[] = [
     title: 'Slab Leak Repair in Center Grove, IN | Fix or Bypass',
     description: 'Slab leak repair in Center Grove, IN: spot repair at the marked leak or a reroute that bypasses the slab, often simple in homes with PEX manifolds.',
     h1: 'Slab Leak Repair in Center Grove, IN',
-    answer: 'After the leak is pinpointed, Center Grove homes have two good repair paths: a spot repair through one small opening in the floor, or a reroute that runs a new line through the walls or attic and leaves the old one under the slab. Many newer homes have a PEX manifold that feeds each fixture with its own line, which makes rerouting just that one line straightforward. Our plumbing partner handles either.',
+    answer: 'Slab leak repair in Center Grove is often simpler than homeowners expect. After the leak is pinpointed, Center Grove homes have two good repair paths: a spot repair through one small opening in the floor, or a reroute that runs a new line through the walls or attic and leaves the old one under the slab. Many newer homes have a PEX manifold that feeds each fixture with its own line, which makes rerouting just that one line straightforward. Our plumbing partner handles either.',
     primaryKeyword: 'slab leak repair center grove',
     secondaryKeywords: ['slab leak repair center grove indiana', 'slab leak reroute pex', 'slab leak repair white river township', 'fix slab leak without breaking floor', 'slab leak plumber'],
     glance: [
@@ -172,7 +172,7 @@ export const centerGrovePages: TownServicePage[] = [
     title: 'Water Line Leak Detection in Center Grove, IN',
     description: 'Water line leak detection in Center Grove, IN: a wet yard or a meter that keeps turning. Plastic service lines found with tracer gas and marked for one dig.',
     h1: 'Water Line Leak Detection in Center Grove, IN',
-    answer: 'Most Center Grove homes have a plastic (PE) water service line from the curb to the house, and plastic carries very little sound. That’s why yard leaks here are often missed by listening alone. We confirm the leak with your meter, rule out the sprinklers, trace the line and use tracer gas, a safe hydrogen mix that rises through the soil at the leak, to mark the exact spot.',
+    answer: 'Water line leak detection in Center Grove usually calls for tracer gas. Most Center Grove homes have a plastic (PE) water service line from the curb to the house, and plastic carries very little sound. That’s why yard leaks here are often missed by listening alone. We confirm the leak with your meter, rule out the sprinklers, trace the line and use tracer gas, a safe hydrogen mix that rises through the soil at the leak, to mark the exact spot.',
     primaryKeyword: 'water line leak detection center grove',
     secondaryKeywords: ['underground water leak center grove', 'water service line leak white river township', 'tracer gas leak detection', 'plastic water line leak', 'yard water leak greenwood 46143'],
     glance: [
@@ -319,7 +319,7 @@ export const centerGrovePages: TownServicePage[] = [
     title: 'Pool Leak Detection in Center Grove, IN | Pools & Spas',
     description: 'Pool leak detection in Center Grove, IN: a pool losing more than evaporation or an auto-fill that never stops. We test the shell, fittings and every line.',
     h1: 'Pool Leak Detection in Center Grove, IN',
-    answer: 'Center Grove has one of the highest concentrations of backyard pools around Bargersville, and many have an auto-fill that hides a leak by quietly topping the pool up. If your water bill climbs in summer or the bucket test shows the pool losing more than evaporation, we test the shell, skimmers, returns, lights and main drain with dye and underwater listening, and pressure-test each buried line to the equipment pad.',
+    answer: 'Pool leak detection in Center Grove is one of our most common summer calls. Center Grove has one of the highest concentrations of backyard pools around Bargersville, and many have an auto-fill that hides a leak by quietly topping the pool up. If your water bill climbs in summer or the bucket test shows the pool losing more than evaporation, we test the shell, skimmers, returns, lights and main drain with dye and underwater listening, and pressure-test each buried line to the equipment pad.',
     primaryKeyword: 'pool leak detection center grove',
     secondaryKeywords: ['pool leak detection center grove indiana', 'pool leak white river township', 'pool auto fill running', 'spa leak detection', 'pool losing water'],
     glance: [
@@ -398,8 +398,8 @@ export const centerGrovePages: TownServicePage[] = [
     imageAlt: 'Sprinkler zone valve box opened in a suburban lawn to check for a leak',
     title: 'Sprinkler Leak Detection in Center Grove, IN',
     description: 'Sprinkler leak detection in Center Grove, IN: wet zones, a valve that won’t shut off or a summer bill that jumps. We find mainline, valve and zone leaks.',
-    h1: 'Sprinkler Leak Detection & Repair in Center Grove, IN',
-    answer: 'Most Center Grove homes have an in-ground sprinkler system, and it’s the most common source of a mysterious summer water bill here. We separate the always-pressurized mainline from the zones, check the valves and backflow preventer, and pinpoint the break with acoustic listening or tracer gas, so the repair is one small hole in the lawn and not a dug-up zone.',
+    h1: 'Sprinkler Leak Detection in Center Grove, IN',
+    answer: 'Sprinkler leak detection in Center Grove is a regular summer job. Most Center Grove homes have an in-ground sprinkler system, and it’s the most common source of a mysterious summer water bill here. We separate the always-pressurized mainline from the zones, check the valves and backflow preventer, and pinpoint the break with acoustic listening or tracer gas, so the repair is one small hole in the lawn and not a dug-up zone.',
     primaryKeyword: 'sprinkler leak detection center grove',
     secondaryKeywords: ['sprinkler repair center grove indiana', 'irrigation leak white river township', 'sprinkler valve stuck on', 'sprinkler mainline leak', 'irrigation leak detection'],
     glance: [
@@ -474,8 +474,8 @@ export const centerGrovePages: TownServicePage[] = [
     imageAlt: 'Thermal camera aimed at a ceiling below an upstairs laundry room',
     title: 'Hidden Leak Detection in Center Grove, IN | Walls & Ceilings',
     description: 'Hidden leak detection in Center Grove, IN: stains under upstairs baths and laundry rooms, wet drywall or a musty smell. We find the source and mark it.',
-    h1: 'Hidden Water Leak Detection in Center Grove, IN',
-    answer: 'In Center Grove’s two-story homes, hidden leaks usually show up as a stain on a first-floor ceiling under an upstairs bathroom or laundry room, or wet drywall behind the kitchen. The cause is most often a shower pan, a toilet seal, a washer box, a refrigerator line or a PEX fitting. We separate supply and drain leaks with the meter, map the moisture with meters and a thermal camera, and mark the source.',
+    h1: 'Hidden Leak Detection in Center Grove, IN',
+    answer: 'Hidden leak detection in Center Grove mostly means two-story homes. In Center Grove’s two-story homes, hidden leaks usually show up as a stain on a first-floor ceiling under an upstairs bathroom or laundry room, or wet drywall behind the kitchen. The cause is most often a shower pan, a toilet seal, a washer box, a refrigerator line or a PEX fitting. We separate supply and drain leaks with the meter, map the moisture with meters and a thermal camera, and mark the source.',
     primaryKeyword: 'hidden water leak detection center grove',
     secondaryKeywords: ['ceiling leak center grove indiana', 'leak in wall white river township', 'upstairs laundry room leak', 'shower leak detection', 'water stain on ceiling'],
     glance: [
@@ -552,10 +552,10 @@ export const centerGrovePages: TownServicePage[] = [
     service: 'hidden-water-leak-detection',
     image: 'thermal-imaging-inspection',
     imageAlt: 'Small drywall opening exposing a repaired PEX fitting inside a wall',
-    title: 'Leaking Pipe Repair in Center Grove, IN | PEX & Copper',
-    description: 'Leaking pipe repair in Center Grove, IN: PEX fittings, copper pinholes, frozen hose bib lines and polybutylene, repaired through one small opening at the leak.',
-    h1: 'Leaking Pipe Repair in Center Grove, IN',
-    answer: 'Pipe repairs in Center Grove homes are usually one of four things: a leaking PEX fitting or crimp ring, a pinhole in older copper, a hose bib line that froze inside the wall, or aging polybutylene in some homes from the 1980s and 1990s. We pinpoint the leak first, then our plumbing partner opens one small spot, replaces the part, tests the line and leaves it ready to close.',
+    title: 'Pipe Leak Repair in Center Grove, IN | PEX & Copper',
+    description: 'Pipe leak repair in Center Grove, IN: PEX fittings, copper pinholes, frozen hose bib lines and polybutylene, repaired through one small opening at the leak.',
+    h1: 'Pipe Leak Repair in Center Grove, IN',
+    answer: 'Pipe leak repair in Center Grove homes is usually one of four things: a leaking PEX fitting or crimp ring, a pinhole in older copper, a hose bib line that froze inside the wall, or aging polybutylene in some homes from the 1980s and 1990s. We pinpoint the leak first, then our plumbing partner opens one small spot, replaces the part, tests the line and leaves it ready to close.',
     primaryKeyword: 'pipe leak repair center grove',
     secondaryKeywords: ['pex leak repair', 'burst pipe repair center grove indiana', 'polybutylene replacement white river township', 'frozen hose bib repair', 'leaking pipe in wall repair'],
     glance: [

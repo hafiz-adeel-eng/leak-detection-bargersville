@@ -1,8 +1,8 @@
 ---
 title: "Water Leak Under the Driveway? Find It Without Guesswork"
-description: "Water seeping through driveway cracks or a wet spot that won't dry? How to confirm a water line leak under the driveway and pinpoint it before concrete is cut."
+description: "Water leak under the driveway? Water seeping through cracks or a spot that won’t dry? How to confirm a water line leak and pinpoint it before concrete is cut."
 h1: "Water Leak Under the Driveway: How to Confirm It and Find It"
-quickAnswer: "Water coming up through driveway cracks or joints in dry weather, a spot that never dries, or a sinking slab often means the water service line or an irrigation line is leaking underneath. Turn off all water and check the meter; then close the irrigation valve and the house shutoff to see which line it is. The leak can be pinpointed with line tracing, acoustic listening and tracer gas, so only a small section of concrete is cut, or the line is rerouted around the driveway."
+quickAnswer: "A water leak under the driveway is easy to mistake for groundwater. Water coming up through driveway cracks or joints in dry weather, a spot that never dries, or a sinking slab often means the water service line or an irrigation line is leaking underneath. Turn off all water and check the meter; then close the irrigation valve and the house shutoff to see which line it is. The leak can be pinpointed with line tracing, acoustic listening and tracer gas, so only a small section of concrete is cut, or the line is rerouted around the driveway."
 primaryKeyword: "water leak under driveway"
 secondaryKeywords: ["water coming up through driveway", "water seeping through driveway", "water line leak under driveway", "cost to repair water leak under driveway", "broken water line under driveway", "water leak under driveway indiana"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Driveways often sit right on top of the water service line, and sometimes an irrigation line too. When one of those pipes leaks, the water has nowhere to go but up through cracks and joints, or out at the edge of the concrete. A wet driveway in dry weather is worth checking before it undermines the slab. Here's how to confirm it's a leak and find it without cutting up the driveway to look.
 
-## Signs of a leak under the driveway
+## Signs of a water leak under the driveway
 
 - Water **seeping through cracks or control joints** when it hasn't rained
 - A **wet or dark patch** that never fully dries, often with moss or algae

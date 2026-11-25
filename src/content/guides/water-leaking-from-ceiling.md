@@ -1,8 +1,8 @@
 ---
 title: "Water Leaking From the Ceiling? How to Find the Source"
-description: "Water dripping through the ceiling? What to do first, how to tell a plumbing leak from a roof leak, and how to find the source before opening drywall."
+description: "Water leaking from the ceiling? What to do first, how to tell a plumbing leak from a roof leak, and how to find the source before opening drywall."
 h1: "Water Leaking From the Ceiling: What to Do and How to Find the Source"
-quickAnswer: "Turn off power to the area if water is near lights or outlets, catch the water and keep people away from any sagging drywall. Then check the timing: a leak that appears only in rain points to the roof, while one that drips in dry weather or when a fixture above is used points to plumbing. A moving water meter with everything off means a pressurized supply line is leaking."
+quickAnswer: "With water leaking from the ceiling, safety comes first. Turn off power to the area if water is near lights or outlets, catch the water and keep people away from any sagging drywall. Then check the timing: a leak that appears only in rain points to the roof, while one that drips in dry weather or when a fixture above is used points to plumbing. A moving water meter with everything off means a pressurized supply line is leaking."
 primaryKeyword: "water leaking from ceiling"
 secondaryKeywords: ["ceiling leak", "water dripping from ceiling", "water stain on ceiling", "ceiling leak under bathroom", "how to find a ceiling leak", "leak in ceiling no rain"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Water coming through a ceiling is one of the most alarming leaks, and one of the easiest to misdiagnose. The wet spot is almost never directly under the source: water runs along joists, pipes and the back of the drywall before it finds a low point. Here's what to do right away, and how to track the water back to where it's really coming from.
 
-## Do this first
+## Water leaking from the ceiling? Do this first
 
 1. **Turn off power** to the room at the breaker if water is near a light fixture, fan, smoke detector or outlet. Do it from a dry spot.
 2. **Catch the water** with buckets and towels, and move furniture and electronics out of the way.

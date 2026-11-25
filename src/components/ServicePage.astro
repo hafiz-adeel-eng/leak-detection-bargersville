@@ -6,7 +6,8 @@ import ServiceCard from './ServiceCard.astro';
 import Faq from './Faq.astro';
 import CtaBand from './CtaBand.astro';
 import { site, areas, type Service } from '../data/site';
-import { image } from '../data/images';
+import { pageImage, pageKeyword } from '../data/images';
+import PageImage from './PageImage.astro';
 import { guideUrl } from '../data/guides';
 import { md } from '../data/md';
 import { locationUrl } from '../data/locations';
@@ -39,7 +40,8 @@ const L = kind === 'leak'
       cost: 'Repairs are carried out by our plumbing partner. Every home is different, so call and describe the problem for an accurate quote.',
       related: 'Other plumbing services',
     };
-const photo = image(s.slug);
+const lead = pageImage(`${base}${s.slug}/`, s.image ?? '');
+const photo = lead?.src ?? null;
 const related = s.related.map((slug) => pool.find((x) => x.slug === slug)).filter(Boolean) as Service[];
 const allGuides = await getCollection('guides');
 // Up to 8 guides: a long list of titles repeats the guides hub instead of adding to the page.
@@ -72,7 +74,7 @@ const serviceSchema = {
   <section class="section">
     <div class="container content-grid">
       <article class="prose">
-        {photo && <img class="photo" src={photo} alt={s.image} width="1200" height="675" loading="eager" decoding="async" />}
+        <PageImage path={url} desc={kind === 'leak' ? s.image : undefined} />
 
         <h2>{s.whatIs.h2}</h2>
         {s.whatIs.paras?.map((p) => <p set:html={md(p)} />)}
@@ -123,7 +125,7 @@ const serviceSchema = {
           </div>
         )}
 
-        <h2>Where we offer {lower}</h2>
+        <h2>{pageKeyword(url) ?? `Where we offer ${lower}`}{pageKeyword(url) ? ' and nearby towns' : ''}</h2>
         <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
         {local.length > 0 && <p>Town pages for this service: {local.map((x, i) => <>{i > 0 && (i === local.length - 1 ? ' and ' : ', ')}<a href={townServiceUrl(x)}>{x.h1.replace(', IN', '')}</a></>)}.</p>}
 

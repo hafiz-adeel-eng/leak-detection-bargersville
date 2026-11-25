@@ -1,8 +1,8 @@
 ---
 title: "Toilet Leaking at the Base? Causes, Fixes & Hidden Damage"
-description: "Water around the toilet base? Tell a wax ring leak from condensation or a supply line drip, fix it, and check for hidden damage in the floor and ceiling."
+description: "Toilet leaking at the base? Tell a wax ring leak from condensation or a supply line drip, fix it, and check for hidden damage in the floor and ceiling."
 h1: "Toilet Leaking at the Base: Causes, Fixes and Hidden Damage"
-quickAnswer: "Water that appears at the base of the toilet after flushing usually means the wax ring seal has failed, often because the toilet rocks or the bolts are loose. Before blaming the wax ring, rule out condensation on the tank, a dripping supply line or shutoff valve, and a cracked tank or bowl. A leaking wax ring should be replaced soon, because every flush can soak the subfloor and the ceiling below."
+quickAnswer: "A toilet leaking at the base after flushing usually means the wax ring seal has failed, often because the toilet rocks or the bolts are loose. Before blaming the wax ring, rule out condensation on the tank, a dripping supply line or shutoff valve, and a cracked tank or bowl. A leaking wax ring should be replaced soon, because every flush can soak the subfloor and the ceiling below."
 primaryKeyword: "toilet leaking at base"
 secondaryKeywords: ["toilet leaking from bottom", "toilet seeping at base", "wax ring for toilet leaking", "toilet leaking at base of toilet", "water around base of toilet", "toilet leaking through ceiling below"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 A little water around the base of the toilet is easy to mop up and forget. But if it's coming from under the toilet, it's also soaking into the subfloor every time someone flushes, and in a two-story home it can end up in the ceiling below. Here's how to find out where the water is really coming from, what to fix, and how to check for damage you can't see.
 
-## First: where is the water coming from?
+## Toilet leaking at the base: where is the water coming from?
 
 Dry the toilet and the floor completely, then watch.
 

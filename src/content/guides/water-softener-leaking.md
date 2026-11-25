@@ -1,8 +1,8 @@
 ---
 title: "Water Softener Leaking? Causes and Fixes (Indiana Homes)"
-description: "Water around your softener? Check the bypass valve, fittings, brine tank and drain line, why softeners are common in Indiana, and when it's a bigger leak."
+description: "Water softener leaking? Check the bypass valve, fittings, brine tank and drain line, why softeners are so common in Indiana, and when it is a bigger leak."
 h1: "Water Softener Leaking? Causes and Fixes for Indiana Homes"
-quickAnswer: "Most water softener leaks come from the bypass valve O-rings, loose inlet or outlet fittings, the drain line, an overflowing brine tank, or a cracked resin tank. Put the softener in bypass, dry it off and watch where water reappears. If the softener is dry but the floor around it stays wet, or the meter moves with everything off, the leak is elsewhere in the plumbing."
+quickAnswer: "A water softener leaking is usually losing water at the bypass valve O-rings, loose inlet or outlet fittings, the drain line, an overflowing brine tank, or a cracked resin tank. Put the softener in bypass, dry it off and watch where water reappears. If the softener is dry but the floor around it stays wet, or the meter moves with everything off, the leak is elsewhere in the plumbing."
 primaryKeyword: "water softener leaking"
 secondaryKeywords: ["water leaking from water softener", "water softener leaking from bottom", "water softener bypass valve leaking", "water softener leaking from top", "brine tank overflowing", "water softener leak indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -37,7 +37,7 @@ The **bypass valve** sends water around the softener so the house still has wate
 3. **Dry everything**: the softener head, the tanks, the fittings and the floor.
 4. Take it back out of bypass and **watch where water appears**.
 
-## Where softeners leak
+## Water softener leaking? Where to look
 
 | Where it's wet | Likely cause | Usual fix |
 |---|---|---|

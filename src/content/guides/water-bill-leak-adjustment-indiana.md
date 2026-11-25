@@ -1,8 +1,8 @@
 ---
 title: "Water Bill Leak Adjustment in Indiana: How to Ask for One"
-description: "High water bill from a leak? How leak adjustments work at Indiana utilities, what proof to send, and how to ask Indiana American Water or your town utility."
+description: "Water bill leak adjustment in Indiana: how it works at local utilities, what proof to send, and how to ask Indiana American Water or your town utility."
 h1: "Water Bill Leak Adjustment in Indiana: How to Request One"
-quickAnswer: "Many water utilities will reduce a high bill caused by a leak on your side of the meter, but only after the leak is repaired and usually only once in a set period. Call your utility's customer service, ask about their leak adjustment policy, and send proof: the repair invoice, photos, and ideally a leak detection report showing where the leak was. Policies differ, so ask your own utility for the rules and deadline."
+quickAnswer: "A water bill leak adjustment in Indiana is possible at most utilities. Many water utilities will reduce a high bill caused by a leak on your side of the meter, but only after the leak is repaired and usually only once in a set period. Call your utility's customer service, ask about their leak adjustment policy, and send proof: the repair invoice, photos, and ideally a leak detection report showing where the leak was. Policies differ, so ask your own utility for the rules and deadline."
 primaryKeyword: "water bill leak adjustment"
 secondaryKeywords: ["leak adjustment water bill", "water leak adjustment policy", "indiana american water leak adjustment", "leak adjustment form", "water bill adjustment due to leak", "high water bill leak johnson county indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -28,7 +28,7 @@ faqs:
 
 A leak can double or triple a water bill before anyone notices. The good news is that many utilities offer a **leak adjustment**, a partial credit for water lost through a leak on your side of the meter, once the leak is fixed. The catch is that every utility sets its own rules. Here's how leak adjustments usually work in Indiana, what to have ready, and how to ask the utilities that serve Johnson County.
 
-## How leak adjustments usually work
+## How a water bill leak adjustment in Indiana usually works
 
 Policies vary, but most share these features:
 

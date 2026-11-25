@@ -1,8 +1,8 @@
 ---
 title: "Water Line Replacement Cost Indiana: $2,000–$5,800"
-description: "Main water line, meter to house: about $2,000–$5,800, or $50–$290 per foot. What drives the price in Johnson County, IN and when a spot repair is enough."
+description: "Water line replacement cost in Indiana: about $2,000–$5,800 meter to house, or $50–$290 per foot. What drives the price and when a spot repair is enough."
 h1: "Water Line Replacement Cost in Indiana: Meter to House"
-quickAnswer: "Replacing the main water line from the meter to the house commonly costs about $2,000 to $5,800 nationally, or roughly $50 to $290 per foot, depending on length, depth, pipe material and what's above the line. Trenchless replacement often runs $3,200 to $8,000. A single leak in an otherwise sound line can usually be spot-repaired for much less once it has been pinpointed."
+quickAnswer: "Water line replacement cost in Indiana follows national ranges. Replacing the main water line from the meter to the house commonly costs about $2,000 to $5,800 nationally, or roughly $50 to $290 per foot, depending on length, depth, pipe material and what's above the line. Trenchless replacement often runs $3,200 to $8,000. A single leak in an otherwise sound line can usually be spot-repaired for much less once it has been pinpointed."
 primaryKeyword: "water line replacement cost indiana"
 secondaryKeywords: ["main water line replacement cost", "cost to replace water line from meter to house", "main water line leak repair cost", "underground water line repair cost", "trenchless water line replacement cost", "water line replacement cost johnson county in", "who pays for water line repair indiana"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -84,7 +84,7 @@ Lead service lines are a special case. Indiana American Water has state approval
 - [Low water pressure](/guides/low-water-pressure-leak/) throughout the house
 - A meter that moves with everything off, and a higher bill
 
-## What changes the price in Johnson County
+## Water line replacement cost in Indiana: Johnson County factors
 
 Lot size is the biggest local factor. A typical subdivision home in Greenwood or Whiteland may have a short run from the meter pit near the sidewalk; a house set back on an acre around Trafalgar or rural Franklin can have hundreds of feet of line. Depth matters too: lines here are buried below the central Indiana frost depth of roughly 30 to 36 inches, in clay that is slow to dig and restore.
 
