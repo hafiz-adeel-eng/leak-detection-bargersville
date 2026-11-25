@@ -1,6 +1,6 @@
 ---
-title: "Water Line Replacement Cost in Indiana (Meter to House)"
-description: "What it costs to repair or replace the water line from the meter to your house in Johnson County, IN, what drives the price, and when a spot repair is enough."
+title: "Water Line Replacement Cost Indiana: $2,000–$5,800"
+description: "Main water line, meter to house: about $2,000–$5,800, or $50–$290 per foot. What drives the price in Johnson County, IN and when a spot repair is enough."
 h1: "Water Line Replacement Cost in Indiana: Meter to House"
 quickAnswer: "Replacing the main water line from the meter to the house commonly costs about $2,000 to $5,800 nationally, or roughly $50 to $290 per foot, depending on length, depth, pipe material and what's above the line. Trenchless replacement often runs $3,200 to $8,000. A single leak in an otherwise sound line can usually be spot-repaired for much less once it has been pinpointed."
 primaryKeyword: "water line replacement cost indiana"
@@ -9,7 +9,7 @@ service: { name: "Underground Water Leak Detection", url: "/services/underground
 image: { name: "underground-water-leak-detection", alt: "Exposed buried water service line leaking in a yard, pinpointed before any trench was dug" }
 related: ["galvanized-pipe-replacement", "whole-house-repipe-cost", "how-to-find-an-underground-water-leak", "water-leak-under-driveway", "low-water-pressure-leak"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 23
 faqs:
   - q: "How much does it cost to replace a water line from the meter to the house?"

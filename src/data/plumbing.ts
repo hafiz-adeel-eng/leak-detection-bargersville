@@ -73,7 +73,7 @@ export const plumbing: Service[] = [
     icon: 'drain',
     short: 'Slow or clogged sinks, tubs, toilets and main drains cleared, with the cause found.',
     title: 'Drain Cleaning in Bargersville, IN | Clogged Drains',
-    description: 'Slow or clogged drains in Bargersville and Johnson County? Drain cleaning for sinks, tubs, toilets and main lines, plus camera inspection to find what’s causing it.',
+    description: 'Slow or clogged drains in Bargersville or Johnson County? Drain cleaning for sinks, tubs, toilets and main lines, plus a camera to find the cause.',
     h1: 'Drain Cleaning in Bargersville & Johnson County',
     answer: 'A slow or clogged drain is usually a build-up of grease, hair, soap or debris, and sometimes roots or damage in the line. We clear kitchen, bathroom, laundry and main drains, and when a clog keeps coming back, inspect the line to find out why.',
     whatIs: {
@@ -179,7 +179,7 @@ export const plumbing: Service[] = [
     icon: 'pipe',
     short: 'Burst, frozen, leaking and slab-leak pipes repaired — after the leak is pinpointed.',
     title: 'Burst & Frozen Pipe Repair | Bargersville, IN',
-    description: 'Burst, frozen or leaking pipes in Bargersville and Johnson County? Pipe repair for supply lines, water lines and slab leaks, starting with finding exactly where the leak is.',
+    description: 'Burst, frozen or leaking pipes in Johnson County? Pipe repair for supply lines, water lines and slab leaks, starting with finding exactly where the leak is.',
     h1: 'Burst, Frozen & Leaking Pipe Repair',
     answer: 'A burst or leaking pipe needs two things: the leak found, and the pipe fixed. Because we specialize in leak detection, we pinpoint hidden leaks first — under slabs, inside walls, in buried water lines — so the repair opening is small and in the right place.',
     whatIs: {
@@ -241,7 +241,7 @@ export const plumbing: Service[] = [
     icon: 'bolt',
     short: 'Burst pipe, sewage backup or no water? What to do right now, and who to call.',
     title: 'Emergency Plumber in Bargersville & Johnson County, IN',
-    description: 'Burst pipe, sewage backup, leaking water heater or no water? What to do right now and how to reach us for urgent plumbing help in Bargersville and Johnson County.',
+    description: 'Burst pipe, sewage backup, leaking water heater or no water? What to do right now and how to get urgent plumbing help in Bargersville and Johnson County.',
     h1: 'Emergency Plumbing Help in Bargersville',
     answer: 'A plumbing emergency is anything that’s damaging your home or leaves you without water: a burst pipe, a sewage backup, a leaking water heater or a leak you can’t stop. First, shut off the water. Then call — we’ll tell you what to do next and get the problem found and fixed.',
     whatIs: {

@@ -1,6 +1,6 @@
 ---
-title: "Hear Water Running When Nothing Is On? What It Means"
-description: "Hear running water in the walls or under the floor with every tap off? The common causes, a 10-minute meter test, and how to find a hidden leak you can hear."
+title: "Water Running in Pipes With Nothing On? Causes & Fixes"
+description: "Hear water running in the walls or floor with every tap off? Do a 10-minute meter test, then check the toilet, softener and hidden leaks that cause it."
 h1: "Hear Water Running When Nothing Is On? Here's What It Means"
 quickAnswer: "The sound of running water with every fixture off usually means water is moving somewhere it shouldn't. The most common cause is a toilet leaking from the tank into the bowl; the next is a hidden supply line leak in a wall, ceiling or under the slab. Check your water meter with everything off. If it moves, water is leaking, and a toilet dye test tells you whether the toilet is the cause."
 primaryKeyword: "hear water running in pipes when nothing is on"
@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician listening through a tile floor with an acoustic ground microphone to locate the sound of a hidden water leak" }
 related: ["toilet-leaking-at-base", "how-to-find-a-slab-leak", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 19
 faqs:
   - q: "Is it normal to hear water running in pipes when nothing is on?"

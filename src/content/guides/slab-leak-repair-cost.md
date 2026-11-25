@@ -1,6 +1,6 @@
 ---
-title: "Slab Leak Repair Cost: Spot Repair, Reroute or Repipe"
-description: "What slab leak repair costs, what drives the price, and how spot repair, rerouting and repiping compare. Plus how accurate detection keeps the bill down."
+title: "Slab Leak Repair Cost: $2,000–$4,000 by Repair Type"
+description: "A typical slab leak repair runs about $2,000–$4,000. See what spot repair, rerouting and repiping cost, what drives the price, and how to keep the bill down."
 h1: "Slab Leak Repair Cost: What You'll Pay and What Drives It"
 quickAnswer: "National cost guides put a typical slab leak repair at about $2,000 to $4,000, with a simple spot repair often around $1,500 to $3,500 and rerouting commonly $600 to $7,500 depending on the length and route. Repiping the house runs much more. The biggest cost drivers are access through concrete and flooring, how many leaks there are, and how precisely the leak was located."
 primaryKeyword: "slab leak repair cost"
@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician marking a slab leak on a tile floor so the repair opening stays small" }
 related: ["slab-leak-repair-options", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 37
 faqs:
   - q: "How much does it cost to fix a slab leak?"
