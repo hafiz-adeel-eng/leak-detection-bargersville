@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking walls for moisture before a whole-house repipe is planned" }
 related: ["pinhole-leaks-copper-pipes", "galvanized-pipe-replacement", "polybutylene-pipe-replacement"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 38
 faqs:
   - q: "How much does it cost to repipe a house?"
@@ -20,6 +20,8 @@ faqs:
     a: "Many homes are repiped in a few days, with water shut off only part of each day. Drywall patching and painting can take longer."
   - q: "When should I repipe instead of repairing leaks?"
     a: "When you've had several leaks in a few years, when the house has galvanized steel or polybutylene pipe, or when a plumber finds thin, pitted pipe while making a repair."
+  - q: "Do I need a permit to repipe a house in Johnson County?"
+    a: "Repiping is plumbing work and often needs a permit from the local building department. Ask your plumber to pull it and include inspection in the quote."
 ---
 
 Repiping means replacing the water supply lines throughout the house. It's a big job, but for a home with old, failing pipe it's often cheaper in the long run than paying for leak after leak and the water damage that comes with them. Here's what it costs, PEX versus copper, and the signs it's time.
@@ -79,6 +81,12 @@ Before committing to a repipe, it helps to know:
 - **How widespread the moisture is** in walls and floors
 
 [Slab leak detection](/services/slab-leak-detection/) and hidden leak detection answer those questions without opening walls to search.
+
+## Repiping a Johnson County home
+
+The houses most often repiped here are older Franklin and Greenwood homes with galvanized steel, and 1978 to 1995 subdivision homes in Greenwood, Center Grove and Whiteland with polybutylene. Basement and crawl-space homes are simpler to repipe because lines can run along the joists; slab homes need lines rerouted through walls and attics.
+
+PEX is the usual choice in local repipes because it handles freezing better than copper and is faster to install through finished walls. Ask whether the quote includes drywall repair and a permit, which some local building departments require for repipes.
 
 ## Get quotes
 

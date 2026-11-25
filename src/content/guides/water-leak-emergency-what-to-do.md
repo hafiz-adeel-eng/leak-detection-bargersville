@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet tile floor near a cabinet with an acoustic sensor, with an inset of a leaking pipe" }
 related: ["how-to-shut-off-water-to-house", "burst-pipe-what-to-do", "burst-pipe-insurance-claim-indiana", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "does-insurance-cover-slab-leaks", "frozen-pipe-leaks", "leak-detection-vs-plumber"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 14
 faqs:
   - q: "What is the first thing to do when a water pipe leaks?"
@@ -20,6 +20,8 @@ faqs:
     a: "If the leak is on the hot side or the water is off for a while, turn a gas heater to vacation or pilot and switch off power to an electric heater."
   - q: "When is a leak an emergency?"
     a: "When water is actively spreading, coming through a ceiling, near electrical outlets or appliances, or when you can hear water running inside a wall or under the floor."
+  - q: "Who do I call if the leak is at my water meter?"
+    a: "Call your water utility's emergency line. The meter and the pipe on the street side of it usually belong to the utility, and they can shut the water off at the curb."
 ---
 
 Water on the floor or coming through the ceiling is stressful. The first few minutes matter most, and most of what you need to do doesn't require any tools. Work through these steps in order.
@@ -69,6 +71,12 @@ Mop up standing water, open windows if the weather allows, and run fans or a deh
 - Don't cut into walls or break floors to look for the leak. You may open the wrong spot.
 - Don't use a regular household vacuum on water.
 - Don't turn the main water back on until you know where the leak is.
+
+## Emergency contacts for Johnson County homes
+
+Know who to call before you need them. For water, the main shutoff is yours, but a leak at or before the meter belongs to your utility: Indiana American Water, the Bargersville utility, Whiteland Water Works, Citizens Water in Southport, or your town utility. Each lists an emergency number on its website and on your bill.
+
+If water reaches outlets, an electrical panel or appliances, cut power at the breaker before stepping in it. Duke Energy serves much of Johnson County, and some rural areas are served by an electric cooperative; call your electric company if you cannot reach the panel safely.
 
 ## Hidden leak? Get it located
 

@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Thermal camera showing a cool moisture pattern on a ceiling below a leaking shower pan" }
 related: ["toilet-leaking-at-base", "water-leaking-from-ceiling", "how-to-find-a-leak-in-a-wall"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 29
 faqs:
   - q: "How do I know if my shower pan is leaking?"
@@ -20,6 +20,8 @@ faqs:
     a: "Sometimes. Leaks at the drain or through grout can sometimes be fixed without removing the floor. A failed liner under a tile floor usually means removing and rebuilding the shower floor."
   - q: "Is it the shower pan or the shower valve?"
     a: "A pan or drain leaks only when water is on the shower floor. A valve or supply line leaks when the shower is running or all the time, and a meter test catches a constant supply leak. Testing each part separately tells them apart."
+  - q: "How do I know if my shower pan is leaking in a slab home?"
+    a: "Look for grout that stays dark long after showers, loose floor tile beside the shower, or damp carpet on the other side of the wall. Plug the drain and fill the pan for a flood test; if the dampness spreads, the pan is leaking."
 ---
 
 A shower sends gallons of water onto the floor every day, and the only thing between that water and your subfloor is the **shower pan**: the liner or molded base under the tile, sealed to the drain. When it fails, the water goes down instead of out the drain. It's one of the most common hidden leaks in a bathroom, and one of the most commonly misdiagnosed. Here's how to recognize it and test for it.
@@ -90,6 +92,12 @@ With [hidden water leak detection](/services/hidden-water-leak-detection/), we:
 - Provide **photos and readings** for your insurer
 
 A [thermal imaging inspection](/services/thermal-imaging-inspection/) is also useful before buying a home with a tiled shower. If the leak shows up as a ceiling stain, see [water leaking from the ceiling](/guides/water-leaking-from-ceiling/). If water is appearing at the toilet next to the shower, see [toilet leaking at the base](/guides/toilet-leaking-at-base/).
+
+## Shower pan leaks in Johnson County homes
+
+Two kinds of showers dominate here. Homes built in the 1990s and 2000s in Greenwood, Center Grove and Whiteland often have tiled showers over a mortar bed and liner, and the liner or the drain clamp is where they fail. Older bathrooms in Franklin and Greenwood may have a tub or a one-piece fiberglass unit, where the drain gasket is the weak spot.
+
+In two-story homes, a pan leak usually shows up as a stain on the ceiling below; in slab homes, it shows up as loose tile or grout darkening next to the shower, or damp carpet in the next room. A flood test with the drain plugged separates a pan leak from a supply or valve leak.
 
 ## Get it tested
 

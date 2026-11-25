@@ -9,7 +9,7 @@ service: { name: "Thermal Imaging Inspection", url: "/services/thermal-imaging-i
 image: { name: "thermal-imaging-inspection", alt: "Technician documenting water damage from a burst pipe with a thermal camera for a homeowners insurance claim" }
 related: ["burst-pipe-what-to-do", "does-insurance-cover-slab-leaks", "water-leak-emergency-what-to-do", "frozen-pipe-leaks"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 27
 faqs:
   - q: "Does homeowners insurance cover a burst pipe in Indiana?"
@@ -22,6 +22,8 @@ faqs:
     a: "Take thorough photos and video first, then start protecting the home: stop the water, remove standing water and start drying. Keep damaged items or photos of them, and save every receipt for the cleanup."
   - q: "What can I do if my Indiana claim is denied?"
     a: "Ask the insurer for the reason in writing and which policy language it relies on. If you still disagree after talking to the company, the Indiana Department of Insurance takes consumer complaints online or at 1-800-622-4461."
+  - q: "Will my insurer pay for finding the burst pipe in my Indiana home?"
+    a: "Many Indiana policies treat the cost of locating and opening up to reach a sudden break as part of the covered loss, while the pipe itself is not covered. Check the 'access' or 'tear-out' wording in your policy and ask the adjuster before the work starts."
 ---
 
 A burst pipe can put hundreds of gallons of water into a house in an hour, and in central Indiana winters it's one of the most common homeowner claims. What you do in the first few hours affects both the damage and the claim. Here's a step-by-step guide for Indiana homeowners, from shutting off the water to talking to the adjuster.
@@ -94,6 +96,12 @@ If a pipe froze, see [frozen pipe leaks](/guides/frozen-pipe-leaks/) for where t
 Ask the insurer to explain the denial or low offer in writing, citing the policy language. If talking to the company doesn't resolve it, the **Indiana Department of Insurance** takes consumer complaints through its online portal or its consumer hotline, 1-800-622-4461 ([IDOI complaints](https://www.in.gov/idoi/consumer-services/complaints/)). Insurers must respond to the Department in writing.
 
 For slab leaks specifically, see [does homeowners insurance cover slab leaks](/guides/does-insurance-cover-slab-leaks/).
+
+## Filing from a Johnson County home: what adjusters ask for
+
+Most burst-pipe claims in Johnson County arrive in the same few weeks each winter, after a cold snap when temperatures stay in the single digits overnight. That timing matters: adjusters are busy, so a clear file gets handled faster. Keep the water meter readings from before and after the shutoff, a photo of the break if you can reach it, and the date the heat was last confirmed on, because a policy may exclude freezing if a house was left unheated.
+
+If the break is in a crawl space or behind finished drywall and you cannot see it, a leak locate report with photos and moisture readings gives the adjuster the cause and location in writing. Homes in Greenwood, Franklin and Bargersville on Indiana American Water can also ask the utility for a usage history, which shows when the loss started.
 
 ## Get the leak located and documented
 

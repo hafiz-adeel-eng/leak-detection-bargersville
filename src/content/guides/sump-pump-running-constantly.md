@@ -20,6 +20,8 @@ faqs:
     a: "Do a meter test with all water off. If the meter moves and the pump keeps cycling, a pressurized line may be leaking near the foundation. Clear, steady inflow into the pit in dry weather is another clue."
   - q: "Can a failed check valve make a sump pump run constantly?"
     a: "Yes. Without a working check valve, the water in the discharge pipe falls back into the pit each time the pump stops, so the pump keeps re-pumping the same water."
+  - q: "Why does my sump pump run in dry weather in Indiana?"
+    a: "If there has been no rain, check for a stuck float, a failed check valve that lets water flow back, or a plumbing leak feeding the pit. Clean, cold water entering steadily is a sign of a leak in the water line."
 ---
 
 Central Indiana basements rely on sump pumps, especially in spring and after long wet spells when the clay-rich soil stays saturated. A pump that runs a lot during heavy rain is doing its job. A pump that runs constantly in dry weather, or never shuts off, is telling you something is wrong: with the pump, the pit, or a source of water that shouldn't be there. Here's how to sort it out.
@@ -73,6 +75,12 @@ If the water is groundwater or runoff:
 ## Find the leak before digging
 
 If the meter moves, the leak needs to be found before anyone digs near the foundation. With [underground water leak detection](/services/underground-water-leak-detection/), we trace the service line, listen along it with acoustic equipment, and use tracer gas on plastic pipe, then mark the spot. If there's water inside the basement too, see [water in the basement or crawl space](/guides/water-in-basement-or-crawl-space/).
+
+## Sump pumps and Johnson County groundwater
+
+Johnson County's clay soil holds water, and the water table rises in spring and after long rains, so a sump pump that cycles often in April can be normal. It is not normal in a dry August, or when the pit keeps refilling with clear, cold water days after the last rain. That pattern points to a leak in the water service line entering the basement, or a leaking supply line under the floor.
+
+Local sewer utilities generally prohibit connecting a sump pump to the sanitary sewer, so the discharge should run outside. If it empties too close to the house on clay soil, the same water can soak back to the foundation and keep the pump cycling.
 
 ## Get it checked
 

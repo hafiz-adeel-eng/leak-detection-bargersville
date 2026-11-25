@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a kitchen floor near the refrigerator with an acoustic sensor for a hidden water line leak" }
 related: ["leak-under-sink", "washing-machine-leaking", "water-leaking-from-ceiling", "water-in-basement-or-crawl-space", "smart-water-leak-detectors"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 31
 faqs:
   - q: "How do I know if my refrigerator water line is leaking?"
@@ -20,6 +20,8 @@ faqs:
     a: "A braided stainless steel line with factory-crimped fittings, connected to a proper quarter-turn shutoff valve rather than a saddle valve. Leave enough slack to pull the fridge out without kinking it."
   - q: "Is a refrigerator leak water damage covered by insurance?"
     a: "Sudden damage from a burst line is often covered, but damage from a slow leak that went on for weeks may not be. Report it promptly and document it."
+  - q: "Should I use a plastic or braided line for my refrigerator in Indiana?"
+    a: "A braided stainless line with crimped ends is the safer choice. Thin plastic tubing becomes brittle and is easy to kink when the fridge is moved, which is a common cause of slow kitchen leaks."
 ---
 
 Refrigerator water lines are small, out of sight and under constant pressure, and they're one of the most common sources of hidden kitchen leaks. A slow drip behind the fridge can soak the subfloor for weeks, warp flooring, and show up as a stain on the basement ceiling before anyone pulls the fridge out. Here's how to find the leak, fix it properly, and check how far the water went.
@@ -79,6 +81,12 @@ If you can't tell how far the water spread, [hidden water leak detection](/servi
 - Check behind the fridge **once a year**, or when you clean the coils.
 - Put a **leak sensor** on the floor behind the fridge. See [smart water leak detectors](/guides/smart-water-leak-detectors/).
 - Know where the fridge's **shutoff valve** is, and make sure it turns.
+
+## Fridge line leaks in Johnson County kitchens
+
+Many kitchens in Greenwood, Center Grove and Bargersville subdivisions feed the refrigerator through a thin plastic or copper line that runs under the floor from the basement or crawl space, or along the slab to a valve behind the sink. On slab homes, a leak in that line can travel under cabinets and show up at the baseboard several feet away.
+
+Central Indiana's hard water also clogs the inlet screen on the fridge's water valve over time, which can cause the valve to stick and drip. If the ice maker has slowed down and the floor is damp, check the valve before the line.
 
 ## Get it found
 

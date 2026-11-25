@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Technician scanning an exterior wall with a thermal camera to find where a frozen pipe split and leaked" }
 related: ["outside-spigot-leaking", "burst-pipe-what-to-do", "burst-pipe-insurance-claim-indiana", "well-pump-keeps-running", "water-in-basement-or-crawl-space", "water-leak-emergency-what-to-do", "how-to-find-a-leak-in-a-wall", "how-to-find-an-underground-water-leak"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 17
 faqs:
   - q: "How do I know if a frozen pipe burst?"
@@ -22,6 +22,8 @@ faqs:
     a: "Pipes in unheated or poorly insulated spaces are at risk once outdoor temperatures fall to about 20°F, especially overnight and during long cold spells. Wind and drafts make it worse."
   - q: "Is it safe to thaw a frozen pipe with a torch?"
     a: "No. Never use an open flame, a propane torch or a charcoal heater. Use a hair dryer, a heating pad or warm towels, keep the faucet open, and start from the faucet end working back toward the frozen section."
+  - q: "How cold does it have to get for pipes to freeze in central Indiana?"
+    a: "Pipes in unheated spaces can freeze once outdoor temperatures drop into the low 20s or below for several hours, and the risk climbs sharply in single digits. Pipes in heated rooms usually survive unless they sit against a poorly insulated outside wall."
 ---
 
 Central Indiana winters regularly drop below 20°F, and that's when pipes in exterior walls, crawl spaces, garages and attics start to freeze. The tricky part is that a frozen pipe usually doesn't leak while it's frozen. The ice plugs the crack. The leak starts when things thaw, often inside a wall or under a floor where you can't see it. Here's how to check your home after a freeze and find a leak before it turns into mold and ruined drywall.
@@ -118,6 +120,12 @@ If a faucet only trickles on a cold morning, the pipe is probably frozen but not
 - **Watch for leaks as it thaws,** and have the main shutoff ready.
 
 If you can't find or reach the frozen section, call a plumber.
+
+## After a freeze in Johnson County: the order to check
+
+When a cold snap breaks in Johnson County, start at the water meter. Most homes on Indiana American Water, the Bargersville utility or a town utility have the meter in a pit near the street; a dial that keeps moving with every tap off means a split pipe somewhere. Then check the places local houses freeze: the crawl space under older Franklin and Greenwood homes, outside walls behind kitchen sinks, the garage wall next to the laundry, and every hose bib.
+
+Rural homes around Trafalgar and Morgantown add one more: the line to a barn, shop or frost-free hydrant. If you are on a well, listen for the pump starting when nothing is running.
 
 ## Get the leak found
 

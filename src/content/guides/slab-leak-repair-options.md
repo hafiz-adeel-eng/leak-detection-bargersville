@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician pinpointing a slab leak with an acoustic ground microphone before any concrete is opened" }
 related: ["slab-leak-repair-cost", "whole-house-repipe-cost", "water-line-replacement-cost-indiana", "how-to-find-a-slab-leak", "does-insurance-cover-slab-leaks", "leak-detection-cost"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 15
 faqs:
   - q: "What is the best way to fix a slab leak?"
@@ -20,6 +20,8 @@ faqs:
     a: "With professional slab leak detection: the lines are isolated and pressure-tested, then acoustic listening, thermal imaging or tracer gas pinpoint the spot so it can be marked on the floor."
   - q: "Can a slab leak come back after a repair?"
     a: "A repaired section can hold for years, but other parts of an aging line can develop new leaks. That's why the pipe's overall condition matters when choosing the repair."
+  - q: "How long does a slab leak spot repair take in Indiana?"
+    a: "Most single spot repairs take a day: open the floor at the marked spot, repair the pipe, test it, and backfill. Flooring restoration is usually scheduled separately once the concrete patch cures."
 ---
 
 Once a slab leak is found, the next question is how to fix it. There are three main approaches, and each one fits a different situation. This guide explains them so you can have an informed conversation with your plumber.
@@ -84,6 +86,12 @@ Detection and repair are separate steps. We find and mark the leak and give you 
 For how repairs are priced, see [what affects leak detection cost](/leak-detection-cost/). For insurance questions, see [does homeowners insurance cover slab leaks](/guides/does-insurance-cover-slab-leaks/).
 
 Need the repair done too? See our [pipe repair service](/plumbing/pipe-repair/).
+
+## Choosing an option for a Johnson County slab home
+
+The house style here often decides it. Single-story ranches around Bargersville and Whiteland usually have an attic that makes rerouting a hot-water line straightforward. Two-story homes in Center Grove and Greenwood may need the new line run through closets or chases, which adds drywall work.
+
+Water quality is the other local factor. Central Indiana's hard water and the age of copper in 1990s homes mean a second leak is more likely if one line has already failed. If this is the second slab leak in a few years, ask for a reroute or repipe price alongside the spot repair.
 
 ## Need the leak found first?
 

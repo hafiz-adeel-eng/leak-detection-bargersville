@@ -9,7 +9,7 @@ service: { name: "Pool & Spa Leak Detection", url: "/services/pool-spa-leak-dete
 image: { name: "pool-spa-leak-detection", alt: "Technician lowering an underwater acoustic sensor into a backyard pool while reading the leak detector's display" }
 related: ["leak-detection-methods", "how-to-find-an-underground-water-leak", "leak-detection-cost"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 8
 faqs:
   - q: "How much water loss is normal for a pool?"
@@ -20,6 +20,8 @@ faqs:
     a: "At skimmers, return fittings, main drains, light niches, cracks in the shell or tile line, and the underground plumbing lines between the pool and the equipment pad."
   - q: "Should the pool be full for leak detection?"
     a: "Yes. Keep the pool at its normal operating level and the equipment working so every line can be tested."
+  - q: "When is the best time to check a pool for leaks in Indiana?"
+    a: "Right after opening in late spring, before the water heats up. Freeze damage from winter shows up then, and catching it early avoids losing water and chemicals all season."
 ---
 
 If you're adding water every few days, the first question is simple: is the pool **leaking**, or is it just **evaporating**? Here's how to answer that, then narrow down where the leak is.
@@ -83,6 +85,12 @@ The bucket and dye tests find many shell and fitting leaks, but not leaks in **b
 - **listen along buried lines** with acoustic equipment to pinpoint an underground break.
 
 Indiana's freeze–thaw winters are hard on pools. Lines, skimmer throats and fittings that weren't fully winterized can crack, and the leak only shows after opening in spring.
+
+## Pool leaks in Center Grove, Greenwood and nearby
+
+Most backyard pools in Johnson County are concentrated in the larger-lot subdivisions of Center Grove, west Greenwood and around Bargersville. The season is short, usually late May through September, so leaks tend to surface at opening, when a winter freeze has cracked a fitting, a skimmer throat or a return line that was not fully blown out.
+
+Summer evaporation here is moderate compared with southern states, so a pool that drops more than about a quarter inch a day in normal weather deserves a bucket test. Water lost to a leak also soaks the clay around the shell, which drains slowly and can keep a corner of the yard soft long after the pump is off.
 
 ## Get your pool leak found
 

@@ -9,7 +9,7 @@ service: { name: "Underground Water Leak Detection", url: "/services/underground
 image: { name: "underground-water-leak-detection", alt: "Technician listening along a buried water line from a private well to find the leak making the well pump run" }
 related: ["sump-pump-running-constantly", "how-to-find-an-underground-water-leak", "water-in-basement-or-crawl-space", "low-water-pressure-leak"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 24
 faqs:
   - q: "Why does my well pump keep running when no water is on?"
@@ -20,6 +20,8 @@ faqs:
     a: "For most bladder tanks, about 2 psi below the pump's cut-in pressure, measured with the pump off and the water drained. That's 28 psi on a 30/50 switch and 38 psi on a 40/60 switch."
   - q: "Is it bad if my well pump runs constantly?"
     a: "Yes. A pump that never rests can overheat and wear out early, runs up the electric bill, and may be pumping water straight into a leak. Turn the pump off at the breaker if it won't stop and you can't find why."
+  - q: "Who do I call for a well leak in Johnson County?"
+    a: "A well contractor handles the pump, tank and check valve. If those test fine and the pump still runs, a leak locate on the buried line from the well to the house is the next step."
 ---
 
 Homes on private wells don't have a water meter or a monthly bill to warn them about a leak. Instead, the warning is the **pump**: it starts running more often, runs longer, or won't shut off at all. Around Trafalgar and the rural parts of Johnson County, where many homes are on wells with long lines to the house and outbuildings, that's often the first sign of a buried leak. Here's how to sort out whether it's the equipment or a leak.
@@ -86,6 +88,12 @@ Digging along a few hundred feet of line to look for a leak is slow and expensiv
 - **Mark the spot** so only one small hole is dug
 
 If the leak is inside the house instead, see [hear water running when nothing is on](/guides/water-running-sound-in-pipes/) and [water in the basement or crawl space](/guides/water-in-basement-or-crawl-space/).
+
+## Wells in southern Johnson County
+
+Private wells are common outside town limits around Trafalgar, Morgantown, Nineveh and parts of Franklin and Bargersville. Many feed the house through a long plastic line, and some also supply a barn, shop or yard hydrant. A pump that runs when nothing is open usually means a leak on that line, a failing check valve, or a waterlogged pressure tank.
+
+The Indiana Department of Natural Resources keeps public well records that may show your well's depth and construction. Knowing the depth and pump setting helps a technician test the check valve and estimate how much water a leak is costing in pump run time.
 
 ## Who to call
 

@@ -8,7 +8,7 @@ secondaryKeywords: ["water leak detector residential", "best water leak detector
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
 related: ["refrigerator-water-line-leak", "how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high", "leak-detection-methods"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 9
 faqs:
   - q: "Do smart water leak detectors actually work?"
@@ -19,6 +19,8 @@ faqs:
     a: "Where leaks start and where water collects: under sinks, behind toilets, next to the water heater, beside the washing machine, under the refrigerator, near a sump pump, and in the lowest point of a basement."
   - q: "Is an automatic water shutoff valve worth it?"
     a: "It can limit damage from a burst pipe or failed hose by closing the main water line automatically. It's especially useful for vacation homes or when you travel. It still won't find where a hidden leak is."
+  - q: "Do smart leak detectors catch slab leaks?"
+    a: "Floor sensors usually do not, because water under a slab rarely reaches the surface quickly. A flow-monitoring shutoff valve on the main line can flag continuous flow, which is how most slab leaks first show up."
 ---
 
 Smart leak detectors have become popular, and for good reason: an inexpensive sensor under the sink can prevent costly water damage. But homeowners often expect them to do something they can't: find a leak that's hidden. Here's what each type does, and where professional leak detection fits in.
@@ -69,6 +71,12 @@ These are sudden, visible leaks. Catching them in minutes instead of days is whe
 4. **If the meter keeps moving** with everything off and you can't see a leak, it's hidden: in a wall, under the slab or in the service line.
 
 That's the point where [hidden water leak detection](/services/hidden-water-leak-detection/) comes in. In Bargersville and the rest of Johnson County, we pinpoint the leak with acoustic, thermal and pressure testing, then mark it so the repair is small.
+
+## Smart detectors in Johnson County homes
+
+Where you place sensors should match the house. In basement homes common in Franklin and older Greenwood, put sensors by the water heater, softener, sump pit and under the laundry. In slab homes around Bargersville and Whiteland, put them under sinks, behind the fridge and beside the water heater closet, because slab leaks rarely reach a floor sensor until damage is done.
+
+A whole-house shutoff valve with flow monitoring catches what spot sensors miss, including a slow slab or buried-line leak, because it watches water moving through the main. In winter, a temperature alert in a crawl space or garage gives warning before pipes freeze.
 
 ## Are smart leak detectors worth it?
 

@@ -19,6 +19,8 @@ faqs:
     a: "It can. A leak that runs constantly adds up quickly. The EPA notes that about 1 in 10 homes has leaks wasting 90 gallons or more per day."
   - q: "Should I call the water company about a high bill?"
     a: "Yes, ask whether the reading was actual or estimated, and whether rates changed. Some utilities offer a leak adjustment if you fix a leak and show proof, so keep receipts and reports."
+  - q: "Why is my water bill so high in Johnson County?"
+    a: "Common causes are a running toilet, a softener stuck cycling, an irrigation valve left open, or a hidden leak. Compare gallons used with last year and do a meter test with all water off."
 ---
 
 A water bill that suddenly jumps is often the first sign of a leak, but not always. It can also be the sprinklers or a billing change. Work through these nine checks, easiest first, to find out which.
@@ -86,6 +88,12 @@ If everything above checks out and the meter still moves with all water off, the
 ## Can you get a bill adjustment?
 
 Many water utilities offer a one-time leak adjustment once a leak is repaired. Ask your utility about their policy and keep the repair receipt and any leak detection report.
+
+## High bills in Johnson County: local checks
+
+Start with your utility's billing period. Most local utilities bill monthly; a high bill can be a delayed reading, or a rate change, as well as a leak. Compare the gallons used, not just the dollars, against the same month last year.
+
+Then check the leaks common here: a running toilet, a softener stuck in regeneration, a sprinkler valve that did not close after spring start-up, and a frost-free spigot that cracked over the winter. If the meter keeps moving with everything off, the leak is real.
 
 ## When to call for leak detection
 

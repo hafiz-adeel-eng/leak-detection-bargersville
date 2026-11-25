@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone while a tablet displays the leak's sound frequency" }
 related: ["pinhole-leaks-copper-pipes", "slab-leak-repair-cost", "water-running-sound-in-pipes", "water-heater-leaking", "is-leak-detection-worth-it", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "leak-detection-cost"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 5
 faqs:
   - q: "What are the first signs of a slab leak?"
@@ -20,6 +20,8 @@ faqs:
     a: "It should be handled quickly. A hot water slab leak wastes water and energy, can damage flooring and may affect the soil under the foundation. Closing the cold water inlet to the water heater stops the flow until the repair."
   - q: "How is a slab leak repaired after it's found?"
     a: "The usual options are a spot repair through a small opening in the slab, rerouting the line through walls or the attic, or repiping. The right choice depends on the pipe's age and condition."
+  - q: "Are slab leaks common in Johnson County, Indiana?"
+    a: "They are a regular problem in slab-built homes from the 1990s onward, where clay soil movement and hard water wear on copper lines under the floor. Homes on crawl spaces or basements have them less often because the pipes are above the concrete."
 ---
 
 A slab leak is a leak in a water line that runs **under your home's concrete foundation**. Many homes in Bargersville and newer Johnson County subdivisions are built on slabs, with copper or PEX supply lines running beneath the concrete. When one of those lines leaks, the water goes into the soil, not onto your floor, so the signs are subtle at first.
@@ -90,6 +92,12 @@ The leak is marked on the floor so your plumber opens one small area. Read more 
 ## What happens after the leak is found
 
 The common repairs are a **spot repair** at the marked spot, a **reroute** that bypasses the leaking section through walls or the attic, or a **repipe** if the lines are old. See [what slab leak repair involves and costs](/leak-detection-cost/).
+
+## Slab homes in Johnson County: what to know
+
+Many subdivisions built around Bargersville, Whiteland and Greenwood since the 1990s put the house on a concrete slab, with the water lines laid in the gravel beneath it. Johnson County's clay soil shrinks in dry summers and swells when wet, and that movement can rub a pipe against rebar or gravel until it wears through.
+
+Hot-water lines fail first more often than cold, so a warm spot on tile or a hot water heater that runs constantly is a stronger clue than a high bill alone. Before calling anyone, close the main valve and watch the meter in the pit near the street: if it stops, the leak is inside the house, which is where slab leaks live.
 
 ## Get your slab leak located
 

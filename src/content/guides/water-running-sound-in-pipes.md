@@ -20,6 +20,8 @@ faqs:
     a: "Often, yes. A pressurized line leaking under a concrete slab can make a hissing or running sound you hear through the floor, especially at night when the house is quiet. Leak detection uses acoustic equipment to find the spot where that sound is loudest."
   - q: "What if the meter doesn't move but I still hear water?"
     a: "The sound may be a drain carrying water from another fixture or appliance, water hammer or pipe expansion, a sprinkler or neighbor's line nearby, or a leak that's only intermittent. Repeat the meter test at a different time of day."
+  - q: "Why do I hear water running at night in my house?"
+    a: "Common causes are a toilet refilling because of a worn flapper, a water softener regenerating, or a hidden leak. Check the toilet with a dye test and look at the meter with everything off to tell them apart."
 ---
 
 A steady hiss or trickle when every faucet in the house is off is worth taking seriously. Sometimes it's harmless, like a toilet refilling. But it's also one of the most common ways people first notice a hidden leak in a wall or under a slab, long before a stain or a big bill. Here's how to work out what you're hearing in about 10 minutes.
@@ -79,6 +81,12 @@ Professional [slab leak detection](/services/slab-leak-detection/) turns the sou
 - **Tracer gas** finds quiet leaks in plastic pipe that don't make much noise.
 
 The spot is marked so the plumber makes one small opening. More detail on each tool is in [how professional leak detection works](/guides/leak-detection-methods/).
+
+## Running water sounds in Johnson County homes
+
+The sound and where you hear it point to different causes. In slab homes around Bargersville and Whiteland, a hiss through the floor, often near the kitchen or a bathroom, with a meter that keeps moving, suggests a slab leak. In homes with a water softener, a regeneration cycle at night can sound like running water for 30 minutes or more and is normal.
+
+On private wells around Trafalgar and Morgantown, a pump that starts with every tap closed, plus a running sound in the line, points to a leak between the well and the house or a failed check valve.
 
 ## When to call
 

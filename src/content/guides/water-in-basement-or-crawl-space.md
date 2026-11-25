@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Technician using a thermal camera to check a damp foundation wall for a plumbing leak versus seepage" }
 related: ["sump-pump-running-constantly", "water-softener-leaking", "how-to-find-a-water-leak-in-your-house", "frozen-pipe-leaks", "water-heater-leaking"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 22
 faqs:
   - q: "How do I know if water in my basement is from a pipe or from outside?"
@@ -22,6 +22,8 @@ faqs:
     a: "Yes. Supply lines, drain lines and the water heater often run through crawl spaces, and a slow leak can soak the soil and insulation for weeks before anyone looks. Wet insulation, puddles under pipes and a musty smell are common signs."
   - q: "What humidity should a basement be?"
     a: "The U.S. EPA recommends keeping indoor humidity below 60 percent, ideally between 30 and 50 percent, to limit mold growth. A dehumidifier helps in most central Indiana basements in summer."
+  - q: "How do I tell groundwater from a plumbing leak in my Indiana basement?"
+    a: "Turn off all water and watch the meter. If it moves, you likely have a plumbing leak. If the meter is still and the water appears only after rain, it is usually groundwater coming through the foundation."
 ---
 
 Water in a basement or crawl space has three usual sources: a **plumbing leak**, **groundwater or rainwater** coming in from outside, or **condensation** from humid air. They need completely different fixes. A plumber can't waterproof a foundation, and a waterproofing company can't stop a leaking pipe. A few simple tests tell you which one you're dealing with before you pay anyone.
@@ -80,6 +82,12 @@ If the meter moves but you can't see water, or you've found wet soil or insulati
 - **Acoustic listening** finds pressurized leaks in walls, under slabs and along buried lines.
 
 A [thermal imaging inspection](/services/thermal-imaging-inspection/) with a photo report also documents the moisture for insurance, or before you buy an older home.
+
+## Basements and crawl spaces in Johnson County
+
+Johnson County's glacial clay drains slowly, so after heavy rain or snowmelt it holds water against foundations and pushes it through cracks and the cove joint where the wall meets the floor. That water tends to show up along the walls, comes and goes with the weather, and is usually cool and muddy.
+
+A plumbing leak behaves differently: it appears near a pipe, keeps going in dry weather, and the water meter moves with everything off. Older crawl spaces in Franklin often have exposed supply lines and old drains, so check those first before blaming groundwater.
 
 ## Get it checked
 

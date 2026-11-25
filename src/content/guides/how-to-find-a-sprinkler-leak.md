@@ -9,7 +9,7 @@ service: { name: "Irrigation Leak Detection", url: "/services/irrigation-leak-de
 image: { name: "irrigation-leak-detection", alt: "Technician using an acoustic leak detector beside an exposed sprinkler line leaking at a fitting in a lawn" }
 related: ["how-to-find-a-pool-leak", "how-to-find-an-underground-water-leak", "how-to-find-a-water-leak-in-your-house", "why-is-my-water-bill-so-high"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 2
 faqs:
   - q: "How do I know if my sprinkler system has a leak?"
@@ -20,6 +20,8 @@ faqs:
     a: "At spring start-up, after the system has been winterized, and any time your summer water bill jumps. Freeze damage over the winter is one of the most common causes of irrigation leaks in central Indiana."
   - q: "Can a sprinkler leak be underground with no wet spot?"
     a: "Yes. In sandy or well-drained soil, water can drain away without pooling. Watch for a zone that loses pressure, a patch that stays greener than the rest, or a meter that moves with the system off."
+  - q: "Do I need a backflow test for my sprinkler system in Indiana?"
+    a: "Indiana's cross-connection rules call for testable backflow preventers, including those on lawn irrigation, to be tested every year by a certified tester. Your water utility may send a reminder and can tell you how to submit the result."
 ---
 
 A sprinkler leak can waste more water than every faucet in the house combined, and because the pipe is buried, it often goes unnoticed until the summer water bill arrives. Here's how to track one down in your own yard, zone by zone.
@@ -81,6 +83,12 @@ DIY checks find most broken heads and obvious wet spots. Call a professional whe
 - you can't tell whether it's the sprinkler line or the [main water line to the house](/services/underground-water-leak-detection/).
 
 Our [irrigation leak detection](/services/irrigation-leak-detection/) service tests each zone, checks the valves and traces the buried line with acoustic equipment, then marks the break so only a small hole is dug. We cover Bargersville and the rest of Johnson County.
+
+## Sprinkler systems in Johnson County: winterizing and backflow
+
+Most irrigation systems in Greenwood, Center Grove and Bargersville are blown out with compressed air in October and started again in April or May. Leaks found at start-up are usually freeze damage: a cracked backflow preventer, a split fitting at a valve, or a lateral that held water in a low spot.
+
+Indiana requires testable backflow preventers on irrigation systems to be tested each year by a certified tester, and the test is a good time to catch a leak at the device itself. If the meter keeps turning with the irrigation shutoff closed, the leak is not in the sprinklers; it is in the house or the service line.
 
 ## Sprinkler leak checklist
 

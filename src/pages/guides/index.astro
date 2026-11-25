@@ -23,17 +23,20 @@ const itemList = {
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Guides</span></nav>
       <h1>Leak detection guides</h1>
-      <p class="answer">Straight answers from a local leak detection team: how to check for a leak yourself, what the signs mean, and when it’s time to call a professional.</p>
+      <p class="answer">Straight answers from a leak detection team based in Bargersville: how to check for a leak yourself, what the signs mean in a Johnson County home, and when it’s time to call a professional.</p>
     </div>
   </section>
   <section class="section">
     <div class="container">
+      <div class="prose guides-intro">
+        <p>These guides are written for homes in Johnson County and the south side of Indianapolis: slab houses in Bargersville, Whiteland and Greenwood subdivisions, older basement and crawl-space homes in Franklin, and rural properties on wells around Trafalgar and Morgantown. They cover the local water utilities, central Indiana’s hard water and clay soil, frost depth, and the Indiana 811 rule before any digging.</p>
+      </div>
       <div class="guide-list">
         {guides.map((g) => (
           <a class="guide-item" href={guideUrl(g)}>
             <span class="gi-service">{g.data.service.name}</span>
             <h2>{g.data.h1}</h2>
-            <p>{g.data.quickAnswer}</p>
+            <p>{g.data.description}</p>
             <span class="more">Read the guide<Icon name="arrow" /></span>
           </a>
         ))}

@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Thermal image of a cold wet patch on an interior wall behind a cracked frost-free outdoor spigot" }
 related: ["frozen-pipe-leaks", "how-to-find-a-leak-in-a-wall", "water-in-basement-or-crawl-space"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 34
 faqs:
   - q: "Why is my outside spigot leaking?"
@@ -20,6 +20,8 @@ faqs:
     a: "A frost-free spigot may release a little water for a few seconds as it drains. A drip that keeps going means the washer or seat is worn."
   - q: "When should I disconnect my hose for winter in Indiana?"
     a: "Before the first hard freeze, usually by mid to late October in central Indiana. Disconnect the hose, drain it, and if your spigot isn't frost-free, close its inside shutoff and open the spigot to drain."
+  - q: "When should I disconnect my hose in Indiana?"
+    a: "Before the first hard freeze, usually by late October in central Indiana. Leave it off until nights stay above freezing in spring."
 ---
 
 Outdoor spigots, also called hose bibs or sillcocks, are one of the most common sources of leaks in Indiana homes, and one of the easiest to overlook. Some leaks are just an annoying drip outside. Others happen inside the wall, where they soak framing, insulation and the basement ceiling every time the hose runs. Here's how to tell which one you have.
@@ -81,6 +83,12 @@ In central Indiana, do this before the first hard freeze:
 4. Consider **insulated spigot covers**, especially on the north and west sides.
 
 More on cold-weather leaks in [frozen pipe leaks](/guides/frozen-pipe-leaks/).
+
+## Hose bibs and Indiana winters
+
+Frost-free spigots are standard on Johnson County homes because outdoor temperatures regularly drop well below freezing. They only work if the hose is disconnected: water trapped in a hose keeps the long valve body full, and it splits inside the wall where you cannot see it. The leak often shows up in spring, the first time the spigot is used, as water in the basement, the crawl space or behind siding.
+
+Older Franklin and Greenwood homes may still have standard spigots with an inside shutoff valve. Close it and open the outdoor spigot each fall so the short run between them can drain.
 
 ## Get it checked
 

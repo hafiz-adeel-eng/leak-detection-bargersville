@@ -22,6 +22,8 @@ faqs:
     a: "Per foot it often costs more, but it can save money when the line runs under a driveway, mature trees or landscaping that would otherwise be torn up and restored."
   - q: "Does homeowners insurance pay for a water line replacement?"
     a: "Standard policies usually don't pay to replace a worn-out service line. Some insurers and utilities offer optional service line coverage. Check your policy and any utility protection plan you may have."
+  - q: "How deep is the water line buried in Indiana?"
+    a: "Service lines in central Indiana are normally buried below the frost depth, roughly 30 to 36 inches or more, so they do not freeze. Older or shallow sections near the house can be an exception."
 ---
 
 When the buried line between your water meter and your house starts leaking, the first question is almost always *how much?* The honest answer is that the price swings a lot, and the biggest factor is whether you need a **repair** or a full **replacement**. Here's what drives the cost in central Indiana, typical ranges, and how to avoid paying to replace a line that only needed one fix.
@@ -81,6 +83,12 @@ Lead service lines are a special case. Indiana American Water has state approval
 - Water pooling near the meter or at the foundation
 - [Low water pressure](/guides/low-water-pressure-leak/) throughout the house
 - A meter that moves with everything off, and a higher bill
+
+## What changes the price in Johnson County
+
+Lot size is the biggest local factor. A typical subdivision home in Greenwood or Whiteland may have a short run from the meter pit near the sidewalk; a house set back on an acre around Trafalgar or rural Franklin can have hundreds of feet of line. Depth matters too: lines here are buried below the central Indiana frost depth of roughly 30 to 36 inches, in clay that is slow to dig and restore.
+
+Trenchless methods suit lines under driveways, mature trees or landscaping that is expensive to replace. Every option starts with an Indiana 811 locate at least two working days before digging.
 
 ## Get the leak found first
 

@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Technician scanning a water-stained ceiling with a thermal camera to trace a plumbing leak from the bathroom above" }
 related: ["washing-machine-leaking", "shower-pan-leak", "toilet-leaking-at-base", "how-to-find-a-leak-in-a-wall", "water-leak-emergency-what-to-do", "does-insurance-cover-slab-leaks"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 18
 faqs:
   - q: "Should I poke a hole in a ceiling that is bulging with water?"
@@ -20,6 +20,8 @@ faqs:
     a: "Usually plumbing: a shower pan, tub drain, toilet wax ring or supply line in the floor above, or condensation dripping from an attic HVAC unit or uninsulated duct. A meter test tells you if a pressurized line is leaking."
   - q: "Is a ceiling leak an emergency?"
     a: "Yes if water is near light fixtures or wiring, the ceiling is sagging, or water is actively dripping. Shut off power and water to the area, catch the water and document it. A small dry stain can wait a day, but have it checked before mold sets in."
+  - q: "Is my ceiling leak from the roof or plumbing?"
+    a: "If the stain appears after rain or snowmelt and lines up with the roof, it is likely the roof. If it appears after showers or keeps growing in dry weather, and the water meter moves, it is plumbing."
 ---
 
 Water coming through a ceiling is one of the most alarming leaks, and one of the easiest to misdiagnose. The wet spot is almost never directly under the source: water runs along joists, pipes and the back of the drywall before it finds a low point. Here's what to do right away, and how to track the water back to where it's really coming from.
@@ -86,6 +88,12 @@ With the source marked, the plumber opens one small section. A [thermal imaging 
 The U.S. EPA advises drying water-damaged materials within **24–48 hours** to prevent mold growth ([EPA mold guidance](https://www.epa.gov/mold)). Insulation above a wet ceiling holds water for a long time, so once the leak is fixed, wet insulation and badly soaked drywall usually need to come out rather than dry in place. Fans and a dehumidifier help the rest.
 
 Most homeowners policies treat sudden, accidental water damage differently from long-term seepage, so report it quickly and keep your photos and any leak detection report. See [does homeowners insurance cover slab leaks](/guides/does-insurance-cover-slab-leaks/) for how coverage usually works.
+
+## Ceiling leaks in Johnson County two-story homes
+
+Many homes built in Greenwood, Center Grove and Whiteland from the 1990s onward put bathrooms and laundry on the second floor, so the most common ceiling leaks we see are from shower pans, toilet seals and washer hoses above. A stain under a bathroom that grows after showers points to the drain or pan; one that grows steadily, even overnight, points to a supply line.
+
+In winter, a ceiling stain near an outside wall can also be an ice dam on the roof or a frozen pipe in an attic or garage ceiling. Check whether it lines up with a roof valley or a plumbing run.
 
 ## Get the leak found
 

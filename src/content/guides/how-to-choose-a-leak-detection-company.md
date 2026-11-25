@@ -9,7 +9,7 @@ service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "hero", alt: "Leak detection technician listening for a buried water line leak with a ground microphone outside a Bargersville home" }
 related: ["leak-detection-vs-plumber", "is-leak-detection-worth-it", "leak-detection-methods"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 11
 faqs:
   - q: "What should I ask a leak detection company before hiring them?"
@@ -20,6 +20,8 @@ faqs:
     a: "Often, yes. A leak detection specialist focuses on finding and marking hidden leaks with dedicated equipment. A plumber usually handles the repair. Some businesses do both."
   - q: "Should the company give me a report?"
     a: "It helps. Photos, readings and the marked location make the repair faster and give your insurer the documentation they usually ask for."
+  - q: "Do leak detection companies need a license in Indiana?"
+    a: "Finding a leak is not a licensed trade in Indiana, but repairing water piping is plumbing work. Ask which licensed plumber will make the repair and look up the license with the Indiana Professional Licensing Agency."
 ---
 
 When you search for a leak detection company, the listings can look the same. The difference shows up on the job: one company tests, pinpoints and marks the leak; another starts opening walls and hopes. These nine questions help you tell them apart before anyone arrives.
@@ -76,6 +78,12 @@ A helpful company gives you simple steps: shut off the water if it's actively sp
 - No clear explanation of how the leak will be found
 - Pressure to **repipe the whole house** before the leak is located
 - No marked location or documentation at the end
+
+## Checking a leak detection company in Indiana
+
+Indiana licenses plumbers through the Indiana Professional Licensing Agency, and you can look up a plumbing license on the state's online verification site. Leak locating itself is not a licensed trade, so ask who makes the repair and check that person's license. Ask whether the company knows your water utility: a crew that works in Johnson County should know where Indiana American Water and the Bargersville utility put their meters and who owns which part of the line.
+
+Also ask whether they call Indiana 811 before any digging. State law requires notice at least two full working days before excavation, and a company that skips it is taking risks with your gas and electric lines.
 
 ## Hiring locally in Bargersville
 
