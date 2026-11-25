@@ -2,7 +2,7 @@
 title: "Burst Pipe: What to Do, Causes and Repair Options"
 description: "A pipe burst? What to do right away, what causes pipes to burst, how they're repaired, and how to find a burst pipe hidden in a wall, ceiling or floor."
 h1: "Burst Pipe: What to Do, What Causes It and How It's Repaired"
-quickAnswer: "Shut off the main water valve, turn off power to wet areas if you can do it safely, open faucets to drain the lines, and call a plumber. Pipes usually burst from freezing, high water pressure, corrosion or physical damage. If you can't see the break but water is appearing or the meter is spinning, the burst is hidden and should be located before walls or floors are opened."
+quickAnswer: "A burst pipe needs fast action. Shut off the main water valve, turn off power to wet areas if you can do it safely, open faucets to drain the lines, and call a plumber. Pipes usually burst from freezing, high water pressure, corrosion or physical damage. If you can't see the break but water is appearing or the meter is spinning, the burst is hidden and should be located before walls or floors are opened."
 primaryKeyword: "burst pipe"
 secondaryKeywords: ["burst pipe repair", "what to do if a pipe bursts", "what causes pipes to burst", "burst pipe in wall", "burst water pipe", "burst pipe repair cost"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }

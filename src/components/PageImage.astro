@@ -1,0 +1,12 @@
+---
+import { pageImage, pageBaseAlt } from '../data/images';
+
+interface Props { path: string; desc?: string; class?: string; eager?: boolean }
+const { path, desc, class: cls = 'kw-figure', eager = true } = Astro.props;
+const img = pageImage(path, desc ?? pageBaseAlt(path));
+---
+{img && (
+  <figure class={cls}>
+    <img src={img.src} alt={img.alt} width="1200" height="675" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  </figure>
+)}

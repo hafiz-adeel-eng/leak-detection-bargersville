@@ -1,8 +1,8 @@
 ---
 title: "Galvanized Pipe Replacement: Signs, Cost & Lead Risk"
-description: "Galvanized steel water pipes in an older Indiana home? How to identify them, signs they're failing, replacement options and cost, and why lead is a concern."
+description: "Galvanized pipe replacement for older Indiana homes: how to identify galvanized steel pipe, signs it is failing, options, cost and the lead concern."
 h1: "Galvanized Pipe Replacement: Signs, Costs and the Lead Question"
-quickAnswer: "Galvanized steel was the standard water pipe in many homes built before the 1960s. It corrodes from the inside, causing low pressure, rusty water and leaks at threaded joints, and it's often past its expected 40 to 60 year life. Galvanized pipe that was downstream of a lead service line can also hold and release lead. Replacement is usually done as part of a repipe with PEX or copper."
+quickAnswer: "Galvanized pipe replacement is worth planning before the pipe fails. Galvanized steel was the standard water pipe in many homes built before the 1960s. It corrodes from the inside, causing low pressure, rusty water and leaks at threaded joints, and it's often past its expected 40 to 60 year life. Galvanized pipe that was downstream of a lead service line can also hold and release lead. Replacement is usually done as part of a repipe with PEX or copper."
 primaryKeyword: "galvanized pipe replacement"
 secondaryKeywords: ["replacing galvanized steel pipes", "galvanized piping replacement cost", "cost of replacing galvanized pipes", "replacing galvanized pipes with pex", "galvanized pipes lead", "galvanized pipe replacement indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -70,7 +70,7 @@ Galvanized replacement is usually quoted as a repipe. National cost guides put a
 
 When galvanized pipe leaks inside a plaster wall or under an old floor, opening the wrong spot is expensive and hard to match. [Hidden water leak detection](/services/hidden-water-leak-detection/) with thermal imaging, moisture mapping and acoustic listening pinpoints the leak so the repair, or the repipe plan, starts in the right place.
 
-## Galvanized pipe in Johnson County homes
+## Galvanized pipe replacement in Johnson County homes
 
 Galvanized steel water lines show up most often in houses built before about 1960, which in Johnson County means the older blocks of downtown Franklin, Old Town Greenwood and farmhouses around Trafalgar and Nineveh. Many of those homes have had partial repairs, so it is common to find copper or PEX in the kitchen and galvanized pipe still running to an upstairs bath.
 

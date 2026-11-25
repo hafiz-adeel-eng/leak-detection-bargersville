@@ -8,7 +8,7 @@ import { site, services } from '../../../data/site';
 import { locations, locationUrl } from '../../../data/locations';
 import { townServicePages, townPages, townServiceUrl, type TownServicePage } from '../../../data/townServices';
 import { guideUrl } from '../../../data/guides';
-import { image } from '../../../data/images';
+import { pageImage } from '../../../data/images';
 import { md } from '../../../data/md';
 
 export function getStaticPaths() {
@@ -20,7 +20,8 @@ const loc = locations.find((l) => l.slug === p.town)!;
 const place = `${p.townName}, IN`;
 const path = townServiceUrl(p);
 const url = `${site.url}${path}`;
-const photo = image(p.image);
+const lead = pageImage(path, p.imageAlt);
+const photo = lead?.src ?? null;
 const svc = services.find((s) => s.slug === p.service);
 const siblings = townPages(p.town);
 const detection = siblings.filter((x) => x.kind === 'detection');
@@ -85,7 +86,7 @@ const pageSchema = {
       </div>
       {photo && (
         <figure class="ts-hero-media">
-          <img src={photo} alt={p.imageAlt} width="1200" height="800" fetchpriority="high" decoding="async" />
+          <img src={photo} alt={lead?.alt ?? p.imageAlt} width="1200" height="675" fetchpriority="high" decoding="async" />
         </figure>
       )}
     </div>
@@ -141,7 +142,7 @@ const pageSchema = {
         ))}
 
         <section class="ts-block" id="faq">
-          <h2>{p.h1.replace(` in ${place}`, '')}: questions from {p.townName} homeowners</h2>
+          <h2>{p.h1.replace(/, IN$/, '')}: homeowner questions</h2>
           <Faq items={p.faqs} />
         </section>
 

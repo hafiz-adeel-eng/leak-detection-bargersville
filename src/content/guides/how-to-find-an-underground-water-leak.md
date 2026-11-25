@@ -1,8 +1,8 @@
 ---
 title: "How to Find an Underground Water Leak in Your Yard"
-description: "Soggy yard, low pressure or a meter that never stops? Confirm a leak in the buried line from meter to house, and see how it's found without digging up the yard."
+description: "How to find an underground water leak in the buried line from meter to house: the signs, the shutoff test, and how it is pinpointed without digging."
 h1: "How to Find an Underground Water Leak"
-quickAnswer: "Turn off all water, close the main shutoff valve where the line enters your house, and watch the water meter. If it still moves, the leak is in the buried service line between the meter and the house. Walk that path for soggy, sunken or extra-green ground. To pinpoint it without digging, professionals listen along the line with acoustic equipment or use tracer gas on plastic pipe."
+quickAnswer: "Here’s how to find an underground water leak. Turn off all water, close the main shutoff valve where the line enters your house, and watch the water meter. If it still moves, the leak is in the buried service line between the meter and the house. Walk that path for soggy, sunken or extra-green ground. To pinpoint it without digging, professionals listen along the line with acoustic equipment or use tracer gas on plastic pipe."
 primaryKeyword: "finding a water leak underground"
 secondaryKeywords: ["best way to find a water leak underground", "locating water leaks underground", "find water leak in yard", "finding water line leaks underground", "find broken water pipe underground", "underground water leak detection", "water line leak detection"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -62,7 +62,7 @@ You can't find a leak on a line you can't locate. The service line usually runs 
 
 > **Keep in mind:** water travels. In sandy soil or along the gravel bed around the pipe, the wet spot can appear a few feet from the actual leak, or not at all.
 
-## Step 3: Pinpoint without digging
+## Step 3: How to find an underground water leak without digging
 
 Once the leak is confirmed in the service line, the goal is to mark the exact spot so only one small hole is dug. Professionals use:
 

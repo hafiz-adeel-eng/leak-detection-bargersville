@@ -1,8 +1,8 @@
 ---
 title: "How to Find a Slab Leak: Signs, Tests & Next Steps"
-description: "Warm floors, a running meter or water sounds under the floor? The signs of a slab leak, how to test for one, and how it's pinpointed without breaking concrete."
+description: "How to find a slab leak: warm floors, a running meter or water sounds under the floor, how to test for one, and how it is pinpointed without breaking concrete."
 h1: "How to Find a Slab Leak"
-quickAnswer: "Signs of a slab leak include warm spots on the floor, the sound of running water with everything off, a water meter that keeps moving, and a sudden jump in your water bill. Confirm it with a meter test, then close the water heater inlet to see whether it's a hot or cold line. Finding the exact spot under concrete takes professional acoustic, thermal or tracer gas equipment."
+quickAnswer: "Here’s how to find a slab leak. Signs of a slab leak include warm spots on the floor, the sound of running water with everything off, a water meter that keeps moving, and a sudden jump in your water bill. Confirm it with a meter test, then close the water heater inlet to see whether it's a hot or cold line. Finding the exact spot under concrete takes professional acoustic, thermal or tracer gas equipment."
 primaryKeyword: "finding a slab leak"
 secondaryKeywords: ["signs of a slab leak", "find leak under slab", "detecting water leak under slab", "hot water slab leak", "water leak under concrete slab", "find water leak under concrete floor", "slab leak detection"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -93,7 +93,7 @@ The leak is marked on the floor so your plumber opens one small area. Read more 
 
 The common repairs are a **spot repair** at the marked spot, a **reroute** that bypasses the leaking section through walls or the attic, or a **repipe** if the lines are old. See [what slab leak repair involves and costs](/leak-detection-cost/).
 
-## Slab homes in Johnson County: what to know
+## How to find a slab leak in a Johnson County home
 
 Many subdivisions built around Bargersville, Whiteland and Greenwood since the 1990s put the house on a concrete slab, with the water lines laid in the gravel beneath it. Johnson County's clay soil shrinks in dry summers and swells when wet, and that movement can rub a pipe against rebar or gravel until it wears through.
 

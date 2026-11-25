@@ -1,8 +1,8 @@
 ---
 title: "Refrigerator Water Line Leak: Find It & Fix It Fast"
-description: "Water under the fridge or a stain below the kitchen? How to find a refrigerator or ice maker water line leak, fix it, and check for hidden floor damage."
+description: "Refrigerator water line leak? How to find a fridge or ice maker line leak, fix it properly, and check for hidden floor damage below the kitchen."
 h1: "Refrigerator Water Line Leak: How to Find It and Fix It"
-quickAnswer: "Pull the fridge out, turn off its water supply and dry everything, then run the water back on and watch the shutoff valve, the line and the connection on the back of the fridge. Most leaks are at a saddle valve, a cracked plastic line, or a loose fitting. Replace plastic lines and saddle valves with a proper shutoff and a braided stainless line, then check under the floor for water that's already spread."
+quickAnswer: "To find a refrigerator water line leak, start at the back of the fridge. Pull the fridge out, turn off its water supply and dry everything, then run the water back on and watch the shutoff valve, the line and the connection on the back of the fridge. Most leaks are at a saddle valve, a cracked plastic line, or a loose fitting. Replace plastic lines and saddle valves with a proper shutoff and a braided stainless line, then check under the floor for water that's already spread."
 primaryKeyword: "refrigerator water line leak"
 secondaryKeywords: ["fridge water line repair", "fixing refrigerator water line", "ice maker water line leak", "saddle valve leak", "water under refrigerator", "refrigerator leaking water on floor"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -82,7 +82,7 @@ If you can't tell how far the water spread, [hidden water leak detection](/servi
 - Put a **leak sensor** on the floor behind the fridge. See [smart water leak detectors](/guides/smart-water-leak-detectors/).
 - Know where the fridge's **shutoff valve** is, and make sure it turns.
 
-## Fridge line leaks in Johnson County kitchens
+## Refrigerator water line leaks in Johnson County kitchens
 
 Many kitchens in Greenwood, Center Grove and Bargersville subdivisions feed the refrigerator through a thin plastic or copper line that runs under the floor from the basement or crawl space, or along the slab to a valve behind the sink. On slab homes, a leak in that line can travel under cabinets and show up at the baseboard several feet away.
 

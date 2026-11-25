@@ -25,10 +25,11 @@ const hub = {
     itemListElement: plumbing.map((p) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: p.name, url: `${site.url}/plumbing/${p.slug}/` } })),
   },
 };
+import PageImage from '../../components/PageImage.astro';
 ---
 <Base
-  title="Plumber in Bargersville & Johnson County, IN"
-  description="Plumbing repair in Bargersville, Greenwood and Franklin, IN: water heaters, drains, sewer lines, burst and frozen pipes, and leaks found before we dig."
+  title="Plumbing in Bargersville, IN | Plumber for Johnson County"
+  description="Plumbing in Bargersville, Greenwood and Franklin, IN: water heaters, drains, sewer lines, burst and frozen pipes, and leaks found before we dig."
   faqs={faqs}
   breadcrumbs={[{ name: 'Plumbing', url: '/plumbing/' }]}
   schema={[hub]}
@@ -36,8 +37,8 @@ const hub = {
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Plumbing</span></nav>
-      <h1>Plumbing Repair in Bargersville &amp; Johnson County</h1>
-      <p class="answer">Water heaters, clogged drains, sewer lines, burst and frozen pipes — and the hidden leaks behind them. We find the problem first, and our plumbing partner makes the repair, so one call covers finding and fixing it.</p>
+      <h1>Plumbing in Bargersville &amp; Johnson County</h1>
+      <p class="answer">Plumbing in Bargersville and across Johnson County: water heaters, clogged drains, sewer lines, burst and frozen pipes, and the hidden leaks behind them. We find the problem first, and our plumbing partner makes the repair, so one call covers finding and fixing it.</p>
       <div class="ctas">
         <a class="btn btn-primary call-big" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -45,6 +46,7 @@ const hub = {
   </section>
 
   <section class="section">
+    <div class="container kw-wrap"><PageImage path="/plumbing/" /></div>
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Plumbing services</span>
@@ -65,7 +67,7 @@ const hub = {
       </div>
       <div class="info-card">
         <span class="ico"><Icon name="pin" /></span>
-        <h2>Local to Johnson County</h2>
+        <h2>Plumbing in Bargersville and Johnson County</h2>
         <p>Based in {site.city}, serving {areas.map((a) => a.name).join(', ')}.</p>
         <ul class="list">
           <li><Icon name="check" /><span><a href="/plumber-greenwood-in/">Plumber in Greenwood, IN</a></span></li>

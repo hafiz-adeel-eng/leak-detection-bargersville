@@ -1,8 +1,8 @@
 ---
 title: "Leak Under the Sink? Kitchen & Bathroom Causes and Fixes"
-description: "Water under the kitchen or bathroom sink? Find the leak at the supply lines, faucet, drain, P-trap, disposal or dishwasher, or in the wall behind it."
+description: "A leak under the sink? Find it at the supply lines, faucet, drain, P-trap, disposal or dishwasher, or in the wall behind it. Kitchen and bathroom fixes."
 h1: "Leak Under the Sink: How to Find It in a Kitchen or Bathroom"
-quickAnswer: "Empty the cabinet, dry everything, and test one part at a time. Water with the faucet off points to the supply lines or shutoff valves. Water only when the faucet runs points to the faucet body or sprayer. Water when the sink drains points to the drain, P-trap, disposal or dishwasher connection. If the cabinet floor is wet but every connection is dry, the leak may be in the wall behind the sink."
+quickAnswer: "To find a leak under the sink, work in order. Empty the cabinet, dry everything, and test one part at a time. Water with the faucet off points to the supply lines or shutoff valves. Water only when the faucet runs points to the faucet body or sprayer. Water when the sink drains points to the drain, P-trap, disposal or dishwasher connection. If the cabinet floor is wet but every connection is dry, the leak may be in the wall behind the sink."
 primaryKeyword: "leak under kitchen sink"
 secondaryKeywords: ["leak under sink", "kitchen sink leaking underneath", "bathroom sink leaking underneath", "leaking pipe under sink", "water under sink cabinet", "sink leaking from drain"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -55,7 +55,7 @@ A wet sink cabinet is one of the most common leaks in any home, and usually one 
 
 Bathroom sinks add the **pop-up drain** assembly, which leaks at the pivot nut.
 
-## When the leak is in the wall
+## When the leak under the sink is in the wall
 
 If the cabinet floor or back wall is wet but every connection stays dry:
 

@@ -1,8 +1,8 @@
 ---
 title: "Water Running in Pipes With Nothing On? Causes & Fixes"
-description: "Hear water running in the walls or floor with every tap off? Do a 10-minute meter test, then check the toilet, softener and hidden leaks that cause it."
-h1: "Hear Water Running When Nothing Is On? Here's What It Means"
-quickAnswer: "The sound of running water with every fixture off usually means water is moving somewhere it shouldn't. The most common cause is a toilet leaking from the tank into the bowl; the next is a hidden supply line leak in a wall, ceiling or under the slab. Check your water meter with everything off. If it moves, water is leaking, and a toilet dye test tells you whether the toilet is the cause."
+description: "Water running in pipes with every tap off? Do a 10-minute meter test, then check the toilet, softener and hidden leaks that cause the sound in walls or floors."
+h1: "Water Running in Pipes When Nothing Is On? What It Means"
+quickAnswer: "The sound of water running in pipes with every fixture off usually means water is moving somewhere it shouldn't. The most common cause is a toilet leaking from the tank into the bowl; the next is a hidden supply line leak in a wall, ceiling or under the slab. Check your water meter with everything off. If it moves, water is leaking, and a toilet dye test tells you whether the toilet is the cause."
 primaryKeyword: "hear water running in pipes when nothing is on"
 secondaryKeywords: ["sound of running water in walls", "water running sound under floor", "hissing sound in walls", "running water noise no leak", "why do I hear water running in my house"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 A steady hiss or trickle when every faucet in the house is off is worth taking seriously. Sometimes it's harmless, like a toilet refilling. But it's also one of the most common ways people first notice a hidden leak in a wall or under a slab, long before a stain or a big bill. Here's how to work out what you're hearing in about 10 minutes.
 
-## Common causes of a running water sound
+## Common causes of water running in pipes
 
 | Cause | What it sounds like | How to check |
 |---|---|---|

@@ -1,8 +1,8 @@
 ---
 title: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe"
-description: "Found a slab leak? Compare spot repair, rerouting and repiping, and learn what decides which slab leak repair is right for your home."
+description: "Slab leak repair options compared: spot repair, rerouting and repiping, what each involves, and what decides which one is right for your home."
 h1: "Slab Leak Repair Options: Spot Repair, Reroute or Repipe?"
-quickAnswer: "There are three main ways to fix a slab leak. A spot repair opens the concrete at the marked leak and fixes that section. A reroute abandons the leaking line and runs a new one through the walls or attic. A repipe replaces most or all of the supply lines. The right choice depends on the pipe's age and condition, how many leaks there have been, and where the leak is."
+quickAnswer: "There are three main slab leak repair options. A spot repair opens the concrete at the marked leak and fixes that section. A reroute abandons the leaking line and runs a new one through the walls or attic. A repipe replaces most or all of the supply lines. The right choice depends on the pipe's age and condition, how many leaks there have been, and where the leak is."
 primaryKeyword: "slab leak repair"
 secondaryKeywords: ["fix slab leak", "slab leak solutions", "concrete slab leak repair", "slab leak repair near me", "best way to fix a slab leak", "under slab leak repair", "slab leak plumbers"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -87,7 +87,7 @@ For how repairs are priced, see [what affects leak detection cost](/leak-detecti
 
 Need the repair done too? See our [pipe repair service](/plumbing/pipe-repair/).
 
-## Choosing an option for a Johnson County slab home
+## Slab leak repair options for a Johnson County slab home
 
 The house style here often decides it. Single-story ranches around Bargersville and Whiteland usually have an attic that makes rerouting a hot-water line straightforward. Two-story homes in Center Grove and Greenwood may need the new line run through closets or chases, which adds drywall work.
 

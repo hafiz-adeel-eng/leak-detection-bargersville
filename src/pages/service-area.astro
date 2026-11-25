@@ -18,10 +18,11 @@ const faqs = [
   { q: `Which areas do you serve?`, a: `We’re based in ${site.city} and serve homes across ${site.county} and nearby towns in Morgan and southern Marion counties, including ${areas.slice(1).map((a) => a.name).join(', ')}. If you’re just outside these towns, call and ask.` },
   { q: 'Do you charge more outside Bargersville?', a: 'Pricing depends on the job, not just the town. Call with your address and what you’re noticing, and we’ll tell you what to expect before we come out.' },
 ];
+import PageImage from '../components/PageImage.astro';
 ---
 <Base
   title={`Leak Detection Service Area: ${site.county} & Nearby, IN`}
-  description={`Leak detection in ${site.city}, Greenwood, Franklin, Center Grove, Whiteland, Trafalgar, Southport, Morgantown and Nineveh, Indiana: slab and water line leaks.`}
+  description={`Our leak detection service area covers ${site.city}, Greenwood, Franklin, Center Grove, Whiteland, Trafalgar, Southport, Morgantown and Nineveh, Indiana.`}
   faqs={faqs}
   breadcrumbs={[{ name: 'Service area', url: '/service-area/' }]}
   schema={[areaList]}
@@ -29,8 +30,8 @@ const faqs = [
   <section class="page-hero dark">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Service area</span></nav>
-      <h1>Leak detection across {site.county} and nearby towns</h1>
-      <p class="answer">We’re based in {site.city}, Indiana, and find hidden water leaks in homes throughout {site.county} and nearby towns in Morgan and southern Marion counties: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
+      <h1>Leak Detection Service Area: {site.county} &amp; Nearby Towns</h1>
+      <p class="answer">Our leak detection service area starts in {site.city}, Indiana, where we’re based. We find hidden water leaks in homes throughout {site.county} and nearby towns in Morgan and southern Marion counties: under slabs, in buried water lines, inside walls, in pools and in sprinkler systems.</p>
       <div class="ctas">
         <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />Call {site.phone}</a>
       </div>
@@ -38,10 +39,11 @@ const faqs = [
   </section>
 
   <section class="section">
+    <div class="container kw-wrap"><PageImage path="/service-area/" /></div>
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Towns we serve</span>
-        <h2>Where we work</h2>
+        <h2>Our leak detection service area, town by town</h2>
         <p>Not sure if you’re in our area? Call with your address and we’ll let you know.</p>
       </div>
       <div class="area-grid">

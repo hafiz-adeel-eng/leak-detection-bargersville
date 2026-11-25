@@ -54,10 +54,10 @@ export const services: Service[] = [
     name: 'Slab Leak Detection',
     icon: 'slab',
     short: 'Warm spots on the floor or a meter that keeps running? We trace the line under the concrete.',
-    title: 'Slab Leak Detection & Repair in Johnson County, IN',
-    description: 'Warm floor, a meter that keeps running or a jump in your water bill? We pinpoint leaks under concrete slabs so only a small area needs to be opened.',
-    h1: 'Slab Leak Detection & Repair in Bargersville, IN',
-    answer: 'A slab leak is a broken water line under your home’s concrete foundation. We find it without breaking the floor to search: we isolate and pressure-test the lines, then use acoustic ground microphones and thermal imaging to mark the spot, so only one small section is opened for the repair, which our plumbing partner can handle.',
+    title: 'Slab Leak Detection in Bargersville, IN | Find & Repair',
+    description: 'Slab leak detection in Bargersville: warm floors, a meter that keeps running or a high bill? We pinpoint the leak under the slab so only a small area is opened.',
+    h1: 'Slab Leak Detection in Bargersville, IN',
+    answer: 'Slab leak detection in Bargersville finds the leak before any concrete is cut. A slab leak is a broken water line under your home’s concrete foundation. We find it without breaking the floor to search: we isolate and pressure-test the lines, then use acoustic ground microphones and thermal imaging to mark the spot, so only one small section is opened for the repair, which our plumbing partner can handle.',
     whatIs: {
       h2: 'What is a slab leak?',
       paras: [
@@ -113,10 +113,10 @@ export const services: Service[] = [
     name: 'Underground Water Leak Detection',
     icon: 'pipe',
     short: 'Soggy yard, low pressure or a high water bill. We find breaks in the buried line between the meter and the house.',
-    title: 'Water Line Leak Detection & Repair | Bargersville, IN',
-    description: 'Soggy yard, low pressure or a meter that never stops? We trace buried water lines from the meter to your home, pinpoint the leak and mark it for repair.',
-    h1: 'Underground Water Line Leak Detection & Repair',
-    answer: 'An underground water leak is a break in the buried service line that brings water from the meter to your house. We confirm it with a shutoff test, trace where the line runs, then listen along it with acoustic equipment, or use tracer gas on plastic pipe, and mark the spot on your lawn so only one small hole is dug.',
+    title: 'Underground Water Leak Detection in Bargersville, IN',
+    description: 'Underground water leak detection in Bargersville: soggy yard, low pressure or a meter that never stops? We trace the buried line and mark the leak for repair.',
+    h1: 'Underground Water Leak Detection in Bargersville, IN',
+    answer: 'Underground water leak detection in Bargersville finds the break in your yard without trenching it. An underground water leak is a break in the buried service line that brings water from the meter to your house. We confirm it with a shutoff test, trace where the line runs, then listen along it with acoustic equipment, or use tracer gas on plastic pipe, and mark the spot on your lawn so only one small hole is dug.',
     whatIs: {
       h2: 'What counts as an underground water leak?',
       paras: [
@@ -178,10 +178,10 @@ export const services: Service[] = [
     name: 'Hidden Water Leak Detection',
     icon: 'shower',
     short: 'Stains, musty smells or a high bill with no visible leak. We find leaks inside walls, floors and showers.',
-    title: 'Hidden Water Leak Detection & Repair | Bargersville, IN',
-    description: 'Stains, a musty smell or a high water bill with no visible leak? We find hidden leaks inside walls, floors, showers and ceilings with non-invasive testing.',
-    h1: 'Hidden Water Leak Detection & Repair',
-    answer: 'A hidden water leak is one you can’t see: a supply line inside a wall, a shower valve or pan, a drain, or a pipe under the floor. We confirm the leak with a meter test, isolate the fixtures, then map moisture, use thermal imaging and listen for pressurized leaks to find the source before anything is opened.',
+    title: 'Hidden Water Leak Detection in Bargersville, IN',
+    description: 'Hidden water leak detection in Bargersville: stains, a musty smell or a high bill with no visible leak? We find leaks in walls, floors, showers and ceilings.',
+    h1: 'Hidden Water Leak Detection in Bargersville, IN',
+    answer: 'Hidden water leak detection in Bargersville finds the leak you can’t see without opening walls to search. A hidden water leak is one you can’t see: a supply line inside a wall, a shower valve or pan, a drain, or a pipe under the floor. We confirm the leak with a meter test, isolate the fixtures, then map moisture, use thermal imaging and listen for pressurized leaks to find the source before anything is opened.',
     whatIs: {
       h2: 'What is a hidden water leak?',
       paras: [
@@ -245,9 +245,9 @@ export const services: Service[] = [
     icon: 'pool',
     short: 'Dye testing, pressure testing and underwater listening for shells, returns and skimmers.',
     title: 'Pool & Spa Leak Detection in Bargersville, IN',
-    description: 'Topping off your pool every few days? We confirm the leak, then use dye, pressure tests and underwater listening to find it in the shell, fittings and plumbing.',
-    h1: 'Pool & Spa Leak Detection',
-    answer: 'If your pool drops faster than a bucket of pool water sitting beside it, it’s leaking, not evaporating. We confirm that with a bucket test, then use dye at the fittings and shell, pressure-test each plumbing line, and listen underwater and along buried lines to find exactly where the water is going.',
+    description: 'Pool and spa leak detection in Bargersville: topping off every few days? We confirm the leak, then use dye, pressure tests and underwater listening to find it.',
+    h1: 'Pool & Spa Leak Detection in Bargersville, IN',
+    answer: 'Pool and spa leak detection in Bargersville starts with a simple test. If your pool drops faster than a bucket of pool water sitting beside it, it’s leaking, not evaporating. We confirm that with a bucket test, then use dye at the fittings and shell, pressure-test each plumbing line, and listen underwater and along buried lines to find exactly where the water is going.',
     whatIs: {
       h2: 'Leaking or evaporating?',
       paras: [
@@ -299,10 +299,10 @@ export const services: Service[] = [
     name: 'Thermal Imaging Inspection',
     icon: 'thermal',
     short: 'Infrared cameras spot moisture behind drywall and under flooring without cutting.',
-    title: 'Thermal Imaging Leak Inspection | Bargersville, IN',
-    description: 'Infrared thermal imaging reveals moisture behind walls, ceilings and floors. We confirm every reading with a moisture meter and document it in a photo report.',
-    h1: 'Thermal Imaging Leak Inspection',
-    answer: 'A thermal imaging inspection uses an infrared camera to show temperature differences on walls, ceilings and floors. Wet materials usually read cooler, and hot-water leaks warmer, so hidden moisture shows up without cutting into anything. We confirm every reading with a moisture meter and document it with photos.',
+    title: 'Thermal Imaging Inspection in Bargersville, IN | Leaks',
+    description: 'Thermal imaging inspection in Bargersville: an infrared camera shows moisture behind walls, ceilings and floors, confirmed with a moisture meter and photos.',
+    h1: 'Thermal Imaging Inspection in Bargersville, IN',
+    answer: 'A thermal imaging inspection in Bargersville uses an infrared camera to show temperature differences on walls, ceilings and floors. Wet materials usually read cooler, and hot-water leaks warmer, so hidden moisture shows up without cutting into anything. We confirm every reading with a moisture meter and document it with photos.',
     whatIs: {
       h2: 'What thermal imaging can and can’t show',
       paras: [
@@ -352,10 +352,10 @@ export const services: Service[] = [
     name: 'Irrigation Leak Detection',
     icon: 'sprinkler',
     short: 'Soggy lawn spots and weak zones, traced to the broken head, valve or buried line.',
-    title: 'Irrigation & Sprinkler Leak Detection | Bargersville, IN',
-    description: 'Soggy spots, a weak zone or a summer water bill spike? We test each sprinkler zone, check the valves and trace buried lines to find the break before you dig.',
-    h1: 'Irrigation & Sprinkler Leak Detection',
-    answer: 'An irrigation leak is usually a cracked line, a broken head or a valve that won’t close. We test the always-pressurized mainline separately from each zone, check the valves and backflow preventer, then trace the buried line with acoustic equipment to mark the break, so only one small spot of lawn is dug up.',
+    title: 'Irrigation Leak Detection in Bargersville, IN | Sprinklers',
+    description: 'Irrigation leak detection in Bargersville: soggy spots, a weak zone or a summer bill spike? We test each sprinkler zone, check valves and trace buried lines.',
+    h1: 'Irrigation Leak Detection in Bargersville, IN (Sprinklers)',
+    answer: 'Irrigation leak detection in Bargersville tracks down the sprinkler leak before anyone digs. An irrigation leak is usually a cracked line, a broken head or a valve that won’t close. We test the always-pressurized mainline separately from each zone, check the valves and backflow preventer, then trace the buried line with acoustic equipment to mark the break, so only one small spot of lawn is dug up.',
     whatIs: {
       h2: 'Mainline or zone? Why it matters',
       paras: [

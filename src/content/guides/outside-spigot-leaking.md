@@ -1,8 +1,8 @@
 ---
 title: "Outside Spigot Leaking? Fixes and Hidden Wall Leaks"
-description: "Outdoor spigot dripping, leaking at the handle, or leaking inside the wall? What each leak means, how to fix it, and why frost-free spigots crack in winter."
+description: "Outside spigot leaking from the spout, the handle or inside the wall? What each leak means, how to fix it, and why frost-free spigots crack in winter."
 h1: "Outside Spigot Leaking: Dripping, Handle Leaks and Leaks Inside the Wall"
-quickAnswer: "A spigot that drips from the spout usually needs a new washer or cartridge. Water around the handle means a loose packing nut or worn packing. Water inside the house or down the foundation when the spigot is on usually means the valve body or the pipe behind it cracked in a freeze, often because a hose was left connected. That leak needs the spigot replaced and the wall checked for water damage."
+quickAnswer: "An outside spigot leaking can mean three different things. A spigot that drips from the spout usually needs a new washer or cartridge. Water around the handle means a loose packing nut or worn packing. Water inside the house or down the foundation when the spigot is on usually means the valve body or the pipe behind it cracked in a freeze, often because a hose was left connected. That leak needs the spigot replaced and the wall checked for water damage."
 primaryKeyword: "outside spigot leaking"
 secondaryKeywords: ["outdoor faucet leaking", "outside spigot dripping", "frost free spigot leaking inside wall", "hose bib leaking", "outside faucet leaking behind wall", "spigot leaking after winter"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Outdoor spigots, also called hose bibs or sillcocks, are one of the most common sources of leaks in Indiana homes, and one of the easiest to overlook. Some leaks are just an annoying drip outside. Others happen inside the wall, where they soak framing, insulation and the basement ceiling every time the hose runs. Here's how to tell which one you have.
 
-## What kind of leak is it?
+## Outside spigot leaking: what kind of leak is it?
 
 | Where the water is | Likely cause | Fix |
 |---|---|---|

@@ -1,0 +1,382 @@
+{
+ "/": {
+  "kw": "Leak detection in Bargersville",
+  "base": "hero"
+ },
+ "/contact/": {
+  "kw": "Contact Leak Detection Bargersville",
+  "base": "hero"
+ },
+ "/faq/": {
+  "kw": "Leak detection FAQ",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/": {
+  "kw": "Leak detection guides",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/burst-pipe-insurance-claim-indiana/": {
+  "kw": "Burst pipe insurance claim in Indiana",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/burst-pipe-what-to-do/": {
+  "kw": "Burst pipe",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/does-insurance-cover-slab-leaks/": {
+  "kw": "Insurance cover slab leaks",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/frozen-pipe-leaks/": {
+  "kw": "Frozen pipe leaks",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/galvanized-pipe-replacement/": {
+  "kw": "Galvanized pipe replacement",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/how-to-choose-a-leak-detection-company/": {
+  "kw": "How to choose a leak detection company",
+  "base": "hero"
+ },
+ "/guides/how-to-find-a-leak-in-a-wall/": {
+  "kw": "How to find a leak in a wall",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/how-to-find-a-pool-leak/": {
+  "kw": "How to find a pool leak",
+  "base": "pool-spa-leak-detection"
+ },
+ "/guides/how-to-find-a-slab-leak/": {
+  "kw": "How to find a slab leak",
+  "base": "slab-leak-detection"
+ },
+ "/guides/how-to-find-a-sprinkler-leak/": {
+  "kw": "How to find a sprinkler leak",
+  "base": "irrigation-leak-detection"
+ },
+ "/guides/how-to-find-a-water-leak-in-your-house/": {
+  "kw": "How to find a water leak in your house",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/how-to-find-an-underground-water-leak/": {
+  "kw": "How to find an underground water leak",
+  "base": "hero"
+ },
+ "/guides/how-to-shut-off-water-to-house/": {
+  "kw": "How to shut off water to your house",
+  "base": "hero"
+ },
+ "/guides/is-leak-detection-worth-it/": {
+  "kw": "Is leak detection worth it",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/leak-detection-methods/": {
+  "kw": "Leak detection methods",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/leak-detection-vs-plumber/": {
+  "kw": "Leak detection vs plumber",
+  "base": "slab-leak-detection"
+ },
+ "/guides/leak-under-sink/": {
+  "kw": "Leak under sink",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/low-water-pressure-leak/": {
+  "kw": "Low water pressure",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/outside-spigot-leaking/": {
+  "kw": "Outside spigot leaking",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/pinhole-leaks-copper-pipes/": {
+  "kw": "Pinhole leaks in copper pipes",
+  "base": "slab-leak-detection"
+ },
+ "/guides/polybutylene-pipe-replacement/": {
+  "kw": "Polybutylene pipe replacement",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/refrigerator-water-line-leak/": {
+  "kw": "Refrigerator water line leak",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/shower-pan-leak/": {
+  "kw": "Shower pan leak",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/slab-leak-repair-cost/": {
+  "kw": "Slab leak repair cost",
+  "base": "slab-leak-detection"
+ },
+ "/guides/slab-leak-repair-options/": {
+  "kw": "Slab leak repair options",
+  "base": "slab-leak-detection"
+ },
+ "/guides/smart-water-leak-detectors/": {
+  "kw": "Smart water leak detectors",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/sump-pump-running-constantly/": {
+  "kw": "Sump pump running constantly",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/toilet-leaking-at-base/": {
+  "kw": "Toilet leaking at base",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/washing-machine-leaking/": {
+  "kw": "Washing machine leaking",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/water-bill-leak-adjustment-indiana/": {
+  "kw": "Water bill leak adjustment in Indiana",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/water-heater-leaking/": {
+  "kw": "Water heater leaking",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/water-in-basement-or-crawl-space/": {
+  "kw": "Water in basement or crawl space",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/water-leak-emergency-what-to-do/": {
+  "kw": "Water leak emergency",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/water-leak-under-driveway/": {
+  "kw": "Water leak under driveway",
+  "base": "hero"
+ },
+ "/guides/water-leaking-from-ceiling/": {
+  "kw": "Water leaking from ceiling",
+  "base": "thermal-imaging-inspection"
+ },
+ "/guides/water-line-replacement-cost-indiana/": {
+  "kw": "Water line replacement cost in Indiana",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/water-running-sound-in-pipes/": {
+  "kw": "Water running in pipes",
+  "base": "slab-leak-detection"
+ },
+ "/guides/water-softener-leaking/": {
+  "kw": "Water softener leaking",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/well-pump-keeps-running/": {
+  "kw": "Well pump keeps running",
+  "base": "underground-water-leak-detection"
+ },
+ "/guides/whole-house-repipe-cost/": {
+  "kw": "Whole house repipe cost",
+  "base": "hidden-water-leak-detection"
+ },
+ "/guides/why-is-my-water-bill-so-high/": {
+  "kw": "Why is my water bill so high",
+  "base": "hidden-water-leak-detection"
+ },
+ "/leak-detection-cost/": {
+  "kw": "Leak detection cost",
+  "base": "slab-leak-detection"
+ },
+ "/leak-detection-indianapolis/": {
+  "kw": "Leak detection in Indianapolis",
+  "base": "slab-leak-detection"
+ },
+ "/plumber-franklin-in/": {
+  "kw": "Plumber in Franklin, IN",
+  "base": "hidden-water-leak-detection"
+ },
+ "/plumber-greenwood-in/": {
+  "kw": "Plumber in Greenwood, IN",
+  "base": "underground-water-leak-detection"
+ },
+ "/plumbing/": {
+  "kw": "Plumbing in Bargersville",
+  "base": "underground-water-leak-detection"
+ },
+ "/plumbing/drain-cleaning/": {
+  "kw": "Drain cleaning in Bargersville",
+  "base": "hidden-water-leak-detection"
+ },
+ "/plumbing/emergency-plumber/": {
+  "kw": "Emergency plumber in Bargersville",
+  "base": "hidden-water-leak-detection"
+ },
+ "/plumbing/pipe-repair/": {
+  "kw": "Pipe repair in Bargersville",
+  "base": "thermal-imaging-inspection"
+ },
+ "/plumbing/sewer-line-repair/": {
+  "kw": "Sewer line repair in Bargersville",
+  "base": "underground-water-leak-detection"
+ },
+ "/plumbing/water-heater-repair/": {
+  "kw": "Water heater repair in Bargersville",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/": {
+  "kw": "Leak detection service area",
+  "base": "hero"
+ },
+ "/service-area/center-grove/": {
+  "kw": "Leak detection in Center Grove",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/center-grove/hidden-leak-detection/": {
+  "kw": "Hidden leak detection in Center Grove",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/center-grove/pipe-leak-repair/": {
+  "kw": "Pipe leak repair in Center Grove",
+  "base": "thermal-imaging-inspection"
+ },
+ "/service-area/center-grove/pool-leak-detection/": {
+  "kw": "Pool leak detection in Center Grove",
+  "base": "pool-spa-leak-detection"
+ },
+ "/service-area/center-grove/slab-leak-detection/": {
+  "kw": "Slab leak detection in Center Grove",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/center-grove/slab-leak-repair/": {
+  "kw": "Slab leak repair in Center Grove",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/center-grove/sprinkler-leak-detection/": {
+  "kw": "Sprinkler leak detection in Center Grove",
+  "base": "irrigation-leak-detection"
+ },
+ "/service-area/center-grove/water-line-leak-detection/": {
+  "kw": "Water line leak detection in Center Grove",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/center-grove/water-line-repair/": {
+  "kw": "Water line repair in Center Grove",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/franklin/": {
+  "kw": "Leak detection in Franklin",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/franklin/crawl-space-leak-detection/": {
+  "kw": "Crawl space leak detection in Franklin",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/franklin/hidden-leak-detection/": {
+  "kw": "Hidden leak detection in Franklin",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/franklin/pipe-leak-repair/": {
+  "kw": "Pipe leak repair in Franklin",
+  "base": "thermal-imaging-inspection"
+ },
+ "/service-area/franklin/slab-leak-detection/": {
+  "kw": "Slab leak detection in Franklin",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/franklin/slab-leak-repair/": {
+  "kw": "Slab leak repair in Franklin",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/franklin/thermal-imaging-leak-inspection/": {
+  "kw": "Thermal imaging leak inspection in Franklin",
+  "base": "thermal-imaging-inspection"
+ },
+ "/service-area/franklin/water-line-leak-detection/": {
+  "kw": "Water line leak detection in Franklin",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/franklin/water-line-repair/": {
+  "kw": "Water line repair in Franklin",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/greenwood/": {
+  "kw": "Leak detection in Greenwood",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/greenwood/hidden-leak-detection/": {
+  "kw": "Hidden leak detection in Greenwood",
+  "base": "hidden-water-leak-detection"
+ },
+ "/service-area/greenwood/pipe-leak-repair/": {
+  "kw": "Pipe leak repair in Greenwood",
+  "base": "thermal-imaging-inspection"
+ },
+ "/service-area/greenwood/pool-leak-detection/": {
+  "kw": "Pool leak detection in Greenwood",
+  "base": "pool-spa-leak-detection"
+ },
+ "/service-area/greenwood/slab-leak-detection/": {
+  "kw": "Slab leak detection in Greenwood",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/greenwood/slab-leak-repair/": {
+  "kw": "Slab leak repair in Greenwood",
+  "base": "slab-leak-detection"
+ },
+ "/service-area/greenwood/sprinkler-leak-detection/": {
+  "kw": "Sprinkler leak detection in Greenwood",
+  "base": "irrigation-leak-detection"
+ },
+ "/service-area/greenwood/water-line-leak-detection/": {
+  "kw": "Water line leak detection in Greenwood",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/greenwood/water-line-repair/": {
+  "kw": "Water line repair in Greenwood",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/morgantown/": {
+  "kw": "Leak detection in Morgantown",
+  "base": "underground-water-leak-detection"
+ },
+ "/service-area/nineveh/": {
+  "kw": "Leak detection in Nineveh",
+  "base": "irrigation-leak-detection"
+ },
+ "/service-area/southport/": {
+  "kw": "Leak detection in Southport",
+  "base": "thermal-imaging-inspection"
+ },
+ "/service-area/trafalgar/": {
+  "kw": "Leak detection in Trafalgar",
+  "base": "hero"
+ },
+ "/service-area/whiteland/": {
+  "kw": "Leak detection in Whiteland",
+  "base": "slab-leak-detection"
+ },
+ "/services/hidden-water-leak-detection/": {
+  "kw": "Hidden water leak detection in Bargersville",
+  "base": "hidden-water-leak-detection"
+ },
+ "/services/irrigation-leak-detection/": {
+  "kw": "Irrigation leak detection in Bargersville",
+  "base": "irrigation-leak-detection"
+ },
+ "/services/pool-spa-leak-detection/": {
+  "kw": "Pool and spa leak detection in Bargersville",
+  "base": "pool-spa-leak-detection"
+ },
+ "/services/sewer-line-leak-detection/": {
+  "kw": "Sewer line leak detection in Bargersville",
+  "base": "underground-water-leak-detection"
+ },
+ "/services/slab-leak-detection/": {
+  "kw": "Slab leak detection in Bargersville",
+  "base": "slab-leak-detection"
+ },
+ "/services/thermal-imaging-inspection/": {
+  "kw": "Thermal imaging inspection in Bargersville",
+  "base": "thermal-imaging-inspection"
+ },
+ "/services/underground-water-leak-detection/": {
+  "kw": "Underground water leak detection in Bargersville",
+  "base": "underground-water-leak-detection"
+ }
+}

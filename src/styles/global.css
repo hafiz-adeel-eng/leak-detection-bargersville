@@ -371,7 +371,9 @@ p { margin: 0; }
 .qa-label { display: block; font: 600 12.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--aqua); margin-bottom: 6px; }
 .quick-answer p { font-size: 17.5px; line-height: 1.6; color: var(--text); font-weight: 500; }
 .guide-figure { margin: 28px 0 0; }
-.guide-figure img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); }
+.kw-figure { margin: 0 0 28px; }
+.kw-wrap .kw-figure { max-width: 960px; margin: 0 auto 36px; }
+.kw-figure img, .guide-figure img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); }
 .guide-body { margin-top: 12px; font-size: 17px; line-height: 1.75; color: var(--text-2); }
 .guide-body > * + * { margin-top: 1.05em; }
 .guide-body h2 { font-size: clamp(23px, 2.8vw, 29px); font-weight: 800; color: var(--text); margin-top: 1.9em; scroll-margin-top: 90px; }
@@ -657,7 +659,8 @@ p { margin: 0; }
 .case-quote cite { font-style: normal; color: #FFC107; font-weight: 700; font-size: 14px; }
 
 /* ===== Brand logo ===== */
-.logo-mark { width: 54px; height: 54px; flex: none; object-fit: contain; padding: 4px; border-radius: 50%; background: radial-gradient(circle at 50% 40%, #FFFFFF 0%, #F8F4EC 70%, #EFE6D5 100%); border: 2px solid #FFE08A; box-shadow: 0 0 0 3px rgba(255,224,138,.18), 0 6px 16px -6px rgba(0,0,0,.55); }
+/* Logo is a CSS background so the first <img> on each page is the page's own keyword image. */
+.logo-mark { display: block; box-sizing: border-box; width: 54px; height: 54px; flex: none; padding: 4px; border-radius: 50%; background-image: url(/images/logo-128.webp), radial-gradient(circle at 50% 40%, #FFFFFF 0%, #F8F4EC 70%, #EFE6D5 100%); background-size: contain, auto; background-repeat: no-repeat; background-position: center; background-origin: content-box, border-box; border: 2px solid #FFE08A; box-shadow: 0 0 0 3px rgba(255,224,138,.18), 0 6px 16px -6px rgba(0,0,0,.55); }
 @media (max-width: 520px) { .logo-mark { width: 46px; height: 46px; padding: 3px; } }
 .site-footer .logo-mark { width: 64px; height: 64px; padding: 5px; }
 

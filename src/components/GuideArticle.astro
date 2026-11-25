@@ -6,7 +6,7 @@ import Faq from './Faq.astro';
 import CtaBand from './CtaBand.astro';
 import { site, areas } from '../data/site';
 import { locationUrl } from '../data/locations';
-import { image } from '../data/images';
+import { image, pageImage, pageBaseAlt } from '../data/images';
 import { guideUrl } from '../data/guides';
 import { townServicePages, townServiceUrl } from '../data/townServices';
 
@@ -15,7 +15,8 @@ const { entry } = Astro.props;
 const d = entry.data;
 const { Content, headings } = await render(entry);
 const url = guideUrl(entry);
-const photo = d.image ? image(d.image.name) : null;
+const lead = pageImage(url, d.image?.alt ?? pageBaseAlt(url));
+const photo = lead?.src ?? (d.image ? image(d.image.name) : null);
 const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length;
 const minutes = Math.max(3, Math.round(words / 220));
 const toc = headings.filter((h) => h.depth === 2);
@@ -62,11 +63,11 @@ const crumbs = d.path
         <span>{d.h1}</span>
       </nav>
       <h1>{d.h1}</h1>
-      <p class="guide-meta">
+      <div class="guide-meta">
         <span>By the {site.name} team</span><span aria-hidden="true">·</span>
         <span>Updated <time datetime={d.updated.toISOString().slice(0, 10)}>{fmt(d.updated)}</time></span><span aria-hidden="true">·</span>
         <span>{minutes} min read</span>
-      </p>
+      </div>
     </div>
   </section>
 
@@ -78,9 +79,9 @@ const crumbs = d.path
           <p>{d.quickAnswer}</p>
         </div>
 
-        {photo && d.image && (
+        {lead && (
           <figure class="guide-figure">
-            <img src={photo} alt={d.image.alt} width="1200" height="675" loading="eager" decoding="async" />
+            <img src={lead.src} alt={lead.alt} width="1200" height="675" loading="eager" decoding="async" />
           </figure>
         )}
 

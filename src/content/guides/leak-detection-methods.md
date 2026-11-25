@@ -1,8 +1,8 @@
 ---
-title: "How Professional Leak Detection Works: Methods & Tools"
-description: "Acoustic listening, pressure testing, tracer gas, correlators and thermal imaging: how professionals find hidden water leaks without tearing things up."
-h1: "How Professional Leak Detection Works"
-quickAnswer: "Professional leak detection narrows the leak down in stages. A pressure test confirms which line is leaking, then acoustic ground microphones, correlators or tracer gas locate the exact spot, and thermal imaging and moisture meters confirm what's happening inside walls and floors. The goal is to mark the leak within inches so only a small area is opened."
+title: "Leak Detection Methods: How Professionals Find Hidden Leaks"
+description: "Leak detection methods explained: acoustic listening, pressure testing, tracer gas, correlators and thermal imaging, and which one fits which leak."
+h1: "Leak Detection Methods: How Professional Leak Detection Works"
+quickAnswer: "Professional leak detection methods narrow the leak down in stages. A pressure test confirms which line is leaking, then acoustic ground microphones, correlators or tracer gas locate the exact spot, and thermal imaging and moisture meters confirm what's happening inside walls and floors. The goal is to mark the leak within inches so only a small area is opened."
 primaryKeyword: "acoustic leak detection"
 secondaryKeywords: ["non invasive leak detection", "tracer gas leak detection", "leak correlator", "geophones leak detection", "hydrophone leak detection", "ground penetrating radar leak detection", "electronic leak detection", "professional leak detection"]
 service: { name: "Professional Leak Detection", url: "/" }
@@ -92,7 +92,7 @@ GPR sends radar pulses into the ground and reads the reflections. It can help lo
 
 The technician marks the spot, often with tape or paint on the floor or a flag in the yard, and documents it with photos and readings. The repair is a separate step, usually done by a plumber, who opens only the marked area. Detection and repair are different skills. Accurate detection is what keeps the repair small.
 
-## Which methods work best on Johnson County homes
+## Leak detection methods that work best on Johnson County homes
 
 Local conditions decide the method. Johnson County's dense, wet clay carries leak noise reasonably well on metal pipe, so acoustic ground microphones work on many copper and galvanized service lines. Plastic lines, now common in newer subdivisions and on rural properties, carry sound poorly; on those, tracer gas pushed through the line and detected at the surface is more reliable.
 

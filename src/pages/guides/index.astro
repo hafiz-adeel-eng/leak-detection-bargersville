@@ -12,10 +12,11 @@ const itemList = {
   name: 'Leak detection guides',
   itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${site.url}${guideUrl(g)}`, name: g.data.h1 })),
 };
+import PageImage from '../../components/PageImage.astro';
 ---
 <Base
   title={`Leak Detection Guides for Homeowners | ${site.city}, IN`}
-  description="Practical guides to finding water leaks in your house, slab, yard, walls, pool and sprinkler system, plus what leak detection costs and how it works."
+  description="Leak detection guides for homeowners: how to find water leaks in your house, slab, yard, walls, pool and sprinklers, what detection costs and how it works."
   breadcrumbs={[{ name: 'Guides', url: '/guides/' }]}
   schema={[itemList]}
 >
@@ -23,12 +24,14 @@ const itemList = {
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Guides</span></nav>
       <h1>Leak detection guides</h1>
-      <p class="answer">Straight answers from a leak detection team based in Bargersville: how to check for a leak yourself, what the signs mean in a Johnson County home, and when it’s time to call a professional.</p>
+      <p class="answer">Our leak detection guides give straight answers from a team based in Bargersville: how to check for a leak yourself, what the signs mean in a Johnson County home, and when it’s time to call a professional.</p>
     </div>
   </section>
   <section class="section">
     <div class="container">
       <div class="prose guides-intro">
+        <PageImage path="/guides/" />
+        <h2>Leak detection guides for Johnson County homes</h2>
         <p>These guides are written for homes in Johnson County and the south side of Indianapolis: slab houses in Bargersville, Whiteland and Greenwood subdivisions, older basement and crawl-space homes in Franklin, and rural properties on wells around Trafalgar and Morgantown. They cover the local water utilities, central Indiana’s hard water and clay soil, frost depth, and the Indiana 811 rule before any digging.</p>
       </div>
       <div class="guide-list">

@@ -78,7 +78,7 @@ A spot repair depends on accurate detection. If the leak isn't pinpointed, the o
 
 Many homeowners policies cover sudden water damage and the cost of accessing the leak, often called "tear out," but not the worn pipe itself. Policies vary, so check yours. A leak detection report with photos and readings makes the claim easier.
 
-## What affects the price for Johnson County homes
+## Leak detection cost for Johnson County homes
 
 The biggest local factors are the kind of house and the length of the line. A slab home in a Bargersville or Whiteland subdivision needs the under-floor lines isolated and tested; a farmhouse outside Trafalgar may have hundreds of feet of plastic line to trace with tracer gas; an older Franklin home may need several fixtures checked in a crawl space. Each takes a different amount of time and equipment.
 

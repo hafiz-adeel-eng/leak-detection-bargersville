@@ -1,8 +1,8 @@
 ---
 title: "Polybutylene Pipe Replacement: Identify It, Cost & Risks"
-description: "Gray plastic pipe stamped PB2110? How to identify polybutylene plumbing, why it fails, insurance and home-sale issues, and what replacement costs."
+description: "Polybutylene pipe replacement: how to identify gray PB2110 plastic pipe, why it fails, insurance and home-sale issues, and what replacement costs."
 h1: "Polybutylene Pipe Replacement: How to Identify It and What It Costs"
-quickAnswer: "Polybutylene is a gray, blue or black flexible plastic water pipe used in millions of U.S. homes built from about 1978 to 1995, often stamped PB2110. It can become brittle and crack from reactions with chlorine in treated water, and it tends to fail without warning. Because of that risk, many insurers and buyers treat it as a problem, and replacement with PEX or copper is usually recommended."
+quickAnswer: "Polybutylene pipe replacement starts with knowing what you have. Polybutylene is a gray, blue or black flexible plastic water pipe used in millions of U.S. homes built from about 1978 to 1995, often stamped PB2110. It can become brittle and crack from reactions with chlorine in treated water, and it tends to fail without warning. Because of that risk, many insurers and buyers treat it as a problem, and replacement with PEX or copper is usually recommended."
 primaryKeyword: "polybutylene pipe replacement"
 secondaryKeywords: ["polybutylene plumbing replacement", "polybutylene pipes replacement cost", "cost to replace polybutylene plumbing", "how to identify polybutylene pipe", "polybutylene pipe insurance", "polybutylene pipe indiana"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -66,7 +66,7 @@ Because of its failure history:
 
 If you're buying or selling a home from that era, identify the pipe early.
 
-## Replacement
+## Polybutylene pipe replacement options
 
 Polybutylene replacement is done as a **repipe**, usually with **PEX**:
 

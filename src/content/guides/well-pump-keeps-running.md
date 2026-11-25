@@ -1,8 +1,8 @@
 ---
 title: "Well Pump Keeps Running? Causes & Leak Checks (Indiana)"
-description: "Well pump running constantly or won't shut off? Check the pressure switch, tank and check valve, then test for a leak. For well owners in Johnson County, IN."
+description: "Well pump keeps running or won’t shut off? Check the pressure switch, tank and check valve, then test for a leak. For well owners in Johnson County, IN."
 h1: "Well Pump Keeps Running? Causes and How to Check for a Leak"
-quickAnswer: "A well pump that keeps running or cycles on with no water in use usually has one of four problems: a pressure switch that isn't shutting off, a waterlogged pressure tank, a leaking check valve, or a leak somewhere between the pump and your fixtures. Watch the pressure gauge with all water off. If the pressure slowly drops and the pump kicks on, water is escaping, either back down the well or out of a leak."
+quickAnswer: "Well pump keeps running? A well pump that keeps running or cycles on with no water in use usually has one of four problems: a pressure switch that isn't shutting off, a waterlogged pressure tank, a leaking check valve, or a leak somewhere between the pump and your fixtures. Watch the pressure gauge with all water off. If the pressure slowly drops and the pump kicks on, water is escaping, either back down the well or out of a leak."
 primaryKeyword: "well pump keeps running"
 secondaryKeywords: ["well pump runs constantly", "well pump won't shut off", "well pump keeps turning on and off", "well pump continuously running", "water pump for well keeps running", "well pump keeps running indiana", "well water leak johnson county"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -32,7 +32,7 @@ A **pressure switch** turns the pump on when pressure falls to the *cut-in* sett
 
 With no water in use, pressure should hold steady and the pump should stay off. If it doesn't, something is letting pressure drop, or the switch isn't reading it correctly.
 
-## Common causes
+## Why a well pump keeps running: common causes
 
 | Symptom | Likely cause |
 |---|---|

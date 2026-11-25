@@ -1,8 +1,8 @@
 ---
 title: "How to Choose a Leak Detection Company: 9 Questions"
-description: "Hiring a leak detection company in Johnson County, IN? Ask these 9 questions about methods, equipment, reports and repair before you book."
+description: "How to choose a leak detection company in Johnson County, IN: ask these 9 questions about methods, equipment, reports and repair before you book."
 h1: "How to Choose a Leak Detection Company"
-quickAnswer: "Choose a leak detection company that confirms the leak before touching anything, tests each line to isolate it, pinpoints the spot with acoustic, thermal or tracer gas equipment, and marks it with photos you can give your plumber and insurer. Ask how they work, what they use, and what you get at the end. Be wary of anyone who wants to break floors or walls before testing."
+quickAnswer: "How to choose a leak detection company: pick one that confirms the leak before touching anything, tests each line to isolate it, pinpoints the spot with acoustic, thermal or tracer gas equipment, and marks it with photos you can give your plumber and insurer. Ask how they work, what they use, and what you get at the end. Be wary of anyone who wants to break floors or walls before testing."
 primaryKeyword: "how to choose a leak detection company"
 secondaryKeywords: ["best leak detection company near me", "questions to ask a leak detection company", "how to pick a leak detection company", "best water leak detection company", "leak detection company reviews"]
 service: { name: "Professional Leak Detection", url: "/" }
@@ -79,7 +79,7 @@ A helpful company gives you simple steps: shut off the water if it's actively sp
 - Pressure to **repipe the whole house** before the leak is located
 - No marked location or documentation at the end
 
-## Checking a leak detection company in Indiana
+## How to choose a leak detection company in Indiana: license checks
 
 Indiana licenses plumbers through the Indiana Professional Licensing Agency, and you can look up a plumbing license on the state's online verification site. Leak locating itself is not a licensed trade, so ask who makes the repair and check that person's license. Ask whether the company knows your water utility: a crew that works in Johnson County should know where Indiana American Water and the Bargersville utility put their meters and who owns which part of the line.
 

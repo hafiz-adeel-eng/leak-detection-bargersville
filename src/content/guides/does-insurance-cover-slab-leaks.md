@@ -1,8 +1,8 @@
 ---
 title: "Does Homeowners Insurance Cover Slab Leaks?"
-description: "Does homeowners insurance pay for a slab leak, the damage or finding it? What policies usually cover and exclude, and how a detection report helps your claim."
+description: "Does homeowners insurance cover slab leaks, the water damage or finding the leak? What policies usually cover and exclude, and how a detection report helps."
 h1: "Does Homeowners Insurance Cover Slab Leaks?"
-quickAnswer: "Often in part. Many homeowners policies cover sudden water damage from a slab leak and the cost of getting access to the pipe (sometimes called tear-out), but not the repair of the worn pipe itself. Damage from slow, long-term leaks may be excluded. Policies vary, so check yours, call your insurer early, and keep the leak detection report and photos."
+quickAnswer: "Does homeowners insurance cover slab leaks? Often in part. Many homeowners policies cover sudden water damage from a slab leak and the cost of getting access to the pipe (sometimes called tear-out), but not the repair of the worn pipe itself. Damage from slow, long-term leaks may be excluded. Policies vary, so check yours, call your insurer early, and keep the leak detection report and photos."
 primaryKeyword: "does homeowners insurance cover slab leaks"
 secondaryKeywords: ["slab leak insurance", "insurance cover leak detection", "water leak insurance claim", "slab leak repair", "hot water slab leak"]
 service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
@@ -66,7 +66,7 @@ Insurers want to know **where** the leak is and **what caused** the damage. Prof
 
 After the leak is found, your plumber can recommend a [spot repair, reroute or repipe](/guides/slab-leak-repair-options/).
 
-## Slab leaks and insurance in Johnson County
+## Does insurance cover slab leaks in Johnson County?
 
 A large share of the slab homes around Bargersville, Greenwood and Whiteland were built from the 1990s onward with copper or PEX under the concrete. When a line under one of these floors fails, Indiana insurers usually look at two questions: was the leak sudden, and how long has water been escaping? A steadily rising bill on Indiana American Water, the Bargersville utility or Whiteland Water Works helps answer the second question, so keep those statements.
 

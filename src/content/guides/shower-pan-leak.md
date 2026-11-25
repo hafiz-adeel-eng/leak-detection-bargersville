@@ -2,7 +2,7 @@
 title: "Shower Pan Leak: Signs, Flood Test & Repair Options"
 description: "Stain below the shower or a wet floor beside it? Signs of a shower pan leak, how to flood test it, how to tell it from a valve leak, and repair options."
 h1: "Shower Pan Leak: Signs, How to Test It and What to Do"
-quickAnswer: "A leaking shower pan lets water through the floor of the shower into the subfloor, often showing up as a stain on the ceiling below, loose tile, or water at the base of the wall or toilet next to the shower. Test by plugging the drain and flooding the shower floor with about 2 inches of water. If the level drops or a stain appears below, the pan or drain is leaking."
+quickAnswer: "A shower pan leak lets water through the floor of the shower into the subfloor, often showing up as a stain on the ceiling below, loose tile, or water at the base of the wall or toilet next to the shower. Test by plugging the drain and flooding the shower floor with about 2 inches of water. If the level drops or a stain appears below, the pan or drain is leaking."
 primaryKeyword: "shower pan leak"
 secondaryKeywords: ["leaking shower pan", "how to test a shower pan for leaks", "shower base leak repair", "leaking shower valve behind wall", "water leaking from under shower pan", "shower leaking through ceiling"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }

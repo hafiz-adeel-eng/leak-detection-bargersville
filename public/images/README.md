@@ -49,3 +49,13 @@ photorealistic, no text or logos.
 > Lawn sprinkler head spraying water on a green Indiana lawn at sunrise, a technician in navy uniform kneeling beside an open valve box with a pressure gauge, photorealistic, shallow depth of field, no text --ar 16:9
 
 Each service also uses a <slug>-card.webp (640×400) for its card on the homepage.
+
+## Keyword images
+
+Every indexable page's first image is named after its target keyword (for example
+`slab-leak-detection-in-greenwood.webp`). The keyword for each page lives in
+`src/data/keywords.json`, along with the base photo the image is cropped from.
+After adding a page or changing a keyword, run `node scripts/keyword-images.mjs`
+(add `--force` to rebuild all), then `npm run build && python3 scripts/keyword-audit.py`
+to confirm the keyword appears in the URL, title, description, H1, an H2, the first
+paragraph, and the first image's file name and alt text.

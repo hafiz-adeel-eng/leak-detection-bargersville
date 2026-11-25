@@ -1,8 +1,8 @@
 ---
 title: "Sump Pump Running Constantly, Even Without Rain? Fixes"
-description: "Sump pump keeps running, even without rain? Check the float, check valve and discharge line, then rule out groundwater or a plumbing leak feeding the pit."
+description: "Sump pump running constantly, even without rain? Check the float, check valve and discharge line, then rule out groundwater or a plumbing leak feeding the pit."
 h1: "Sump Pump Running Constantly? Causes and What to Check"
-quickAnswer: "A sump pump that runs nonstop usually has a stuck float switch, a failed check valve letting water flow back into the pit, a frozen or clogged discharge line, or more water reaching the pit than the pump can handle. If it runs a lot in dry weather, the water may be groundwater from a high water table, or a plumbing leak such as a broken water line soaking the soil around the foundation."
+quickAnswer: "A sump pump running constantly usually has a stuck float switch, a failed check valve letting water flow back into the pit, a frozen or clogged discharge line, or more water reaching the pit than the pump can handle. If it runs a lot in dry weather, the water may be groundwater from a high water table, or a plumbing leak such as a broken water line soaking the soil around the foundation."
 primaryKeyword: "sump pump running constantly"
 secondaryKeywords: ["sump pump keeps running", "sump pump running constantly no rain", "sump pump always running", "sump pump won't turn off", "water constantly running into sump pump", "sump pump running constantly indiana"]
 service: { name: "Underground Water Leak Detection", url: "/services/underground-water-leak-detection/" }
@@ -26,7 +26,7 @@ faqs:
 
 Central Indiana basements rely on sump pumps, especially in spring and after long wet spells when the clay-rich soil stays saturated. A pump that runs a lot during heavy rain is doing its job. A pump that runs constantly in dry weather, or never shuts off, is telling you something is wrong: with the pump, the pit, or a source of water that shouldn't be there. Here's how to sort it out.
 
-## Quick checks: is it the pump?
+## Sump pump running constantly? Quick checks on the pump
 
 | Check | What to look for | Fix |
 |---|---|---|

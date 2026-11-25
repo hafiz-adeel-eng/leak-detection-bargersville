@@ -1,8 +1,8 @@
 ---
-title: "Is Professional Leak Detection Worth It?"
-description: "Is non-invasive leak detection worth paying for instead of opening floors and walls? What it saves, when it pays off, and when you don't need it."
-h1: "Is Professional Leak Detection Worth It?"
-quickAnswer: "Usually, yes, when the leak is hidden. Non-invasive leak detection finds and marks the leak before anything is opened, so the repair needs one small opening instead of several exploratory holes in tile, concrete, drywall or lawn. It isn't needed when the leak is visible and easy to reach, like a dripping faucet or a running toilet."
+title: "Is Leak Detection Worth It? What It Saves and When It Doesn’t"
+description: "Is leak detection worth it, or should you just open floors and walls? What non-invasive detection saves, when it pays off, and when you do not need it."
+h1: "Is Leak Detection Worth It?"
+quickAnswer: "Is leak detection worth it? Usually, yes, when the leak is hidden. Non-invasive leak detection finds and marks the leak before anything is opened, so the repair needs one small opening instead of several exploratory holes in tile, concrete, drywall or lawn. It isn't needed when the leak is visible and easy to reach, like a dripping faucet or a running toilet."
 primaryKeyword: "non invasive leak detection"
 secondaryKeywords: ["professional leak detection", "leak detection services", "is leak detection worth it", "residential leak detection services", "home leak detection services"]
 service: { name: "Professional Leak Detection", url: "/" }
@@ -61,7 +61,7 @@ A slow leak rarely stays small. Water soaks subfloors, drywall and insulation, a
 
 Ask how the company will confirm the leak, isolate the line, pinpoint the spot and document it. Our guide on [how to choose a leak detection company](/guides/how-to-choose-a-leak-detection-company/) lists nine questions, and [what affects leak detection cost](/leak-detection-cost/) explains how jobs are priced.
 
-## When it pays off in Johnson County
+## Is leak detection worth it in Johnson County?
 
 Locating a leak first saves the most money on slab homes and long service lines, which are both common here: slab-built subdivisions around Bargersville, Whiteland and Greenwood, and long rural lines around Trafalgar and Morgantown. Breaking a slab or digging a trench across a clay yard to hunt for a leak costs far more than one targeted opening.
 

@@ -1,8 +1,8 @@
 ---
 title: "How to Find a Water Leak in Your House (Step-by-Step)"
-description: "Think you have a water leak? Do the meter test, check toilets, faucets and appliances, and narrow down hidden leaks in walls, floors or the slab."
+description: "How to find a water leak in your house: do the meter test, check toilets, faucets and appliances, then narrow down hidden leaks in walls, floors or the slab."
 h1: "How to Find a Water Leak in Your House"
-quickAnswer: "Start with your water meter: turn off every faucet and water-using appliance, note the reading, and wait one to two hours. If the meter moves, you have a leak. Then check toilets with a dye test, look under sinks and around the water heater, and close the main shutoff to tell whether the leak is inside the house or in the line outside."
+quickAnswer: "Here’s how to find a water leak in your house. Start with your water meter: turn off every faucet and water-using appliance, note the reading, and wait one to two hours. If the meter moves, you have a leak. Then check toilets with a dye test, look under sinks and around the water heater, and close the main shutoff to tell whether the leak is inside the house or in the line outside."
 primaryKeyword: "find water leak in house"
 secondaryKeywords: ["how to find a water leak in your house", "i have a water leak in my house", "checking for water leaks", "detecting a water leak in your home", "can't find water leak", "find leaks in house", "locate water leak"]
 service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-leak-detection/" }
@@ -104,7 +104,7 @@ Where the meter sits depends on your utility. Indiana American Water, the Barger
 
 If you are on a private well, as many homes around Trafalgar, Morgantown and Nineveh are, there is no meter. Use the pressure tank gauge instead: with every tap off, the needle should hold steady and the pump should stay quiet.
 
-## Quick checklist
+## How to find a water leak in your house: quick checklist
 
 - [ ] Meter test with all water off (1–2 hours)
 - [ ] Toilet dye test (10 minutes per toilet)
