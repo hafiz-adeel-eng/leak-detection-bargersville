@@ -54,7 +54,7 @@ export const services: Service[] = [
     name: 'Slab Leak Detection',
     icon: 'slab',
     short: 'Warm spots on the floor or a meter that keeps running? We trace the line under the concrete.',
-    title: 'Slab Leak Detection & Repair | Bargersville, IN',
+    title: 'Slab Leak Detection & Repair in Johnson County, IN',
     description: 'Warm floor, a meter that keeps running or a jump in your water bill? We pinpoint leaks under concrete slabs so only a small area needs to be opened.',
     h1: 'Slab Leak Detection & Repair in Bargersville, IN',
     answer: 'A slab leak is a broken water line under your home’s concrete foundation. We find it without breaking the floor to search: we isolate and pressure-test the lines, then use acoustic ground microphones and thermal imaging to mark the spot, so only one small section is opened for the repair, which our plumbing partner can handle.',

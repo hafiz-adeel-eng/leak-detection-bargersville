@@ -22,9 +22,20 @@ const kw = keywordsFor(c);
 const allGuides = await getCollection('guides');
 const guideIds = ['how-to-find-a-slab-leak', 'slab-leak-repair-cost', 'how-to-find-an-underground-water-leak', 'why-is-my-water-bill-so-high', c.pools ? 'how-to-find-a-pool-leak' : 'frozen-pipe-leaks', 'leak-detection-methods'];
 const guides = guideIds.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
-const sameState = nationalCities.filter((x) => x.st === c.st && x.slug !== c.slug).slice(0, 6);
-const others = nationalCities.filter((x) => x.st !== c.st).slice(0, 6 - Math.min(sameState.length, 6));
-const nearby = [...sameState, ...others].slice(0, 6);
+// The 6 closest cities by distance, so links spread evenly instead of always pointing at the first cities in the list.
+const km = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) => {
+  const r = Math.PI / 180, dLat = (b.lat - a.lat) * r, dLng = (b.lng - a.lng) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLng / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+};
+const nearby = nationalCities
+  .filter((x) => x.slug !== c.slug)
+  .map((x) => ({ x, d: km(c.geo, x.geo) }))
+  .sort((a, b) => a.d - b.d)
+  .slice(0, 6)
+  .map(({ x }) => x);
+const anchor = (x: (typeof nationalCities)[number], i: number) =>
+  [`Leak detection in ${x.city}, ${x.st}`, `${x.city} slab and water line leaks`, `Find a leak in ${x.city}`, `${x.city}, ${x.state}`][i % 4];
 const cards = services.filter((s) => c.pools || s.slug !== 'pool-spa-leak-detection');
 
 const title = `Leak Detection in ${place} | Slab & Water Line Repair`.length <= 60
@@ -179,13 +190,13 @@ const pageSchema = {
 
   <section class="section">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">More cities</span><h2>Leak detection in other cities</h2></div>
+      <div class="section-head"><span class="eyebrow">More cities</span><h2>Leak detection in nearby cities</h2></div>
       <div class="chips">
-        {nearby.map((x) => <a class="chip" href={nationalUrl(x.slug)}><Icon name="pin" />Leak detection {x.city}, {x.st}</a>)}
+        {nearby.map((x, i) => <a class="chip" href={nationalUrl(x.slug)}><Icon name="pin" />{anchor(x, i)}</a>)}
         <a class="chip" href="/leak-detection/"><Icon name="pin" />All cities</a>
       </div>
     </div>
   </section>
 
-  <CtaBand title={`Need a leak found in ${c.city}? Call ${site.phone}`} text={`Slab, water line${c.pools ? ', pool' : ''} and hidden leaks in ${place}.`} />
+  <CtaBand title={`Need a leak found in ${c.city}?`} text={`Slab, water line${c.pools ? ', pool' : ''} and hidden leaks in ${place}.`} />
 </Base>

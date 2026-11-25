@@ -8,6 +8,7 @@ import { site, areas } from '../data/site';
 import { locationUrl } from '../data/locations';
 import { image } from '../data/images';
 import { guideUrl } from '../data/guides';
+import { townServicePages, townServiceUrl } from '../data/townServices';
 
 interface Props { entry: CollectionEntry<'guides'> }
 const { entry } = Astro.props;
@@ -20,6 +21,18 @@ const minutes = Math.max(3, Math.round(words / 220));
 const toc = headings.filter((h) => h.depth === 2);
 const all = await getCollection('guides');
 const related = d.related.map((s) => all.find((g) => g.id === s)).filter(Boolean) as CollectionEntry<'guides'>[];
+// Town service pages for this guide's topic: pages that cite this guide first, then pages for the same service.
+const serviceSlug = d.service.url.match(/^\/services\/([^/]+)\//)?.[1];
+const candidates = [
+  ...townServicePages.filter((p) => p.guides.includes(entry.id)),
+  ...townServicePages.filter((p) => p.service === serviceSlug && !p.guides.includes(entry.id)),
+];
+// Round-robin across towns so every town gets links, not just the first one in the list.
+const byTown = new Map<string, typeof candidates>();
+for (const p of candidates) byTown.set(p.town, [...(byTown.get(p.town) ?? []), p]);
+const localPages: typeof candidates = [];
+for (let i = 0; localPages.length < 6 && i < 8; i++)
+  for (const list of byTown.values()) if (list[i] && localPages.length < 6) localPages.push(list[i]);
 const fmt = (dt: Date) => dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
 const article = {
@@ -75,6 +88,14 @@ const crumbs = d.path
           <Content />
         </div>
 
+        {localPages.length > 0 && (
+          <div class="local-links">
+            <h2 id="local-help">Local help in Johnson County</h2>
+            <p>If you are in one of these towns, the page for your town covers the local water utility, soils and permits.</p>
+            <ul>{localPages.map((p) => <li><a href={townServiceUrl(p)}>{p.h1}</a></li>)}</ul>
+          </div>
+        )}
+
         <div class="guide-cta">
           <div>
             <h2>Still can’t find it?</h2>
@@ -93,7 +114,7 @@ const crumbs = d.path
       <aside class="guide-aside">
         {toc.length > 0 && (
           <nav class="toc-box" aria-label="On this page">
-            <h2>On this page</h2>
+            <p class="aside-h">On this page</p>
             <ol>
               <li><a href="#quick-answer">Quick answer</a></li>
               {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
@@ -102,19 +123,19 @@ const crumbs = d.path
           </nav>
         )}
         <div class="aside">
-          <h3>Need a professional?</h3>
+          <p class="aside-title">Need a professional?</p>
           <p>Local leak detection across {site.city} and {site.county}.</p>
           <a class="btn btn-primary" href={`tel:${site.phoneHref}`}><Icon name="phone" />{site.phone}</a>
           <a class="btn btn-ghost" href={d.service.url}>{d.service.name}</a>
         </div>
         {related.length > 0 && (
           <div class="related-box">
-            <h2>Related guides</h2>
+            <p class="aside-h">Related guides</p>
             <ul>{related.map((r) => <li><a href={guideUrl(r)}>{r.data.h1}</a></li>)}</ul>
           </div>
         )}
         <div class="related-box">
-          <h2>Areas we serve</h2>
+          <p class="aside-h">Areas we serve</p>
           <ul>{areas.map((a) => <li><a href={locationUrl(a.slug)}>Leak detection in {a.name}, IN</a></li>)}</ul>
         </div>
       </aside>

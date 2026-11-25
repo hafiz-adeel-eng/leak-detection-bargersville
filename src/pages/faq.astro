@@ -5,11 +5,17 @@ import CtaBand from '../components/CtaBand.astro';
 import { site, services, generalFaqs } from '../data/site';
 
 const seen = new Set<string>();
-const all = [...generalFaqs, ...services.flatMap((s) => s.faqs)].filter((f) => {
+const unique = (items: typeof generalFaqs) => items.filter((f) => {
   if (seen.has(f.q)) return false;
   seen.add(f.q);
   return true;
 });
+// One H2 per topic, so the page has a real outline instead of one long list.
+const groups = [
+  { id: 'general', h2: 'General leak detection questions', items: unique(generalFaqs) },
+  ...services.map((s) => ({ id: s.slug, h2: `${s.name}: questions`, url: `/services/${s.slug}/`, name: s.name, items: unique(s.faqs) })),
+].filter((g) => g.items.length > 0);
+const all = groups.flatMap((g) => g.items);
 ---
 <Base
   title="Leak Detection FAQ: Signs, Process & Insurance"
@@ -25,7 +31,15 @@ const all = [...generalFaqs, ...services.flatMap((s) => s.faqs)].filter((f) => {
     </div>
   </section>
   <section class="section">
-    <div class="container"><Faq items={all} /></div>
+    <div class="container faq-groups">
+      {groups.map((g) => (
+        <div class="faq-group" id={g.id}>
+          <h2>{g.h2}</h2>
+          {'url' in g && g.url && <p class="faq-more">More on <a href={g.url}>{g.name.toLowerCase()}</a>.</p>}
+          <Faq items={g.items} openFirst={false} />
+        </div>
+      ))}
+    </div>
   </section>
   <CtaBand />
 </Base>
