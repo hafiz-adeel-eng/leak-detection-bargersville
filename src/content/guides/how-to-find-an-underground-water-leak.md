@@ -9,7 +9,7 @@ service: { name: "Underground Water Leak Detection", url: "/services/underground
 image: { name: "hero", alt: "Leak detection technician with headphones listening for a buried water line leak with a ground microphone on a front lawn" }
 related: ["water-line-replacement-cost-indiana", "water-leak-under-driveway", "low-water-pressure-leak", "frozen-pipe-leaks", "how-to-find-a-sprinkler-leak", "leak-detection-methods", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 6
 faqs:
   - q: "How do I know if my main water line is leaking?"
@@ -20,6 +20,8 @@ faqs:
     a: "Confirm the leak with the meter and shutoff test first. Then acoustic listening along the pipe's path, a leak noise correlator, or tracer gas for plastic pipe can pinpoint it so only a small hole is dug."
   - q: "Why doesn't my underground leak make a wet spot?"
     a: "Water follows the easiest path. In sandy or gravelly soil, or along the pipe's bedding, it can drain away or travel before it surfaces, so the wet spot may not be above the leak, or may never appear."
+  - q: "Who owns the water line in my yard in Johnson County?"
+    a: "In most Johnson County communities the utility owns the line up to the meter or curb stop, and the homeowner owns the service line from there to the house. Call your utility first if water is coming up at the meter itself."
 ---
 
 The water line from your meter to your house is out of sight and out of mind until it leaks. Because the water drains into the soil, an underground leak can run for months. Here's how to confirm one, narrow down where it is, and avoid digging up the whole yard.
@@ -83,6 +85,12 @@ Read the details in [how professional leak detection works](/guides/leak-detecti
 ## Who's responsible for the leak?
 
 In most areas, the homeowner owns the line **from the meter to the house**, and the utility owns the meter and the line up to it. If the leak seems to be at or near the meter, contact your water utility first. Rules vary, so confirm with your provider.
+
+## Underground leaks in Johnson County clay
+
+Johnson County sits on glacial clay that holds water rather than draining it. A leak on a buried service line often shows up as a strip of lawn that stays soft and green in August, or as water seeping up at the meter pit, rather than a gusher. On long lines to houses set back on larger lots around Trafalgar, Franklin and rural Bargersville, the wet spot can appear well away from the actual break.
+
+Before anyone digs, Indiana law requires a call to Indiana 811 at least two full working days ahead so gas, electric and cable lines get marked. Pinpointing the leak first keeps that excavation to one small hole.
 
 ## Get the leak marked
 

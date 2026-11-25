@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a bathroom floor around a toilet with a moisture sensor for hidden water damage" }
 related: ["water-leaking-from-ceiling", "shower-pan-leak", "water-running-sound-in-pipes"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 28
 faqs:
   - q: "Why is my toilet leaking at the base?"
@@ -20,6 +20,8 @@ faqs:
     a: "No. Caulk around the base doesn't fix a failed wax ring. It can hide the leak, so water spreads under the floor where you can't see it. Replace the seal instead."
   - q: "How do I know if the floor under my toilet is damaged?"
     a: "Signs include a soft or spongy floor around the toilet, a toilet that rocks, loose or stained tiles or vinyl, a musty or sewer smell, and a stain on the ceiling below. A moisture meter or thermal camera shows how far the water has spread."
+  - q: "Why does my toilet sweat in summer in Indiana?"
+    a: "Humid central Indiana summers make cold tank water condense on the outside of the toilet, which can drip onto the floor and look like a leak. If the water appears only on humid days and the wax seal is firm, it is likely condensation."
 ---
 
 A little water around the base of the toilet is easy to mop up and forget. But if it's coming from under the toilet, it's also soaking into the subfloor every time someone flushes, and in a two-story home it can end up in the ceiling below. Here's how to find out where the water is really coming from, what to fix, and how to check for damage you can't see.
@@ -79,6 +81,12 @@ If you can't see how far the water went, [hidden water leak detection](/services
 If the floor near the toilet stays wet after you've replaced the wax ring, look at the neighbors: a **shower pan or tub drain** often leaks toward the toilet, and water from a leaking shower can show up at the toilet base. See [shower pan leak](/guides/shower-pan-leak/). A supply line leak inside the wall behind the toilet can also run down to the floor.
 
 And if the toilet makes a running sound or the tank refills by itself, that's a different leak, inside the tank, that wastes water down the drain. See [hear water running when nothing is on](/guides/water-running-sound-in-pipes/).
+
+## Toilet leaks in Johnson County homes
+
+On slab homes common around Bargersville and Whiteland, a failed wax ring lets water seep into the subfloor and grout, so you see dark grout lines or a loose toilet rather than a ceiling stain. In two-story homes in Center Grove and Greenwood, the first sign is often a stain on the ceiling below an upstairs bathroom.
+
+Hard water in central Indiana wears out fill valves and flappers faster, which causes running toilets rather than base leaks. Do a dye test in the tank: color in the bowl means the flapper is leaking; water on the floor means the seal, the supply connection or condensation.
 
 ## Get it checked
 

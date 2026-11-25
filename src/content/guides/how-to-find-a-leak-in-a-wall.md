@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "thermal-imaging-inspection", alt: "Technician holding a thermal camera that shows a cold moisture pattern on a water-stained wall near the floor" }
 related: ["leak-under-sink", "outside-spigot-leaking", "shower-pan-leak", "water-leaking-from-ceiling", "how-to-find-a-water-leak-in-your-house", "leak-detection-methods", "why-is-my-water-bill-so-high"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 7
 faqs:
   - q: "How can I tell if there's a leak inside my wall?"
@@ -20,6 +20,8 @@ faqs:
     a: "Not until you've narrowed it down. Cutting in the wrong place means more patching. Use a meter test, fixture checks and moisture readings first, or have the spot pinpointed professionally."
   - q: "How quickly can a leak in a wall cause mold?"
     a: "The U.S. EPA advises drying water-damaged materials within 24–48 hours to prevent mold growth. A slow hidden leak keeps the wall wet for much longer than that, which is why early detection matters."
+  - q: "Why does my wall look wet in summer but not winter?"
+    a: "In central Indiana summers, humid air condenses on cold water pipes and on basement walls, which can look like a leak. If the meter does not move with all water off and the dampness tracks humidity, it is likely condensation rather than a pipe leak."
 ---
 
 A leak inside a wall usually comes from a supply line, a drain, or a shower valve that's slowly soaking the drywall and framing. Because the water is hidden behind paint, it can take weeks to show. Here's how to confirm it and narrow down the spot before anyone reaches for a saw.
@@ -77,6 +79,12 @@ Once the source is marked, the opening can be small and in the right place. See 
 ## Don't wait on it
 
 The U.S. EPA recommends drying water-damaged materials within **24–48 hours** to prevent mold growth ([EPA mold guidance](https://www.epa.gov/mold)). A hidden leak can keep a wall wet for weeks. If you see signs, turn off the nearest fixture's shutoff valve if you know the source, and get it located.
+
+## Wall leaks in Johnson County houses
+
+The wall leaks we trace most in Johnson County come from a few predictable spots: the shower valve wall shared with a bedroom closet, the wall behind a second-floor laundry in newer two-story homes in Center Grove and Greenwood, and outside walls where a frozen line split. In older Franklin homes with plaster, a leak often shows as a bubble or a soft spot near the baseboard rather than a clean stain.
+
+Clay soil and a humid summer can make a basement or slab-level wall look damp without any plumbing leak at all. A moisture meter reading that is highest near a supply line, and a meter test that shows water moving, separate a pipe leak from humidity.
 
 ## Get the leak found
 

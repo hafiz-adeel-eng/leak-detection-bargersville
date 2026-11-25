@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "thermal-imaging-inspection", alt: "Technician documenting moisture on a water-stained wall with a thermal camera for an insurance report" }
 related: ["slab-leak-repair-cost", "burst-pipe-insurance-claim-indiana", "slab-leak-repair-options", "water-leak-emergency-what-to-do", "how-to-find-a-slab-leak"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 16
 faqs:
   - q: "Does insurance pay to fix the broken pipe under my slab?"
@@ -20,6 +20,8 @@ faqs:
     a: "Damage from long-term, gradual leaks is often excluded. That's one reason to act quickly when you notice signs like a warm floor or a running meter."
   - q: "What documents help a slab leak claim?"
     a: "Photos and video of the damage, the leak detection report with the marked location and readings, water bills showing the change, and receipts for repairs and drying."
+  - q: "Do Indiana homeowners policies cover slab leak repairs?"
+    a: "It depends on the policy. Many cover water damage from a sudden slab leak and the cost to open the floor, but not the pipe repair or damage from a slow leak that went on for months. Read the water damage and tear-out sections and ask your agent."
 ---
 
 A slab leak raises two questions at once: how do I fix it, and who pays for it? Insurance coverage depends on your policy, but most policies follow the same general pattern. This guide explains it so you know what to ask.
@@ -63,6 +65,12 @@ Insurers want to know **where** the leak is and **what caused** the damage. Prof
 - a smaller repair opening, which keeps access and restoration costs down.
 
 After the leak is found, your plumber can recommend a [spot repair, reroute or repipe](/guides/slab-leak-repair-options/).
+
+## Slab leaks and insurance in Johnson County
+
+A large share of the slab homes around Bargersville, Greenwood and Whiteland were built from the 1990s onward with copper or PEX under the concrete. When a line under one of these floors fails, Indiana insurers usually look at two questions: was the leak sudden, and how long has water been escaping? A steadily rising bill on Indiana American Water, the Bargersville utility or Whiteland Water Works helps answer the second question, so keep those statements.
+
+Policies sold in Indiana differ on slab coverage. Some add a limited endorsement for access and tear-out; others exclude continuous seepage. If you disagree with a decision, the Indiana Department of Insurance takes consumer complaints.
 
 ## Get your slab leak documented
 

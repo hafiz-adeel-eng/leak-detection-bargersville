@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet utility room floor near a water softener and water heater for a plumbing leak" }
 related: ["washing-machine-leaking", "water-heater-leaking", "water-in-basement-or-crawl-space", "water-running-sound-in-pipes"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 32
 faqs:
   - q: "Why is my water softener leaking?"
@@ -22,6 +22,8 @@ faqs:
     a: "Yes. The U.S. Geological Survey notes that groundwater in Indiana is usually very hard, above 180 mg/L as calcium carbonate, which is why many central Indiana homes have softeners."
   - q: "Can a water softener make a running water sound?"
     a: "Yes, during regeneration a softener can run water to the drain for a while, often at night. If you hear water running long after the cycle should be over, or the meter moves with the softener in bypass, look for a leak elsewhere."
+  - q: "Is a water softener worth it in Johnson County?"
+    a: "Many homeowners here use one because the groundwater is very hard, which builds scale in water heaters and fixtures. Ask your utility for its hardness figure to decide."
 ---
 
 Water softeners are everywhere in central Indiana. According to the U.S. Geological Survey, groundwater in Indiana is usually **very hard**, above **180 mg/L** as calcium carbonate ([USGS on water hardness](https://www.usgs.gov/special-topics/water-science-school/science/hardness-water)), and softeners protect water heaters, fixtures and pipes from scale. But they're also a plumbing appliance full of fittings, O-rings and a drain line, and when one leaks, it's usually in a basement, garage or utility room where nobody looks. Here's how to find the leak and fix it.
@@ -69,6 +71,12 @@ A softener regenerating at night makes a normal running-water sound. If you hear
 ## Check for hidden damage
 
 A softener in a finished basement, a closet or a slab-on-grade utility room can leak into walls and flooring you can't see. If drywall at the base of the wall is soft or stained, or carpet nearby is damp, [hidden water leak detection](/services/hidden-water-leak-detection/) maps the moisture so only the wet material is removed. For basement water in general, see [water in the basement or crawl space](/guides/water-in-basement-or-crawl-space/).
+
+## Softeners in Johnson County homes
+
+Water softeners are common across Johnson County because local groundwater is very hard. Most are in a basement, utility room or garage next to the water heater. Leaks usually come from the bypass valve, the brine line, or the drain line that runs to a floor drain or laundry tub, especially after the unit has been bumped or the drain line has frozen in an unheated garage.
+
+If you are on a private well around Trafalgar or Morgantown, the softener may also be part of an iron filter system, and leaks at those fittings are common after pressure changes from the pump.
 
 ## Get help
 

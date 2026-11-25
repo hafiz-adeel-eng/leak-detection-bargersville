@@ -756,3 +756,4 @@ p { margin: 0; }
 .faq-index li { line-height: 1.5; padding: 2px 0; }
 .faq-index li a { color: var(--text-2); }
 .faq-index li a:hover { color: var(--aqua); }
+.guides-intro { max-width: 760px; margin-bottom: 32px; color: var(--text-2); }

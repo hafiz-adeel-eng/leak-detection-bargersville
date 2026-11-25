@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a kitchen sink cabinet and the wall behind it for a hidden plumbing leak" }
 related: ["how-to-find-a-leak-in-a-wall", "refrigerator-water-line-leak", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 42
 faqs:
   - q: "Why is there water under my kitchen sink?"
@@ -20,6 +20,8 @@ faqs:
     a: "A drip from a drain isn't usually an emergency, but a supply line leak is under constant pressure and can burst. Close the shutoff valves under the sink until it's fixed."
   - q: "What if the cabinet is wet but the pipes are dry?"
     a: "The leak may be in the wall behind the sink, from the supply stubs or drain line, or from the dishwasher or refrigerator line. A meter test and moisture readings on the back wall help narrow it down."
+  - q: "Why do under-sink valves leak in older Indiana homes?"
+    a: "Hard water builds scale on the valve stem and washer, and when the valve finally gets turned, the packing loosens. Replacing old multi-turn valves with quarter-turn valves usually fixes it."
 ---
 
 A wet sink cabinet is one of the most common leaks in any home, and usually one of the easiest to fix, once you know which of the half-dozen connections under there is the culprit. Here's how to track it down in a kitchen or bathroom, and what to do when the leak is actually in the wall behind the cabinet.
@@ -77,6 +79,12 @@ A long-running leak under a sink can soak the subfloor. [Hidden water leak detec
 - Replace supply lines with **braided** lines and check them once a year.
 - Put a **leak sensor** in the sink cabinet.
 - Don't store heavy items that can knock the P-trap loose.
+
+## Sink leaks and hard water in Johnson County
+
+Central Indiana's hard water leaves mineral crust on faucet cartridges, supply valves and the threads of compression fittings. Under a sink that often shows up as a slow drip from an angle stop that has not been turned in years, or white crust around a supply nut. Turning an old valve can start a drip, so have a towel and a bucket ready before you test it.
+
+In older Franklin and Greenwood kitchens, drain lines may still be metal and corrode from the inside, so a leak can come from the trap or the wall connection rather than the supply. In newer homes, check the dishwasher and disposal connections first.
 
 ## Get help
 

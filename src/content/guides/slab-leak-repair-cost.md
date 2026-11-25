@@ -20,6 +20,8 @@ faqs:
     a: "Many policies pay for water damage and the cost of accessing the leak (breaking and restoring the floor), but not to fix the pipe itself. Check your policy."
   - q: "Is leak detection included in the repair cost?"
     a: "Usually not. Detection is typically a separate charge. Accurate detection lowers the repair cost because the plumber opens the floor once, in the right place."
+  - q: "Is rerouting or spot repair better for a slab leak in Indiana?"
+    a: "Spot repair suits a single leak on otherwise sound pipe. If the lines are old copper with a history of pinholes, or the leak sits under expensive flooring, rerouting through walls or the attic is often the better long-term choice."
 ---
 
 A slab leak is a broken water line under your home's concrete foundation, and the repair bill depends less on the leak itself than on **getting to it**. Here's what slab leak repair typically costs, what pushes the price up or down, and how to keep it as low as possible.
@@ -77,6 +79,12 @@ Many don't pay to **fix the pipe itself**, and they may exclude long-term seepag
 3. **Get the leak pinpointed** before any concrete is cut.
 4. **Get two or three written quotes** that list access, repair, restoration and warranty.
 5. **Ask about rerouting** if the line is old, the flooring is expensive, or it's not the first leak.
+
+## Repair costs on Johnson County slab homes
+
+Two local factors move the price most. First, the floor: tile and hardwood laid in many newer Greenwood and Center Grove homes cost more to open and restore than carpet. Second, the route: a single-story ranch with an attic makes rerouting a line over the ceiling simpler than a two-story home where the line has to go through finished walls.
+
+Clay soil under local slabs also matters. If a leak has run for months, the soil can soften or wash out, and a contractor may need to compact or fill it before closing the floor. Ask whether that is included in the quote.
 
 ## Get it located
 

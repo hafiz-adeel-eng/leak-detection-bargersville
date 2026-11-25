@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hero", alt: "Leak detection technician checking the water line near a home's main shutoff and meter" }
 related: ["water-leak-emergency-what-to-do", "burst-pipe-what-to-do", "how-to-find-a-water-leak-in-your-house"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 33
 faqs:
   - q: "Where is the main water shutoff valve in my house?"
@@ -20,6 +20,8 @@ faqs:
     a: "Don't force it with a long wrench; old gate valves can break. Try gentle pressure back and forth. In an emergency, shut off at the meter pit or curb stop, or call your water utility's emergency line."
   - q: "Can I turn off the water at the meter?"
     a: "Many meter pits have a valve on the utility side of the meter. It belongs to the utility, so call them first unless water is actively flooding the house. Some utilities ask customers not to operate it."
+  - q: "Can I turn off the water at the meter in Johnson County?"
+    a: "The valve at the meter is often utility property and needs a meter key. In an emergency, call your water utility's emergency line; for planned work, use the main valve inside the house."
 ---
 
 When a pipe bursts or a hidden leak is flooding a room, the single most useful thing you can do is shut off the water, fast. Most homeowners don't know where their main shutoff is until they need it. Here's how to find it, how to close it, and what to do if it won't budge.
@@ -90,6 +92,12 @@ You don't always need to shut off the whole house. Most fixtures have their own 
 - **Find the source.** A visible [burst pipe](/guides/burst-pipe-what-to-do/) needs a plumber; a hidden leak needs to be found first.
 
 The full checklist is in [water leak emergency: what to do in the first hour](/guides/water-leak-emergency-what-to-do/).
+
+## Finding the shutoff in a Johnson County home
+
+The main valve location follows the way the house was built. In slab homes common around Bargersville and Whiteland, it is usually where the line comes up through the floor, often in a utility closet, a garage wall or near the water heater. Homes with a basement in Franklin and Greenwood usually have it on the front foundation wall, close to where the line enters from the street. Crawl-space homes may hide it just inside the crawl-space access.
+
+If the inside valve will not close, the curb stop in or near the meter pit can shut the water off, but it belongs to the utility in many towns and needs a special key. Call Indiana American Water, the Bargersville utility or your town utility if you need it turned off in an emergency.
 
 ## When you can't see where it's leaking
 

@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "slab-leak-detection", alt: "Technician pinpointing a pinhole leak in a copper line under a slab with an acoustic ground microphone" }
 related: ["how-to-find-a-slab-leak", "whole-house-repipe-cost", "slab-leak-repair-cost"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 36
 faqs:
   - q: "What causes pinhole leaks in copper pipes?"
@@ -20,6 +20,8 @@ faqs:
     a: "Often. Pinholes come from conditions that affect the whole system, so one pinhole is a warning sign. Several pinholes in a few years usually means the pipe is thinning throughout."
   - q: "Can a pinhole leak be under the slab?"
     a: "Yes. Pinholes in copper lines under a concrete slab are one of the most common causes of slab leaks. They're found with pressure testing, acoustic listening and thermal imaging."
+  - q: "Why does my house in Johnson County keep getting pinhole leaks?"
+    a: "Repeated pinholes usually come from a mix of water chemistry, high flow velocity on hot-water lines, and pipe age. One pinhole is usually a spot repair; repeated ones in the same area are a sign to evaluate the whole system."
 ---
 
 A pinhole leak is exactly what it sounds like: a hole in a copper pipe so small you can barely see it. It can spray a fine mist inside a wall, drip onto a ceiling, or soak the soil under a slab for months. And where there's one, there are often more. Here's what causes them, how to find them, and when to stop repairing and start replacing.
@@ -83,6 +85,12 @@ Pinholes come from conditions that affect the **whole system**, not one spot. A 
 - **Ask your utility** about water chemistry changes if pinholes start appearing across your neighborhood.
 - **Have a plumber check** that hot water recirculation pumps aren't running too fast.
 - **Get pinholes found early,** before water damage spreads.
+
+## Copper pinholes in Johnson County homes
+
+Copper is the common supply pipe in Johnson County homes built from the 1960s through the early 2000s, from Franklin ranches to Greenwood and Center Grove subdivisions. Pinholes tend to show up first on hot-water lines and near fittings, where fast flow and heat wear the pipe from the inside.
+
+Water chemistry varies between Indiana American Water, the Bargersville utility, Whiteland Water Works and Citizens Water, and it can change when a utility adjusts treatment. If you get a second pinhole within a year or two, ask your utility for its latest water quality report and have a plumber look at pipe condition before deciding between spot repairs and a repipe.
 
 ## Get it found
 

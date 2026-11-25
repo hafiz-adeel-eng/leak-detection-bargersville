@@ -9,7 +9,7 @@ service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "slab-leak-detection", alt: "Technician listening for a slab leak with an acoustic ground microphone and a frequency display on a tile floor" }
 related: ["how-to-choose-a-leak-detection-company", "is-leak-detection-worth-it", "slab-leak-repair-options"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 12
 faqs:
   - q: "Can a plumber find a hidden water leak?"
@@ -20,6 +20,8 @@ faqs:
     a: "Usually, yes. A marked spot with photos and readings is exactly what a plumber needs to start the repair in the right place."
   - q: "Is it more expensive to use both?"
     a: "Not necessarily. Accurate detection often reduces the total cost, because the repair needs less demolition and less flooring, concrete or drywall to put back."
+  - q: "Should I call a plumber or a leak detection company first in Indiana?"
+    a: "If you can see where the water is coming from, call a plumber. If the meter is moving and you cannot find the leak, or you suspect a slab or buried line, have it located first, then hand the marked spot to a licensed plumber."
 ---
 
 When water is going somewhere it shouldn't, most people call a plumber first. Sometimes that's exactly right. But for leaks you can't see, finding the leak and fixing it are two different jobs, and it helps to know who does which.
@@ -72,6 +74,12 @@ With detection first:
 ## Can one company do both?
 
 Some can. Either way, ask the same question: *how will you pinpoint the leak before you open anything?* If the answer is a clear testing process, you're in good hands. Our guide on [how to choose a leak detection company](/guides/how-to-choose-a-leak-detection-company/) lists the other questions worth asking.
+
+## How the work is usually split in Johnson County
+
+Many plumbers around Greenwood, Franklin and Bargersville handle visible leaks and repairs every day but do not carry correlators, tracer gas or thermal cameras for hidden leaks. When a leak is under a slab or somewhere along a long buried line, it is common for the plumber to ask for a locate first, then make the repair at the marked spot.
+
+Either way, the repair itself is plumbing work in Indiana and should be done by a licensed plumber. If you already have one you trust, a locate report with photos lets them quote the job accurately before they open anything.
 
 ## Hidden leak in Bargersville?
 

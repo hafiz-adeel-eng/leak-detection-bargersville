@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a laundry room floor and wall for hidden water damage from a leaking washer" }
 related: ["refrigerator-water-line-leak", "water-leaking-from-ceiling", "how-to-find-a-leak-in-a-wall"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 41
 faqs:
   - q: "Why is my washing machine leaking from the bottom?"
@@ -20,6 +20,8 @@ faqs:
     a: "Yes. Water can soak the subfloor under the washer, spread under flooring, run into the wall, and show up on the ceiling below in a second-floor laundry."
   - q: "What if the washer is dry but the laundry floor is wet?"
     a: "Check the washer box in the wall, the valves, the standpipe and nearby plumbing like the water heater or a utility sink. A leak inside the wall can run down to the floor."
+  - q: "Should an upstairs washer have a drain pan?"
+    a: "It is a good idea. A pan with a drain line or a leak sensor catches small leaks from hoses and valves before they soak into the ceiling below, which is common in two-story Johnson County homes."
 ---
 
 Washing machines move a lot of water through a few rubber hoses and a drain, often in a closet or upstairs laundry room where a leak can do real damage. Research by the **Insurance Institute for Business & Home Safety** found washing machine failures are among the top sources of home water damage claims, and that **supply hoses** were involved in more than half of them. Here's how to find where your washer is leaking and fix it.
@@ -85,6 +87,12 @@ Signs of hidden damage:
 - Put a **leak sensor** on the floor beside the washer. See [smart water leak detectors](/guides/smart-water-leak-detectors/).
 - Use a **washer pan** with a drain in upstairs laundries.
 - Know where the washer's **shutoff valves** are.
+
+## Laundry leaks in Johnson County houses
+
+Where the laundry sits changes the damage. Many newer two-story homes in Center Grove and Greenwood put the washer upstairs, so a leaking hose or drain shows up in the ceiling below. Basement laundries in older Franklin homes leak onto concrete and are easy to miss until a rug or box gets wet.
+
+Hard water leaves scale in the washer's inlet valves and screens, and older rubber fill hoses crack with age. Replacing rubber hoses with braided ones and installing a drain pan with a sensor under an upstairs washer are two of the cheapest leak protections for a local home.
 
 ## Get it found
 

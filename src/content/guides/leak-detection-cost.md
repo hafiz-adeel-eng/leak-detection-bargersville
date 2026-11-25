@@ -21,6 +21,8 @@ faqs:
     a: "It depends on your policy. Many policies cover sudden water damage and the cost of getting access to the leak, but not the worn-out pipe itself. Call your insurer before the repair and keep the detection report and photos."
   - q: "How can I get an exact price for my home?"
     a: "Call with a short description of what you're noticing: a warm floor, a running meter, a wet spot in the yard, or a pool that keeps dropping. That's enough for an accurate quote for your situation."
+  - q: "Does leak detection cost more in rural Johnson County?"
+    a: "Not because of distance alone. Rural homes often have longer buried lines, sometimes plastic, which can take longer to trace and may need tracer gas, and that is what can raise the price."
 ---
 
 The honest answer to "how much does leak detection cost?" is: it depends on the leak. A running toilet takes minutes to diagnose. A leak under a concrete slab in a large home takes more time and more equipment. This guide explains what drives the price, so you know what you're paying for and how to compare quotes.
@@ -75,6 +77,12 @@ A spot repair depends on accurate detection. If the leak isn't pinpointed, the o
 ## Will insurance help?
 
 Many homeowners policies cover sudden water damage and the cost of accessing the leak, often called "tear out," but not the worn pipe itself. Policies vary, so check yours. A leak detection report with photos and readings makes the claim easier.
+
+## What affects the price for Johnson County homes
+
+The biggest local factors are the kind of house and the length of the line. A slab home in a Bargersville or Whiteland subdivision needs the under-floor lines isolated and tested; a farmhouse outside Trafalgar may have hundreds of feet of plastic line to trace with tracer gas; an older Franklin home may need several fixtures checked in a crawl space. Each takes a different amount of time and equipment.
+
+Distance from our base in Bargersville matters less than the job itself. A call to Greenwood, Center Grove, Franklin or Southport is priced the same way: by what has to be tested and how hard the pipe is to reach.
 
 ## How to keep the total cost down
 

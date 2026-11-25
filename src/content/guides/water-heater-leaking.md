@@ -9,7 +9,7 @@ service: { name: "Slab Leak Detection", url: "/services/slab-leak-detection/" }
 image: { name: "hidden-water-leak-detection", alt: "Technician checking a wet floor near a utility closet with an acoustic sensor to find a hot water leak" }
 related: ["how-to-shut-off-water-to-house", "water-softener-leaking", "how-to-find-a-slab-leak", "water-leak-emergency-what-to-do", "water-running-sound-in-pipes"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 21
 faqs:
   - q: "What should I do first if my water heater is leaking?"
@@ -22,6 +22,8 @@ faqs:
     a: "It may be heating water that's escaping somewhere else. A hot water line leaking under the slab or inside a wall keeps the heater running. Close the cold inlet on the heater: if the water meter stops moving, the leak is on the hot side."
   - q: "How long do tank water heaters last?"
     a: "The U.S. Department of Energy puts the typical life of a storage water heater at about 10 to 15 years. Hard water and skipped maintenance shorten it."
+  - q: "How long do water heaters last in central Indiana?"
+    a: "Tank water heaters typically last about 10 to 15 years, and hard water can shorten that. Annual flushing and checking the anode rod help it last longer."
 ---
 
 Water on the floor next to the water heater doesn't always mean the heater is finished. It could be a loose fitting, the relief valve doing its job, or condensation. It could also be a sign of a hot water leak somewhere else in the house. Here's how to make it safe, find the source and decide what happens next.
@@ -90,6 +92,12 @@ A hot water leak under a slab or inside a wall is ideal for non-invasive detecti
 - **Listen acoustically** to pinpoint the spot, then mark it for the plumber
 
 Your plumber then repairs it through one small opening, or reroutes the line. See [slab leak repair options](/guides/slab-leak-repair-options/).
+
+## Water heaters in Johnson County homes
+
+Central Indiana groundwater is hard, so sediment builds up in tank heaters faster here, which leads to rumbling noises, a weak drain valve and earlier tank failure. Flushing the tank once a year helps. Where the heater sits matters too: in slab homes around Bargersville and Whiteland it is usually in a garage or closet, where a leak spreads to the floor; in basement homes in Franklin and Greenwood it is near a floor drain.
+
+Many local homes with tank heaters have a temperature and pressure relief valve that drips when pressure rises. If your home has a pressure reducing valve or a check valve, an expansion tank is often needed; a dripping relief valve is a common sign it is missing or failed.
 
 ## Get help
 

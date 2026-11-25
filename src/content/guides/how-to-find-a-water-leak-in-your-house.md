@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician listening for a hidden water leak with an acoustic sensor on a tile floor inside a home" }
 related: ["leak-under-sink", "how-to-shut-off-water-to-house", "water-in-basement-or-crawl-space", "smart-water-leak-detectors", "how-to-choose-a-leak-detection-company", "why-is-my-water-bill-so-high", "how-to-find-a-leak-in-a-wall", "how-to-find-a-slab-leak"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 1
 faqs:
   - q: "How do I know if I have a water leak in my house?"
@@ -20,6 +20,8 @@ faqs:
     a: "Narrow it down first: meter test, fixture checks and closing individual shutoff valves. Professionals then use moisture meters, thermal imaging and acoustic listening to mark the spot, so only a small opening is needed for the repair."
   - q: "What if I can't find the water leak?"
     a: "If the meter keeps moving after you've checked every fixture, the leak is usually hidden in a wall, under the floor slab or in the buried line outside. That's the point where professional leak detection saves time and demolition."
+  - q: "Where is my water meter in Johnson County?"
+    a: "For most homes it is in a pit near the street or sidewalk under a round lid. Some older homes have an indoor meter in the basement. If you cannot find it, your water utility can tell you where it is."
 ---
 
 A hidden water leak rarely announces itself. It shows up as a water bill that creeps up, a floor that feels warm, or a faint hiss at night. The good news: you can confirm a leak and narrow down where it is in under an hour, with no tools beyond a flashlight and some food coloring.
@@ -95,6 +97,12 @@ Call for professional leak detection when:
 - water is reaching flooring, cabinets or the foundation.
 
 A leak detection specialist uses pressure testing, [acoustic listening and thermal imaging](/guides/leak-detection-methods/) to mark the leak's location, so your plumber opens one small area instead of guessing. In Bargersville and the rest of Johnson County, our [hidden water leak detection](/services/hidden-water-leak-detection/) service is built for exactly that.
+
+## Reading your meter in Johnson County
+
+Where the meter sits depends on your utility. Indiana American Water, the Bargersville utility and Whiteland Water Works mostly use a meter pit near the street or sidewalk with a round metal lid; in some older Franklin homes the meter is in the basement. Many newer meters have a small triangle or star that spins with any flow, which is the quickest leak check you can do.
+
+If you are on a private well, as many homes around Trafalgar, Morgantown and Nineveh are, there is no meter. Use the pressure tank gauge instead: with every tap off, the needle should hold steady and the pump should stay quiet.
 
 ## Quick checklist
 

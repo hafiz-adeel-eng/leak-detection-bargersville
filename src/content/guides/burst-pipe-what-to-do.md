@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician locating a burst pipe hidden under a tile floor with an acoustic sensor" }
 related: ["how-to-shut-off-water-to-house", "burst-pipe-insurance-claim-indiana", "frozen-pipe-leaks"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 35
 faqs:
   - q: "What should I do first when a pipe bursts?"
@@ -20,6 +20,8 @@ faqs:
     a: "Signs are the sound of rushing or hissing water, a spinning water meter, a sudden drop in pressure, and wet drywall, stains or water coming from under baseboards or through the ceiling."
   - q: "How much does it cost to fix a burst pipe?"
     a: "A simple, easy-to-reach repair can be a few hundred dollars. Pipes inside walls, ceilings or under slabs cost more because of access and restoration. Water damage cleanup is usually the larger cost, which is why speed matters."
+  - q: "Why do pipes burst in Johnson County homes built after 1990?"
+    a: "Newer homes often run supply pipes through exterior walls, garages and attics to reach upstairs bathrooms and laundry rooms. When insulation is thin or a garage door stays open in single-digit weather, those runs freeze first."
 ---
 
 A burst pipe can release hundreds of gallons of water an hour. The damage depends almost entirely on how fast the water is shut off and how fast the break is found. Here's what to do in the first minutes, what usually causes a pipe to burst, and how it gets fixed.
@@ -91,6 +93,12 @@ The U.S. EPA advises drying water-damaged materials within **24–48 hours** to 
 - Check your water pressure; add or repair a pressure-reducing valve if it's over 80 psi.
 - Replace old rubber appliance hoses with braided lines.
 - Consider a leak sensor or automatic shutoff valve. See [smart water leak detectors](/guides/smart-water-leak-detectors/).
+
+## Where pipes burst most often in Johnson County houses
+
+In this part of Indiana the breaks we hear about cluster in the same places: supply lines in outside walls of 1990s and 2000s subdivisions in Greenwood and Center Grove, pipes in vented crawl spaces under older Franklin homes, and lines that run through unheated garages to a laundry or a second-floor bathroom. A frost-free spigot with a hose left on through the winter is another regular one.
+
+Buried lines are a different story. The service line from the meter is normally laid below the 30 to 36 inch frost depth used in central Indiana, so it rarely freezes; when one breaks it is usually from clay soil settling around it or from a shallow section near the foundation.
 
 ## Get the break found
 

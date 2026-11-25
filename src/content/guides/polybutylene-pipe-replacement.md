@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician checking for a hidden leak in a home plumbed with older plastic water pipe" }
 related: ["whole-house-repipe-cost", "galvanized-pipe-replacement", "burst-pipe-what-to-do"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 40
 faqs:
   - q: "How do I know if I have polybutylene pipes?"
@@ -22,6 +22,8 @@ faqs:
     a: "It can. Some insurers decline to write policies on homes with polybutylene, charge more, or exclude related water damage. Ask your insurer directly."
   - q: "How much does it cost to replace polybutylene pipes?"
     a: "It's done as a repipe. National cost guides put a whole-house repipe at about $4,500 to $15,000, with PEX usually at the lower end."
+  - q: "Is polybutylene pipe common in Greenwood and Center Grove?"
+    a: "It turns up in homes built roughly between 1978 and 1995, and many subdivisions in Greenwood, Center Grove and Whiteland date from that period. Look for gray plastic pipe stamped PB2110 near the water heater or main valve."
 ---
 
 Polybutylene was marketed as the plumbing pipe of the future and installed in millions of homes from the late 1970s until 1995. Then it started failing. If your home was built or replumbed in that era, including many subdivisions around Greenwood, Center Grove and Whiteland, it's worth checking what your water lines are made of. Here's how to identify polybutylene, why it's a risk, and what replacing it involves.
@@ -80,6 +82,12 @@ Polybutylene replacement is done as a **repipe**, usually with **PEX**:
 4. **Get quotes** for a full repipe.
 
 For a pipe that has already burst, see [burst pipe: what to do](/guides/burst-pipe-what-to-do/).
+
+## Polybutylene in Johnson County subdivisions
+
+Polybutylene was used in many homes built from about 1978 to 1995. In Johnson County that covers a good share of the subdivisions in Greenwood, Center Grove and Whiteland from that era. It is usually gray, sometimes blue for the service line, and stamped PB2110. The fittings, plastic or metal crimp rings, are where it most often fails.
+
+If you are selling, Indiana's residential real estate disclosure form asks about known plumbing problems, and buyers' inspectors often flag polybutylene. Replacing it before listing removes that negotiating point.
 
 ## Get it checked
 

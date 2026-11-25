@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "underground-water-leak-detection", alt: "Corroded older water line exposed during a leak repair, a sign galvanized pipe needs replacing" }
 related: ["whole-house-repipe-cost", "low-water-pressure-leak", "water-line-replacement-cost-indiana"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 39
 faqs:
   - q: "How do I know if I have galvanized pipes?"
@@ -20,6 +20,8 @@ faqs:
     a: "They can be. Galvanized pipe that was downstream of a lead service line can collect lead in its corrosion scale and release it later. If you have galvanized pipe in an older home, ask your utility about your service line and consider testing your water."
   - q: "How much does it cost to replace galvanized pipes?"
     a: "It's usually done as a repipe. National cost guides put a whole-house repipe at about $4,500 to $15,000, with PEX at the lower end. Replacing just the main service line is a separate cost."
+  - q: "Should I replace galvanized pipes in an older Franklin or Greenwood home?"
+    a: "If the pipes are original and you see low pressure, rusty water or leaks at joints, replacement usually costs less over time than repeated repairs. Have the service line checked at the same time, since older homes may have lead or galvanized pipe there too."
 ---
 
 Many older homes in central Indiana, including historic houses around downtown Franklin and older neighborhoods in Greenwood, were plumbed with **galvanized steel** pipe. It was the standard for decades. The problem is that it corrodes from the inside, and most of it is now well past its expected life. Here's how to identify it, what failing galvanized looks like, and what replacing it involves.
@@ -67,6 +69,12 @@ Galvanized replacement is usually quoted as a repipe. National cost guides put a
 ## Leaks in older homes
 
 When galvanized pipe leaks inside a plaster wall or under an old floor, opening the wrong spot is expensive and hard to match. [Hidden water leak detection](/services/hidden-water-leak-detection/) with thermal imaging, moisture mapping and acoustic listening pinpoints the leak so the repair, or the repipe plan, starts in the right place.
+
+## Galvanized pipe in Johnson County homes
+
+Galvanized steel water lines show up most often in houses built before about 1960, which in Johnson County means the older blocks of downtown Franklin, Old Town Greenwood and farmhouses around Trafalgar and Nineveh. Many of those homes have had partial repairs, so it is common to find copper or PEX in the kitchen and galvanized pipe still running to an upstairs bath.
+
+Because central Indiana water is hard, scale builds on the rough inside of old galvanized pipe and pressure drops long before the pipe leaks. If the service line from the meter is also old, ask your utility what it is made of; Indiana American Water publishes information about its lead service line program for its customers.
 
 ## Get it checked
 

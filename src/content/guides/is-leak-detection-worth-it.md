@@ -9,7 +9,7 @@ service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "underground-water-leak-detection", alt: "Water spraying from a cracked underground pipe while a technician reads an acoustic leak detector" }
 related: ["leak-detection-cost", "leak-detection-vs-plumber", "how-to-choose-a-leak-detection-company"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 13
 faqs:
   - q: "What does non-invasive leak detection mean?"
@@ -20,6 +20,8 @@ faqs:
     a: "It often does. Photos, readings and a marked location give the adjuster clear documentation of where the water came from."
   - q: "Can a slow leak really cause much damage?"
     a: "Yes. A slow leak can run for weeks inside a wall or under a slab, soaking materials and wasting water. The U.S. EPA notes that about 1 in 10 homes has leaks wasting 90 gallons or more per day."
+  - q: "Is leak detection worth it if my plumber can just dig?"
+    a: "On a short, shallow line it may not be. On a slab or a long buried line in clay soil, digging without a located spot often means several holes and more restoration, so detection usually costs less overall."
 ---
 
 "Do I really need to pay someone just to *find* a leak?" It's a fair question. The answer depends on one thing: whether you can see the leak. If you can, you probably don't. If you can't, detection is usually what keeps the whole job small.
@@ -58,6 +60,12 @@ A slow leak rarely stays small. Water soaks subfloors, drywall and insulation, a
 ## Questions to ask before you hire
 
 Ask how the company will confirm the leak, isolate the line, pinpoint the spot and document it. Our guide on [how to choose a leak detection company](/guides/how-to-choose-a-leak-detection-company/) lists nine questions, and [what affects leak detection cost](/leak-detection-cost/) explains how jobs are priced.
+
+## When it pays off in Johnson County
+
+Locating a leak first saves the most money on slab homes and long service lines, which are both common here: slab-built subdivisions around Bargersville, Whiteland and Greenwood, and long rural lines around Trafalgar and Morgantown. Breaking a slab or digging a trench across a clay yard to hunt for a leak costs far more than one targeted opening.
+
+It is also worth it when you need a bill adjustment. Indiana American Water and town utilities usually want proof that a leak existed and was repaired, and a written locate report with the date and location supplies that.
 
 ## Talk it through
 

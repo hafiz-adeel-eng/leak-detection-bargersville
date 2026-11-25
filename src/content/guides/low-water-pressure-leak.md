@@ -9,7 +9,7 @@ service: { name: "Underground Water Leak Detection", url: "/services/underground
 image: { name: "underground-water-leak-detection", alt: "Water escaping from a cracked buried service line, a common cause of low water pressure throughout a house" }
 related: ["galvanized-pipe-replacement", "well-pump-keeps-running", "how-to-find-an-underground-water-leak", "why-is-my-water-bill-so-high", "water-running-sound-in-pipes"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 20
 faqs:
   - q: "What is normal water pressure for a house?"
@@ -20,6 +20,8 @@ faqs:
     a: "Common reasons are utility work or a main break in your area, a pressure-reducing valve that failed, a shutoff valve that was partly closed during recent plumbing work, or a new leak. Check with neighbors and your utility first, then test your own system."
   - q: "How do I test my water pressure?"
     a: "Screw an inexpensive pressure gauge onto an outside hose faucet or the washing machine connection, make sure no water is running in the house, and open the faucet fully. The reading is your static water pressure."
+  - q: "Who do I call about low water pressure in Johnson County?"
+    a: "Ask a neighbor first. If their pressure is low too, call your water utility. If only your house is affected, check the main valve and pressure reducing valve, then test for a leak on your side of the meter."
 ---
 
 When every faucet and shower in the house feels weak at once, the problem is almost always on the main line, not the fixtures. That narrows it to a handful of causes, and one of them is a leak. A pressure gauge and your water meter will tell you which one you have, usually in under an hour.
@@ -85,6 +87,12 @@ If the meter test points outside, don't start digging along the whole line. Prof
 - **Tracer gas** finds leaks in plastic pipe that don't carry sound well.
 
 The spot is marked on the lawn or driveway so the plumber digs one small hole. If the leak is inside the house instead, see [hear water running when nothing is on](/guides/water-running-sound-in-pipes/) and [how to find a slab leak](/guides/how-to-find-a-slab-leak/).
+
+## Pressure problems by utility in Johnson County
+
+Pressure differs across the county because utilities and elevations differ. Homes on Indiana American Water in Greenwood and Franklin, on the Bargersville utility, or on Citizens Water in Southport each have their own normal range, and some newer houses have a pressure reducing valve near the main shutoff. A sudden drop for one house while the neighbors are fine points to your own line or valve, not the utility.
+
+On private wells around Trafalgar and Morgantown, low pressure with a pump that runs longer than usual is a classic sign of a leak between the well and the house, especially on long plastic lines.
 
 ## Get it checked
 

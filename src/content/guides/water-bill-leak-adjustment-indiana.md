@@ -9,7 +9,7 @@ service: { name: "Hidden Water Leak Detection", url: "/services/hidden-water-lea
 image: { name: "hidden-water-leak-detection", alt: "Technician documenting a hidden leak with readings and photos for a water bill leak adjustment request" }
 related: ["why-is-my-water-bill-so-high", "how-to-find-a-water-leak-in-your-house", "water-line-replacement-cost-indiana"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 26
 faqs:
   - q: "Will my water company lower my bill if I had a leak?"
@@ -22,6 +22,8 @@ faqs:
     a: "Usually yes. Many utilities require the request within a set number of days of the bill or the repair. Call as soon as you see the high bill, fix the leak quickly, and keep every receipt."
   - q: "Do leak adjustments apply to sewer charges?"
     a: "Sometimes. If sewer charges are based on water use and the leaked water didn't go down the drain, for example a leak in the yard, some utilities adjust the sewer part of the bill. Ask specifically about sewer when you call."
+  - q: "Will Indiana American Water adjust my bill after a leak?"
+    a: "It may, depending on its current policy and the kind of leak. Call customer service, explain the leak was repaired, and ask what proof it needs. Keep your repair invoice and meter readings."
 ---
 
 A leak can double or triple a water bill before anyone notices. The good news is that many utilities offer a **leak adjustment**, a partial credit for water lost through a leak on your side of the meter, once the leak is fixed. The catch is that every utility sets its own rules. Here's how leak adjustments usually work in Indiana, what to have ready, and how to ask the utilities that serve Johnson County.
@@ -91,6 +93,12 @@ Not sure which one you have? Check your bill, or see our [town pages](/service-a
 - Fix running toilets right away. They're one of the most common causes of a high bill.
 - Consider a [smart water leak detector or flow monitor](/guides/smart-water-leak-detectors/) that alerts you to continuous flow.
 - Get hidden leaks found early. A leak that runs around the clock can waste thousands of gallons a month.
+
+## Getting a Johnson County utility to approve it
+
+Utilities here look for the same three things: proof that the leak was repaired, the repair date, and a meter reading or bill that shows usage back to normal. A plumber's invoice or a leak locate report with the address and date covers the first two. If your utility asks for a written request, send it as soon as the repair is done, since many limit how far back an adjustment can reach.
+
+If you are on Indiana American Water, which is regulated by the Indiana Utility Regulatory Commission, and you cannot resolve a billing dispute with the company, the IURC's consumer affairs division takes complaints. Town utilities such as Bargersville or Whiteland handle disputes through their own offices and town councils.
 
 ## Get the leak found and documented
 

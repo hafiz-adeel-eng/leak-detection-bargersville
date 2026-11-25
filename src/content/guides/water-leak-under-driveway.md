@@ -9,7 +9,7 @@ service: { name: "Underground Water Leak Detection", url: "/services/underground
 image: { name: "hero", alt: "Technician listening with a ground microphone along a buried water line near a driveway to locate a leak" }
 related: ["how-to-find-an-underground-water-leak", "water-line-replacement-cost-indiana", "how-to-find-a-sprinkler-leak"]
 published: 2026-09-27
-updated: 2026-09-27
+updated: 2026-11-25
 order: 25
 faqs:
   - q: "Why is water coming up through my driveway?"
@@ -20,6 +20,8 @@ faqs:
     a: "If the line is in good shape, a small cut and patch at the marked spot is often cheapest. If the line is old or has leaked before, rerouting a new line around the driveway avoids cutting concrete at all and replaces the weak section."
   - q: "Can a leak under the driveway damage the concrete?"
     a: "Yes. Water running under a slab can wash out the base and soften clay soil, which leads to cracking, settling and sunken sections. The sooner it's found, the less damage there is to the base."
+  - q: "Can a leak under my driveway damage the concrete in Indiana?"
+    a: "Yes. Running water can soften clay soil and wash out the base under the slab, which can lead to settling and cracks. Finding and fixing the leak early limits that damage."
 ---
 
 Driveways often sit right on top of the water service line, and sometimes an irrigation line too. When one of those pipes leaks, the water has nowhere to go but up through cracks and joints, or out at the edge of the concrete. A wet driveway in dry weather is worth checking before it undermines the slab. Here's how to confirm it's a leak and find it without cutting up the driveway to look.
@@ -74,6 +76,12 @@ Concrete is expensive to cut, remove and pour back. Guessing can mean several op
 | **Replace the whole service line** | Old galvanized or lead line, several problems. See [water line replacement cost](/guides/water-line-replacement-cost-indiana/) |
 
 After the repair, the base under the concrete should be checked. Water can wash out gravel and soften the clay soil common across central Indiana, and a void left under the slab can lead to cracking later.
+
+## Driveway leaks on Johnson County properties
+
+In many subdivisions the service line runs from a meter pit near the sidewalk across the front yard or under the driveway to the garage. Johnson County's clay soil does not drain quickly, so a leak under concrete often appears as water seeping from a control joint or the edge of the drive, or a damp strip that stays wet after the rest of the drive dries.
+
+Before any concrete is cut or dug, Indiana 811 must be called at least two full working days ahead. Pinpointing the leak first means one saw cut and a small patch rather than removing a whole slab.
 
 ## Don't wait
 

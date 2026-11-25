@@ -9,7 +9,7 @@ service: { name: "Professional Leak Detection", url: "/" }
 image: { name: "underground-water-leak-detection", alt: "Water spraying from a cracked underground pipe while a technician reads the frequency display of an acoustic leak detector" }
 related: ["leak-detection-cost", "how-to-find-a-slab-leak", "how-to-find-an-underground-water-leak"]
 published: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-25
 order: 3
 faqs:
   - q: "How do professionals detect hidden water leaks?"
@@ -20,6 +20,8 @@ faqs:
     a: "The detection itself is non-invasive: nothing is cut or broken to find the leak. An opening is only made afterwards, at the marked spot, for the repair."
   - q: "Can acoustic equipment find leaks in plastic pipe?"
     a: "Plastic pipe like PEX and PVC carries leak noise poorly, so leaks are quieter and harder to hear. That's where tracer gas and other methods are added."
+  - q: "Does acoustic leak detection work in clay soil?"
+    a: "Yes, on metal pipe it often works well, because wet clay carries sound better than loose sand. On plastic pipe the leak noise is faint, so tracer gas is usually added."
 ---
 
 When people hear "leak detection," they often picture someone chipping away at the floor until they find wet soil. Professional leak detection is the opposite: the point is to find the leak *before* anything is broken. Here's how it works, and which method fits which kind of leak.
@@ -89,6 +91,12 @@ GPR sends radar pulses into the ground and reads the reflections. It can help lo
 ## What happens after the leak is found
 
 The technician marks the spot, often with tape or paint on the floor or a flag in the yard, and documents it with photos and readings. The repair is a separate step, usually done by a plumber, who opens only the marked area. Detection and repair are different skills. Accurate detection is what keeps the repair small.
+
+## Which methods work best on Johnson County homes
+
+Local conditions decide the method. Johnson County's dense, wet clay carries leak noise reasonably well on metal pipe, so acoustic ground microphones work on many copper and galvanized service lines. Plastic lines, now common in newer subdivisions and on rural properties, carry sound poorly; on those, tracer gas pushed through the line and detected at the surface is more reliable.
+
+Inside slab homes, the usual sequence is a pressure test to confirm which line under the floor is leaking, thermal imaging on the hot side, then acoustic pinpointing through the concrete. On well systems around Trafalgar and Morgantown, the first test is often on the check valve and pressure tank, before any digging is considered.
 
 ## Why accurate leak detection matters
 
