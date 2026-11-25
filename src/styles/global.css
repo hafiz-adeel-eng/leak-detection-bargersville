@@ -749,3 +749,10 @@ p { margin: 0; }
 .faq-group { display: grid; gap: 14px; }
 .faq-group h2 { font-size: clamp(22px, 2.6vw, 28px); font-weight: 800; }
 .faq-more { color: var(--text-2); margin: 0; }
+.faq-index { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px 36px; }
+.faq-index h3 { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
+.faq-index h3 a { color: var(--text); }
+.faq-index ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.faq-index li { line-height: 1.5; padding: 2px 0; }
+.faq-index li a { color: var(--text-2); }
+.faq-index li a:hover { color: var(--aqua); }

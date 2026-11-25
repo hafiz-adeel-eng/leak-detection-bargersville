@@ -61,14 +61,13 @@ const faqs = [
 
   <section class="section">
     <div class="container">
-      <p class="note-link">Outside Indiana? See <a href="/leak-detection/">leak detection by city</a> for Florida, Texas, California, Louisiana and more.</p>
     </div>
   </section>
 
   <section class="section alt">
     <div class="container">
       <div class="section-head"><span class="eyebrow">Services</span><h2>Leak detection services in every town we serve</h2></div>
-      <div class="cards">{services.map((s) => <ServiceCard service={s} />)}</div>
+      <div class="cards">{services.map((s) => <ServiceCard service={s} compact />)}</div>
     </div>
   </section>
 

@@ -42,7 +42,8 @@ const L = kind === 'leak'
 const photo = image(s.slug);
 const related = s.related.map((slug) => pool.find((x) => x.slug === slug)).filter(Boolean) as Service[];
 const allGuides = await getCollection('guides');
-const guides = s.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+// Up to 8 guides: a long list of titles repeats the guides hub instead of adding to the page.
+const guides = (s.guides.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides).slice(0, 8);
 const lower = s.name.toLowerCase();
 const url = `${base}${s.slug}/`;
 const serviceSchema = {
@@ -126,7 +127,7 @@ const serviceSchema = {
         <p>We’re based in {site.city} and provide {lower} across {site.county} and nearby towns: {areas.map((a, i) => <>{i > 0 && (i === areas.length - 1 ? ' and ' : ', ')}<a href={locationUrl(a.slug)}>{a.name}</a></>)}.</p>
         {local.length > 0 && <p>Town pages for this service: {local.map((x, i) => <>{i > 0 && (i === local.length - 1 ? ' and ' : ', ')}<a href={townServiceUrl(x)}>{x.h1.replace(', IN', '')}</a></>)}.</p>}
 
-        <h2>Frequently asked questions</h2>
+        <h2 id="faq">Frequently asked questions</h2>
         <Faq items={s.faqs} />
       </article>
 
@@ -145,7 +146,7 @@ const serviceSchema = {
       <div class="container">
         <div class="section-head"><span class="eyebrow">Related services</span><h2>{L.related}</h2></div>
         <div class="cards">
-          {related.map((r) => <ServiceCard service={r} base={base} />)}
+          {related.map((r) => <ServiceCard service={r} base={base} compact />)}
         </div>
       </div>
     </section>
