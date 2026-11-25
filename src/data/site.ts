@@ -432,5 +432,8 @@ export const generalFaqs: Faq[] = [
   { q: 'Will homeowners insurance cover the leak?', a: 'Many policies cover the water damage and the cost of getting access to the leak, but not the broken pipe itself. Photos and readings from the detection help with the claim. Check your own policy for details.' },
   { q: 'What should I do while I wait for you to arrive?', a: 'Turn off the main water valve if water is actively spreading, move valuables away from wet areas, and take photos for your insurance claim.' },
   { q: 'Do you also repair the leak?', a: 'Yes. We find and mark the leak, then our plumbing partner makes the repair, so you deal with one team from finding the leak to fixing it. If you already have a plumber, we can hand them the marked spot and our report instead. Accurate detection keeps the repair small.' },
-  ...services[0].faqs.slice(0, 2),
+  { q: 'Do I need to be home during leak detection?', a: 'Someone needs to let us in and show us the water meter, the main shutoff and any wet spots. After that you don’t have to watch, but we go over what we found and where it is marked before we leave.' },
+  { q: 'Will my water be shut off while you look?', a: 'For parts of the visit, yes. Isolating lines and pressure testing means closing valves for a few minutes at a time. We tell you before each shutoff, so plan to hold off on showers and laundry during the appointment.' },
+  { q: 'Can you find a leak if the meter is not moving?', a: 'Sometimes. A very slow leak, a leak that only runs when a fixture is in use, or a drain leak will not move the meter. Then we work from the damage instead: moisture readings, a thermal camera and testing the fixture lines one at a time.' },
+  { q: 'Is a leak detection visit worth it for a small leak?', a: 'Usually, if the leak is hidden. Opening walls or floors to search costs more than one targeted opening, and a small leak under a slab or in a wall keeps soaking materials until it is found.' },
 ];

@@ -19,7 +19,13 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/thank-you/') && !page.includes('/404'),
+      // Pages outside Bargersville and nearby Johnson County towns are noindex, so they stay out of the sitemap too.
+      filter: (page) =>
+        !page.includes('/thank-you/') &&
+        !page.includes('/404') &&
+        !page.includes('/leak-detection/') &&
+        !page.includes('/services/slab-leak-detection-and-repair-gainesville/') &&
+        !page.includes('/services/gas-leak-detection-brighton/'),
       serialize(item) {
         if (lastmod[item.url]) item.lastmod = lastmod[item.url];
         return item;

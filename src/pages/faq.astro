@@ -4,23 +4,18 @@ import Faq from '../components/Faq.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { site, services, generalFaqs } from '../data/site';
 
-const seen = new Set<string>();
-const unique = (items: typeof generalFaqs) => items.filter((f) => {
-  if (seen.has(f.q)) return false;
-  seen.add(f.q);
-  return true;
-});
-// One H2 per topic, so the page has a real outline instead of one long list.
-const groups = [
-  { id: 'general', h2: 'General leak detection questions', items: unique(generalFaqs) },
-  ...services.map((s) => ({ id: s.slug, h2: `${s.name}: questions`, url: `/services/${s.slug}/`, name: s.name, items: unique(s.faqs) })),
-].filter((g) => g.items.length > 0);
-const all = groups.flatMap((g) => g.items);
+// Full answers here only for questions that are not answered on another page.
+// The first 3 general questions are answered on the homepage, and each service's questions on its own page,
+// so those are listed as links instead of repeating the same answers.
+const own = generalFaqs.slice(3);
+const groups = services
+  .filter((s) => s.faqs.length > 0)
+  .map((s) => ({ id: s.slug, name: s.name, url: `/services/${s.slug}/#faq`, qs: s.faqs.map((f) => f.q) }));
 ---
 <Base
   title="Leak Detection FAQ: Signs, Process & Insurance"
-  description="Answers to common leak detection questions from Bargersville homeowners: signs of a slab leak, how detection works, insurance, pool leaks and more."
-  faqs={all}
+  description="Answers to common leak detection questions from Johnson County homeowners: what a visit involves, shutoffs, slow leaks, insurance and repairs."
+  faqs={own}
   breadcrumbs={[{ name: 'FAQ', url: '/faq/' }]}
 >
   <section class="page-hero dark">
@@ -32,13 +27,22 @@ const all = groups.flatMap((g) => g.items);
   </section>
   <section class="section">
     <div class="container faq-groups">
-      {groups.map((g) => (
-        <div class="faq-group" id={g.id}>
-          <h2>{g.h2}</h2>
-          {'url' in g && g.url && <p class="faq-more">More on <a href={g.url}>{g.name.toLowerCase()}</a>.</p>}
-          <Faq items={g.items} openFirst={false} />
+      <div class="faq-group" id="general">
+        <h2>What to expect from a leak detection visit</h2>
+        <Faq items={own} openFirst={false} />
+      </div>
+      <div class="faq-group" id="by-service">
+        <h2>Questions about each service</h2>
+        <p class="faq-more">Each service page answers these in full. Pick a question to go straight to the answer.</p>
+        <div class="faq-index">
+          {groups.map((g) => (
+            <div>
+              <h3 id={g.id}><a href={`/services/${g.id}/`}>{g.name}</a></h3>
+              <ul>{g.qs.map((q) => <li><a href={g.url}>{q}</a></li>)}</ul>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   </section>
   <CtaBand />

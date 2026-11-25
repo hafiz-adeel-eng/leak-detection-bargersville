@@ -2,8 +2,6 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import ServiceCard from '../../components/ServiceCard.astro';
-import Process from '../../components/Process.astro';
 import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { site, services, areas, type Service } from '../../data/site';
@@ -28,6 +26,10 @@ const calls = l.topCalls
   .map((c) => ({ ...c, s: services.find((x) => x.slug === c.service) }))
   .filter((c) => c.s) as { service: string; text: string; s: Service }[];
 const sub = townPages(l.slug);
+const utilityFact = l.facts.find((f) => f.label === 'Water provider')?.value ?? 'your water utility';
+const utility = utilityFact.split(/[;(]/)[0].replace(/^Mostly /, '').trim();
+const onWell = /wells?/i.test(utilityFact);
+const repairPages = sub.filter((x) => x.kind === 'repair');
 const nearby = l.nearby.map((slug) => areas.find((a) => a.slug === slug)).filter(Boolean) as typeof areas;
 
 const city = {
@@ -95,7 +97,6 @@ const pageSchema = {
         <table class="facts">
           <tbody>
             {l.facts.map((f) => <tr><th scope="row">{f.label}</th><td>{f.value}</td></tr>)}
-            <tr><th scope="row">Services</th><td>{services.map((s) => s.name).join(', ')}</td></tr>
           </tbody>
         </table>
 
@@ -138,27 +139,17 @@ const pageSchema = {
         {l.water.paras.map((p) => <p set:html={md(p)} />)}
         {l.water.links.length > 0 && (<p class="note-link">Utility sites: {l.water.links.map((x, i) => <>{i > 0 && ', '}<a href={x.url} rel="noopener" target="_blank">{x.name}</a></>)}.</p>)}
 
-        <h2>Check for a leak before you call</h2>
-        <ol class="steps-ol">
-          <li>Turn off every faucet, the washer, dishwasher and ice maker.</li>
-          <li>Look at your water meter’s leak indicator, or write down the reading.</li>
-          <li>Wait 30 minutes to two hours without using water. If the reading changed or the indicator spins, water is leaking.</li>
-          <li>Close the main shutoff in the house. If the meter still moves, the leak is in the buried line outside; if it stops, it’s inside.</li>
-          <li>If you have sprinklers, close the irrigation valve too, so a sprinkler leak doesn’t look like a house leak.</li>
-        </ol>
-        <p class="note-link">More detail: <a href="/guides/how-to-find-a-water-leak-in-your-house/">how to find a water leak in your house</a>.</p>
+        <h2>{onWell ? `Checking for a leak on a ${l.name} well` : `Checking your meter in ${l.name}`}</h2>
+        {onWell ? (
+          <p>Homes in {l.name} on {utility} can read the meter: with everything off, a moving dial means a leak, and the <a href="/guides/how-to-find-a-water-leak-in-your-house/">house leak guide</a> has the full test. Around {l.name} on a private well, use the tank gauge instead; the <a href="/guides/well-pump-keeps-running/">well pump guide</a> explains how to rule out the pressure switch and check valve before blaming a leak.</p>
+        ) : (
+          <p>Your meter belongs to {utility}. With every fixture off, a spinning leak indicator or a reading that changes over an hour means water is leaking; close the house shutoff to tell an outdoor line leak from an indoor one. The full step-by-step test is in our <a href="/guides/how-to-find-a-water-leak-in-your-house/">house leak guide</a>, and <a href="/guides/water-bill-leak-adjustment-indiana/">this guide</a> covers asking for a bill adjustment afterwards.</p>
+        )}
 
-        <h2>Leak repair in {l.name}</h2>
-        <p>Finding the leak is only half the job. Once it’s marked, our plumbing partner can make the repair, so {l.name} homeowners deal with one team from the first call to the fixed pipe. Common repairs:</p>
-        <ul class="list">
-          <li><Icon name="check" /><span><b>Slab leak repair:</b> a spot repair through one small opening at the marked spot, or rerouting the line through walls or the attic. See <a href="/guides/slab-leak-repair-cost/">slab leak repair cost</a>.</span></li>
-          <li><Icon name="check" /><span><b>Water line repair:</b> one small hole at the marked spot on the buried service line, or a new line when the old one keeps failing. See <a href="/guides/water-line-replacement-cost-indiana/">water line replacement cost</a>.</span></li>
-          <li><Icon name="check" /><span><b>Hidden pipe repair:</b> a small opening in the wall, ceiling or floor at the marked spot, instead of several exploratory holes.</span></li>
-        </ul>
-        <p>Already have a plumber you trust? We hand them the marked spot and our photo report instead.</p>
-
-        <h2>What leak detection costs in {l.name}</h2>
-        <p>The price depends on the type of leak, how many lines need testing and what’s above the pipe, not on which town you live in. Detection and repair are quoted separately, and we can arrange both through our plumbing partner. See <a href="/leak-detection-cost/">what affects leak detection cost</a>, or call for a quote for your home.</p>
+        <h2>Getting the leak repaired in {l.name}</h2>
+        <p>Once the leak is marked, our plumbing partner makes the repair at that spot, or we hand the marked location and photo report to your own plumber.{repairPages.length > 0 ? <> The repair pages for {l.name} explain each option:</> : <> For {l.name}, the usual repairs follow from the calls listed above; prices are in the <a href="/guides/slab-leak-repair-cost/">slab repair</a> and <a href="/guides/water-line-replacement-cost-indiana/">water line</a> cost guides.</>}</p>
+        {repairPages.length > 0 && <ul class="list">{repairPages.map((x) => <li><Icon name="pipe" /><a href={townServiceUrl(x)}>{x.h1}</a></li>)}</ul>}
+        <p>Detection is quoted separately from the repair. See <a href="/leak-detection-cost/">what sets the leak detection price</a>.</p>
 
         {guides.length > 0 && (
           <div class="guide-links">
@@ -183,15 +174,6 @@ const pageSchema = {
       </aside>
     </div>
   </section>
-
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">Services in {l.name}</span><h2>Leak detection services in {place}</h2></div>
-      <div class="cards">{services.map((s) => <ServiceCard service={s} />)}</div>
-    </div>
-  </section>
-
-  <Process />
 
   <section class="section">
     <div class="container">

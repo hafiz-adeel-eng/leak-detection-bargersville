@@ -84,14 +84,14 @@ const schema = {
   <section class="section alt">
     <div class="container">
       <div class="section-head"><span class="eyebrow">In {p.city}</span><h2>{p.focus === 'plumbing' ? 'Plumbing services' : 'Leak detection services'}</h2></div>
-      <div class="cards">{primary.map((s) => <ServiceCard service={s} base={primaryBase} />)}</div>
+      <div class="cards">{primary.map((s) => <ServiceCard service={s} base={primaryBase} compact />)}</div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="section-head"><span class="eyebrow">Also in {p.city}</span><h2>{p.focus === 'plumbing' ? 'Hidden leak? We find it first' : 'Plumbing repair'}</h2></div>
-      <div class="cards">{secondary.map((s) => <ServiceCard service={s} base={secondaryBase} />)}</div>
+      <div class="cards">{secondary.map((s) => <ServiceCard service={s} base={secondaryBase} compact />)}</div>
     </div>
   </section>
 
